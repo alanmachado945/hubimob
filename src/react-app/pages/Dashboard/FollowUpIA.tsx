@@ -130,7 +130,7 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                   className={`flex ${msg.tipo === 'corretor' ? 'justify-end' : 'justify-start'}`}
                 >
                   <div
-                    className={`max-w-[80%] p-4 rounded-2xl ${
+                    className={`max-w-chat p-4 rounded-2xl ${
                       msg.tipo === 'corretor' 
                         ? 'rounded-br-none' 
                         : 'rounded-bl-none'
@@ -326,6 +326,7 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
     </div>
   );
 }
+
 
 
 

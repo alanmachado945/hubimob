@@ -33,7 +33,7 @@ export default function ImovelDetalhes() {
     <div className="min-h-screen bg-black text-white">
       {/* HERO */}
       <div
-        className="h-[60vh] bg-cover bg-center"
+        className="h-60vh bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200')",
@@ -209,6 +209,7 @@ export default function ImovelDetalhes() {
     </div>
   );
 }
+
 
 
 

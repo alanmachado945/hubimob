@@ -1,10 +1,10 @@
-export default function MegaMenuComprar() {
+﻿export default function MegaMenuComprar() {
   return (
     <div
-      className="absolute left-0 mt-4 w-[420px] backdrop-blur-xl rounded-xl shadow-xl p-6 z-50"
+      className="absolute left-0 mt-4 w-menu backdrop-blur-xl rounded-xl shadow-xl p-6 z-50"
       style={{
         backgroundColor: "rgba(var(--color-111827-rgb), 0.95)", // Preto Azul-Grafite 95%
-        border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)", // Dourado metálico 20%
+        border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)", // Dourado metÃ¡lico 20%
       }}
     >
 
@@ -21,7 +21,7 @@ export default function MegaMenuComprar() {
           className="text-sm"
           style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
         >
-          Imóveis únicos selecionados pela curadoria IMOBIA.
+          ImÃ³veis Ãºnicos selecionados pela curadoria IMOBIA.
         </p>
       </div>
 
@@ -30,18 +30,18 @@ export default function MegaMenuComprar() {
         style={{ borderColor: "rgba(var(--color-d4af67-rgb), 0.20)" }}
       />
 
-      {/* Escolha por Regiões */}
+      {/* Escolha por RegiÃµes */}
       <div className="mb-2">
         <h3
           className="font-semibold text-lg mb-3"
           style={{ color: "var(--brand-primary)" }}
         >
-          Escolha por regiões
+          Escolha por regiÃµes
         </h3>
 
         <div className="grid grid-cols-2 gap-4">
 
-          {/* Coluna 1 – Cidades */}
+          {/* Coluna 1 â€“ Cidades */}
           <div>
             <h4
               className="text-sm font-medium mb-2"
@@ -72,12 +72,12 @@ export default function MegaMenuComprar() {
                   (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.80)")
                 }
               >
-                Niterói
+                NiterÃ³i
               </li>
             </ul>
           </div>
 
-          {/* Coluna 2 – Bairros */}
+          {/* Coluna 2 â€“ Bairros */}
           <div>
             <h4
               className="text-sm font-medium mb-2"
@@ -112,5 +112,6 @@ export default function MegaMenuComprar() {
     </div>
   );
 }
+
 
 

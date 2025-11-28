@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import Navbar from "@/react-app/components/siteimobiliario2/Navbar";
 import Footer from "@/react-app/components/Footer";
 
@@ -13,7 +13,7 @@ export default function Contato() {
 
       {/* HERO */}
       <section
-        className="relative w-full h-[60vh] bg-cover bg-center"
+        className="relative w-full h-60vh bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?w=1400')",
@@ -27,8 +27,8 @@ export default function Contato() {
           </h1>
 
           <p className="text-xl text-brand-white/80 max-w-2xl mt-6">
-            Suporte, atendimento e orientações rápidas.
-            Estamos aqui para ajudar você em cada etapa.
+            Suporte, atendimento e orientaÃ§Ãµes rÃ¡pidas.
+            Estamos aqui para ajudar vocÃª em cada etapa.
           </p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function Contato() {
             <h3 className="font-display text-2xl text-brand-gold font-semibold mb-3 leading-tight">
               WhatsApp
             </h3>
-            <p className="text-brand-white/70 mt-3">Atendimento rápido e direto.</p>
+            <p className="text-brand-white/70 mt-3">Atendimento rÃ¡pido e direto.</p>
             <p className="text-brand-white mt-4 font-medium">(+55) 21 99999-9999</p>
           </div>
 
@@ -52,7 +52,7 @@ export default function Contato() {
             <h3 className="font-display text-2xl text-brand-gold font-semibold mb-3 leading-tight">
               E-mail
             </h3>
-            <p className="text-brand-white/70 mt-3">Envie dúvidas e solicitações.</p>
+            <p className="text-brand-white/70 mt-3">Envie dÃºvidas e solicitaÃ§Ãµes.</p>
             <p className="text-brand-white mt-4 font-medium">contato@hubimob.com</p>
           </div>
 
@@ -60,13 +60,13 @@ export default function Contato() {
             <h3 className="font-display text-2xl text-brand-gold font-semibold mb-3 leading-tight">
               Suporte
             </h3>
-            <p className="text-brand-white/70 mt-3">Equipe especializada para ajudar você.</p>
+            <p className="text-brand-white/70 mt-3">Equipe especializada para ajudar vocÃª.</p>
             <p className="text-brand-white mt-4 font-medium">suporte@hubimob.com</p>
           </div>
         </div>
       </section>
 
-      {/* FORMULÁRIO */}
+      {/* FORMULÃRIO */}
       <section className="bg-brand-graphite py-20">
         <div className="max-w-container mx-auto px-5">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gradient-gold text-center mb-12 leading-tight">
@@ -104,7 +104,7 @@ export default function Contato() {
               type="submit"
               className="mt-4 w-full py-4 bg-brand-gold text-brand-black font-bold rounded-full hover:bg-opacity-90 transition-all duration-300 shadow-2xl shadow-brand-gold/30"
             >
-              Enviar mensagem →
+              Enviar mensagem â†’
             </button>
           </form>
         </div>
@@ -118,7 +118,7 @@ export default function Contato() {
         
         <div className="max-w-container mx-auto px-5">
           <p className="text-brand-white/80 max-w-2xl mx-auto mt-4 text-lg">
-          Estamos disponíveis para te ajudar com qualquer dúvida ou necessidade.
+          Estamos disponÃ­veis para te ajudar com qualquer dÃºvida ou necessidade.
           Entre em contato e fale com nossa equipe.
           </p>
         </div>
@@ -128,3 +128,4 @@ export default function Contato() {
     </div>
   );
 }
+

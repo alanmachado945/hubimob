@@ -1,4 +1,4 @@
-import SidebarCorretor from "../../components/SidebarCorretor";
+﻿import SidebarCorretor from "../../components/SidebarCorretor";
 import { Outlet } from "react-router-dom";
 
 export default function DashboardLayout() {
@@ -9,10 +9,11 @@ export default function DashboardLayout() {
         <SidebarCorretor />
       </div>
 
-      {/* Conteúdo à direita */}
-      <div className="ml-[270px] w-full min-h-screen px-6">
+      {/* ConteÃºdo Ã  direita */}
+      <div className="ml-sidebar w-full min-h-screen px-6">
         <Outlet />
       </div>
     </div>
   );
 }
+

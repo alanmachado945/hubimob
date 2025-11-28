@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import Navbar from "@/react-app/components/siteimobiliario2/Navbar";
 import Footer from "@/react-app/components/siteimobiliario2/Footer";
 import PropertyMap from "@/react-app/components/siteimobiliario2/PropertyMap";
@@ -16,7 +16,7 @@ export default function ImovelVistaMar() {
       
       {/* Hero Image */}
       <div
-        className="h-[60vh] bg-cover bg-center relative"
+        className="h-60vh bg-cover bg-center relative"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1600')",
@@ -32,34 +32,34 @@ export default function ImovelVistaMar() {
         </h1>
 
         <p className="text-lg text-brand-white/70 mb-4">
-          Localização: Icaraí, Niterói – RJ
+          LocalizaÃ§Ã£o: IcaraÃ­, NiterÃ³i â€“ RJ
         </p>
 
         <p className="text-3xl font-semibold text-brand-gold mb-10">R$ 1.250.000</p>
 
         <h2 className="font-display text-2xl font-bold mb-4 text-gradient-gold">
-          Descrição do Imóvel
+          DescriÃ§Ã£o do ImÃ³vel
         </h2>
         <p className="text-brand-white/80 leading-relaxed mb-10">
-          Este apartamento Vista Mar oferece uma experiência única de conforto e
-          sofisticação. Possui ampla sala integrada, cozinha moderna, varanda
-          com vista panorâmica para o mar, 2 quartos (sendo 1 suíte), acabamento
+          Este apartamento Vista Mar oferece uma experiÃªncia Ãºnica de conforto e
+          sofisticaÃ§Ã£o. Possui ampla sala integrada, cozinha moderna, varanda
+          com vista panorÃ¢mica para o mar, 2 quartos (sendo 1 suÃ­te), acabamento
           premium e vaga de garagem. Ideal para quem busca praticidade e beleza
-          em uma das regiões mais valorizadas de Niterói.
+          em uma das regiÃµes mais valorizadas de NiterÃ³i.
         </p>
 
-        <h2 className="font-display text-2xl font-bold mb-6 text-gradient-gold">Características</h2>
+        <h2 className="font-display text-2xl font-bold mb-6 text-gradient-gold">CaracterÃ­sticas</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
           <div className="bg-brand-graphite rounded-lg p-6 text-center border border-brand-gold/10 hover:border-brand-gold/30 transition-all duration-300">
             <Maximize className="w-8 h-8 text-brand-gold mx-auto mb-3" />
-            <p className="text-2xl font-bold text-brand-white mb-1">85 m²</p>
-            <p className="text-sm text-brand-white/60">Área total</p>
+            <p className="text-2xl font-bold text-brand-white mb-1">85 mÂ²</p>
+            <p className="text-sm text-brand-white/60">Ãrea total</p>
           </div>
           
           <div className="bg-brand-graphite rounded-lg p-6 text-center border border-brand-gold/10 hover:border-brand-gold/30 transition-all duration-300">
             <Bed className="w-8 h-8 text-brand-gold mx-auto mb-3" />
             <p className="text-2xl font-bold text-brand-white mb-1">2</p>
-            <p className="text-sm text-brand-white/60">Quartos (1 suíte)</p>
+            <p className="text-sm text-brand-white/60">Quartos (1 suÃ­te)</p>
           </div>
           
           <div className="bg-brand-graphite rounded-lg p-6 text-center border border-brand-gold/10 hover:border-brand-gold/30 transition-all duration-300">
@@ -80,7 +80,7 @@ export default function ImovelVistaMar() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
-              <span className="text-brand-white/80">Vista panorâmica para o mar</span>
+              <span className="text-brand-white/80">Vista panorÃ¢mica para o mar</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
@@ -96,11 +96,11 @@ export default function ImovelVistaMar() {
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
-              <span className="text-brand-white/80">Andar alto (12º)</span>
+              <span className="text-brand-white/80">Andar alto (12Âº)</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
-              <span className="text-brand-white/80">Ventilação natural</span>
+              <span className="text-brand-white/80">VentilaÃ§Ã£o natural</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
@@ -108,15 +108,15 @@ export default function ImovelVistaMar() {
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
-              <span className="text-brand-white/80">Área de lazer completa</span>
+              <span className="text-brand-white/80">Ãrea de lazer completa</span>
             </div>
           </div>
         </div>
 
-        <h2 className="font-display text-2xl font-bold mb-4 text-gradient-gold">Localização</h2>
+        <h2 className="font-display text-2xl font-bold mb-4 text-gradient-gold">LocalizaÃ§Ã£o</h2>
         <p className="text-brand-white/80 leading-relaxed mb-6">
-          Localizado em uma das regiões mais nobres de Niterói, com fácil acesso a praias, 
-          comércio e serviços premium. A região de Icaraí oferece infraestrutura completa 
+          Localizado em uma das regiÃµes mais nobres de NiterÃ³i, com fÃ¡cil acesso a praias, 
+          comÃ©rcio e serviÃ§os premium. A regiÃ£o de IcaraÃ­ oferece infraestrutura completa 
           e excelente qualidade de vida.
         </p>
         <div className="mb-16">
@@ -124,7 +124,7 @@ export default function ImovelVistaMar() {
             latitude={-22.9064}
             longitude={-43.1089}
             propertyName="Apartamento Vista Mar"
-            location="Icaraí, Niterói – RJ"
+            location="IcaraÃ­, NiterÃ³i â€“ RJ"
           />
         </div>
 
@@ -163,22 +163,22 @@ export default function ImovelVistaMar() {
           <img
             className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200"
-            alt="Escritório"
+            alt="EscritÃ³rio"
           />
           <img
             className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200"
-            alt="Área gourmet"
+            alt="Ãrea gourmet"
           />
         </div>
 
         <div className="bg-brand-graphite rounded-lg p-8 max-w-2xl mx-auto text-center mb-16">
-          <h2 className="font-display text-2xl font-bold mb-4 text-gradient-gold">Pronto para conhecer este imóvel de perto?</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-gradient-gold">Pronto para conhecer este imÃ³vel de perto?</h2>
           <p className="text-brand-white/70 mb-6">
-            Fale agora com um consultor especializado e receba atendimento prioritário pelo WhatsApp.
+            Fale agora com um consultor especializado e receba atendimento prioritÃ¡rio pelo WhatsApp.
           </p>
           <a
-            href="https://wa.me/5521999813673?text=Olá!%20Tenho%20interesse%20no%20Apartamento%20Vista%20Mar%20em%20Icaraí."
+            href="https://wa.me/5521999813673?text=OlÃ¡!%20Tenho%20interesse%20no%20Apartamento%20Vista%20Mar%20em%20IcaraÃ­."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-brand-black font-semibold rounded-lg shadow-lg hover:bg-opacity-90 transition-all duration-300"
@@ -196,3 +196,4 @@ export default function ImovelVistaMar() {
     </div>
   );
 }
+

@@ -1,6 +1,6 @@
-export default function Hero() {
+﻿export default function Hero() {
   return (
-    <section className="relative w-full h-[95vh] flex items-center justify-center text-center">
+    <section className="relative w-full h-95vh flex items-center justify-center text-center">
 
       {/* background image */}
       <img
@@ -14,19 +14,20 @@ export default function Hero() {
       <div className="relative max-w-3xl mx-auto px-6">
 
         <h1 className="text-5xl md:text-6xl font-bold text-brand-gold leading-tight">
-          Inteligência<br />
-          que entende você.
+          InteligÃªncia<br />
+          que entende vocÃª.
         </h1>
 
         <p className="text-xl text-brand-text-light mt-6 opacity-90">
-          Tecnologia avançada, IA e curadoria humana para encontrar seu imóvel ideal.
+          Tecnologia avanÃ§ada, IA e curadoria humana para encontrar seu imÃ³vel ideal.
         </p>
 
         <button className="btn-primary mt-10">
-          Encontrar imóvel ideal →
+          Encontrar imÃ³vel ideal â†’
         </button>
 
       </div>
     </section>
   );
 }
+

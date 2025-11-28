@@ -1,24 +1,24 @@
-import { Star, Quote } from 'lucide-react';
+﻿import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
     name: 'Carlos Eduardo',
     role: 'CEO, Tech Startup',
-    content: 'A HUBIMOB transformou minha busca por imóvel. A IA encontrou exatamente o que eu precisava em tempo recorde. Processo impecável do início ao fim.',
+    content: 'A HUBIMOB transformou minha busca por imÃ³vel. A IA encontrou exatamente o que eu precisava em tempo recorde. Processo impecÃ¡vel do inÃ­cio ao fim.',
     rating: 5,
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/testimonial-carlos.png'
   },
   {
     name: 'Mariana Silva',
-    role: 'Médica Cardiologista',
-    content: 'Atendimento excepcional e tecnologia de ponta. Encontraram um imóvel perfeito próximo ao hospital, considerando todos os meus critérios específicos.',
+    role: 'MÃ©dica Cardiologista',
+    content: 'Atendimento excepcional e tecnologia de ponta. Encontraram um imÃ³vel perfeito prÃ³ximo ao hospital, considerando todos os meus critÃ©rios especÃ­ficos.',
     rating: 5,
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/testimonial-mariana.png'
   },
   {
     name: 'Roberto Almeida',
     role: 'Investidor',
-    content: 'A análise de mercado e recomendações personalizadas da HUBIMOB são incomparáveis. Fiz um investimento excelente com total segurança.',
+    content: 'A anÃ¡lise de mercado e recomendaÃ§Ãµes personalizadas da HUBIMOB sÃ£o incomparÃ¡veis. Fiz um investimento excelente com total seguranÃ§a.',
     rating: 5,
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/testimonial-roberto.png'
   }
@@ -40,7 +40,7 @@ export default function Testimonials() {
             className="text-lg max-w-2xl mx-auto"
             style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
           >
-            Histórias reais de quem confiou na HUBIMOB
+            HistÃ³rias reais de quem confiou na HUBIMOB
           </p>
         </div>
         
@@ -51,7 +51,7 @@ export default function Testimonials() {
               key={index}
               className="relative rounded-2xl p-8 overflow-hidden 
               hover:shadow-2xl transition-all duration-500 hover:scale-105 
-              min-h-[500px] flex flex-col"
+              min-h-card-med flex flex-col"
               style={{
                 boxShadow: "var(--shadow-lg)" // dourado suave
               }}
@@ -121,5 +121,6 @@ export default function Testimonials() {
     </section>
   );
 }
+
 
 

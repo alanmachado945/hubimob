@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router';
+﻿import { Link, useLocation } from 'react-router';
 import { 
   Building,
   LogOut
@@ -19,7 +19,7 @@ export default function SidebarCorretor() {
   `;
 
   return (
-    <aside className="w-[260px] h-screen bg-brand-black border-r border-[var(--color-c8a96a)]/20 fixed left-0 top-0 overflow-y-auto">
+    <aside className="w-sidebar h-screen bg-brand-black border-r border-[var(--color-c8a96a)]/20 fixed left-0 top-0 overflow-y-auto">
 
       {/* Header */}
       <div className="p-6 border-b border-[var(--color-c8a96a)]/20">
@@ -27,7 +27,7 @@ export default function SidebarCorretor() {
           HUBIMOB
         </h1>
         <p className="text-sm" style={{ color: 'rgba(var(--color-f7f7f7-rgb), 0.667)' }}>
-          Área do Corretor
+          Ãrea do Corretor
         </p>
       </div>
 
@@ -38,7 +38,7 @@ export default function SidebarCorretor() {
         <div>
           <Link to="/imobiliarias" className={linkClass('/imobiliarias')}>
             <Building className="w-5 h-5" style={{ color: 'inherit' }} />
-            <span>Imobiliárias</span>
+            <span>ImobiliÃ¡rias</span>
           </Link>
         </div>
 
@@ -68,5 +68,6 @@ export default function SidebarCorretor() {
     </aside>
   );
 }
+
 
 

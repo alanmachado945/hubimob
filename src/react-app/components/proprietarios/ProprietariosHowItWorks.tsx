@@ -1,29 +1,29 @@
-import { Home, Cpu, Users, Calendar } from 'lucide-react';
+﻿import { Home, Cpu, Users, Calendar } from 'lucide-react';
 
 const steps = [
   {
     number: '01',
     icon: Home,
-    title: 'Cadastro do Imóvel',
-    description: 'Preencha os dados do seu imóvel em minutos. Nossa plataforma é intuitiva e completa.'
+    title: 'Cadastro do ImÃ³vel',
+    description: 'Preencha os dados do seu imÃ³vel em minutos. Nossa plataforma Ã© intuitiva e completa.'
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'Análise Automática pela IA',
-    description: 'A IA avalia seu imóvel, sugere melhorias de valor e determina o perfil ideal de comprador.'
+    title: 'AnÃ¡lise AutomÃ¡tica pela IA',
+    description: 'A IA avalia seu imÃ³vel, sugere melhorias de valor e determina o perfil ideal de comprador.'
   },
   {
     number: '03',
     icon: Users,
     title: 'Compradores Qualificados',
-    description: 'Apenas leads verificados e com real intenção de compra têm acesso ao seu imóvel.'
+    description: 'Apenas leads verificados e com real intenÃ§Ã£o de compra tÃªm acesso ao seu imÃ³vel.'
   },
   {
     number: '04',
     icon: Calendar,
-    title: 'Visitas e Negociação',
-    description: 'Agendamento automatizado de visitas com compradores sérios. Você controla todo o processo.'
+    title: 'Visitas e NegociaÃ§Ã£o',
+    description: 'Agendamento automatizado de visitas com compradores sÃ©rios. VocÃª controla todo o processo.'
   }
 ];
 
@@ -47,7 +47,7 @@ export default function ProprietariosHowItWorks() {
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            4 passos simples para vender seu imóvel com tecnologia de ponta
+            4 passos simples para vender seu imÃ³vel com tecnologia de ponta
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function ProprietariosHowItWorks() {
                   className="relative group"
                 >
                   {/* Card */}
-                  <div className="relative backdrop-blur-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-3xl p-8 hover:border-amber-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20 min-h-[350px]">
+                  <div className="relative backdrop-blur-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-3xl p-8 hover:border-amber-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20 min-h-card-xl">
                     {/* Number Badge */}
                     <div className="absolute top-6 right-6 w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-yellow-600 flex items-center justify-center shadow-lg shadow-amber-500/50">
                       <span 
@@ -110,3 +110,4 @@ export default function ProprietariosHowItWorks() {
     </section>
   );
 }
+

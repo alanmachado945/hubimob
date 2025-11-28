@@ -1,29 +1,29 @@
-import { UserPlus, Cpu, Filter, Handshake } from 'lucide-react';
+﻿import { UserPlus, Cpu, Filter, Handshake } from 'lucide-react';
 
 const steps = [
   {
     number: '01',
     icon: UserPlus,
-    title: 'Cadastro Rápido',
+    title: 'Cadastro RÃ¡pido',
     description: 'Crie sua conta e configure seu perfil profissional em minutos.'
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'IA Trabalha Por Você',
-    description: 'Nossa IA analisa leads 24/7 e identifica intenção real de compra.'
+    title: 'IA Trabalha Por VocÃª',
+    description: 'Nossa IA analisa leads 24/7 e identifica intenÃ§Ã£o real de compra.'
   },
   {
     number: '03',
     icon: Filter,
     title: 'Leads Filtrados',
-    description: 'Receba apenas compradores qualificados e prontos para avançar.'
+    description: 'Receba apenas compradores qualificados e prontos para avanÃ§ar.'
   },
   {
     number: '04',
     icon: Handshake,
-    title: 'Fechamento Rápido',
-    description: 'Com clientes prontos para negociar, você elimina objeções e fecha mais negócios.'
+    title: 'Fechamento RÃ¡pido',
+    description: 'Com clientes prontos para negociar, vocÃª elimina objeÃ§Ãµes e fecha mais negÃ³cios.'
   }
 ];
 
@@ -52,7 +52,7 @@ export default function HowItWorks() {
             className="text-xl"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.667)' }}
           >
-            4 passos para revolucionar sua forma de vender imóveis
+            4 passos para revolucionar sua forma de vender imÃ³veis
           </p>
 
         </div>
@@ -79,7 +79,7 @@ export default function HowItWorks() {
 
                   {/* Card */}
                   <div 
-                    className="relative backdrop-blur-xl bg-gradient-to-br from-brand-light/10 to-brand-light/5 border border-brand-light/10 rounded-3xl overflow-hidden hover:border-brand-primary/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-brand-primary/20 min-h-[400px] flex flex-col"
+                    className="relative backdrop-blur-xl bg-gradient-to-br from-brand-light/10 to-brand-light/5 border border-brand-light/10 rounded-3xl overflow-hidden hover:border-brand-primary/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-brand-primary/20 min-h-card-3xl flex flex-col"
                     style={{ 
                       backgroundImage: `url('${backgroundImages[index]}')`,
                       backgroundSize: 'cover',
@@ -143,5 +143,6 @@ export default function HowItWorks() {
     </section>
   );
 }
+
 
 

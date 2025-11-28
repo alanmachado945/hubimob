@@ -1,4 +1,4 @@
-import { Users, Target, Award, Shield } from 'lucide-react';
+﻿import { Users, Target, Award, Shield } from 'lucide-react';
 
 const benefits = [
   {
@@ -9,20 +9,20 @@ const benefits = [
   },
   {
     icon: Target,
-    title: 'Recomendações personalizadas',
-    description: 'IA avançada analisa suas preferências para encontrar imóveis perfeitos',
+    title: 'RecomendaÃ§Ãµes personalizadas',
+    description: 'IA avanÃ§ada analisa suas preferÃªncias para encontrar imÃ³veis perfeitos',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/benefit-recomendacoes.png'
   },
   {
     icon: Award,
     title: 'Processo premium',
-    description: 'Experiência exclusiva do início ao fim da sua jornada imobiliária',
+    description: 'ExperiÃªncia exclusiva do inÃ­cio ao fim da sua jornada imobiliÃ¡ria',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/benefit-processo.png'
   },
   {
     icon: Shield,
-    title: 'Segurança total',
-    description: 'Proteção completa em todas as etapas da transação',
+    title: 'SeguranÃ§a total',
+    description: 'ProteÃ§Ã£o completa em todas as etapas da transaÃ§Ã£o',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/benefit-seguranca.png'
   }
 ];
@@ -51,7 +51,7 @@ export default function Benefits() {
               <div
                 key={index}
                 className="group relative rounded-2xl p-8 overflow-hidden hover:scale-105 
-                transition-all duration-500 hover:shadow-2xl hover:shadow-brand-gold/20 min-h-[320px] flex flex-col"
+                transition-all duration-500 hover:shadow-2xl hover:shadow-brand-gold/20 min-h-card flex flex-col"
               >
 
                 {/* BACKGROUND IMAGE */}
@@ -92,3 +92,4 @@ export default function Benefits() {
     </section>
   );
 }
+
