@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
-
+﻿
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os imóveis da HUBIMOB.");
+    const message = encodeURIComponent("OlÃ¡! Gostaria de mais informaÃ§Ãµes sobre os imÃ³veis da HUBIMOB.");
     window.open(`https://wa.me/5521999999999?text=${message}`, '_blank');
   };
 
@@ -11,7 +10,7 @@ export default function WhatsAppButton() {
       onClick={handleWhatsAppClick}
       className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
       style={{
-        backgroundColor: "var(--brand-primary)", // dourado metálico
+        backgroundColor: "var(--brand-primary)", // dourado metÃ¡lico
         boxShadow: "var(--shadow-lg)" 
       }}
       aria-label="Falar no WhatsApp"

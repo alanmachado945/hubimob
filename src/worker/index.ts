@@ -1,4 +1,6 @@
-import { Hono } from "hono";
+﻿import { Hono } from "hono";
+
+type Env = Record<string, unknown>;
 
 const app = new Hono<{ Bindings: Env }>();
 
