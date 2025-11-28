@@ -82,4 +82,4 @@
 - Config: `vite.config.ts`, `wrangler.json`, `tailwind.config.js`, `eslint.config.js`
 
 ---
-For questions, see the [README.md](../README.md) or join the [Discord](https://discord.gg/shDEGBSe2d).
+For questions, see the [README.md](https://github.com/alanmachado945/hubimob/blob/main/README.md) or join the [Discord](https://discord.gg/shDEGBSe2d).
