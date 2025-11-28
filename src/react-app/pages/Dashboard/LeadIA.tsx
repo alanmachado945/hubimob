@@ -296,7 +296,7 @@ export default function LeadIAPage() {
                 {/* AI Analysis Message */}
                 <div 
                   className="p-6 rounded-xl"
-                  style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
+                  style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)" }}
                 >
                   <div className="flex items-start gap-3 mb-4">
                     <Sparkles className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--brand-primary)' }} />

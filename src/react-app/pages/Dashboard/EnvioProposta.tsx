@@ -341,7 +341,7 @@ Qualquer dúvida, estou à disposição para ajustar valores, condições ou mar
 
           <div 
             className="p-6 rounded-xl mb-8"
-            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
+            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)" }}
           >
             <div className="space-y-3">
               <div className="flex items-center gap-3">

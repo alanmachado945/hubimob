@@ -772,7 +772,7 @@ export default function CaptacaoImovelPage() {
               {/* Sugestão de copy */}
               <div 
                 className="p-6 rounded-xl mb-6"
-                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
+                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)" }}
               >
                 <div className="flex items-start gap-3">
                   <Sparkles className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--brand-primary)' }} />
@@ -795,7 +795,7 @@ export default function CaptacaoImovelPage() {
               {/* Alertas da IA */}
               <div 
                 className="p-6 rounded-xl"
-                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-ff9800)' }}
+                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-ff9800)" }}
               >
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--color-warning)' }} />

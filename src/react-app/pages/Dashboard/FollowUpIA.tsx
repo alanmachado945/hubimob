@@ -259,7 +259,7 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                 className="p-6 rounded-xl mb-6"
                 style={{ 
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderLeft: "var(--border-thick) solid var(--color-e3a93c)'
+                  borderLeft: "var(--border-thick) solid var(--color-e3a93c)"
                 }}
               >
                 <p 

@@ -548,7 +548,7 @@ export default function RelatoriosPage() {
             className="p-6 rounded-xl"
             style={{ 
               backgroundColor: 'var(--brand-dark-secondary)',
-              borderLeft: "var(--border-thick) solid var(--brand-primary)'
+              borderLeft: "var(--border-thick) solid var(--brand-primary)"
             }}
           >
             <div className="flex items-start gap-3">
