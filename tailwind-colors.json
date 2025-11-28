@@ -1,6 +1,12 @@
 {
   "brand-primary": "#0a0f1f",
   "brand-primary-dark": "#111827",
+  "brand-bg": "#0a0f1f",
+  "brand-dark": "#111827",
+  "brand-gold": "#d4af67",
+  "brand-gold-dark": "#b68a37",
+  "brand-gray": "#f2f2f2",
+  "brand-white": "#fff9f2",
   "brand-accent": "#d4af67",
   "brand-accent-dark": "#b68a37",
   "brand-text-light": "#f2f2f2",
