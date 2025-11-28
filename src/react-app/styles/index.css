@@ -20,8 +20,8 @@
 
 html,
 body {
-  background-color: var(--brand-light);
-  color: var(--brand-text-dark);
+  background-color: var(--brand-bg);
+  color: var(--brand-white);
   font-family: var(--font-default);
 }
 
@@ -42,8 +42,8 @@ a {
 
 /* BUTTONS */
 .btn-primary {
-  background: var(--brand-primary);
-  color: var(--brand-surface);
+  background: var(--brand-gold);
+  color: var(--brand-dark);
   padding: var(--space-3) var(--space-8);
   border-radius: var(--radius-pill);
   font-weight: var(--font-medium);
@@ -51,7 +51,7 @@ a {
 }
 
 .btn-primary:hover {
-  background: var(--brand-primary-dark);
+  background: var(--brand-gold-dark);
 }
 
 /* TEXTS */
@@ -68,7 +68,7 @@ a {
 }
 
 .text-soft {
-  color: var(--brand-text-light);
+  color: var(--brand-gray);
   opacity: 0.85;
 }
 
@@ -85,13 +85,13 @@ a {
 
 .btn-outline {
   background: transparent;
-  border: var(--border-thin) solid var(--brand-accent);
-  color: var(--brand-accent);
+  border: var(--border-thin) solid var(--brand-gold);
+  color: var(--brand-gold);
 }
 
 .btn-outline:hover {
-  background-color: var(--brand-accent);
-  color: var(--brand-primary);
+  background-color: var(--brand-gold);
+  color: var(--brand-dark);
 }
 
 /* TYPOGRAPHY UTILITIES */

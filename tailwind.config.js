@@ -1,4 +1,6 @@
 ﻿/** @type {import('tailwindcss').Config} */
+const generatedColors = require('./tailwind-colors.json');
+
 module.exports = {
   content: [
     "./index.html",
@@ -6,15 +8,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
+      colors: Object.assign({}, generatedColors, {
         brand: {
-          primary: "#C8A96A",
-          secondary: "#0D1A2D",
-          light: "#F7F9FB",
-          "light-gray": "#E7ECF2",
-          dark: "#1A1A1A",
+          primary: generatedColors['brand-primary'] || '#C8A96A',
+          secondary: generatedColors['brand-secondary'] || '#0D1A2D',
+          light: generatedColors['brand-light'] || '#F7F9FB',
+          'light-gray': generatedColors['brand-light-gray'] || '#E7ECF2',
+          dark: generatedColors['brand-dark'] || '#1A1A1A',
         },
-      },
+      }),
       fontFamily: {
         display: ["Playfair Display", "serif"],
         sans: ["Montserrat", "sans-serif"],

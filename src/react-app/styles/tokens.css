@@ -5,6 +5,32 @@
   --brand-primary: #0A0F1F;           /* Azul-Marinho Profundo */
   --brand-primary-dark: #111827;      /* Preto Azul-Grafite */
   --brand-primary-rgb: 10,15,31;
+
+  /* IMOBIA canonical tokens (new) */
+  --brand-bg: #0A0F1F;                /* Fundo geral (Azul-Marinho Profundo) */
+  --brand-bg-rgb: 10,15,31;
+  --brand-dark: #111827;              /* Navbar, títulos (Preto Azul-Grafite) */
+  --brand-dark-rgb: 17,24,39;
+  --brand-gold: #D4AF67;              /* Destaques (Dourado Metálico) */
+  --brand-gold-rgb: 212,175,103;
+  --brand-gold-dark: #B68A37;         /* Hover / bordas (Dourado Escuro) */
+  --brand-gold-dark-rgb: 182,138,55;
+  --brand-gray: #F2F2F2;              /* Textos secundários / neutros (Cinza Neutro) */
+  --brand-gray-rgb: 242,242,242;
+  --brand-white: #FFF9F2;             /* Fundo claro / cards (Branco Quente) */
+  --brand-white-rgb: 255,249,242;
+
+  /* Backwards-compatible aliases (keep older token names mapped to canonical ones) */
+  --brand-primary: var(--brand-bg);
+  --brand-primary-dark: var(--brand-dark);
+  --brand-primary-rgb: var(--brand-bg-rgb);
+  --brand-accent: var(--brand-gold);
+  --brand-accent-dark: var(--brand-gold-dark);
+  --brand-accent-rgb: var(--brand-gold-rgb);
+  --brand-text-light: var(--brand-gray);
+  --brand-text-light-rgb: var(--brand-gray-rgb);
+  --brand-surface: var(--brand-white);
+  --brand-surface-rgb: var(--brand-white-rgb);
   
   /* Secondary Palette */
   --brand-secondary: var(--color-0d1a2d);       /* Azul secundário */

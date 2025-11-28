@@ -13,24 +13,24 @@
   font-family: var(--font-display);
   font-weight: var(--font-extrabold);
   line-height: var(--line-tight);
-  color: var(--brand-primary);
+  color: var(--brand-gold);
   font-size: var(--text-5xl);
 }
 
 .subtitle-hero {
   font-family: var(--font-sans);
   font-size: var(--text-xl);
-  color: var(--brand-light);
+  color: var(--brand-gray);
   opacity: 0.9;
 }
 
 /* Text Utilities */
 .text-primary {
-  color: var(--brand-primary);
+  color: var(--brand-dark);
 }
 
 .text-light {
-  color: var(--brand-light);
+  color: var(--brand-white);
 }
 
 .text-dark {
@@ -130,7 +130,7 @@
 -------------------------------- */
 
 .btn-primary {
-  background-color: var(--brand-primary);
+  background-color: var(--brand-gold);
   color: var(--brand-dark);
   border-radius: var(--radius-pill);
   padding: var(--space-3) var(--space-8);
@@ -145,7 +145,7 @@
 }
 
 .btn-primary:hover {
-  background-color: var(--brand-primary-dark);
+  background-color: var(--brand-gold-dark);
   box-shadow: var(--shadow-medium);
 }
 
@@ -154,8 +154,8 @@
 }
 
 .btn-secondary {
-  background-color: var(--brand-secondary);
-  color: var(--brand-light);
+  background-color: var(--brand-white);
+  color: var(--brand-dark);
   border-radius: var(--radius-pill);
   padding: var(--space-3) var(--space-8);
   font-weight: var(--font-semibold);
@@ -169,8 +169,8 @@
 }
 
 .btn-outline {
-  border: var(--border-md) solid var(--brand-primary);
-  color: var(--brand-primary);
+  border: var(--border-md) solid var(--brand-gold);
+  color: var(--brand-gold);
   padding: var(--space-2) var(--space-6);
   border-radius: var(--radius-pill);
   transition: var(--transition-base);
@@ -180,13 +180,13 @@
 }
 
 .btn-outline:hover {
-  background-color: var(--brand-primary);
+  background-color: var(--brand-gold);
   color: var(--brand-dark);
 }
 
 .btn-ghost {
   background-color: transparent;
-  color: var(--brand-text-dark);
+  color: var(--brand-gray);
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-md);
   transition: var(--transition-base);
@@ -194,7 +194,7 @@
 }
 
 .btn-ghost:hover {
-  background-color: var(--brand-light-gray);
+  background-color: var(--brand-white);
 }
 
 /* Buttons Sizes */
@@ -218,7 +218,7 @@
 -------------------------------- */
 
 .card-base {
-  background-color: var(--brand-secondary);
+  background-color: var(--brand-white);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
   padding: var(--space-6);
@@ -231,11 +231,11 @@
 }
 
 .card-light {
-  background-color: var(--brand-light);
+  background-color: var(--brand-white);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-sm);
   padding: var(--space-6);
-  border: var(--border-thin) solid var(--brand-light-gray);
+  border: var(--border-thin) solid var(--brand-gray);
 }
 
 .card-light:hover {
@@ -244,11 +244,11 @@
 
 /* Borders */
 .border-primary {
-  border-color: var(--brand-primary);
+  border-color: var(--brand-gold);
 }
 
 .border-light {
-  border-color: var(--brand-light);
+  border-color: var(--brand-white);
 }
 
 .border-dark {
@@ -257,15 +257,15 @@
 
 /* Backgrounds */
 .bg-primary {
-  background-color: var(--brand-primary);
+  background-color: var(--brand-bg);
 }
 
 .bg-secondary {
-  background-color: var(--brand-secondary);
+  background-color: var(--brand-white);
 }
 
 .bg-light {
-  background-color: var(--brand-light);
+  background-color: var(--brand-white);
 }
 
 .bg-dark {
