@@ -1,0 +1,456 @@
+/* ============================================================================
+   REFACTORING EXAMPLES - Before & After
+   
+   Exemplos práticos de como refatorar cada tipo de hardcoding encontrado.
+   ============================================================================ */
+
+/* ============================================================================
+   1. CORES EM INLINE STYLES
+   ============================================================================ */
+
+// ❌ ANTES (Imobiliarias.tsx)
+return (
+  <div
+    className="mb-12 p-6 rounded-2xl border-2"
+    style={{
+      backgroundColor: '#1A1A1A',
+      borderColor: '#C8A96A'
+    }}
+  >
+
+// ✅ DEPOIS
+return (
+  <div
+    className="mb-12 p-6 rounded-2xl border-2"
+    style={{
+      backgroundColor: 'var(--brand-dark)',
+      borderColor: 'var(--brand-primary)'
+    }}
+  >
+
+---
+
+// ❌ ANTES (Dashboard/Relatorios.tsx)
+<div
+  style={{
+    backgroundColor: '#0B0B0C',
+    borderColor: '#E3A93C'
+  }}
+>
+
+// ✅ DEPOIS
+<div
+  style={{
+    backgroundColor: 'var(--bg-ultra-dark)',
+    borderColor: 'var(--accent-gold)'
+  }}
+>
+
+---
+
+// ❌ ANTES (MegaMenuComprar.tsx)
+onMouseOver={(e) => (e.currentTarget.style.color = "#D4AF67")}
+
+// ✅ DEPOIS
+onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+
+---
+
+// ❌ ANTES (Imobiliarias.tsx - cores em lógica condicional)
+const getBadgeColor = (badge: string) => {
+  switch (badge) {
+    case 'Premium':
+      return { bg: '#C8A96A20', color: '#C8A96A' };
+    case 'Nova':
+      return { bg: '#1A1A1A20', color: '#F7F7F7' };
+    case 'Parceira':
+      return { bg: '#0C1F2620', color: '#0C1F26' };
+    default:
+      return { bg: '#1A1A1A20', color: '#F7F7F7' };
+  }
+};
+
+// ✅ DEPOIS
+// No arquivo CSS, criar classes:
+.badge-premium {
+  background-color: rgba(var(--brand-primary-rgb), 0.13);
+  color: var(--brand-primary);
+}
+.badge-nova {
+  background-color: rgba(var(--brand-dark-rgb), 0.13);
+  color: var(--brand-text-muted);
+}
+.badge-parceira {
+  background-color: rgba(0, 31, 38, 0.13);
+  color: #0C1F26; /* ou criar token se necessário */
+}
+
+// Ou em TypeScript com CSS variables:
+const getBadgeColor = (badge: string) => {
+  const colors = {
+    Premium: { 
+      bg: 'rgba(200, 169, 106, 0.13)', 
+      color: 'var(--brand-primary)' 
+    },
+    Nova: { 
+      bg: 'rgba(26, 26, 26, 0.13)', 
+      color: 'var(--brand-text-muted)' 
+    },
+    Parceira: { 
+      bg: 'rgba(12, 31, 38, 0.13)', 
+      color: '#0C1F26' 
+    },
+  };
+  return colors[badge] || colors.Nova;
+};
+
+/* ============================================================================
+   2. FONT-FAMILY INLINE
+   ============================================================================ */
+
+// ❌ ANTES (Imobiliarias.tsx)
+<h1
+  className="text-5xl md:text-6xl font-bold mb-4"
+  style={{
+    fontFamily: 'Playfair Display, serif',
+    color: '#C8A96A'
+  }}
+>
+  Imobiliárias Parceiras
+</h1>
+
+<p
+  className="text-xl"
+  style={{
+    fontFamily: 'Montserrat, sans-serif',
+    color: '#F7F7F7'
+  }}
+>
+  Encontre as melhores imobiliárias conectadas ao HUBIMOB.
+</p>
+
+// ✅ DEPOIS
+<h1
+  className="text-5xl md:text-6xl font-bold mb-4"
+  style={{
+    fontFamily: 'var(--font-display)',
+    color: 'var(--brand-primary)'
+  }}
+>
+  Imobiliárias Parceiras
+</h1>
+
+<p
+  className="text-xl"
+  style={{
+    fontFamily: 'var(--font-sans)',
+    color: 'var(--brand-text-muted)'
+  }}
+>
+  Encontre as melhores imobiliárias conectadas ao HUBIMOB.
+</p>
+
+---
+
+// ❌ ANTES (Dashboard/Proposta.tsx - múltiplas instâncias)
+<p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: '#C8A96A' }}>
+  R$ 1.250.000
+</p>
+
+// ✅ DEPOIS
+<p 
+  className="text-2xl font-bold" 
+  style={{ 
+    fontFamily: 'var(--font-display)', 
+    color: 'var(--brand-primary)' 
+  }}
+>
+  R$ 1.250.000
+</p>
+
+/* ============================================================================
+   3. BOX-SHADOW INLINE
+   ============================================================================ */
+
+// ❌ ANTES (Dashboard/LeadPerfil.tsx)
+style={{ 
+  boxShadow: stage.active ? '0 0 20px #E3A93C' : 'none' 
+}}
+
+// ✅ DEPOIS
+style={{ 
+  boxShadow: stage.active ? 'var(--shadow-glow-accent)' : 'var(--shadow-none)' 
+}}
+
+---
+
+// ❌ ANTES (Testimonials.tsx)
+style={{
+  boxShadow: "0 0 25px rgba(212,175,103,0.10)"
+}}
+
+// ✅ DEPOIS
+style={{
+  boxShadow: 'var(--shadow-glow-soft)'
+}}
+
+---
+
+// ❌ ANTES (FinalCTA.tsx)
+style={{
+  boxShadow: '0 0 40px rgba(200,169,106,0.4)'
+}}
+
+// ✅ DEPOIS
+style={{
+  boxShadow: 'var(--shadow-glow-primary)'
+}}
+
+---
+
+// ❌ ANTES (PropertyMap.tsx - múltiplas variações)
+style={{
+  'border-radius': '50% 50% 50% 0',
+  'box-shadow': '0 2px 8px rgba(10, 15, 31, 0.3)'
+}}
+
+// ✅ DEPOIS
+style={{
+  borderRadius: '50% 50% 50% 0',
+  boxShadow: 'var(--shadow-navy)'
+}}
+
+/* ============================================================================
+   4. SOMBRAS COMPLEXAS / MÚLTIPLAS
+   ============================================================================ */
+
+// ❌ ANTES (quando múltiplas sombras são necessárias)
+style={{
+  boxShadow: 'var(--shadow-base), var(--shadow-glow-primary)'
+}}
+
+// ✅ DEPOIS - Considerar criar um novo token:
+// Em tokens.css:
+--shadow-primary-glow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 20px rgba(200, 169, 106, 0.4);
+
+// Então usar:
+style={{
+  boxShadow: 'var(--shadow-primary-glow)'
+}}
+
+/* ============================================================================
+   5. CORES COM TRANSPARÊNCIA
+   ============================================================================ */
+
+// ❌ ANTES (Imobiliarias.tsx)
+const getBadgeColor = (badge: string) => {
+  switch (badge) {
+    case 'Premium':
+      return { bg: '#C8A96A20', color: '#C8A96A' }; // Hardcoded com alpha
+    default:
+      return { bg: '#1A1A1A20', color: '#F7F7F7' };
+  }
+};
+
+// ✅ DEPOIS - Usar CSS variables:
+// Em tokens.css, adicionar versões RGB (sem #):
+--brand-primary-rgb: 200, 169, 106;
+--brand-dark-rgb: 26, 26, 26;
+
+// Então usar rgba():
+const getBadgeColor = (badge: string) => {
+  switch (badge) {
+    case 'Premium':
+      return { 
+        bg: `rgba(var(--brand-primary-rgb), 0.13)`, 
+        color: 'var(--brand-primary)' 
+      };
+    default:
+      return { 
+        bg: `rgba(var(--brand-dark-rgb), 0.13)`, 
+        color: 'var(--brand-text-muted)' 
+      };
+  }
+};
+
+/* ============================================================================
+   6. EVENTOS COM CORES INLINE
+   ============================================================================ */
+
+// ❌ ANTES (Dashboard/Relatorios.tsx)
+onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#00000050'}
+onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '...'}
+
+// Ou:
+onMouseEnter={(e) => e.currentTarget.style.color = '#E3A93C'}
+onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#E3A93C'}
+
+// ✅ DEPOIS - Criar classes CSS:
+.button-interactive:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-accent {
+  color: var(--accent-gold);
+}
+
+.button-accent:hover {
+  background-color: var(--accent-gold);
+  color: var(--black);
+}
+
+// Então usar em React:
+<button 
+  className="button-interactive"
+  onMouseEnter={(e) => e.currentTarget.classList.add('hover')}
+>
+
+// Ou melhor ainda (React moderno):
+<button 
+  className="button-accent hover:bg-accent-gold hover:text-black transition-colors"
+>
+
+/* ============================================================================
+   7. BACKGROUND GRADIENTES
+   ============================================================================ */
+
+// ❌ ANTES (Dashboard/Relatorios.tsx)
+<div className="absolute top-0 left-1/4 w-96 h-96 bg-[#E3A93C]/5 rounded-full blur-3xl pointer-events-none"></div>
+<div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#C8912F]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+// ✅ DEPOIS - Considerar classes CSS customizadas:
+// Em index.css:
+.glow-accent-primary {
+  background: radial-gradient(circle, rgba(var(--brand-primary-rgb), 0.1) 0%, transparent 100%);
+}
+
+.glow-accent-dark {
+  background: radial-gradient(circle, rgba(200, 137, 47, 0.1) 0%, transparent 100%);
+}
+
+// Então:
+<div className="absolute top-0 left-1/4 w-96 h-96 glow-accent-primary rounded-full blur-3xl pointer-events-none"></div>
+<div className="absolute bottom-0 right-1/4 w-96 h-96 glow-accent-dark rounded-full blur-3xl pointer-events-none"></div>
+
+/* ============================================================================
+   8. BORDER COLORS
+   ============================================================================ */
+
+// ❌ ANTES (Imobiliarias.tsx)
+<div
+  style={{
+    borderWidth: '2px',
+    backgroundColor: '#0D0D0D',
+    borderColor: '#C8A96A',
+    color: '#F7F7F7'
+  }}
+>
+
+// ✅ DEPOIS
+<div
+  style={{
+    borderWidth: '2px',
+    backgroundColor: 'var(--brand-dark-secondary)',
+    borderColor: 'var(--brand-primary)',
+    color: 'var(--brand-text-muted)'
+  }}
+>
+
+/* ============================================================================
+   9. TAILWIND BACKGROUND COLORS COM VALORES INLINE
+   ============================================================================ */
+
+// ❌ ANTES (Relatorios.tsx)
+<div className="bg-[#E3A93C]/5 rounded-full"></div>
+<div className="bg-[#C8912F]/5 rounded-full"></div>
+
+// ✅ DEPOIS - Adicionar customização no tailwind.config.js:
+module.exports = {
+  theme: {
+    extend: {
+      backgroundColor: {
+        'accent-primary': 'var(--accent-gold)',
+        'accent-primary-light': 'rgba(227, 169, 60, 0.05)',
+        'accent-dark-light': 'rgba(200, 137, 47, 0.05)',
+      },
+    },
+  },
+};
+
+// Então usar:
+<div className="bg-accent-primary-light rounded-full"></div>
+<div className="bg-accent-dark-light rounded-full"></div>
+
+/* ============================================================================
+   10. PADRÃO PARA COMPONENTES NOVOS
+   ============================================================================ */
+
+// ✅ PADRÃO RECOMENDADO - Novo componente:
+
+interface BadgeProps {
+  type: 'premium' | 'nova' | 'parceira';
+  children: React.ReactNode;
+}
+
+export function Badge({ type, children }: BadgeProps) {
+  const badgeStyles = {
+    premium: {
+      backgroundColor: `rgba(var(--brand-primary-rgb), 0.13)`,
+      color: 'var(--brand-primary)',
+      fontFamily: 'var(--font-sans)',
+    },
+    nova: {
+      backgroundColor: `rgba(var(--brand-dark-rgb), 0.13)`,
+      color: 'var(--brand-text-muted)',
+      fontFamily: 'var(--font-sans)',
+    },
+    parceira: {
+      backgroundColor: 'rgba(12, 31, 38, 0.13)',
+      color: '#0C1F26', // Considerar criar token
+      fontFamily: 'var(--font-sans)',
+    },
+  };
+
+  return (
+    <span style={badgeStyles[type]}>
+      {children}
+    </span>
+  );
+}
+
+/* ============================================================================
+   MIGRATION CHECKLIST PER FILE
+   ============================================================================ */
+
+/*
+For each file refactoring:
+
+☐ Imobiliarias.tsx
+  ☐ backgroundColor colors → var()
+  ☐ borderColor colors → var()
+  ☐ color values → var()
+  ☐ fontFamily → var(--font-*)
+  ☐ borderWidth inline → considerar remover
+  
+☐ Dashboard/Relatorios.tsx
+  ☐ #E3A93C → var(--accent-gold) (89 instances)
+  ☐ #0B0B0C → var(--bg-ultra-dark)
+  ☐ #C7C7C7 → var(--text-gray-light)
+  ☐ fontFamily → var()
+  ☐ boxShadow glows → var()
+  
+☐ Dashboard/PropostasLista.tsx
+  ☐ Same as Relatorios (45 instances)
+  
+☐ Dashboard/Proposta.tsx
+  ☐ Same as Relatorios (32 instances)
+  
+☐ LayoutController.tsx
+  ☐ #0A0F1F → var(--brand-secondary-light)
+  ☐ #111827 → var(--bg-dark-secondary)
+  ☐ #F2F2F2 → var(--text-light-secondary)
+  
+☐ Components (Mega, Testimonials, etc)
+  ☐ #D4AF67 → var(--brand-primary)
+  ☐ boxShadow → var()
+*/

@@ -1,0 +1,8 @@
+/* 
+ * HUBIMOB — Color System
+ * ═══════════════════════════════
+ * This file is deprecated. Use tokens.css instead.
+ * All color variables are now centralized in tokens.css
+ */
+
+@import './tokens.css';

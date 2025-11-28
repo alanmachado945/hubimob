@@ -1,0 +1,558 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-11-28",
+    "project": "HUBIMOB - IA para Corretores de Elite",
+    "scope": "src/react-app",
+    "analysis_type": "Design System Hardcoding Audit"
+  },
+  "colors": {
+    "#C8A96A": {
+      "token": "var(--brand-primary)",
+      "description": "Dourado primário - cor principal da marca",
+      "usage_count": 47,
+      "files": [
+        "Imobiliarias.tsx",
+        "MegaMenuComprar.tsx",
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx",
+        "Dashboard/Proposta.tsx",
+        "Dashboard/LeadPerfil.tsx"
+      ]
+    },
+    "#A68A52": {
+      "token": "var(--brand-primary-dark)",
+      "description": "Dourado escuro para hover/dark states",
+      "usage_count": 3,
+      "files": [
+        "Token CSS (definido)",
+        "Dashboard/Relatorios.tsx"
+      ]
+    },
+    "#D4AF67": {
+      "token": "var(--brand-primary-light)",
+      "description": "Variação mais clara do dourado (variante não mapeada em tokens.css)",
+      "usage_count": 5,
+      "files": [
+        "MegaMenuComprar.tsx"
+      ],
+      "recommendation": "Adicionar como novo token ou unificar com #C8A96A"
+    },
+    "#E3A93C": {
+      "token": "Novo token sugerido: --accent-gold",
+      "description": "Ouro accent (usado em Dashboard)",
+      "usage_count": 89,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx",
+        "Dashboard/Proposta.tsx",
+        "Dashboard/PainelJuridico.tsx",
+        "Dashboard/LeadPerfil.tsx"
+      ],
+      "recommendation": "CRÍTICO - Este é um tom diferente do primary. Deve ser definido como token separado"
+    },
+    "#C8912F": {
+      "token": "Novo token sugerido: --accent-gold-dark",
+      "description": "Variação escura do accent gold",
+      "usage_count": 4,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PainelJuridico.tsx"
+      ]
+    },
+    "#0D1A2D": {
+      "token": "var(--brand-secondary)",
+      "description": "Azul secundário - texto escuro",
+      "usage_count": 8,
+      "files": [
+        "Imobiliarias.tsx",
+        "Token CSS"
+      ]
+    },
+    "#0A0F1F": {
+      "token": "var(--brand-secondary-light)",
+      "description": "Azul-Marinho Profundo para backgrounds",
+      "usage_count": 12,
+      "files": [
+        "Site2Homepage.tsx",
+        "LayoutController.tsx",
+        "Múltiplas páginas de site"
+      ]
+    },
+    "#111827": {
+      "token": "Novo token: --bg-dark-secondary",
+      "description": "Preto azul-grafite para backgrounds secundários",
+      "usage_count": 3,
+      "files": [
+        "LayoutController.tsx"
+      ]
+    },
+    "#1A1A1A": {
+      "token": "var(--brand-dark)",
+      "description": "Escuro principal",
+      "usage_count": 18,
+      "files": [
+        "Imobiliarias.tsx",
+        "Múltiplas páginas Dashboard"
+      ]
+    },
+    "#0D0D0D": {
+      "token": "var(--brand-dark-secondary)",
+      "description": "Escuro secundário ainda mais profundo",
+      "usage_count": 22,
+      "files": [
+        "Imobiliarias.tsx",
+        "Dashboard pages"
+      ]
+    },
+    "#0B0B0C": {
+      "token": "Novo token: --bg-ultra-dark",
+      "description": "Ultra escuro para cards e elementos",
+      "usage_count": 31,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx",
+        "Dashboard/Proposta.tsx"
+      ]
+    },
+    "#F7F7F7": {
+      "token": "var(--brand-text-muted)",
+      "description": "Branco muted/texto claro",
+      "usage_count": 24,
+      "files": [
+        "Imobiliarias.tsx",
+        "Múltiplas páginas"
+      ]
+    },
+    "#F7F9FB": {
+      "token": "var(--brand-light)",
+      "description": "Fundo claro/texto light",
+      "usage_count": 5,
+      "files": [
+        "Token CSS, componentes"
+      ]
+    },
+    "#F2F2F2": {
+      "token": "Novo token: --text-light-secondary",
+      "description": "Cinza neutro para texto",
+      "usage_count": 8,
+      "files": [
+        "LayoutController.tsx",
+        "Múltiplas páginas"
+      ]
+    },
+    "#E7ECF2": {
+      "token": "var(--brand-light-gray)",
+      "description": "Cinza claro",
+      "usage_count": 1,
+      "files": [
+        "Token CSS (definido)"
+      ]
+    },
+    "#FFFFFF": {
+      "token": "Novo token: --white",
+      "description": "Branco puro",
+      "usage_count": 18,
+      "files": [
+        "Dashboard/Proposta.tsx",
+        "Dashboard/Relatorios.tsx"
+      ]
+    },
+    "#C7C7C7": {
+      "token": "Novo token: --text-gray-light",
+      "description": "Cinza claro para texto secundário",
+      "usage_count": 16,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/Proposta.tsx"
+      ]
+    },
+    "#4CAF50": {
+      "token": "var(--color-success)",
+      "description": "Verde sucesso",
+      "usage_count": 4,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx"
+      ]
+    },
+    "#FF9800": {
+      "token": "var(--color-warning)",
+      "description": "Laranja aviso",
+      "usage_count": 2,
+      "files": [
+        "Dashboard/PropostasLista.tsx"
+      ]
+    },
+    "#2196F3": {
+      "token": "var(--color-info)",
+      "description": "Azul informação",
+      "usage_count": 2,
+      "files": [
+        "Dashboard/PropostasLista.tsx"
+      ]
+    },
+    "#F44336": {
+      "token": "var(--color-error)",
+      "description": "Vermelho erro",
+      "usage_count": 1,
+      "files": [
+        "Dashboard/PropostasLista.tsx"
+      ]
+    },
+    "#666666": {
+      "token": "Novo token: --text-muted-dark",
+      "description": "Cinza escuro para texto muted",
+      "usage_count": 3,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx"
+      ]
+    },
+    "#7A7A7A": {
+      "token": "Novo token: --text-gray-medium",
+      "description": "Cinza médio para textos secundários",
+      "usage_count": 2,
+      "files": [
+        "Dashboard/Relatorios.tsx"
+      ]
+    },
+    "#000000": {
+      "token": "Novo token: --black",
+      "description": "Preto puro",
+      "usage_count": 8,
+      "files": [
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx",
+        "Dashboard/Proposta.tsx"
+      ]
+    },
+    "#0C1F26": {
+      "token": "Novo token: --bg-teal-dark",
+      "description": "Azul-teal escuro (variante rara)",
+      "usage_count": 2,
+      "files": [
+        "Imobiliarias.tsx"
+      ]
+    }
+  },
+  "fonts": {
+    "'Playfair Display', serif": {
+      "token": "var(--font-display)",
+      "type": "display",
+      "usage_count": 31,
+      "files": [
+        "Imobiliarias.tsx",
+        "Dashboard/Proposta.tsx",
+        "Dashboard/Relatorios.tsx",
+        "Dashboard/PropostasLista.tsx",
+        "Multiple page components"
+      ],
+      "note": "Muito usado em títulos e headings"
+    },
+    "'Montserrat', sans-serif": {
+      "token": "var(--font-sans)",
+      "type": "body",
+      "usage_count": 48,
+      "files": [
+        "Imobiliarias.tsx",
+        "Dashboard pages",
+        "Site2 pages",
+        "Component styles"
+      ],
+      "note": "Extremamente utilizado - corpo de texto principal"
+    },
+    "'Inter', sans-serif": {
+      "token": "var(--font-default)",
+      "type": "fallback",
+      "usage_count": 0,
+      "files": [
+        "Token CSS (definido mas não usado)"
+      ],
+      "recommendation": "Remover ou utilizar consistentemente"
+    }
+  },
+  "spacing_and_sizing": {
+    "summary": "Spacing é principalmente definido via Tailwind classes (px-*, py-*, gap-*, etc)",
+    "hardcoded_spacing": {
+      "padding_padding_spacing": {
+        "px-4": "presente em formulários e badges",
+        "px-6": "comum em containers",
+        "px-8": "botões largos",
+        "px-10": "CTAs principais",
+        "px-12": "elementos full-width",
+        "py-2": "inputs compactos",
+        "py-3": "inputs padrão",
+        "py-4": "botões padrão",
+        "py-6": "seções internas",
+        "py-12": "espaço entre seções",
+        "py-20": "espaço grande entre seções"
+      },
+      "margin_spacing": {
+        "mb-2": "espaço pequeno entre elementos",
+        "mb-3": "espaço pequeno-médio",
+        "mb-4": "espaço padrão",
+        "mb-6": "espaço médio",
+        "mb-8": "espaço grande",
+        "mb-12": "espaço muito grande",
+        "mt-*": "raramente hardcoded - usar Tailwind"
+      },
+      "gap_spacing": {
+        "gap-2": "ícone + texto compacto",
+        "gap-3": "padrão para flex layouts",
+        "gap-4": "espaço amplo entre itens",
+        "gap-6": "grid com espaço médio",
+        "gap-8": "grid com espaço grande",
+        "gap-12": "grid sections grande espaçamento"
+      },
+      "recommendation": "Criar tokens CSS para spacing: --space-sm, --space-md, --space-lg, etc."
+    }
+  },
+  "border_radius": {
+    "summary": "Utilizando Tailwind classes com alguns valores inline",
+    "found_values": {
+      "rounded-full": "999px - badges, botões circulares",
+      "rounded-lg": "0.5rem - cards padrão",
+      "rounded-xl": "1rem - inputs, cards",
+      "rounded-2xl": "1.5rem - large containers",
+      "rounded-3xl": "1.875rem - raro",
+      "rounded-pill": "999px - pills"
+    },
+    "inline_styles": {
+      "border-radius_50%": 2,
+      "border-radius_50%_50%_50%_0": 1,
+      "border-radius_4px": 1
+    }
+  },
+  "shadows": {
+    "summary": "Sombras definidas em tokens.css mas também inline em múltiplas formas",
+    "tokens_defined": {
+      "--shadow-sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+      "--shadow-base": "0 1px 3px rgba(0, 0, 0, 0.1)",
+      "--shadow-soft": "0 4px 6px rgba(0, 0, 0, 0.1)",
+      "--shadow-medium": "0 10px 15px rgba(0, 0, 0, 0.1)",
+      "--shadow-lg": "0 20px 25px rgba(0, 0, 0, 0.15)",
+      "--shadow-xl": "0 25px 50px rgba(0, 0, 0, 0.25)"
+    },
+    "inline_shadows": {
+      "0 0 20px rgba(200,169,106,0.3)": {
+        "description": "Glow dourado",
+        "count": 3,
+        "files": ["WhatsAppButton.tsx", "Testimonials.tsx", "FinalCTA.tsx"]
+      },
+      "0 0 25px rgba(212,175,103,0.10)": {
+        "description": "Glow dourado suave",
+        "count": 2,
+        "files": ["Testimonials.tsx", "PremiumExperiences.tsx"]
+      },
+      "0 0 40px rgba(212,175,103,0.10)": {
+        "description": "Glow dourado muito suave",
+        "count": 1,
+        "files": ["Methodology.tsx"]
+      },
+      "0 2px 8px rgba(10, 15, 31, 0.3)": {
+        "description": "Sombra navy profundo",
+        "count": 1,
+        "files": ["PropertyMap.tsx"]
+      },
+      "0 2px 4px rgba(10,15,31,0.2)": {
+        "description": "Sombra navy muito suave",
+        "count": 1,
+        "files": ["PropertyMap.tsx"]
+      },
+      "0 4px 12px rgba(10,15,31,0.25)": {
+        "description": "Sombra navy média",
+        "count": 1,
+        "files": ["PropertyMap.tsx"]
+      },
+      "0 0 20px #E3A93C": {
+        "description": "Glow dourado accent",
+        "count": 1,
+        "files": ["LeadPerfil.tsx"]
+      }
+    },
+    "recommendation": "Criar tokens para shadow glows: --shadow-glow-primary, --shadow-glow-accent"
+  },
+  "files_affected": {
+    "pages": [
+      "src/react-app/pages/Public/Imobiliarias.tsx",
+      "src/react-app/pages/Public/Login.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Homepage.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Agendar.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Sobre.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Proprietarios.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Imobiliarias.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Imovel.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Contato.tsx",
+      "src/react-app/pages/Public/siteimobiliario/Site2Canais.tsx",
+      "src/react-app/pages/Dashboard/Relatorios.tsx",
+      "src/react-app/pages/Dashboard/PropostasLista.tsx",
+      "src/react-app/pages/Dashboard/Proposta.tsx",
+      "src/react-app/pages/Dashboard/PropostaAndamento.tsx",
+      "src/react-app/pages/Dashboard/PainelJuridico.tsx",
+      "src/react-app/pages/Dashboard/PainelJuridicoLista.tsx",
+      "src/react-app/pages/Dashboard/LeadPerfil.tsx",
+      "src/react-app/pages/Dashboard/MeusImoveis.tsx",
+      "src/react-app/pages/Dashboard/MeusContratos.tsx",
+      "src/react-app/pages/Dashboard/MinhaContaPage.tsx"
+    ],
+    "components": [
+      "src/react-app/components/LayoutController.tsx",
+      "src/react-app/components/Header.tsx",
+      "src/react-app/components/Testimonials.tsx",
+      "src/react-app/components/siteimobiliario2/MegaMenuComprar.tsx",
+      "src/react-app/components/siteimobiliario2/MegaMenuVender.tsx",
+      "src/react-app/components/siteimobiliario2/Testimonials.tsx",
+      "src/react-app/components/siteimobiliario2/WhatsAppButton.tsx",
+      "src/react-app/components/siteimobiliario2/PropertyMap.tsx",
+      "src/react-app/components/siteimobiliario2/PremiumExperiences.tsx",
+      "src/react-app/components/siteimobiliario2/Methodology.tsx",
+      "src/react-app/components/siteimobiliario2/FinalCTA.tsx",
+      "src/react-app/components/FinalCTA.tsx",
+      "src/react-app/components/sobre/SobrePilares.tsx",
+      "src/react-app/components/sobre/SobreTecnologia.tsx"
+    ]
+  },
+  "priority_replacements": {
+    "CRITICAL_P0": [
+      {
+        "issue": "Inconsistent gold colors in Dashboard",
+        "colors_affected": ["#E3A93C", "#C8912F"],
+        "files": [
+          "Dashboard/Relatorios.tsx",
+          "Dashboard/PropostasLista.tsx",
+          "Dashboard/Proposta.tsx"
+        ],
+        "action": "Create new token --accent-gold and --accent-gold-dark, replace all 93 instances",
+        "impact": "HIGH - Dashboard visual consistency"
+      },
+      {
+        "issue": "Hardcoded navy/dark colors in multiple files",
+        "colors_affected": ["#0A0F1F", "#111827", "#0D0D0D", "#0B0B0C"],
+        "count": 76,
+        "files": [
+          "LayoutController.tsx",
+          "Multiple Dashboard pages"
+        ],
+        "action": "Map to existing/new tokens and replace",
+        "impact": "HIGH - Theme consistency"
+      },
+      {
+        "issue": "Primary gold color mismatch",
+        "details": "#C8A96A used in site, #D4AF67 used in MegaMenu, #E3A93C in Dashboard",
+        "files": [
+          "MegaMenuComprar.tsx",
+          "Imobiliarias.tsx"
+        ],
+        "action": "Standardize to single primary gold or create proper token palette",
+        "impact": "CRITICAL - Brand consistency"
+      }
+    ],
+    "HIGH_P1": [
+      {
+        "issue": "Inline font-family declarations",
+        "count": 48,
+        "pattern": "fontFamily: 'Montserrat, sans-serif' ou 'Playfair Display, serif'",
+        "files": [
+          "Imobiliarias.tsx",
+          "Dashboard/Proposta.tsx",
+          "Dashboard/Relatorios.tsx"
+        ],
+        "action": "Use var(--font-sans) and var(--font-display) in style props",
+        "impact": "HIGH - Maintainability"
+      },
+      {
+        "issue": "Missing semantic color tokens",
+        "colors_missing": ["#FFFFFF", "#000000", "#F2F2F2", "#C7C7C7", "#7A7A7A"],
+        "usage": 45,
+        "action": "Add to tokens.css: --white, --black, --text-light-secondary, --text-gray-light, --text-gray-medium",
+        "impact": "HIGH - Color system completeness"
+      },
+      {
+        "issue": "Inline box-shadow with color values",
+        "count": 8,
+        "examples": [
+          "boxShadow: '0 0 20px rgba(200,169,106,0.4)'",
+          "boxShadow: '0 0 20px #E3A93C'"
+        ],
+        "action": "Create shadow tokens: --shadow-glow-primary, --shadow-glow-accent",
+        "impact": "HIGH - Consistency and reusability"
+      }
+    ],
+    "MEDIUM_P2": [
+      {
+        "issue": "Tailwind classes for spacing used inconsistently",
+        "description": "Some components use px-4, others px-6, no clear pattern",
+        "files": "Multiple",
+        "action": "Document spacing scale and enforce via component standards",
+        "impact": "MEDIUM - Visual rhythm"
+      },
+      {
+        "issue": "Rare color variants (#0C1F26, #D4AF67)",
+        "count": 2,
+        "action": "Either add to tokens or refactor to use existing palette",
+        "impact": "MEDIUM - Palette simplification"
+      },
+      {
+        "issue": "Missing width/height token usage",
+        "pattern": "w-96, h-96 (Tailwind) mixed with inline size specifications",
+        "files": "Imobiliarias.tsx, PropertyMap.tsx",
+        "action": "Consider custom size tokens for reusable components",
+        "impact": "MEDIUM - Reusability"
+      }
+    ]
+  },
+  "recommendations": {
+    "immediate_actions": [
+      "1. MERGE GOLD PALETTE: Consolidate #C8A96A, #D4AF67, #E3A93C into two tokens (primary, accent)",
+      "2. ADD MISSING TOKENS to tokens.css for all dark variants (#0B0B0C, #111827, #000000, #FFFFFF, etc)",
+      "3. REFACTOR Dashboard to use --accent-gold instead of #E3A93C (91 instances)",
+      "4. REPLACE inline fontFamily with CSS variable references"
+    ],
+    "token_additions_required": {
+      "new_colors": [
+        "--accent-gold: #E3A93C",
+        "--accent-gold-dark: #C8912F",
+        "--bg-dark-secondary: #111827",
+        "--bg-ultra-dark: #0B0B0C",
+        "--text-light-secondary: #F2F2F2",
+        "--text-gray-light: #C7C7C7",
+        "--text-gray-medium: #7A7A7A",
+        "--text-muted-dark: #666666",
+        "--white: #FFFFFF",
+        "--black: #000000",
+        "--bg-teal-dark: #0C1F26 (rarely used - consider removal)"
+      ],
+      "new_shadows": [
+        "--shadow-glow-primary: 0 0 20px rgba(200, 169, 106, 0.4)",
+        "--shadow-glow-accent: 0 0 20px rgba(227, 169, 60, 0.3)",
+        "--shadow-glow-soft: 0 0 25px rgba(212, 175, 103, 0.1)"
+      ]
+    },
+    "file_refactoring_order": [
+      "1. Update tokens.css with all missing tokens",
+      "2. Refactor Dashboard pages (Relatorios, PropostasLista, Proposta) - 91 replacements",
+      "3. Refactor Imobiliarias.tsx - 47 color replacements",
+      "4. Refactor MegaMenu components - 5 color replacements",
+      "5. Update all font-family inline styles (48 instances)",
+      "6. Clean up shadow definitions (8 instances)"
+    ],
+    "validation_checklist": [
+      "Verify no hardcoded hex colors in Tailwind className props",
+      "Ensure all colors in style props reference CSS variables",
+      "Confirm font-family props use var(--font-*)",
+      "Test visual consistency across light/dark themes",
+      "Check for missed color instances via grep: #[0-9A-F]{6}"
+    ]
+  },
+  "statistics": {
+    "total_hardcoded_colors": 24,
+    "total_color_instances": 281,
+    "total_hardcoded_fonts": 3,
+    "total_font_instances": 79,
+    "total_shadow_definitions": 8,
+    "total_radius_definitions": 7,
+    "files_with_inline_styles": 34,
+    "color_coverage_percentage": "61% (colors already in tokens.css)",
+    "opportunity_for_improvement": "38% tokens missing or unused"
+  }
+}
