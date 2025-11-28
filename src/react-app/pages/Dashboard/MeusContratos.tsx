@@ -4,11 +4,11 @@ import { FileText, Download, Mail, Eye, Plus } from 'lucide-react';
 
 interface Contrato {
   id: number;
-  tipo: 'Proposta' | 'PrÃ©-Contrato' | 'Contrato Final';
+  tipo: 'Proposta' | 'Pré-Contrato' | 'Contrato Final';
   comprador: string;
   imovel: string;
   data: string;
-  status: 'Em elaboraÃ§Ã£o' | 'Enviado' | 'Assinado' | 'Cancelado';
+  status: 'Em elaboração' | 'Enviado' | 'Assinado' | 'Cancelado';
 }
 
 export default function MeusContratosPage() {
@@ -27,9 +27,9 @@ export default function MeusContratosPage() {
   const contratos: Contrato[] = [
     {
       id: 1,
-      tipo: 'PrÃ©-Contrato',
+      tipo: 'Pré-Contrato',
       comprador: 'Ana Lima',
-      imovel: 'Apartamento Vista Mar â€“ IcaraÃ­',
+      imovel: 'Apartamento Vista Mar – Icaraí',
       data: '18/11/2025',
       status: 'Enviado'
     },
@@ -37,7 +37,7 @@ export default function MeusContratosPage() {
       id: 2,
       tipo: 'Proposta',
       comprador: 'Pedro Souza',
-      imovel: 'Cobertura Duplex â€“ Charitas',
+      imovel: 'Cobertura Duplex – Charitas',
       data: '10/11/2025',
       status: 'Assinado'
     },
@@ -45,7 +45,7 @@ export default function MeusContratosPage() {
       id: 3,
       tipo: 'Contrato Final',
       comprador: 'Carla e Bruno',
-      imovel: 'Casa Alto PadrÃ£o â€“ Pendotiba',
+      imovel: 'Casa Alto Padrão – Pendotiba',
       data: '15/11/2025',
       status: 'Assinado'
     },
@@ -53,15 +53,15 @@ export default function MeusContratosPage() {
       id: 4,
       tipo: 'Proposta',
       comprador: 'Roberto Silva',
-      imovel: 'Studio Moderno â€“ Centro',
+      imovel: 'Studio Moderno – Centro',
       data: '20/11/2025',
-      status: 'Em elaboraÃ§Ã£o'
+      status: 'Em elaboração'
     },
     {
       id: 5,
-      tipo: 'PrÃ©-Contrato',
+      tipo: 'Pré-Contrato',
       comprador: 'Juliana Costa',
-      imovel: 'Apartamento 3 Quartos â€“ IngÃ¡',
+      imovel: 'Apartamento 3 Quartos – Ingá',
       data: '12/11/2025',
       status: 'Enviado'
     },
@@ -69,7 +69,7 @@ export default function MeusContratosPage() {
       id: 6,
       tipo: 'Proposta',
       comprador: 'Marcos Paulo',
-      imovel: 'Loft ContemporÃ¢neo â€“ SÃ£o Francisco',
+      imovel: 'Loft Contemporâneo – São Francisco',
       data: '08/11/2025',
       status: 'Cancelado'
     },
@@ -77,15 +77,15 @@ export default function MeusContratosPage() {
       id: 7,
       tipo: 'Contrato Final',
       comprador: 'Fernanda Martins',
-      imovel: 'Apartamento Frente Mar â€“ IcaraÃ­',
+      imovel: 'Apartamento Frente Mar – Icaraí',
       data: '05/11/2025',
       status: 'Assinado'
     },
     {
       id: 8,
-      tipo: 'PrÃ©-Contrato',
+      tipo: 'Pré-Contrato',
       comprador: 'Lucas Oliveira',
-      imovel: 'Casa em CondomÃ­nio â€“ Piratininga',
+      imovel: 'Casa em Condomínio – Piratininga',
       data: '17/11/2025',
       status: 'Enviado'
     },
@@ -93,21 +93,21 @@ export default function MeusContratosPage() {
       id: 9,
       tipo: 'Proposta',
       comprador: 'Patricia Alves',
-      imovel: 'Apartamento Compacto â€“ Boa Viagem',
+      imovel: 'Apartamento Compacto – Boa Viagem',
       data: '19/11/2025',
-      status: 'Em elaboraÃ§Ã£o'
+      status: 'Em elaboração'
     },
     {
       id: 10,
       tipo: 'Contrato Final',
       comprador: 'Rafael Santos',
-      imovel: 'Cobertura Jardim OceÃ¢nico',
+      imovel: 'Cobertura Jardim Oceânico',
       data: '03/11/2025',
       status: 'Assinado'
     },
     {
       id: 11,
-      tipo: 'PrÃ©-Contrato',
+      tipo: 'Pré-Contrato',
       comprador: 'Beatriz Lima',
       imovel: 'Apartamento Santa Rosa',
       data: '14/11/2025',
@@ -125,7 +125,7 @@ export default function MeusContratosPage() {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'Em elaboraÃ§Ã£o':
+      case 'Em elaboração':
         return { bg: 'var(--color-warning)', text: 'var(--brand-light)' };
       case 'Enviado':
         return { bg: 'var(--color-info)', text: 'var(--brand-light)' };
@@ -219,20 +219,20 @@ export default function MeusContratosPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>Em elaboraÃ§Ã£o</option>
+                <option>Em elaboração</option>
                 <option>Enviado</option>
                 <option>Assinado</option>
                 <option>Cancelado</option>
               </select>
             </div>
 
-            {/* ImÃ³vel Filter */}
+            {/* Imóvel Filter */}
             <div>
               <label 
                 className="block text-sm font-semibold mb-2"
@@ -241,7 +241,7 @@ export default function MeusContratosPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                ImÃ³vel
+                Imóvel
               </label>
               <select
                 value={imovelFilter}
@@ -250,16 +250,16 @@ export default function MeusContratosPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>IcaraÃ­</option>
+                <option>Icaraí</option>
                 <option>Charitas</option>
                 <option>Centro</option>
-                <option>IngÃ¡</option>
+                <option>Ingá</option>
                 <option>Pendotiba</option>
               </select>
             </div>
@@ -282,7 +282,7 @@ export default function MeusContratosPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
@@ -313,14 +313,14 @@ export default function MeusContratosPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Mais recente</option>
                 <option>Mais antigo</option>
-                <option>Em negociaÃ§Ã£o</option>
+                <option>Em negociação</option>
               </select>
             </div>
           </div>
@@ -389,7 +389,7 @@ export default function MeusContratosPage() {
                   </p>
                 </div>
 
-                {/* ImÃ³vel */}
+                {/* Imóvel */}
                 <div className="mb-3">
                   <p 
                     className="text-sm font-semibold mb-1"
@@ -398,7 +398,7 @@ export default function MeusContratosPage() {
                       color: 'var(--brand-primary)'
                     }}
                   >
-                    ImÃ³vel
+                    Imóvel
                   </p>
                   <p 
                     className="text-sm"
@@ -420,7 +420,7 @@ export default function MeusContratosPage() {
                       color: 'var(--brand-primary)'
                     }}
                   >
-                    ðŸ“… Data de criaÃ§Ã£o
+                    📅 Data de criação
                   </p>
                   <p 
                     className="text-sm"
@@ -458,7 +458,7 @@ export default function MeusContratosPage() {
                         fontFamily: 'Montserrat, sans-serif',
                         backgroundColor: 'var(--brand-dark-secondary)',
                         color: 'var(--brand-primary)',
-                        borderWidth: '2px',
+                        borderWidth: "var(--border-md)",
                         borderColor: 'var(--brand-primary)'
                       }}
                       onMouseEnter={(e) => {
@@ -481,7 +481,7 @@ export default function MeusContratosPage() {
                         fontFamily: 'Montserrat, sans-serif',
                         backgroundColor: 'var(--brand-dark-secondary)',
                         color: 'var(--brand-primary)',
-                        borderWidth: '2px',
+                        borderWidth: "var(--border-md)",
                         borderColor: 'var(--brand-primary)'
                       }}
                       onMouseEnter={(e) => {
@@ -512,12 +512,13 @@ export default function MeusContratosPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” GestÃ£o JurÃ­dica de Contratos.
+            © 2025 HUB Imobiliário Inteligente — Gestão Jurídica de Contratos.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

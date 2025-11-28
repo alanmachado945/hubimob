@@ -16,32 +16,32 @@ export default function PropostaPage() {
     nome: 'Ana Lima',
     whatsapp: '(21) 99999-9999',
     orcamento: 'R$ 750.000',
-    preferencia: 'IcaraÃ­',
-    urgencia: 'atÃ© 3 meses'
+    preferencia: 'Icaraí',
+    urgencia: 'até 3 meses'
   };
 
   const imovelInfo = {
-    titulo: 'Apartamento 3 Quartos â€“ IcaraÃ­',
+    titulo: 'Apartamento 3 Quartos – Icaraí',
     preco: 'R$ 760.000',
-    metragem: '98mÂ²',
+    metragem: '98m²',
     quartos: '3',
     vaga: '1',
     imagem: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800',
-    observacao: 'ImÃ³vel com alta compatibilidade com o perfil do comprador.'
+    observacao: 'Imóvel com alta compatibilidade com o perfil do comprador.'
   };
 
   const condicoes = {
     propostaInicial: 'R$ 740.000',
     pagamento: 'Financiamento + Entrada 20%',
     prazo: '72 horas',
-    comentarioIA: 'Valor baseado no histÃ³rico da regiÃ£o, tempo de anÃºncio e margem mÃ©dia de negociaÃ§Ã£o para imÃ³veis similares.'
+    comentarioIA: 'Valor baseado no histórico da região, tempo de anúncio e margem média de negociação para imóveis similares.'
   };
 
   const timeline = [
-    { texto: 'Lead qualificado pela IA', tempo: 'hÃ¡ 2h', icon: Sparkles },
-    { texto: 'ImÃ³vel recomendado pela IA', tempo: 'hÃ¡ 1h', icon: CheckCircle2 },
-    { texto: 'Proposta iniciada pelo corretor', tempo: 'hÃ¡ 10 min', icon: FileText },
-    { texto: 'PrÃ©-contrato gerado pela IA', tempo: 'agora', icon: CheckCircle2 }
+    { texto: 'Lead qualificado pela IA', tempo: 'há 2h', icon: Sparkles },
+    { texto: 'Imóvel recomendado pela IA', tempo: 'há 1h', icon: CheckCircle2 },
+    { texto: 'Proposta iniciada pelo corretor', tempo: 'há 10 min', icon: FileText },
+    { texto: 'Pré-contrato gerado pela IA', tempo: 'agora', icon: CheckCircle2 }
   ];
 
   return (
@@ -65,7 +65,7 @@ export default function PropostaPage() {
               className="text-sm font-semibold" 
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
             >
-              FLUXO JURÃDICO AUTOMATIZADO
+              FLUXO JURÍDICO AUTOMATIZADO
             </span>
           </div>
           
@@ -73,19 +73,19 @@ export default function PropostaPage() {
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
           >
-            Proposta / PrÃ©-Contrato Gerado pela IA
+            Proposta / Pré-Contrato Gerado pela IA
           </h1>
           <p 
             className="text-xl max-w-4xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            A IA do HUB cria uma proposta completa e padronizada com base no comprador, no imÃ³vel e nas condiÃ§Ãµes de negociaÃ§Ã£o.
+            A IA do HUB cria uma proposta completa e padronizada com base no comprador, no imóvel e nas condições de negociação.
           </p>
         </div>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* SEÃ‡ÃƒO 1 - Dados do Comprador */}
+          {/* SEÇÃO 1 - Dados do Comprador */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -133,7 +133,7 @@ export default function PropostaPage() {
                   className="text-sm font-semibold mb-1"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
-                  OrÃ§amento
+                  Orçamento
                 </p>
                 <p 
                   className="text-lg"
@@ -148,7 +148,7 @@ export default function PropostaPage() {
                   className="text-sm font-semibold mb-1"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
-                  PreferÃªncia
+                  Preferência
                 </p>
                 <p 
                   className="text-lg"
@@ -163,7 +163,7 @@ export default function PropostaPage() {
                   className="text-sm font-semibold mb-1"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
-                  UrgÃªncia
+                  Urgência
                 </p>
                 <p 
                   className="text-lg"
@@ -175,7 +175,7 @@ export default function PropostaPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 2 - Dados do ImÃ³vel */}
+          {/* SEÇÃO 2 - Dados do Imóvel */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -184,7 +184,7 @@ export default function PropostaPage() {
               className="text-2xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              ImÃ³vel Selecionado para Proposta
+              Imóvel Selecionado para Proposta
             </h2>
 
             <div className="rounded-xl overflow-hidden mb-4">
@@ -253,7 +253,7 @@ export default function PropostaPage() {
 
             <div 
               className="p-4 rounded-xl"
-              style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+              style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
             >
               <div className="flex items-start gap-2">
                 <Sparkles className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--brand-primary)' }} />
@@ -268,7 +268,7 @@ export default function PropostaPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 3 - CondiÃ§Ãµes da Proposta */}
+        {/* SEÇÃO 3 - Condições da Proposta */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -277,7 +277,7 @@ export default function PropostaPage() {
             className="text-3xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
-            CondiÃ§Ãµes Sugeridas pela IA
+            Condições Sugeridas pela IA
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6 mb-6">
@@ -307,7 +307,7 @@ export default function PropostaPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
               >
-                CondiÃ§Ã£o de pagamento
+                Condição de pagamento
               </p>
               <p 
                 className="text-lg font-semibold"
@@ -338,7 +338,7 @@ export default function PropostaPage() {
 
           <div 
             className="p-6 rounded-xl mb-6"
-            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
           >
             <div className="flex items-start gap-3">
               <Sparkles className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--brand-primary)' }} />
@@ -347,7 +347,7 @@ export default function PropostaPage() {
                   className="font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                 >
-                  ComentÃ¡rio da IA:
+                  Comentário da IA:
                 </p>
                 <p 
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)', lineHeight: '1.6' }}
@@ -373,7 +373,7 @@ export default function PropostaPage() {
           </button>
         </div>
 
-        {/* SEÃ‡ÃƒO 4 - PrÃ©-visualizaÃ§Ã£o do Documento */}
+        {/* SEÇÃO 4 - Pré-visualização do Documento */}
         {propostaGerada && (
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
@@ -383,7 +383,7 @@ export default function PropostaPage() {
             className="text-3xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
-            PrÃ©-visualizaÃ§Ã£o do Documento
+            Pré-visualização do Documento
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -406,7 +406,7 @@ export default function PropostaPage() {
                   </div>
                   
                   <div>
-                    <p className="font-bold text-sm mb-1">IMÃ“VEL:</p>
+                    <p className="font-bold text-sm mb-1">IMÓVEL:</p>
                     <p className="text-xs">{imovelInfo.titulo}</p>
                     <p className="text-xs">{imovelInfo.metragem} - {imovelInfo.quartos} quartos - {imovelInfo.vaga} vaga</p>
                   </div>
@@ -420,20 +420,20 @@ export default function PropostaPage() {
 
                   <div className="pt-4 border-t" style={{ borderColor: 'var(--brand-primary)' }}>
                     <p className="text-xs italic" style={{ color: 'var(--color-666666)' }}>
-                      Documento modelo de proposta imobiliÃ¡ria gerado automaticamente pelo HUB. ConteÃºdo ilustrativo para o protÃ³tipo.
+                      Documento modelo de proposta imobiliária gerado automaticamente pelo HUB. Conteúdo ilustrativo para o protótipo.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* InformaÃ§Ãµes e BotÃµes */}
+            {/* Informações e Botões */}
             <div>
               <p 
                 className="text-lg mb-6"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)', lineHeight: '1.6' }}
               >
-                Documento modelo de proposta imobiliÃ¡ria gerado automaticamente pelo HUB. ConteÃºdo ilustrativo para o protÃ³tipo.
+                Documento modelo de proposta imobiliária gerado automaticamente pelo HUB. Conteúdo ilustrativo para o protótipo.
               </p>
 
               <div className="space-y-4">
@@ -458,7 +458,7 @@ export default function PropostaPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'transparent',
                     color: 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)'
                   }}
                   onMouseEnter={(e) => {
@@ -477,7 +477,7 @@ export default function PropostaPage() {
         </div>
         )}
 
-        {/* SEÃ‡ÃƒO 5 - Linha do Tempo JurÃ­dica */}
+        {/* SEÇÃO 5 - Linha do Tempo Jurídica */}
         {propostaGerada && (
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
@@ -487,7 +487,7 @@ export default function PropostaPage() {
             className="text-3xl font-bold mb-8"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
-            Linha do Tempo JurÃ­dica / Auditoria
+            Linha do Tempo Jurídica / Auditoria
           </h2>
 
           <div className="relative">
@@ -540,7 +540,7 @@ export default function PropostaPage() {
         </div>
         )}
 
-        {/* BotÃµes Finais */}
+        {/* Botões Finais */}
         {propostaGerada && (
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <button
@@ -553,7 +553,7 @@ export default function PropostaPage() {
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
           >
-            Salvar e Registrar Evento JurÃ­dico
+            Salvar e Registrar Evento Jurídico
           </button>
 
           <Link
@@ -563,7 +563,7 @@ export default function PropostaPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -579,18 +579,19 @@ export default function PropostaPage() {
         </div>
         )}
 
-        {/* RodapÃ© Premium */}
+        {/* Rodapé Premium */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Proposta gerada por IA com rastreabilidade.
+            © 2025 HUB Imobiliário Inteligente — Proposta gerada por IA com rastreabilidade.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, ArrowLeft } from 'lucide-react';
 
@@ -34,21 +34,21 @@ export default function LoginPage() {
 
         <div className="relative z-10 max-w-md">
           <h1 className="text-5xl font-bold mb-6 leading-tight text-brand-primary font-display">
-            HUB ImobiliÃ¡rio Inteligente
+            HUB Imobiliário Inteligente
           </h1>
 
           <p className="text-2xl font-semibold mb-6 text-brand-secondary font-sans">
-            Premium. Completo. IncomparÃ¡vel.
+            Premium. Completo. Incomparável.
           </p>
 
           <p className="text-lg mb-8 leading-relaxed text-brand-secondary font-sans">
-            Acesse sua plataforma exclusiva com IA, CRM, Omnichannel e marketplace imobiliÃ¡rio.
+            Acesse sua plataforma exclusiva com IA, CRM, Omnichannel e marketplace imobiliário.
           </p>
 
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-brand-primary bg-brand-primary/10">
             <Shield className="w-5 h-5 text-brand-primary" />
             <span className="text-sm font-semibold text-brand-primary font-sans">
-              Acesso exclusivo para Corretores e ImobiliÃ¡rias
+              Acesso exclusivo para Corretores e Imobiliárias
             </span>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function LoginPage() {
                 onFocus={() => setFocusedField('password')}
                 onBlur={() => setFocusedField(null)}
                 required
-                placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+                placeholder="••••••••"
                 className={`w-full px-4 py-3 rounded-xl font-sans transition-all duration-300 bg-brand-dark text-brand-light border-2 focus:outline-none ${
                   focusedField === 'password' ? 'border-brand-primary' : 'border-brand-light-gray'
                 }`}

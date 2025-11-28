@@ -1,4 +1,4 @@
-﻿import { Building2, Mail, Phone, MapPin } from "lucide-react";
+import { Building2, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       className="border-t"
       style={{
         backgroundColor: "var(--brand-dark)", // Preto Azul-Grafite
-        borderColor: "rgba(var(--color-d4af67-rgb), 0.10)", // Dourado metÃ¡lico 10%
+        borderColor: "rgba(var(--color-d4af67-rgb), 0.10)", // Dourado metálico 10%
       }}
     >
       <div className="max-w-container mx-auto px-5 py-16">
@@ -27,18 +27,18 @@ export default function Footer() {
               className="leading-relaxed max-w-md"
               style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
             >
-              Proptech premium do Rio de Janeiro. Combinamos tecnologia avanÃ§ada,
-              IA e curadoria humana para encontrar seu imÃ³vel ideal.
+              Proptech premium do Rio de Janeiro. Combinamos tecnologia avançada,
+              IA e curadoria humana para encontrar seu imóvel ideal.
             </p>
           </div>
 
-          {/* NAVEGAÃ‡ÃƒO */}
+          {/* NAVEGAÇÃO */}
           <div>
             <h3
               className="font-semibold mb-4"
               style={{ color: "var(--brand-light)" }}
             >
-              NavegaÃ§Ã£o
+              Navegação
             </h3>
 
             <ul className="space-y-2 text-sm">
@@ -66,7 +66,7 @@ export default function Footer() {
                     (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
                   }
                 >
-                  Encontre seu imÃ³vel
+                  Encontre seu imóvel
                 </a>
               </li>
 
@@ -80,7 +80,7 @@ export default function Footer() {
                     (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
                   }
                 >
-                  ImobiliÃ¡rias
+                  Imobiliárias
                 </a>
               </li>
 
@@ -108,7 +108,7 @@ export default function Footer() {
                     (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
                   }
                 >
-                  ProprietÃ¡rios
+                  Proprietários
                 </a>
               </li>
             </ul>
@@ -156,7 +156,7 @@ export default function Footer() {
             borderColor: "rgba(var(--color-d4af67-rgb), 0.10)",
           }}
         >
-          <p>Â© 2025 HUBIMOB. Todos os direitos reservados.</p>
+          <p>© 2025 HUBIMOB. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -1,35 +1,35 @@
-﻿import { Brain, Database, Sparkles, BarChart3, MessageSquare, Zap } from 'lucide-react';
+import { Brain, Database, Sparkles, BarChart3, MessageSquare, Zap } from 'lucide-react';
 
 const technologies = [
   {
     icon: Brain,
-    title: 'Machine Learning AvanÃ§ado',
-    description: 'Algoritmos de deep learning analisam padrÃµes de comportamento e histÃ³rico de compra'
+    title: 'Machine Learning Avançado',
+    description: 'Algoritmos de deep learning analisam padrões de comportamento e histórico de compra'
   },
   {
     icon: Database,
     title: 'Big Data Analytics',
-    description: 'Processamento de milhÃµes de dados para identificar os melhores matches'
+    description: 'Processamento de milhões de dados para identificar os melhores matches'
   },
   {
     icon: BarChart3,
     title: 'Scoring Preditivo',
-    description: 'Sistema de pontuaÃ§Ã£o que prevÃª a probabilidade de fechamento antes do contato'
+    description: 'Sistema de pontuação que prevê a probabilidade de fechamento antes do contato'
   },
   {
     icon: MessageSquare,
     title: 'NLP Conversacional',
-    description: 'Processamento de linguagem natural para entender intenÃ§Ãµes reais dos leads'
+    description: 'Processamento de linguagem natural para entender intenções reais dos leads'
   },
   {
     icon: Sparkles,
     title: 'IA Generativa',
-    description: 'CriaÃ§Ã£o automÃ¡tica de propostas personalizadas para cada lead qualificado'
+    description: 'Criação automática de propostas personalizadas para cada lead qualificado'
   },
   {
     icon: Zap,
-    title: 'AutomaÃ§Ã£o 24/7',
-    description: 'Workflows automatizados que trabalham sem parar para vocÃª'
+    title: 'Automação 24/7',
+    description: 'Workflows automatizados que trabalham sem parar para você'
   }
 ];
 
@@ -47,20 +47,20 @@ export default function CorretoresTechnology() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 backdrop-blur-sm mb-6">
             <Sparkles className="w-4 h-4 text-amber-400" />
             <span className="text-sm font-semibold text-amber-400" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              TECNOLOGIA PROPRIETÃRIA
+              TECNOLOGIA PROPRIETÁRIA
             </span>
           </div>
           <h2 
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            Tecnologia <span className="text-amber-400">ProprietÃ¡ria</span> Que Evolui a Cada InteraÃ§Ã£o
+            Tecnologia <span className="text-amber-400">Proprietária</span> Que Evolui a Cada Interação
           </h2>
           <p 
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            Stack tecnolÃ³gico desenvolvido especificamente para o mercado imobiliÃ¡rio brasileiro
+            Stack tecnológico desenvolvido especificamente para o mercado imobiliário brasileiro
           </p>
         </div>
 
@@ -83,13 +83,13 @@ export default function CorretoresTechnology() {
                 className="text-4xl font-bold mb-6"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
-                IA Treinada com <span className="text-amber-400">+10 MilhÃµes</span> de TransaÃ§Ãµes
+                IA Treinada com <span className="text-amber-400">+10 Milhões</span> de Transações
               </h3>
               <p 
                 className="text-lg text-gray-300 mb-8 leading-relaxed"
                 style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
-                Nossa plataforma usa redes neurais profundas treinadas com dados do mercado imobiliÃ¡rio brasileiro. A cada lead processado, o sistema fica mais inteligente, refinando a qualificaÃ§Ã£o e aumentando sua taxa de conversÃ£o.
+                Nossa plataforma usa redes neurais profundas treinadas com dados do mercado imobiliário brasileiro. A cada lead processado, o sistema fica mais inteligente, refinando a qualificação e aumentando sua taxa de conversão.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30">

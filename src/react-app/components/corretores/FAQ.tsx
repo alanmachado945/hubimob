@@ -1,21 +1,21 @@
-﻿import { HelpCircle } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'Os leads sÃ£o garantidos?',
-    answer: 'Sim, garantimos leads qualificados atravÃ©s da nossa IA. Mas lembre-se: a qualidade supera a quantidade. Entregamos compradores com alta intenÃ§Ã£o e fit financeiro, nÃ£o volume bruto. Nossa meta Ã© conversÃ£o, nÃ£o desperdÃ­cio do seu tempo.'
+    question: 'Os leads são garantidos?',
+    answer: 'Sim, garantimos leads qualificados através da nossa IA. Mas lembre-se: a qualidade supera a quantidade. Entregamos compradores com alta intenção e fit financeiro, não volume bruto. Nossa meta é conversão, não desperdício do seu tempo.'
   },
   {
     question: 'A IA substitui o corretor?',
-    answer: 'NÃ£o. A IA faz o trabalho pesado de triagem e qualificaÃ§Ã£o para que vocÃª possa focar no que realmente importa: relacionamento e fechamento. VocÃª continua sendo essencial - mas agora com menos esforÃ§o desperdiÃ§ado e mais eficiÃªncia.'
+    answer: 'Não. A IA faz o trabalho pesado de triagem e qualificação para que você possa focar no que realmente importa: relacionamento e fechamento. Você continua sendo essencial - mas agora com menos esforço desperdiçado e mais eficiência.'
   },
   {
     question: 'Preciso saber tecnologia?',
-    answer: 'NÃ£o precisa ser expert em tech. Nossa plataforma foi desenhada para ser intuitiva. VocÃª recebe onboarding completo e suporte dedicado. Em 24h vocÃª jÃ¡ estÃ¡ operacional.'
+    answer: 'Não precisa ser expert em tech. Nossa plataforma foi desenhada para ser intuitiva. Você recebe onboarding completo e suporte dedicado. Em 24h você já está operacional.'
   },
   {
     question: 'O que eu recebo de verdade?',
-    answer: 'Acesso a leads qualificados por IA, portfÃ³lio premium exclusivo, CRM integrado, automaÃ§Ã£o de follow-up, analytics em tempo real, e suporte humano especializado. Tudo em uma Ãºnica plataforma.'
+    answer: 'Acesso a leads qualificados por IA, portfólio premium exclusivo, CRM integrado, automação de follow-up, analytics em tempo real, e suporte humano especializado. Tudo em uma única plataforma.'
   }
 ];
 
@@ -32,14 +32,14 @@ export default function FAQ() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-amber-500/30 bg-amber-500/10 backdrop-blur-sm mb-6">
             <HelpCircle className="w-4 h-4 text-amber-400" />
             <span className="text-sm font-semibold text-amber-400" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              TRANSPARÃŠNCIA TOTAL
+              TRANSPARÊNCIA TOTAL
             </span>
           </div>
           <h2 
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            Perguntas Que Todo Corretor Tem â€” <span className="text-amber-400">Respondidas</span> com TransparÃªncia
+            Perguntas Que Todo Corretor Tem — <span className="text-amber-400">Respondidas</span> com Transparência
           </h2>
         </div>
 

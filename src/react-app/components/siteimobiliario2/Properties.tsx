@@ -1,4 +1,4 @@
-﻿import { MapPin, Bed, Bath, Square } from 'lucide-react';
+import { MapPin, Bed, Bath, Square } from 'lucide-react';
 
 const properties = [
   {
@@ -21,7 +21,7 @@ const properties = [
   },
   {
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/property-3.png',
-    title: 'ResidÃªncia Premium',
+    title: 'Residência Premium',
     location: 'Barra da Tijuca, Rio de Janeiro',
     beds: 5,
     baths: 6,
@@ -44,7 +44,7 @@ export default function Properties() {
     <section
       className="py-24 bg-gradient-to-b"
       style={{
-        backgroundImage: "linear-gradient(to bottom, var(--color-111827), var(--color-0a0f1f))" // Preto Azul-Grafite â†’ Azul-Marinho Profundo
+        backgroundImage: "linear-gradient(to bottom, var(--color-111827), var(--color-0a0f1f))" // Preto Azul-Grafite → Azul-Marinho Profundo
       }}
     >
       <div className="max-w-container mx-auto px-5">
@@ -52,7 +52,7 @@ export default function Properties() {
         {/* TITLE */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span style={{ color: "var(--brand-primary)" }}>ImÃ³veis</span>{' '}
+            <span style={{ color: "var(--brand-primary)" }}>Imóveis</span>{' '}
             <span style={{ color: "var(--brand-light)" }}>de luxo</span>
           </h2>
 
@@ -71,8 +71,8 @@ export default function Properties() {
               key={index}
               className="group rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105"
               style={{
-                backgroundColor: "rgba(var(--color-111827-rgb), 0.45)", // Preto Azul-Grafite translÃºcido
-                border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)" // Dourado metÃ¡lico 20%
+                backgroundColor: "rgba(var(--color-111827-rgb), 0.45)", // Preto Azul-Grafite translúcido
+                border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)" // Dourado metálico 20%
               }}
             >
               
@@ -131,7 +131,7 @@ export default function Properties() {
                   <div className="flex items-center gap-1">
                     <Square className="w-4 h-4" style={{ color: "var(--brand-light)" }} />
                     <span className="text-sm" style={{ color: "var(--brand-light)" }}>
-                      {property.area}mÂ²
+                      {property.area}m²
                     </span>
                   </div>
                 </div>

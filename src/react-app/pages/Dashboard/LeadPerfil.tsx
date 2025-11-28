@@ -20,37 +20,37 @@ export default function LeadPerfilPage() {
     nome: 'Ana Lima',
     canal: 'WhatsApp',
     orcamento: 'R$ 750.000',
-    bairro: 'IcaraÃ­',
+    bairro: 'Icaraí',
     tipoImovel: 'Apartamento',
-    urgencia: 'Compra em atÃ© 3 meses'
+    urgencia: 'Compra em até 3 meses'
   };
 
   const imoveis = [
     {
-      titulo: 'Apartamento 3 Quartos â€“ IcaraÃ­',
+      titulo: 'Apartamento 3 Quartos – Icaraí',
       preco: 'R$ 720.000',
-      detalhes: '120mÂ² â€“ 3qts â€“ 1 vaga â€“ vista parcial mar',
+      detalhes: '120m² – 3qts – 1 vaga – vista parcial mar',
       imagem: propertyImages[0]
     },
     {
-      titulo: 'Apartamento Moderno â€“ PrÃ©dio Novo',
+      titulo: 'Apartamento Moderno – Prédio Novo',
       preco: 'R$ 760.000',
-      detalhes: '98mÂ² â€“ prÃ©dio novo â€“ lazer completo',
+      detalhes: '98m² – prédio novo – lazer completo',
       imagem: propertyImages[1]
     },
     {
-      titulo: 'Cobertura Duplex â€“ Ãrea Gourmet',
+      titulo: 'Cobertura Duplex – Área Gourmet',
       preco: 'R$ 780.000',
-      detalhes: 'Cobertura duplex â€“ Ã¡rea gourmet premium',
+      detalhes: 'Cobertura duplex – área gourmet premium',
       imagem: propertyImages[2]
     }
   ];
 
   const historico = [
-    { texto: 'Lead captado via WhatsApp', tempo: 'hÃ¡ 2h', icon: MessageSquare },
-    { texto: 'IA qualificou o lead automaticamente', tempo: 'hÃ¡ 2h', icon: Sparkles },
-    { texto: 'ImÃ³veis sugeridos pela IA', tempo: 'hÃ¡ 1h', icon: CheckCircle2 },
-    { texto: 'Lead marcado como quente', tempo: 'hÃ¡ 1h', icon: TrendingUp }
+    { texto: 'Lead captado via WhatsApp', tempo: 'há 2h', icon: MessageSquare },
+    { texto: 'IA qualificou o lead automaticamente', tempo: 'há 2h', icon: Sparkles },
+    { texto: 'Imóveis sugeridos pela IA', tempo: 'há 1h', icon: CheckCircle2 },
+    { texto: 'Lead marcado como quente', tempo: 'há 1h', icon: TrendingUp }
   ];
 
   const funnelStages = [
@@ -81,7 +81,7 @@ export default function LeadPerfilPage() {
                 color: 'var(--brand-primary)'
               }}
             >
-              Perfil do Lead â€“ {leadInfo.nome}
+              Perfil do Lead – {leadInfo.nome}
             </h1>
             <p 
               className="text-xl"
@@ -107,7 +107,7 @@ export default function LeadPerfilPage() {
           </button>
         </div>
 
-        {/* SEÃ‡ÃƒO 1 - InformaÃ§Ãµes do Comprador */}
+        {/* SEÇÃO 1 - Informações do Comprador */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
@@ -122,7 +122,7 @@ export default function LeadPerfilPage() {
               color: 'var(--brand-light)'
             }}
           >
-            InformaÃ§Ãµes Gerais
+            Informações Gerais
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -176,7 +176,7 @@ export default function LeadPerfilPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                OrÃ§amento
+                Orçamento
               </p>
               <p 
                 className="text-lg"
@@ -218,7 +218,7 @@ export default function LeadPerfilPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Tipo de imÃ³vel
+                Tipo de imóvel
               </p>
               <p 
                 className="text-lg"
@@ -239,7 +239,7 @@ export default function LeadPerfilPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                UrgÃªncia
+                Urgência
               </p>
               <p 
                 className="text-lg"
@@ -254,7 +254,7 @@ export default function LeadPerfilPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 2 - Resumo da IA */}
+        {/* SEÇÃO 2 - Resumo da IA */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
@@ -276,7 +276,7 @@ export default function LeadPerfilPage() {
             className="p-6 rounded-xl mb-6"
             style={{ 
               backgroundColor: 'var(--brand-dark-secondary)',
-              borderLeft: '4px solid var(--color-e3a93c)'
+              borderLeft: "var(--border-thick) solid var(--color-e3a93c)'
             }}
           >
             <div className="space-y-3">
@@ -288,7 +288,7 @@ export default function LeadPerfilPage() {
                     color: 'var(--brand-light)'
                   }}
                 >
-                  Lead com alta intenÃ§Ã£o de compra
+                  Lead com alta intenção de compra
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -299,7 +299,7 @@ export default function LeadPerfilPage() {
                     color: 'var(--brand-light)'
                   }}
                 >
-                  Perfil financeiro compatÃ­vel com imÃ³veis de R$ 700k a R$ 800k
+                  Perfil financeiro compatível com imóveis de R$ 700k a R$ 800k
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -310,7 +310,7 @@ export default function LeadPerfilPage() {
                     color: 'var(--brand-light)'
                   }}
                 >
-                  PreferÃªncia clara por IcaraÃ­
+                  Preferência clara por Icaraí
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -321,7 +321,7 @@ export default function LeadPerfilPage() {
                     color: 'var(--brand-light)'
                   }}
                 >
-                  Recomenda-se contato nas prÃ³ximas 24 horas
+                  Recomenda-se contato nas próximas 24 horas
                 </span>
               </div>
             </div>
@@ -338,12 +338,12 @@ export default function LeadPerfilPage() {
               className="font-bold"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
-              IA Classificou como: Lead Quente ðŸ”¥
+              IA Classificou como: Lead Quente 🔥
             </span>
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 3 - SugestÃµes de ImÃ³veis */}
+        {/* SEÇÃO 3 - Sugestões de Imóveis */}
         <div className="mb-12">
           <h2 
             className="text-3xl font-bold mb-6"
@@ -352,7 +352,7 @@ export default function LeadPerfilPage() {
               color: 'var(--brand-light)'
             }}
           >
-            SugestÃµes de ImÃ³veis
+            Sugestões de Imóveis
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -418,7 +418,7 @@ export default function LeadPerfilPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 4 - HistÃ³rico do Lead */}
+        {/* SEÇÃO 4 - Histórico do Lead */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
@@ -433,7 +433,7 @@ export default function LeadPerfilPage() {
               color: 'var(--brand-light)'
             }}
           >
-            HistÃ³rico de InteraÃ§Ãµes
+            Histórico de Interações
           </h2>
 
           <div className="space-y-4">
@@ -477,7 +477,7 @@ export default function LeadPerfilPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 5 - Etapa no Funil */}
+        {/* SEÇÃO 5 - Etapa no Funil */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
@@ -505,7 +505,7 @@ export default function LeadPerfilPage() {
                     }`}
                     style={{ 
                       backgroundColor: stage.active || stage.completed ? 'var(--brand-primary)' : 'var(--brand-dark-secondary)',
-                      boxShadow: stage.active ? '0 0 20px var(--color-e3a93c)' : 'none'
+                      boxShadow: stage.active ? 'var(--shadow-lg)' : 'none'
                     }}
                   >
                     {stage.completed && <CheckCircle2 className="w-6 h-6" style={{ color: 'var(--brand-dark)' }} />}
@@ -549,7 +549,7 @@ export default function LeadPerfilPage() {
           </button>
         </div>
 
-        {/* BotÃµes Finais */}
+        {/* Botões Finais */}
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <button 
             className="flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
@@ -572,7 +572,7 @@ export default function LeadPerfilPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -587,7 +587,7 @@ export default function LeadPerfilPage() {
           </Link>
         </div>
 
-        {/* RodapÃ© */}
+        {/* Rodapé */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
@@ -596,12 +596,13 @@ export default function LeadPerfilPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” CRM com IA.
+            © 2025 HUB Imobiliário Inteligente — CRM com IA.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

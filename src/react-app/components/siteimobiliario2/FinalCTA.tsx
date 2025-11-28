@@ -1,16 +1,16 @@
-﻿import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function FinalCTA() {
   return (
     <section className="py-32 relative overflow-hidden">
 
-      {/* Fundo Luxury â€” substituÃ­do para a paleta IMOBIA */}
+      {/* Fundo Luxury — substituído para a paleta IMOBIA */}
       <div className="absolute inset-0"
         style={{ backgroundColor: "var(--brand-secondary-light)" }}
       ></div>
 
-      {/* Glow Radial Premium â€” ajustado para dourado + navy */}
+      {/* Glow Radial Premium — ajustado para dourado + navy */}
       <div
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]"
         style={{
@@ -33,7 +33,7 @@ export default function FinalCTA() {
           </span>
         </div>
 
-        {/* TÃ­tulo */}
+        {/* Título */}
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6"
           style={{ color: "var(--brand-light)" }}
         >
@@ -55,21 +55,21 @@ export default function FinalCTA() {
           className="text-xl mb-12 max-w-2xl mx-auto leading-relaxed"
           style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.8)" }}
         >
-          Descubra como nossa inteligÃªncia artificial e curadoria especializada
-          podem encontrar o imÃ³vel perfeito para vocÃª.
+          Descubra como nossa inteligência artificial e curadoria especializada
+          podem encontrar o imóvel perfeito para você.
         </p>
 
-        {/* BotÃµes */}
+        {/* Botões */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           
-          {/* BotÃ£o dourado */}
+          {/* Botão dourado */}
           <Link
             to="/agendar-consultoria"
             className="group px-8 py-4 font-semibold rounded-lg transition-all duration-300 shadow-2xl inline-flex items-center gap-2 text-lg"
             style={{
               backgroundColor: "var(--brand-primary)",
               color: "var(--brand-secondary-light)",
-              boxShadow: "0 0 20px rgba(var(--color-d4af67-rgb), 0.3)"
+              boxShadow: "var(--shadow-lg)"
             }}
             onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "var(--color-b68a37)")}
             onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "var(--brand-primary)")}
@@ -78,7 +78,7 @@ export default function FinalCTA() {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
 
-          {/* BotÃ£o vidro (glass) */}
+          {/* Botão vidro (glass) */}
           <button
             className="px-8 py-4 font-semibold rounded-lg transition-all duration-300 text-lg"
             style={{
@@ -93,7 +93,7 @@ export default function FinalCTA() {
 
         </div>
 
-        {/* RodapÃ© CTA */}
+        {/* Rodapé CTA */}
         <div className="mt-12 flex items-center justify-center gap-8 text-sm"
           style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.6)" }}
         >

@@ -1,35 +1,35 @@
-﻿import { Brain, Database, Network, Sparkles, BarChart3, MessageSquare } from 'lucide-react';
+import { Brain, Database, Network, Sparkles, BarChart3, MessageSquare } from 'lucide-react';
 
 const technologies = [
   {
     icon: Brain,
-    title: 'Machine Learning AvanÃ§ado',
-    description: 'Algoritmos de deep learning analisam padrÃµes de comportamento e histÃ³rico de compra'
+    title: 'Machine Learning Avançado',
+    description: 'Algoritmos de deep learning analisam padrões de comportamento e histórico de compra'
   },
   {
     icon: Database,
     title: 'Big Data Analytics',
-    description: 'Processamento de milhÃµes de dados para identificar os melhores matches'
+    description: 'Processamento de milhões de dados para identificar os melhores matches'
   },
   {
     icon: Network,
-    title: 'AutomaÃ§Ã£o Inteligente',
-    description: 'Workflows automatizados que trabalham 24/7 sem intervenÃ§Ã£o manual'
+    title: 'Automação Inteligente',
+    description: 'Workflows automatizados que trabalham 24/7 sem intervenção manual'
   },
   {
     icon: BarChart3,
     title: 'Scoring Preditivo',
-    description: 'Sistema de pontuaÃ§Ã£o que prevÃª a probabilidade de fechamento'
+    description: 'Sistema de pontuação que prevê a probabilidade de fechamento'
   },
   {
     icon: MessageSquare,
-    title: 'NLP & ConversaÃ§Ã£o',
-    description: 'Processamento de linguagem natural para entender intenÃ§Ãµes reais'
+    title: 'NLP & Conversação',
+    description: 'Processamento de linguagem natural para entender intenções reais'
   },
   {
     icon: Sparkles,
     title: 'IA Generativa',
-    description: 'CriaÃ§Ã£o automÃ¡tica de propostas personalizadas para cada lead'
+    description: 'Criação automática de propostas personalizadas para cada lead'
   }
 ];
 
@@ -55,14 +55,14 @@ export default function AITech() {
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            A <span style={{ color: 'var(--brand-primary)' }}>InteligÃªncia</span> Por TrÃ¡s do Sistema
+            A <span style={{ color: 'var(--brand-primary)' }}>Inteligência</span> Por Trás do Sistema
           </h2>
 
           <p 
             className="text-xl max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.667)' }}
           >
-            Stack tecnolÃ³gico proprietÃ¡rio desenvolvido por engenheiros de IA de empresas de tecnologia globais
+            Stack tecnológico proprietário desenvolvido por engenheiros de IA de empresas de tecnologia globais
           </p>
         </div>
 
@@ -85,14 +85,14 @@ export default function AITech() {
                 className="text-4xl font-bold mb-6"
                 style={{ fontFamily: 'Playfair Display, serif' }}
               >
-                  IA que Aprende com Cada <span style={{ color: 'var(--brand-primary)' }}>InteraÃ§Ã£o</span>
+                  IA que Aprende com Cada <span style={{ color: 'var(--brand-primary)' }}>Interação</span>
               </h3>
 
               <p 
                 className="text-lg mb-8 leading-relaxed"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.8)' }}
               >
-                  Nossa plataforma usa redes neurais profundas treinadas com mais de 10 milhÃµes de transaÃ§Ãµes imobiliÃ¡rias. A cada lead processado, o sistema fica mais inteligente, refinando a qualificaÃ§Ã£o e aumentando sua taxa de conversÃ£o.
+                  Nossa plataforma usa redes neurais profundas treinadas com mais de 10 milhões de transações imobiliárias. A cada lead processado, o sistema fica mais inteligente, refinando a qualificação e aumentando sua taxa de conversão.
               </p>
 
               <div className="flex flex-wrap gap-4">

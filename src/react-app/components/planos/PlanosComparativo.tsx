@@ -1,13 +1,13 @@
-﻿import { Check, Minus } from 'lucide-react';
+import { Check, Minus } from 'lucide-react';
 
 const linhas = [
-  { feature: "Acesso Ã  IA", pro: "check-plus", enterprise: "check-plus" },
+  { feature: "Acesso à IA", pro: "check-plus", enterprise: "check-plus" },
   { feature: "CRM", pro: "Completo", enterprise: "Corporativo" },
   { feature: "Omnichannel", pro: "Completo", enterprise: "Alta escala" },
-  { feature: "ProteÃ§Ã£o JurÃ­dica", pro: "AvanÃ§ada", enterprise: "Completa" },
-  { feature: "DistribuiÃ§Ã£o de Leads", pro: "check", enterprise: "check" },
+  { feature: "Proteção Jurídica", pro: "Avançada", enterprise: "Completa" },
+  { feature: "Distribuição de Leads", pro: "check", enterprise: "check" },
   { feature: "Dashboard", pro: "check-plus", enterprise: "check-plus" },
-  { feature: "Suporte", pro: "PrioritÃ¡rio", enterprise: "Dedicado" }
+  { feature: "Suporte", pro: "Prioritário", enterprise: "Dedicado" }
 ];
 
 function renderCell(value: string) {

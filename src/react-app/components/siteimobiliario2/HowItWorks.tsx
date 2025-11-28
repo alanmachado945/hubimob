@@ -1,32 +1,32 @@
-﻿import { MessageSquare, Search, FileCheck, Key } from 'lucide-react';
+import { MessageSquare, Search, FileCheck, Key } from 'lucide-react';
 
 const steps = [
   {
     icon: MessageSquare,
     number: '01',
     title: 'Consulta inicial',
-    description: 'Conversamos sobre suas necessidades, preferÃªncias e objetivos imobiliÃ¡rios',
+    description: 'Conversamos sobre suas necessidades, preferências e objetivos imobiliários',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/step-consulta.png'
   },
   {
     icon: Search,
     number: '02',
-    title: 'AnÃ¡lise inteligente',
-    description: 'Nossa IA analisa milhares de imÃ³veis e seleciona os melhores matches para vocÃª',
+    title: 'Análise inteligente',
+    description: 'Nossa IA analisa milhares de imóveis e seleciona os melhores matches para você',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/step-analise.png'
   },
   {
     icon: FileCheck,
     number: '03',
     title: 'Curadoria premium',
-    description: 'Nossos especialistas refinam as opÃ§Ãµes e agendam visitas personalizadas',
+    description: 'Nossos especialistas refinam as opções e agendam visitas personalizadas',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/step-curadoria.png'
   },
   {
     icon: Key,
     number: '04',
     title: 'Fechamento seguro',
-    description: 'Acompanhamento completo atÃ© a assinatura, com total proteÃ§Ã£o jurÃ­dica',
+    description: 'Acompanhamento completo até a assinatura, com total proteção jurídica',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/step-fechamento.png'
   }
 ];
@@ -51,7 +51,7 @@ export default function HowItWorks() {
             className="text-lg max-w-2xl mx-auto"
             style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
           >
-            Um processo inteligente e eficiente para encontrar seu imÃ³vel ideal
+            Um processo inteligente e eficiente para encontrar seu imóvel ideal
           </p>
         </div>
         

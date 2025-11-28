@@ -1,10 +1,10 @@
-﻿import { X } from 'lucide-react';
+import { X } from 'lucide-react';
 
 const problems = [
   'Pessoas que pedem detalhes e somem',
   'Leads sem poder financeiro',
-  'Interessados que sÃ³ estÃ£o olhando',
-  'Conversas que nÃ£o viram visitas'
+  'Interessados que só estão olhando',
+  'Conversas que não viram visitas'
 ];
 
 export default function MarketProblem() {
@@ -21,14 +21,14 @@ export default function MarketProblem() {
             className="text-5xl md:text-6xl font-bold mb-8 leading-tight"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            O Maior Desafio do Corretor NÃ£o Ã© <span className="text-amber-400">Vender</span>. Ã‰ Encontrar Quem <span className="text-amber-400">Realmente Quer Comprar</span>.
+            O Maior Desafio do Corretor Não é <span className="text-amber-400">Vender</span>. É Encontrar Quem <span className="text-amber-400">Realmente Quer Comprar</span>.
           </h2>
           
           <p 
             className="text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            O mercado imobiliÃ¡rio estÃ¡ saturado de plataformas que entregam quantidade ao invÃ©s de qualidade. VocÃª gasta horas filtrando leads frios, conversando com curiosos e perseguindo pessoas sem poder de compra. O resultado? Tempo perdido, frustraÃ§Ã£o e vendas que nunca acontecem.
+            O mercado imobiliário está saturado de plataformas que entregam quantidade ao invés de qualidade. Você gasta horas filtrando leads frios, conversando com curiosos e perseguindo pessoas sem poder de compra. O resultado? Tempo perdido, frustração e vendas que nunca acontecem.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function MarketProblem() {
             className="text-2xl font-bold text-gray-300"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            Ã‰ hora de mudar esse jogo.
+            É hora de mudar esse jogo.
           </p>
         </div>
       </div>

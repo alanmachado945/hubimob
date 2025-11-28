@@ -1,27 +1,27 @@
-﻿const pilares = [
+const pilares = [
   {
-    title: "ColaboraÃ§Ã£o Real",
-    desc: "Conectamos corretores e imobiliÃ¡rias em um sistema seguro, transparente e profissional.",
+    title: "Colaboração Real",
+    desc: "Conectamos corretores e imobiliárias em um sistema seguro, transparente e profissional.",
   },
   {
-    title: "InteligÃªncia Artificial",
-    desc: "IA treinada para qualificaÃ§Ã£o, atendimento, follow-up, filtros e automaÃ§Ã£o de processos.",
+    title: "Inteligência Artificial",
+    desc: "IA treinada para qualificação, atendimento, follow-up, filtros e automação de processos.",
   },
   {
-    title: "ProteÃ§Ã£o JurÃ­dica",
-    desc: "Contratos digitais, rastreabilidade, logs e trilha de auditoria para proteger operaÃ§Ãµes.",
+    title: "Proteção Jurídica",
+    desc: "Contratos digitais, rastreabilidade, logs e trilha de auditoria para proteger operações.",
   },
   {
     title: "CRM e Omnichannel",
-    desc: "CentralizaÃ§Ã£o total de leads: WhatsApp, Instagram, portais e site em um sÃ³ lugar.",
+    desc: "Centralização total de leads: WhatsApp, Instagram, portais e site em um só lugar.",
   },
   {
     title: "Marketplace Completo",
-    desc: "ImÃ³veis de todos os tipos, regiÃµes e perfis â€” conectados Ã  rede de corretores.",
+    desc: "Imóveis de todos os tipos, regiões e perfis — conectados à rede de corretores.",
   },
   {
     title: "Fee Justo",
-    desc: "Modelo de negÃ³cio transparente: 12% da comissÃ£o, apenas no sucesso.",
+    desc: "Modelo de negócio transparente: 12% da comissão, apenas no sucesso.",
   },
 ];
 

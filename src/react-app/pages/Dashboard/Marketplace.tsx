@@ -34,177 +34,177 @@ export default function MarketplacePage() {
       id: 0,
       titulo: "Apartamento Vista Mar",
       preco: "R$ 1.250.000",
-      bairro: "IcaraÃ­",
-      cidade: "NiterÃ³i â€“ RJ",
+      bairro: "Icaraí",
+      cidade: "Niterói – RJ",
       statusTag: "Exclusivo",
       imagem:
         "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=800&h=600&fit=crop",
-      descricaoCurta: "3 quartos â€¢ 1 suÃ­te â€¢ 2 vagas",
+      descricaoCurta: "3 quartos • 1 suíte • 2 vagas",
     },
     {
       id: 2,
       titulo: "Cobertura Duplex Charitas",
       preco: "R$ 2.100.000",
       bairro: "Charitas",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Novo",
       imagem:
         "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
-      descricaoCurta: "4 quartos â€¢ 280mÂ² â€¢ 3 vagas",
+      descricaoCurta: "4 quartos • 280m² • 3 vagas",
     },
     {
       id: 3,
       titulo: "Studio Moderno Centro",
       preco: "R$ 420.000",
       bairro: "Centro",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Destaque",
       imagem:
         "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
-      descricaoCurta: "1 quarto â€¢ 45mÂ² â€¢ 1 vaga",
+      descricaoCurta: "1 quarto • 45m² • 1 vaga",
     },
     {
       id: 4,
-      titulo: "Casa Alto PadrÃ£o Pendotiba",
+      titulo: "Casa Alto Padrão Pendotiba",
       preco: "R$ 1.850.000",
       bairro: "Pendotiba",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Exclusivo",
       imagem:
         "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=800&h=600&fit=crop",
-      descricaoCurta: "5 quartos â€¢ 350mÂ² â€¢ 4 vagas",
+      descricaoCurta: "5 quartos • 350m² • 4 vagas",
     },
     {
       id: 5,
-      titulo: "Apartamento 3 Quartos IngÃ¡",
+      titulo: "Apartamento 3 Quartos Ingá",
       preco: "R$ 890.000",
-      bairro: "IngÃ¡",
-      cidade: "NiterÃ³i",
+      bairro: "Ingá",
+      cidade: "Niterói",
       statusTag: "Novo",
       imagem:
         "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop",
-      descricaoCurta: "3 quartos â€¢ 98mÂ² â€¢ 1 vaga",
+      descricaoCurta: "3 quartos • 98m² • 1 vaga",
     },
     {
       id: 6,
-      titulo: "Loft ContemporÃ¢neo SÃ£o Francisco",
+      titulo: "Loft Contemporâneo São Francisco",
       preco: "R$ 650.000",
-      bairro: "SÃ£o Francisco",
-      cidade: "NiterÃ³i",
+      bairro: "São Francisco",
+      cidade: "Niterói",
       statusTag: "Destaque",
       imagem:
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
-      descricaoCurta: "2 quartos â€¢ 75mÂ² â€¢ 1 vaga",
+      descricaoCurta: "2 quartos • 75m² • 1 vaga",
     },
     {
       id: 7,
-      titulo: "Apartamento Frente Mar IcaraÃ­",
+      titulo: "Apartamento Frente Mar Icaraí",
       preco: "R$ 1.450.000",
-      bairro: "IcaraÃ­",
-      cidade: "NiterÃ³i",
+      bairro: "Icaraí",
+      cidade: "Niterói",
       statusTag: "Exclusivo",
       imagem:
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
-      descricaoCurta: "3 quartos â€¢ 135mÂ² â€¢ 2 vagas",
+      descricaoCurta: "3 quartos • 135m² • 2 vagas",
     },
     {
       id: 8,
-      titulo: "Casa em CondomÃ­nio Piratininga",
+      titulo: "Casa em Condomínio Piratininga",
       preco: "R$ 1.200.000",
       bairro: "Piratininga",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Novo",
       imagem:
         "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop",
-      descricaoCurta: "4 quartos â€¢ 220mÂ² â€¢ 3 vagas",
+      descricaoCurta: "4 quartos • 220m² • 3 vagas",
     },
     {
       id: 9,
       titulo: "Apartamento Compacto Boa Viagem",
       preco: "R$ 380.000",
       bairro: "Boa Viagem",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Destaque",
       imagem:
         "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&h=600&fit=crop",
-      descricaoCurta: "2 quartos â€¢ 60mÂ² â€¢ 1 vaga",
+      descricaoCurta: "2 quartos • 60m² • 1 vaga",
     },
     {
       id: 10,
-      titulo: "Cobertura Jardim OceÃ¢nico",
+      titulo: "Cobertura Jardim Oceânico",
       preco: "R$ 3.200.000",
-      bairro: "Jardim OceÃ¢nico",
+      bairro: "Jardim Oceânico",
       cidade: "Barra da Tijuca",
       statusTag: "Exclusivo",
       imagem:
         "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
-      descricaoCurta: "4 quartos â€¢ 320mÂ² â€¢ 4 vagas",
+      descricaoCurta: "4 quartos • 320m² • 4 vagas",
     },
     {
       id: 11,
       titulo: "Apartamento Santa Rosa",
       preco: "R$ 720.000",
       bairro: "Santa Rosa",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Novo",
       imagem:
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
-      descricaoCurta: "3 quartos â€¢ 95mÂ² â€¢ 2 vagas",
+      descricaoCurta: "3 quartos • 95m² • 2 vagas",
     },
     {
       id: 12,
       titulo: "Casa Camboinhas Frente Lagoa",
       preco: "R$ 2.500.000",
       bairro: "Camboinhas",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Destaque",
       imagem:
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
-      descricaoCurta: "5 quartos â€¢ 400mÂ² â€¢ 5 vagas",
+      descricaoCurta: "5 quartos • 400m² • 5 vagas",
     },
     {
       id: 13,
       titulo: "Apartamento Fonseca",
       preco: "R$ 520.000",
       bairro: "Fonseca",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Exclusivo",
       imagem:
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
-      descricaoCurta: "2 quartos â€¢ 70mÂ² â€¢ 1 vaga",
+      descricaoCurta: "2 quartos • 70m² • 1 vaga",
     },
     {
       id: 14,
       titulo: "Duplex Itaipu",
       preco: "R$ 980.000",
       bairro: "Itaipu",
-      cidade: "NiterÃ³i",
+      cidade: "Niterói",
       statusTag: "Novo",
       imagem:
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
-      descricaoCurta: "3 quartos â€¢ 150mÂ² â€¢ 2 vagas",
+      descricaoCurta: "3 quartos • 150m² • 2 vagas",
     },
     {
       id: 15,
-      titulo: "Apartamento Vista BaÃ­a SÃ£o Domingos",
+      titulo: "Apartamento Vista Baía São Domingos",
       preco: "R$ 1.100.000",
-      bairro: "SÃ£o Domingos",
-      cidade: "NiterÃ³i",
+      bairro: "São Domingos",
+      cidade: "Niterói",
       statusTag: "Destaque",
       imagem:
         "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop",
-      descricaoCurta: "3 quartos â€¢ 110mÂ² â€¢ 2 vagas",
+      descricaoCurta: "3 quartos • 110m² • 2 vagas",
     },
     {
       id: 16,
-      titulo: "Casa Jardim IcaraÃ­",
+      titulo: "Casa Jardim Icaraí",
       preco: "R$ 1.650.000",
-      bairro: "IcaraÃ­",
-      cidade: "NiterÃ³i",
+      bairro: "Icaraí",
+      cidade: "Niterói",
       statusTag: "Exclusivo",
       imagem:
         "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop",
-      descricaoCurta: "4 quartos â€¢ 250mÂ² â€¢ 3 vagas",
+      descricaoCurta: "4 quartos • 250m² • 3 vagas",
     },
   ];
 
@@ -243,7 +243,7 @@ export default function MarketplacePage() {
             className="text-xl"
             style={{ fontFamily: "Montserrat, sans-serif", color: "var(--brand-text-gray)" }}
           >
-            Explore todos os imÃ³veis disponÃ­veis no HUB.
+            Explore todos os imóveis disponíveis no HUB.
           </p>
         </div>
 
@@ -258,12 +258,12 @@ export default function MarketplacePage() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar por bairro, cÃ³digo ou palavra-chave"
+              placeholder="Buscar por bairro, código ou palavra-chave"
               className="w-full pl-12 pr-4 py-4 rounded-xl focus:outline-none"
               style={{
                 fontFamily: "Montserrat, sans-serif",
                 backgroundColor: "var(--brand-dark-secondary)",
-                borderWidth: "2px",
+                borderWidth: "var(--border-md)",
                 borderColor: "var(--brand-primary)",
                 color: "var(--brand-light)",
               }}
@@ -283,7 +283,7 @@ export default function MarketplacePage() {
                 className="block text-sm font-semibold mb-2"
                 style={{ color: "var(--brand-primary)", fontFamily: "Montserrat, sans-serif" }}
               >
-                Tipo de ImÃ³vel
+                Tipo de Imóvel
               </label>
               <select
                 value={tipoFilter}
@@ -291,7 +291,7 @@ export default function MarketplacePage() {
                 className="w-full px-4 py-3 rounded-xl"
                 style={{
                   backgroundColor: "var(--brand-dark)",
-                  borderWidth: "2px",
+                  borderWidth: "var(--border-md)",
                   borderColor: "var(--brand-primary)",
                   color: "var(--brand-light)",
                   fontFamily: "Montserrat, sans-serif",
@@ -319,28 +319,28 @@ export default function MarketplacePage() {
                 className="w-full px-4 py-3 rounded-xl"
                 style={{
                   backgroundColor: "var(--brand-dark)",
-                  borderWidth: "2px",
+                  borderWidth: "var(--border-md)",
                   borderColor: "var(--brand-primary)",
                   color: "var(--brand-light)",
                   fontFamily: "Montserrat, sans-serif",
                 }}
               >
                 <option>Todos</option>
-                <option>IcaraÃ­</option>
+                <option>Icaraí</option>
                 <option>Charitas</option>
                 <option>Centro</option>
-                <option>IngÃ¡</option>
+                <option>Ingá</option>
                 <option>Pendotiba</option>
               </select>
             </div>
 
-            {/* PreÃ§o */}
+            {/* Preço */}
             <div>
               <label
                 className="block text-sm font-semibold mb-2"
                 style={{ color: "var(--brand-primary)", fontFamily: "Montserrat, sans-serif" }}
               >
-                Faixa de PreÃ§o
+                Faixa de Preço
               </label>
               <select
                 value={precoFilter}
@@ -348,17 +348,17 @@ export default function MarketplacePage() {
                 className="w-full px-4 py-3 rounded-xl"
                 style={{
                   backgroundColor: "var(--brand-dark)",
-                  borderWidth: "2px",
+                  borderWidth: "var(--border-md)",
                   borderColor: "var(--brand-primary)",
                   color: "var(--brand-light)",
                   fontFamily: "Montserrat, sans-serif",
                 }}
               >
                 <option>Todos</option>
-                <option>AtÃ© R$ 500 mil</option>
-                <option>R$ 500 mil - R$ 1 milhÃ£o</option>
-                <option>R$ 1 milhÃ£o - R$ 2 milhÃµes</option>
-                <option>Acima de R$ 2 milhÃµes</option>
+                <option>Até R$ 500 mil</option>
+                <option>R$ 500 mil - R$ 1 milhão</option>
+                <option>R$ 1 milhão - R$ 2 milhões</option>
+                <option>Acima de R$ 2 milhões</option>
               </select>
             </div>
 
@@ -376,7 +376,7 @@ export default function MarketplacePage() {
                 className="w-full px-4 py-3 rounded-xl"
                 style={{
                   backgroundColor: "var(--brand-dark)",
-                  borderWidth: "2px",
+                  borderWidth: "var(--border-md)",
                   borderColor: "var(--brand-primary)",
                   color: "var(--brand-light)",
                   fontFamily: "Montserrat, sans-serif",
@@ -404,7 +404,7 @@ export default function MarketplacePage() {
                 className="w-full px-4 py-3 rounded-xl"
                 style={{
                   backgroundColor: "var(--brand-dark)",
-                  borderWidth: "2px",
+                  borderWidth: "var(--border-md)",
                   borderColor: "var(--brand-primary)",
                   color: "var(--brand-light)",
                   fontFamily: "Montserrat, sans-serif",
@@ -431,7 +431,7 @@ export default function MarketplacePage() {
             }}
           >
             <Plus className="w-6 h-6" />
-            Adicionar Novo ImÃ³vel
+            Adicionar Novo Imóvel
           </Link>
         </div>
 
@@ -494,7 +494,7 @@ export default function MarketplacePage() {
                       color: "var(--brand-text-gray)",
                     }}
                   >
-                    ðŸ“ {imovel.bairro}, {imovel.cidade}
+                    📍 {imovel.bairro}, {imovel.cidade}
                   </p>
 
                   <p
@@ -507,14 +507,14 @@ export default function MarketplacePage() {
                     {imovel.descricaoCurta}
                   </p>
 
-                  {/* VER DETALHES â€” CORRIGIDO */}
+                  {/* VER DETALHES — CORRIGIDO */}
                   <Link
                     to={`/imovel/${imovel.id}`}
                     className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold hover:scale-105 transition-all"
                     style={{
                       backgroundColor: "var(--brand-dark-secondary)",
                       color: "var(--brand-primary)",
-                      borderWidth: "2px",
+                      borderWidth: "var(--border-md)",
                       borderColor: "var(--brand-primary)",
                       fontFamily: "Montserrat, sans-serif",
                     }}
@@ -540,12 +540,13 @@ export default function MarketplacePage() {
               color: "var(--color-7a7a7a)",
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Marketplace de ImÃ³veis.
+            © 2025 HUB Imobiliário Inteligente — Marketplace de Imóveis.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

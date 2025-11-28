@@ -11,13 +11,13 @@ export default function FollowUpIAPage() {
     },
     {
       tipo: 'ia',
-      texto: `SugestÃ£o de resposta:
+      texto: `Sugestão de resposta:
 
-"Claro, fique Ã  vontade! Enquanto isso, jÃ¡ deixei separadas 3 opÃ§Ãµes alinhadas ao seu perfil. Alguns desses imÃ³veis tÃªm alta procura, entÃ£o se quiser agendar uma nova visita ou tirar dÃºvidas, estou Ã  disposiÃ§Ã£o."
+"Claro, fique à vontade! Enquanto isso, já deixei separadas 3 opções alinhadas ao seu perfil. Alguns desses imóveis têm alta procura, então se quiser agendar uma nova visita ou tirar dúvidas, estou à disposição."
 
-âœ” Tom persuasivo
-âœ” PressÃ£o leve
-âœ” MantÃ©m interesse sem parecer agressivo`
+✔ Tom persuasivo
+✔ Pressão leve
+✔ Mantém interesse sem parecer agressivo`
     }
   ]);
 
@@ -41,15 +41,15 @@ export default function FollowUpIAPage() {
     // Simula resposta da IA
     const respostaIA = {
       tipo: 'ia',
-      texto: `Entendi sua situaÃ§Ã£o. Aqui estÃ¡ minha sugestÃ£o de resposta:
+      texto: `Entendi sua situação. Aqui está minha sugestão de resposta:
 
 "${mensagem}"
 
-Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demonstra interesse genuÃ­no no cliente.
+Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstra interesse genuíno no cliente.
 
-âœ” Tom adequado
-âœ” Cria valor
-âœ” MantÃ©m a porta aberta`
+✔ Tom adequado
+✔ Cria valor
+✔ Mantém a porta aberta`
     };
 
     setChat([...chat, novaMensagem, respostaIA]);
@@ -59,9 +59,9 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
   const sugestoesRapidas = [
     'Gerar follow-up educado',
     'Gerar follow-up urgente',
-    'Mensagem para objeÃ§Ã£o de preÃ§o',
-    'Mensagem para objeÃ§Ã£o de localizaÃ§Ã£o',
-    'Mensagem pÃ³s-visita',
+    'Mensagem para objeção de preço',
+    'Mensagem para objeção de localização',
+    'Mensagem pós-visita',
     'Mensagem para cliente que sumiu'
   ];
 
@@ -86,7 +86,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
               className="text-sm font-semibold" 
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
             >
-              AUTOMAÃ‡ÃƒO INTELIGENTE
+              AUTOMAÇÃO INTELIGENTE
             </span>
           </div>
           
@@ -94,13 +94,13 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
           >
-            Assistente de IA â€“ Follow-up AutomÃ¡tico
+            Assistente de IA – Follow-up Automático
           </h1>
           <p 
             className="text-xl"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            Converse com a IA para gerar follow-ups, lidar com objeÃ§Ãµes e automatizar suas interaÃ§Ãµes com o cliente.
+            Converse com a IA para gerar follow-ups, lidar com objeções e automatizar suas interações com o cliente.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
                     }`}
                     style={{
                       backgroundColor: msg.tipo === 'corretor' ? 'var(--brand-dark-secondary)' : 'rgba(var(--color-e3a93c-rgb), 0.125)',
-                      borderWidth: '2px',
+                      borderWidth: "var(--border-md)",
                       borderColor: msg.tipo === 'corretor' ? 'var(--brand-dark-secondary)' : 'var(--brand-primary)'
                     }}
                   >
@@ -173,12 +173,12 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
                 type="text"
                 value={mensagem}
                 onChange={(e) => setMensagem(e.target.value)}
-                placeholder="Digite sua pergunta para a IAâ€¦"
+                placeholder="Digite sua pergunta para a IA…"
                 className="flex-1 px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -213,7 +213,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
                 className="text-2xl font-bold mb-6"
                 style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
               >
-                SugestÃµes RÃ¡pidas da IA
+                Sugestões Rápidas da IA
               </h2>
 
               <div className="space-y-3">
@@ -225,7 +225,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
                       fontFamily: 'Montserrat, sans-serif',
                       backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)',
                       color: 'var(--brand-primary)',
-                      borderWidth: '2px',
+                      borderWidth: "var(--border-md)",
                       borderColor: 'var(--brand-primary)'
                     }}
                     onMouseEnter={(e) => {
@@ -252,14 +252,14 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
                 className="text-2xl font-bold mb-4"
                 style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
               >
-                AutomaÃ§Ã£o Inteligente Sugerida
+                Automação Inteligente Sugerida
               </h2>
 
               <div 
                 className="p-6 rounded-xl mb-6"
                 style={{ 
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderLeft: '4px solid var(--color-e3a93c)'
+                  borderLeft: "var(--border-thick) solid var(--color-e3a93c)'
                 }}
               >
                 <p 
@@ -270,7 +270,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
                   }}
                 >
                   Recomendo criar uma tarefa de follow-up em 48h.
-                  JÃ¡ preparei um modelo de mensagem pronto para envio.
+                  Já preparei um modelo de mensagem pronto para envio.
                 </p>
               </div>
 
@@ -299,7 +299,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -309,7 +309,7 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
               e.currentTarget.style.backgroundColor = 'transparent';
             }}
           >
-            â† Voltar ao Dashboard
+            ← Voltar ao Dashboard
           </Link>
         </div>
 
@@ -319,12 +319,13 @@ Essa abordagem Ã© eficaz porque mantÃ©m o relacionamento profissional e demo
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-777777)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Follow-ups gerados por IA.
+            © 2025 HUB Imobiliário Inteligente — Follow-ups gerados por IA.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

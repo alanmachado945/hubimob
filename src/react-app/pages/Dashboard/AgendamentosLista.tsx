@@ -8,8 +8,8 @@ interface Agendamento {
   dataHora: string;
   comprador: string;
   imovel: string;
-  tipo: 'Visita' | 'LigaÃ§Ã£o' | 'ReuniÃ£o' | 'Follow-up';
-  status: 'PrÃ³ximo' | 'ConcluÃ­do' | 'Cancelado';
+  tipo: 'Visita' | 'Ligação' | 'Reunião' | 'Follow-up';
+  status: 'Próximo' | 'Concluído' | 'Cancelado';
 }
 
 export default function AgendamentosListaPage() {
@@ -29,79 +29,79 @@ export default function AgendamentosListaPage() {
   const agendamentos: Agendamento[] = [
     {
       id: 1,
-      dataHora: '22/11/2025 Ã s 10:00',
+      dataHora: '22/11/2025 às 10:00',
       comprador: 'Ana Lima',
-      imovel: 'Apartamento Vista Mar - IcaraÃ­',
+      imovel: 'Apartamento Vista Mar - Icaraí',
       tipo: 'Visita',
-      status: 'PrÃ³ximo',
+      status: 'Próximo',
     },
     {
       id: 2,
-      dataHora: '22/11/2025 Ã s 14:30',
+      dataHora: '22/11/2025 às 14:30',
       comprador: 'Pedro Souza',
       imovel: 'Cobertura Duplex - Charitas',
       tipo: 'Visita',
-      status: 'PrÃ³ximo',
+      status: 'Próximo',
     },
     {
       id: 3,
-      dataHora: '22/11/2025 Ã s 16:00',
+      dataHora: '22/11/2025 às 16:00',
       comprador: 'Carla e Bruno',
-      imovel: 'Casa Alto PadrÃ£o - Pendotiba',
-      tipo: 'ReuniÃ£o',
-      status: 'PrÃ³ximo',
+      imovel: 'Casa Alto Padrão - Pendotiba',
+      tipo: 'Reunião',
+      status: 'Próximo',
     },
     {
       id: 4,
-      dataHora: '23/11/2025 Ã s 09:00',
+      dataHora: '23/11/2025 às 09:00',
       comprador: 'Roberto Silva',
       imovel: 'Studio Moderno - Centro',
-      tipo: 'LigaÃ§Ã£o',
-      status: 'PrÃ³ximo',
+      tipo: 'Ligação',
+      status: 'Próximo',
     },
     {
       id: 5,
-      dataHora: '23/11/2025 Ã s 11:30',
+      dataHora: '23/11/2025 às 11:30',
       comprador: 'Juliana Costa',
-      imovel: 'Apartamento 3 Quartos - IngÃ¡',
+      imovel: 'Apartamento 3 Quartos - Ingá',
       tipo: 'Visita',
-      status: 'PrÃ³ximo',
+      status: 'Próximo',
     },
     {
       id: 6,
-      dataHora: '23/11/2025 Ã s 15:00',
+      dataHora: '23/11/2025 às 15:00',
       comprador: 'Marcos Paulo',
-      imovel: 'Loft ContemporÃ¢neo - SÃ£o Francisco',
+      imovel: 'Loft Contemporâneo - São Francisco',
       tipo: 'Follow-up',
-      status: 'PrÃ³ximo',
+      status: 'Próximo',
     },
     {
       id: 7,
-      dataHora: '20/11/2025 Ã s 10:00',
+      dataHora: '20/11/2025 às 10:00',
       comprador: 'Fernanda Martins',
-      imovel: 'Apartamento Frente Mar - IcaraÃ­',
+      imovel: 'Apartamento Frente Mar - Icaraí',
       tipo: 'Visita',
-      status: 'ConcluÃ­do',
+      status: 'Concluído',
     },
     {
       id: 8,
-      dataHora: '20/11/2025 Ã s 16:00',
+      dataHora: '20/11/2025 às 16:00',
       comprador: 'Carlos Eduardo',
       imovel: 'Casa Camboinhas Frente Lagoa',
-      tipo: 'ReuniÃ£o',
-      status: 'ConcluÃ­do',
+      tipo: 'Reunião',
+      status: 'Concluído',
     },
     {
       id: 9,
-      dataHora: '19/11/2025 Ã s 15:00',
+      dataHora: '19/11/2025 às 15:00',
       comprador: 'Paula Ferreira',
       imovel: 'Studio Moderno - Centro',
       tipo: 'Follow-up',
-      status: 'ConcluÃ­do',
+      status: 'Concluído',
     },
     {
       id: 10,
-      dataHora: '18/11/2025 Ã s 09:30',
+      dataHora: '18/11/2025 às 09:30',
       comprador: 'Rafaela Gomes',
       imovel: 'Cobertura Duplex - Charitas',
       tipo: 'Visita',
@@ -145,7 +145,7 @@ export default function AgendamentosListaPage() {
             color: 'var(--brand-text-gray)',
           }}
         >
-          Veja todos os seus agendamentos, visitas, reuniÃµes e follow-ups.
+          Veja todos os seus agendamentos, visitas, reuniões e follow-ups.
         </p>
 
         {/* Filtros */}
@@ -175,14 +175,14 @@ export default function AgendamentosListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
               >
                 <option>Todos</option>
-                <option>PrÃ³ximo</option>
-                <option>ConcluÃ­do</option>
+                <option>Próximo</option>
+                <option>Concluído</option>
                 <option>Cancelado</option>
               </select>
             </div>
@@ -205,20 +205,20 @@ export default function AgendamentosListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
               >
                 <option>Todos</option>
                 <option>Visita</option>
-                <option>LigaÃ§Ã£o</option>
-                <option>ReuniÃ£o</option>
+                <option>Ligação</option>
+                <option>Reunião</option>
                 <option>Follow-up</option>
               </select>
             </div>
 
-            {/* Filtro ImÃ³vel */}
+            {/* Filtro Imóvel */}
             <div>
               <label
                 className="block text-sm font-semibold mb-2"
@@ -227,7 +227,7 @@ export default function AgendamentosListaPage() {
                   color: 'var(--brand-primary)',
                 }}
               >
-                ImÃ³vel
+                Imóvel
               </label>
               <select
                 value={imovelFilter}
@@ -236,18 +236,18 @@ export default function AgendamentosListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
               >
                 <option>Todos</option>
-                <option>IcaraÃ­</option>
+                <option>Icaraí</option>
                 <option>Charitas</option>
                 <option>Centro</option>
-                <option>IngÃ¡</option>
+                <option>Ingá</option>
                 <option>Pendotiba</option>
-                <option>SÃ£o Francisco</option>
+                <option>São Francisco</option>
               </select>
             </div>
 
@@ -269,14 +269,14 @@ export default function AgendamentosListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
               >
                 <option>Todos</option>
                 <option>Hoje</option>
-                <option>AmanhÃ£</option>
+                <option>Amanhã</option>
                 <option>Esta Semana</option>
               </select>
             </div>
@@ -312,9 +312,9 @@ export default function AgendamentosListaPage() {
                   className="px-4 py-2 rounded-full text-sm font-semibold"
                   style={{
                     backgroundColor:
-                      agendamento.status === 'PrÃ³ximo'
+                      agendamento.status === 'Próximo'
                         ? 'var(--color-info)'
-                        : agendamento.status === 'ConcluÃ­do'
+                        : agendamento.status === 'Concluído'
                         ? 'var(--color-success)'
                         : 'var(--color-error)',
                     fontFamily: 'Montserrat, sans-serif',
@@ -351,9 +351,9 @@ export default function AgendamentosListaPage() {
                 </p>
               </div>
 
-              {/* AÃ§Ãµes */}
+              {/* Ações */}
               <div className="flex items-center gap-4 mt-6">
-                {/* BOTÃƒO VER â€” AQUI FOI CORRIGIDO */}
+                {/* BOTÃO VER — AQUI FOI CORRIGIDO */}
                 <Link
                   to={`/agenda-detalhe/${agendamento.id}`}
                   className="flex items-center justify-center gap-2 py-2 px-4 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105"
@@ -361,7 +361,7 @@ export default function AgendamentosListaPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)',
                   }}
                   onMouseEnter={(e) => {
@@ -414,12 +414,13 @@ export default function AgendamentosListaPage() {
               color: 'var(--color-7a7a7a)',
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Agenda Inteligente do Corretor.
+            © 2025 HUB Imobiliário Inteligente — Agenda Inteligente do Corretor.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

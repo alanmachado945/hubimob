@@ -1,29 +1,29 @@
-﻿import { UserPlus, Cpu, Filter, Handshake } from 'lucide-react';
+import { UserPlus, Cpu, Filter, Handshake } from 'lucide-react';
 
 const steps = [
   {
     number: '01',
     icon: UserPlus,
-    title: 'Cadastro RÃ¡pido',
+    title: 'Cadastro Rápido',
     description: 'Crie sua conta e configure seu perfil profissional em minutos.'
   },
   {
     number: '02',
     icon: Cpu,
-    title: 'IA Trabalha Por VocÃª',
-    description: 'Nossa IA analisa leads 24/7 e identifica intenÃ§Ã£o real de compra.'
+    title: 'IA Trabalha Por Você',
+    description: 'Nossa IA analisa leads 24/7 e identifica intenção real de compra.'
   },
   {
     number: '03',
     icon: Filter,
     title: 'Leads Filtrados',
-    description: 'Receba apenas compradores qualificados e prontos para avanÃ§ar.'
+    description: 'Receba apenas compradores qualificados e prontos para avançar.'
   },
   {
     number: '04',
     icon: Handshake,
-    title: 'Fechamento RÃ¡pido',
-    description: 'Com clientes prontos para negociar, vocÃª elimina objeÃ§Ãµes e fecha mais negÃ³cios.'
+    title: 'Fechamento Rápido',
+    description: 'Com clientes prontos para negociar, você elimina objeções e fecha mais negócios.'
   }
 ];
 
@@ -52,7 +52,7 @@ export default function HowItWorks() {
             className="text-xl"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.667)' }}
           >
-            4 passos para revolucionar sua forma de vender imÃ³veis
+            4 passos para revolucionar sua forma de vender imóveis
           </p>
 
         </div>

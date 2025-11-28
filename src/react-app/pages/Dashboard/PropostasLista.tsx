@@ -8,7 +8,7 @@ interface Proposta {
   imovel: string;
   valor: string;
   data: string;
-  status: 'Enviada' | 'Em NegociaÃ§Ã£o' | 'Aprovada' | 'Rejeitada';
+  status: 'Enviada' | 'Em Negociação' | 'Aprovada' | 'Rejeitada';
 }
 
 export default function PropostasListaPage() {
@@ -25,16 +25,16 @@ export default function PropostasListaPage() {
   }, []);
 
   const propostas: Proposta[] = [
-    { id: 1, comprador: 'Ana Lima', imovel: 'Apartamento Vista Mar - IcaraÃ­', valor: 'R$ 740.000', data: '20/11/2025', status: 'Em NegociaÃ§Ã£o' },
+    { id: 1, comprador: 'Ana Lima', imovel: 'Apartamento Vista Mar - Icaraí', valor: 'R$ 740.000', data: '20/11/2025', status: 'Em Negociação' },
     { id: 2, comprador: 'Pedro Souza', imovel: 'Cobertura Duplex - Charitas', valor: 'R$ 2.050.000', data: '19/11/2025', status: 'Enviada' },
-    { id: 3, comprador: 'Carla e Bruno', imovel: 'Casa Alto PadrÃ£o - Pendotiba', valor: 'R$ 1.820.000', data: '18/11/2025', status: 'Aprovada' },
-    { id: 4, comprador: 'Roberto Silva', imovel: 'Studio Moderno - Centro', valor: 'R$ 410.000', data: '17/11/2025', status: 'Em NegociaÃ§Ã£o' },
-    { id: 5, comprador: 'Juliana Costa', imovel: 'Apartamento 3 Quartos - IngÃ¡', valor: 'R$ 870.000', data: '16/11/2025', status: 'Enviada' },
-    { id: 6, comprador: 'Marcos Paulo', imovel: 'Loft ContemporÃ¢neo - SÃ£o Francisco', valor: 'R$ 635.000', data: '15/11/2025', status: 'Rejeitada' },
-    { id: 7, comprador: 'Fernanda Martins', imovel: 'Apartamento Frente Mar - IcaraÃ­', valor: 'R$ 1.420.000', data: '14/11/2025', status: 'Aprovada' },
-    { id: 8, comprador: 'Lucas Oliveira', imovel: 'Casa em CondomÃ­nio - Piratininga', valor: 'R$ 1.180.000', data: '13/11/2025', status: 'Em NegociaÃ§Ã£o' },
+    { id: 3, comprador: 'Carla e Bruno', imovel: 'Casa Alto Padrão - Pendotiba', valor: 'R$ 1.820.000', data: '18/11/2025', status: 'Aprovada' },
+    { id: 4, comprador: 'Roberto Silva', imovel: 'Studio Moderno - Centro', valor: 'R$ 410.000', data: '17/11/2025', status: 'Em Negociação' },
+    { id: 5, comprador: 'Juliana Costa', imovel: 'Apartamento 3 Quartos - Ingá', valor: 'R$ 870.000', data: '16/11/2025', status: 'Enviada' },
+    { id: 6, comprador: 'Marcos Paulo', imovel: 'Loft Contemporâneo - São Francisco', valor: 'R$ 635.000', data: '15/11/2025', status: 'Rejeitada' },
+    { id: 7, comprador: 'Fernanda Martins', imovel: 'Apartamento Frente Mar - Icaraí', valor: 'R$ 1.420.000', data: '14/11/2025', status: 'Aprovada' },
+    { id: 8, comprador: 'Lucas Oliveira', imovel: 'Casa em Condomínio - Piratininga', valor: 'R$ 1.180.000', data: '13/11/2025', status: 'Em Negociação' },
     { id: 9, comprador: 'Patricia Alves', imovel: 'Apartamento Compacto - Boa Viagem', valor: 'R$ 365.000', data: '12/11/2025', status: 'Enviada' },
-    { id: 10, comprador: 'Rafael Santos', imovel: 'Cobertura Jardim OceÃ¢nico', valor: 'R$ 3.150.000', data: '11/11/2025', status: 'Em NegociaÃ§Ã£o' },
+    { id: 10, comprador: 'Rafael Santos', imovel: 'Cobertura Jardim Oceânico', valor: 'R$ 3.150.000', data: '11/11/2025', status: 'Em Negociação' },
     { id: 11, comprador: 'Beatriz Lima', imovel: 'Apartamento Santa Rosa', valor: 'R$ 710.000', data: '10/11/2025', status: 'Aprovada' },
     { id: 12, comprador: 'Gabriel Rocha', imovel: 'Casa Camboinhas Frente Lagoa', valor: 'R$ 2.450.000', data: '09/11/2025', status: 'Enviada' }
   ];
@@ -43,7 +43,7 @@ export default function PropostasListaPage() {
     switch (status) {
       case 'Enviada':
         return { bg: 'var(--color-info)', text: 'var(--brand-light)' };
-      case 'Em NegociaÃ§Ã£o':
+      case 'Em Negociação':
         return { bg: 'var(--color-warning)', text: 'var(--brand-light)' };
       case 'Aprovada':
         return { bg: 'var(--color-success)', text: 'var(--brand-light)' };
@@ -89,23 +89,23 @@ export default function PropostasListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
                 <option>Enviada</option>
-                <option>Em NegociaÃ§Ã£o</option>
+                <option>Em Negociação</option>
                 <option>Aprovada</option>
                 <option>Rejeitada</option>
               </select>
             </div>
 
-            {/* Faixa de PreÃ§o Filter */}
+            {/* Faixa de Preço Filter */}
             <div>
               <label className="block text-sm font-semibold mb-2" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}>
-                Faixa de PreÃ§o
+                Faixa de Preço
               </label>
               <select
                 value={precoFilter}
@@ -114,16 +114,16 @@ export default function PropostasListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>AtÃ© R$ 500 mil</option>
-                <option>R$ 500 mil - R$ 1 milhÃ£o</option>
-                <option>R$ 1 milhÃ£o - R$ 2 milhÃµes</option>
-                <option>Acima de R$ 2 milhÃµes</option>
+                <option>Até R$ 500 mil</option>
+                <option>R$ 500 mil - R$ 1 milhão</option>
+                <option>R$ 1 milhão - R$ 2 milhões</option>
+                <option>Acima de R$ 2 milhões</option>
               </select>
             </div>
 
@@ -139,22 +139,22 @@ export default function PropostasListaPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>Ãšltima semana</option>
-                <option>Ãšltimo mÃªs</option>
-                <option>Ãšltimos 3 meses</option>
-                <option>Ãšltimos 6 meses</option>
+                <option>Última semana</option>
+                <option>Último mês</option>
+                <option>Últimos 3 meses</option>
+                <option>Últimos 6 meses</option>
               </select>
             </div>
           </div>
         </div>
 
-        {/* ðŸ”¥ BotÃ£o Gerar Proposta */}
+        {/* 🔥 Botão Gerar Proposta */}
         <div className="flex justify-end mb-8">
           <Link
             to="/proposta/:id"
@@ -163,7 +163,7 @@ export default function PropostasListaPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'var(--brand-primary)',
               color: 'var(--brand-dark)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -214,7 +214,7 @@ export default function PropostasListaPage() {
                   {proposta.comprador}
                 </h3>
 
-                {/* ImÃ³vel */}
+                {/* Imóvel */}
                 <p className="text-sm mb-4" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
                   {proposta.imovel}
                 </p>
@@ -226,7 +226,7 @@ export default function PropostasListaPage() {
 
                 {/* Data */}
                 <p className="text-sm mb-6" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                  ðŸ“… {proposta.data}
+                  📅 {proposta.data}
                 </p>
 
                 {/* Ver Detalhes Button */}
@@ -237,7 +237,7 @@ export default function PropostasListaPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)'
                   }}
                   onMouseEnter={(e) => {
@@ -260,13 +260,14 @@ export default function PropostasListaPage() {
         {/* Footer */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'var(--brand-primary)33' }}>
           <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}>
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” GestÃ£o de Propostas.
+            © 2025 HUB Imobiliário Inteligente — Gestão de Propostas.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 
 

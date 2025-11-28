@@ -17,17 +17,17 @@ export default function ImobiliariasPage() {
   }, []);
 
   const imobiliarias = [
-    { nome: 'ImobiliÃ¡ria Premium Rio', cidade: 'Rio de Janeiro', bairro: 'Copacabana', imoveisAtivos: 145, corretores: 23, dataParceria: '15/03/2024', badge: 'Premium' },
-    { nome: 'Elite ImÃ³veis NiterÃ³i', cidade: 'NiterÃ³i', bairro: 'IcaraÃ­', imoveisAtivos: 98, corretores: 15, dataParceria: '22/04/2024', badge: 'Parceira' },
-    { nome: 'Luxury Real Estate SP', cidade: 'SÃ£o Paulo', bairro: 'Jardins', imoveisAtivos: 267, corretores: 42, dataParceria: '10/01/2024', badge: 'Premium' },
-    { nome: 'Costa Verde ImÃ³veis', cidade: 'BÃºzios', bairro: 'Centro', imoveisAtivos: 76, corretores: 12, dataParceria: '05/06/2024', badge: 'Nova' },
-    { nome: 'ImobiliÃ¡ria Lagoa Azul', cidade: 'Rio de Janeiro', bairro: 'Lagoa', imoveisAtivos: 189, corretores: 28, dataParceria: '18/02/2024', badge: 'Premium' },
-    { nome: 'Paraty Properties', cidade: 'Paraty', bairro: 'Centro HistÃ³rico', imoveisAtivos: 54, corretores: 8, dataParceria: '12/05/2024', badge: 'Parceira' },
-    { nome: 'Recife ImÃ³veis Premium', cidade: 'Recife', bairro: 'Boa Viagem', imoveisAtivos: 132, corretores: 19, dataParceria: '28/03/2024', badge: 'Parceira' },
-    { nome: 'Serra ImobiliÃ¡ria', cidade: 'TeresÃ³polis', bairro: 'Alto', imoveisAtivos: 43, corretores: 7, dataParceria: '01/07/2024', badge: 'Nova' },
-    { nome: 'Barra Premium ImÃ³veis', cidade: 'Rio de Janeiro', bairro: 'Barra da Tijuca', imoveisAtivos: 221, corretores: 35, dataParceria: '08/02/2024', badge: 'Premium' },
-    { nome: 'Alphaville Real Estate', cidade: 'SÃ£o Paulo', bairro: 'Alphaville', imoveisAtivos: 178, corretores: 26, dataParceria: '14/04/2024', badge: 'Premium' },
-    { nome: 'Pendotiba ImÃ³veis', cidade: 'NiterÃ³i', bairro: 'Pendotiba', imoveisAtivos: 87, corretores: 11, dataParceria: '20/06/2024', badge: 'Nova' },
+    { nome: 'Imobiliária Premium Rio', cidade: 'Rio de Janeiro', bairro: 'Copacabana', imoveisAtivos: 145, corretores: 23, dataParceria: '15/03/2024', badge: 'Premium' },
+    { nome: 'Elite Imóveis Niterói', cidade: 'Niterói', bairro: 'Icaraí', imoveisAtivos: 98, corretores: 15, dataParceria: '22/04/2024', badge: 'Parceira' },
+    { nome: 'Luxury Real Estate SP', cidade: 'São Paulo', bairro: 'Jardins', imoveisAtivos: 267, corretores: 42, dataParceria: '10/01/2024', badge: 'Premium' },
+    { nome: 'Costa Verde Imóveis', cidade: 'Búzios', bairro: 'Centro', imoveisAtivos: 76, corretores: 12, dataParceria: '05/06/2024', badge: 'Nova' },
+    { nome: 'Imobiliária Lagoa Azul', cidade: 'Rio de Janeiro', bairro: 'Lagoa', imoveisAtivos: 189, corretores: 28, dataParceria: '18/02/2024', badge: 'Premium' },
+    { nome: 'Paraty Properties', cidade: 'Paraty', bairro: 'Centro Histórico', imoveisAtivos: 54, corretores: 8, dataParceria: '12/05/2024', badge: 'Parceira' },
+    { nome: 'Recife Imóveis Premium', cidade: 'Recife', bairro: 'Boa Viagem', imoveisAtivos: 132, corretores: 19, dataParceria: '28/03/2024', badge: 'Parceira' },
+    { nome: 'Serra Imobiliária', cidade: 'Teresópolis', bairro: 'Alto', imoveisAtivos: 43, corretores: 7, dataParceria: '01/07/2024', badge: 'Nova' },
+    { nome: 'Barra Premium Imóveis', cidade: 'Rio de Janeiro', bairro: 'Barra da Tijuca', imoveisAtivos: 221, corretores: 35, dataParceria: '08/02/2024', badge: 'Premium' },
+    { nome: 'Alphaville Real Estate', cidade: 'São Paulo', bairro: 'Alphaville', imoveisAtivos: 178, corretores: 26, dataParceria: '14/04/2024', badge: 'Premium' },
+    { nome: 'Pendotiba Imóveis', cidade: 'Niterói', bairro: 'Pendotiba', imoveisAtivos: 87, corretores: 11, dataParceria: '20/06/2024', badge: 'Nova' },
     { nome: 'Ipanema Properties', cidade: 'Rio de Janeiro', bairro: 'Ipanema', imoveisAtivos: 156, corretores: 22, dataParceria: '25/03/2024', badge: 'Parceira' }
   ];
 
@@ -65,7 +65,7 @@ export default function ImobiliariasPage() {
               color: 'var(--brand-primary)'
             }}
           >
-            ImobiliÃ¡rias Parceiras
+            Imobiliárias Parceiras
           </h1>
 
           <p
@@ -75,7 +75,7 @@ export default function ImobiliariasPage() {
               color: 'var(--color-f7f7f7)'
             }}
           >
-            Encontre as melhores imobiliÃ¡rias conectadas ao HUBIMOB.
+            Encontre as melhores imobiliárias conectadas ao HUBIMOB.
           </p>
         </div>
 
@@ -107,19 +107,19 @@ export default function ImobiliariasPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--color-f7f7f7)'
                 }}
               >
                 <option>Todas</option>
                 <option>Rio de Janeiro</option>
-                <option>NiterÃ³i</option>
-                <option>SÃ£o Paulo</option>
-                <option>BÃºzios</option>
+                <option>Niterói</option>
+                <option>São Paulo</option>
+                <option>Búzios</option>
                 <option>Paraty</option>
                 <option>Recife</option>
-                <option>TeresÃ³polis</option>
+                <option>Teresópolis</option>
               </select>
             </div>
 
@@ -141,14 +141,14 @@ export default function ImobiliariasPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--color-f7f7f7)'
                 }}
               >
                 <option>Todos</option>
                 <option>Copacabana</option>
-                <option>IcaraÃ­</option>
+                <option>Icaraí</option>
                 <option>Jardins</option>
                 <option>Centro</option>
                 <option>Lagoa</option>
@@ -166,7 +166,7 @@ export default function ImobiliariasPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Tipo de ImobiliÃ¡ria
+                Tipo de Imobiliária
               </label>
               <select
                 value={tipoFilter}
@@ -175,14 +175,14 @@ export default function ImobiliariasPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--color-f7f7f7)'
                 }}
               >
                 <option>Todos</option>
                 <option>Premium</option>
-                <option>PadrÃ£o</option>
+                <option>Padrão</option>
                 <option>Boutique</option>
               </select>
             </div>
@@ -205,14 +205,14 @@ export default function ImobiliariasPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--color-f7f7f7)'
                 }}
               >
                 <option>Todos</option>
                 <option>Ativa</option>
-                <option>Em AvaliaÃ§Ã£o</option>
+                <option>Em Avaliação</option>
                 <option>Nova</option>
               </select>
             </div>
@@ -261,11 +261,11 @@ export default function ImobiliariasPage() {
                     {imobiliaria.nome}
                   </h3>
 
-                  {/* LocalizaÃ§Ã£o */}
+                  {/* Localização */}
                   <div className="flex items-center gap-2 mb-4">
                     <MapPin className="w-5 h-5" style={{ color: 'var(--brand-primary)' }} />
                     <span style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
-                      {imobiliaria.cidade} â€” {imobiliaria.bairro}
+                      {imobiliaria.cidade} — {imobiliaria.bairro}
                     </span>
                   </div>
 
@@ -276,7 +276,7 @@ export default function ImobiliariasPage() {
                       <div className="flex items-center gap-2 mb-2">
                         <Home className="w-5 h-5" style={{ color: 'var(--brand-primary)' }} />
                         <span className="text-sm font-semibold" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
-                          ImÃ³veis Ativos
+                          Imóveis Ativos
                         </span>
                       </div>
                       <p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}>
@@ -305,7 +305,7 @@ export default function ImobiliariasPage() {
                     </p>
                   </div>
 
-                  {/* BotÃ£o */}
+                  {/* Botão */}
                   <Link
                     to="/imobiliarias/1"
                     className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
@@ -330,7 +330,7 @@ export default function ImobiliariasPage() {
           <div className="flex items-center justify-center gap-3 mb-3">
             <Building2 className="w-6 h-6" style={{ color: 'var(--brand-primary)' }} />
             <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
-              HUBIMOB â€” Conectando Corretores Ã s Melhores ImobiliÃ¡rias do Brasil.
+              HUBIMOB — Conectando Corretores às Melhores Imobiliárias do Brasil.
             </p>
           </div>
         </div>
@@ -339,5 +339,6 @@ export default function ImobiliariasPage() {
     </div>
   );
 }
+
 
 

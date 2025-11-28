@@ -25,9 +25,9 @@ export default function CriarTarefaPage() {
     'Agendar Visita',
     'Envio de Proposta',
     'Envio de Contrato',
-    'LigaÃ§Ã£o',
+    'Ligação',
     'Follow-up Manual',
-    'ReuniÃ£o',
+    'Reunião',
     'Outro'
   ];
 
@@ -45,16 +45,16 @@ export default function CriarTarefaPage() {
   ];
 
   const imoveis = [
-    'Apartamento Vista Mar - IcaraÃ­',
+    'Apartamento Vista Mar - Icaraí',
     'Cobertura Duplex - Charitas',
-    'Casa Alto PadrÃ£o - Pendotiba',
+    'Casa Alto Padrão - Pendotiba',
     'Studio Moderno - Centro',
-    'Apartamento 3 Quartos - IngÃ¡',
-    'Loft ContemporÃ¢neo - SÃ£o Francisco',
-    'Apartamento Frente Mar - IcaraÃ­',
-    'Casa em CondomÃ­nio - Piratininga',
+    'Apartamento 3 Quartos - Ingá',
+    'Loft Contemporâneo - São Francisco',
+    'Apartamento Frente Mar - Icaraí',
+    'Casa em Condomínio - Piratininga',
     'Apartamento Compacto - Boa Viagem',
-    'Cobertura Jardim OceÃ¢nico'
+    'Cobertura Jardim Oceânico'
   ];
 
   const temposLembrete = ['15 min', '1h', '1 dia'];
@@ -63,12 +63,12 @@ export default function CriarTarefaPage() {
     e.preventDefault();
     
     if (!data || !hora || !cliente || !imovel) {
-      alert('Por favor, preencha todos os campos obrigatÃ³rios');
+      alert('Por favor, preencha todos os campos obrigatórios');
       return;
     }
     
     // TODO: Implement actual task creation logic
-    alert('Tarefa adicionada Ã  agenda com sucesso!');
+    alert('Tarefa adicionada à agenda com sucesso!');
     navigate('/agendamentos');
   };
 
@@ -100,7 +100,7 @@ export default function CriarTarefaPage() {
               color: 'var(--brand-text-gray)'
             }}
           >
-            Adicione uma nova tarefa manual Ã  sua agenda inteligente.
+            Adicione uma nova tarefa manual à sua agenda inteligente.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export default function CriarTarefaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
@@ -168,7 +168,7 @@ export default function CriarTarefaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)',
                     color: 'var(--brand-light)'
                   }}
@@ -195,7 +195,7 @@ export default function CriarTarefaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)',
                     color: 'var(--brand-light)'
                   }}
@@ -203,7 +203,7 @@ export default function CriarTarefaPage() {
               </div>
             </div>
 
-            {/* Cliente e ImÃ³vel */}
+            {/* Cliente e Imóvel */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label 
@@ -224,7 +224,7 @@ export default function CriarTarefaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)',
                     color: 'var(--brand-light)'
                   }}
@@ -247,7 +247,7 @@ export default function CriarTarefaPage() {
                   }}
                 >
                   <Home className="w-5 h-5" />
-                  ImÃ³vel *
+                  Imóvel *
                 </label>
                 <select
                   value={imovel}
@@ -257,12 +257,12 @@ export default function CriarTarefaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)',
                     color: 'var(--brand-light)'
                   }}
                 >
-                  <option value="">Selecione um imÃ³vel</option>
+                  <option value="">Selecione um imóvel</option>
                   {imoveis.map((im, index) => (
                     <option key={index} value={im}>
                       {im}
@@ -272,7 +272,7 @@ export default function CriarTarefaPage() {
               </div>
             </div>
 
-            {/* ObservaÃ§Ãµes */}
+            {/* Observações */}
             <div className="mb-6">
               <label 
                 className="flex items-center gap-2 text-sm font-semibold mb-3"
@@ -282,7 +282,7 @@ export default function CriarTarefaPage() {
                 }}
               >
                 <FileText className="w-5 h-5" />
-                ObservaÃ§Ãµes
+                Observações
               </label>
               <textarea
                 value={observacoes}
@@ -293,7 +293,7 @@ export default function CriarTarefaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
@@ -305,7 +305,7 @@ export default function CriarTarefaPage() {
               className="p-6 rounded-xl mb-6"
               style={{ 
                 backgroundColor: 'var(--brand-dark-secondary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
             >
@@ -345,7 +345,7 @@ export default function CriarTarefaPage() {
                       color: 'var(--brand-text-gray)'
                     }}
                   >
-                    Tempo de antecedÃªncia
+                    Tempo de antecedência
                   </label>
                   <div className="grid grid-cols-3 gap-3">
                     {temposLembrete.map((tempo, index) => (
@@ -358,7 +358,7 @@ export default function CriarTarefaPage() {
                           fontFamily: 'Montserrat, sans-serif',
                           backgroundColor: tempoLembrete === tempo ? 'var(--brand-primary)' : 'transparent',
                           color: tempoLembrete === tempo ? 'var(--brand-dark)' : 'var(--brand-primary)',
-                          borderWidth: '2px',
+                          borderWidth: "var(--border-md)",
                           borderColor: 'var(--brand-primary)'
                         }}
                       >
@@ -371,7 +371,7 @@ export default function CriarTarefaPage() {
             </div>
           </div>
 
-          {/* BotÃµes de AÃ§Ã£o */}
+          {/* Botões de Ação */}
           <div className="flex flex-col md:flex-row gap-4">
           <Link to="/AgendaDetalhe"></Link>
             <button
@@ -386,7 +386,7 @@ export default function CriarTarefaPage() {
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
             >
               <Plus className="w-6 h-6" />
-              Adicionar Ã  Agenda
+              Adicionar à Agenda
             </button>
 
             <Link
@@ -405,7 +405,7 @@ export default function CriarTarefaPage() {
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'transparent',
                 color: 'var(--brand-primary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
               onMouseEnter={(e) => {
@@ -429,12 +429,13 @@ export default function CriarTarefaPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” GestÃ£o de Tarefas.
+            © 2025 HUB Imobiliário Inteligente — Gestão de Tarefas.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

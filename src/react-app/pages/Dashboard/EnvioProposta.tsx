@@ -1,13 +1,13 @@
 ﻿import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // âœ”ï¸ CORRIGIDO
+import { Link } from 'react-router-dom'; // ✔️ CORRIGIDO
 import { FileText, Mail, MessageSquare, CheckCircle2, Sparkles, Edit, Eye, ArrowLeft } from 'lucide-react';
 
-export default function EnvioProposta() { // âœ”ï¸ NOME CORRIGIDO
+export default function EnvioProposta() { // ✔️ NOME CORRIGIDO
   const [editandoMensagem, setEditandoMensagem] = useState(false);
-  const [mensagem, setMensagem] = useState(`OlÃ¡, Ana! ðŸ˜Š
-Preparei sua proposta para o apartamento em IcaraÃ­.
-Envio abaixo os detalhes para sua anÃ¡lise.
-Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§Ãµes ou marcar uma nova visita.`);
+  const [mensagem, setMensagem] = useState(`Olá, Ana! 😊
+Preparei sua proposta para o apartamento em Icaraí.
+Envio abaixo os detalhes para sua análise.
+Qualquer dúvida, estou à disposição para ajustar valores, condições ou marcar uma nova visita.`);
   const [propostaEnviada, setPropostaEnviada] = useState(false);
   const [canalSelecionado, setCanalSelecionado] = useState<'whatsapp' | 'email' | null>(null);
 
@@ -19,7 +19,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
   }, []);
 
   const propostaInfo = {
-    imovel: 'Apartamento 3 Quartos â€“ IcaraÃ­',
+    imovel: 'Apartamento 3 Quartos – Icaraí',
     valorProposta: 'R$ 740.000',
     condicoes: 'Entrada 20% + Financiamento',
     prazoValidade: '72 horas',
@@ -28,12 +28,12 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
 
   const registroJuridico = {
     protocolo: '#HUB-2025-3429-AZ',
-    horario: '14:52 â€” 21/02/2025'
+    horario: '14:52 — 21/02/2025'
   };
 
   const timeline = [
     { texto: 'Documento gerado pela IA', concluido: true, icon: Sparkles },
-    { texto: 'Proposta prÃ©-visualizada', concluido: true, icon: Eye },
+    { texto: 'Proposta pré-visualizada', concluido: true, icon: Eye },
     { texto: 'Canal de envio selecionado', concluido: canalSelecionado !== null, icon: MessageSquare },
     { texto: 'Proposta enviada ao comprador', concluido: propostaEnviada, icon: CheckCircle2 }
   ];
@@ -64,7 +64,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
               className="text-sm font-semibold" 
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
             >
-              ETAPA FINAL DA NEGOCIAÃ‡ÃƒO
+              ETAPA FINAL DA NEGOCIAÇÃO
             </span>
           </div>
           
@@ -78,11 +78,11 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
             className="text-xl max-w-4xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            Escolha o canal, envie a proposta ao comprador e registre o evento jurÃ­dico automaticamente.
+            Escolha o canal, envie a proposta ao comprador e registre o evento jurídico automaticamente.
           </p>
         </div>
 
-        {/* SEÃ‡ÃƒO 1 - Resumo da Proposta */}
+        {/* SEÇÃO 1 - Resumo da Proposta */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -100,7 +100,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
                 className="text-sm font-semibold mb-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
               >
-                ImÃ³vel
+                Imóvel
               </p>
               <p 
                 className="text-lg"
@@ -130,7 +130,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
                 className="text-sm font-semibold mb-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
               >
-                CondiÃ§Ãµes
+                Condições
               </p>
               <p 
                 className="text-lg"
@@ -178,7 +178,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -193,7 +193,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
           </button>
         </div>
 
-        {/* SEÃ‡ÃƒO 2 - Mensagem Pronta da IA */}
+        {/* SEÇÃO 2 - Mensagem Pronta da IA */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -207,7 +207,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
 
           <div 
             className="p-6 rounded-xl mb-6"
-            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderWidth: '2px', borderColor: 'var(--brand-primary)' }}
+            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderWidth: "var(--border-md)", borderColor: 'var(--brand-primary)' }}
           >
             {editandoMensagem ? (
               <textarea
@@ -251,7 +251,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
           </button>
         </div>
 
-        {/* SEÃ‡ÃƒO 3 - Escolher Canal de Envio */}
+        {/* SEÇÃO 3 - Escolher Canal de Envio */}
         {!propostaEnviada && (
         <div className="mb-12">
           <h2 
@@ -320,14 +320,14 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
                 className="text-lg"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)', lineHeight: '1.6' }}
               >
-                Enviar PDF da proposta por e-mail com registro automÃ¡tico.
+                Enviar PDF da proposta por e-mail com registro automático.
               </p>
             </button>
           </div>
         </div>
         )}
 
-        {/* SEÃ‡ÃƒO 4 - Registro JurÃ­dico / Auditoria */}
+        {/* SEÇÃO 4 - Registro Jurídico / Auditoria */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -336,12 +336,12 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
             className="text-3xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
-            Registro JurÃ­dico AutomÃ¡tico
+            Registro Jurídico Automático
           </h2>
 
           <div 
             className="p-6 rounded-xl mb-8"
-            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
           >
             <div className="space-y-3">
               <div className="flex items-center gap-3">
@@ -349,7 +349,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
                 <span 
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                 >
-                  AÃ§Ã£o registrada: Proposta enviada ao comprador
+                  Ação registrada: Proposta enviada ao comprador
                 </span>
               </div>
               <div className="flex items-center gap-3">
@@ -365,7 +365,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
                 <span 
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                 >
-                  HorÃ¡rio: {registroJuridico.horario}
+                  Horário: {registroJuridico.horario}
                 </span>
               </div>
             </div>
@@ -376,7 +376,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
             className="text-xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
           >
-            Linha do Tempo JurÃ­dica
+            Linha do Tempo Jurídica
           </h3>
 
           <div className="relative">
@@ -425,7 +425,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 5 - ConfirmaÃ§Ã£o de Envio */}
+        {/* SEÇÃO 5 - Confirmação de Envio */}
         {propostaEnviada && (
         <div 
           className="mb-12 p-8 rounded-2xl border-2 text-center"
@@ -454,7 +454,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
         </div>
         )}
 
-        {/* BotÃµes Finais */}
+        {/* Botões Finais */}
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <Link
             to="/lead-perfil"
@@ -478,7 +478,7 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -492,18 +492,19 @@ Qualquer dÃºvida, estou Ã  disposiÃ§Ã£o para ajustar valores, condiÃ§�
           </Link>
         </div>
 
-        {/* RodapÃ© Premium */}
+        {/* Rodapé Premium */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Registro jurÃ­dico automatizado e rastreÃ¡vel.
+            © 2025 HUB Imobiliário Inteligente — Registro jurídico automatizado e rastreável.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

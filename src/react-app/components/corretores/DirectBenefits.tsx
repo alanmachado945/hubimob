@@ -1,18 +1,18 @@
-﻿import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 const benefits = [
   'Pipeline preenchido com compradores validados',
-  'Zero desperdÃ­cio com leads nÃ£o qualificados',
-  'Acesso exclusivo a imÃ³veis de alto padrÃ£o',
-  'Sistema completo de gestÃ£o e automaÃ§Ã£o',
-  'InteligÃªncia de dados para decisÃµes rÃ¡pidas',
-  'ProteÃ§Ã£o total de dados e conformidade legal'
+  'Zero desperdício com leads não qualificados',
+  'Acesso exclusivo a imóveis de alto padrão',
+  'Sistema completo de gestão e automação',
+  'Inteligência de dados para decisões rápidas',
+  'Proteção total de dados e conformidade legal'
 ];
 
 const stats = [
   { value: '+500', label: 'Corretores Ativos' },
   { value: '+R$180M', label: 'Em Vendas Processadas' },
-  { value: '4.9/5', label: 'AvaliaÃ§Ã£o MÃ©dia' }
+  { value: '4.9/5', label: 'Avaliação Média' }
 ];
 
 export default function DirectBenefits() {
@@ -29,13 +29,13 @@ export default function DirectBenefits() {
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            O Que VocÃª <span className="text-amber-400">Ganha</span> Usando o HUBIMOB
+            O Que Você <span className="text-amber-400">Ganha</span> Usando o HUBIMOB
           </h2>
           <p 
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            BenefÃ­cios tangÃ­veis que transformam sua rotina desde o primeiro dia
+            Benefícios tangíveis que transformam sua rotina desde o primeiro dia
           </p>
         </div>
 

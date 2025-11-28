@@ -1,4 +1,4 @@
-﻿import Navbar from "@/react-app/components/siteimobiliario2/Navbar";
+import Navbar from "@/react-app/components/siteimobiliario2/Navbar";
 import Hero from "@/react-app/components/siteimobiliario2/Hero";
 import Benefits from "@/react-app/components/siteimobiliario2/Benefits";
 import Methodology from "@/react-app/components/siteimobiliario2/Methodology";

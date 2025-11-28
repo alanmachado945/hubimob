@@ -1,28 +1,28 @@
-﻿import { Brain, Target, TrendingUp, Zap } from 'lucide-react';
+import { Brain, Target, TrendingUp, Zap } from 'lucide-react';
 
 const reasons = [
   {
     icon: Brain,
-    title: 'InteligÃªncia Artificial AvanÃ§ada',
-    description: 'Nossa IA analisa comportamento, poder de compra e intenÃ§Ã£o real de cada lead para entregar apenas compradores sÃ©rios.',
+    title: 'Inteligência Artificial Avançada',
+    description: 'Nossa IA analisa comportamento, poder de compra e intenção real de cada lead para entregar apenas compradores sérios.',
     image: 'https://mocha-cdn.com/019aa234-e1c8-7195-be05-5bb41d9898c7/ai-tech.png'
   },
   {
     icon: Target,
     title: 'Leads Ultra Qualificados',
-    description: 'Receba apenas leads prÃ©-avaliados com alto fit para imÃ³veis premium e probabilidade real de fechamento.',
+    description: 'Receba apenas leads pré-avaliados com alto fit para imóveis premium e probabilidade real de fechamento.',
     image: 'https://mocha-cdn.com/019aa234-e1c8-7195-be05-5bb41d9898c7/step-3-leads.png'
   },
   {
     icon: TrendingUp,
-    title: 'PortfÃ³lio Premium Exclusivo',
-    description: 'Acesso a imÃ³veis de alto padrÃ£o e oportunidades exclusivas disponÃ­veis apenas para corretores HUBIMOB.',
+    title: 'Portfólio Premium Exclusivo',
+    description: 'Acesso a imóveis de alto padrão e oportunidades exclusivas disponíveis apenas para corretores HUBIMOB.',
     image: 'https://mocha-cdn.com/019aa234-e1c8-7195-be05-5bb41d9898c7/property-1.png'
   },
   {
     icon: Zap,
-    title: 'Plataforma de Ãšltima GeraÃ§Ã£o',
-    description: 'CRM completo, automaÃ§Ã£o de follow-up, analytics em tempo real e dashboard intuitivo.',
+    title: 'Plataforma de Última Geração',
+    description: 'CRM completo, automação de follow-up, analytics em tempo real e dashboard intuitivo.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop'
   }
 ];

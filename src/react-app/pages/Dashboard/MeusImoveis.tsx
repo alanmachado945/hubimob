@@ -8,7 +8,7 @@ interface Imovel {
   preco: string;
   bairro: string;
   cidade: string;
-  status: 'Ativo' | 'Em negociaÃ§Ã£o' | 'Vendido' | 'IndisponÃ­vel';
+  status: 'Ativo' | 'Em negociação' | 'Vendido' | 'Indisponível';
   tipo: string;
   imagem: string;
   descricaoCurta: string;
@@ -30,179 +30,179 @@ export default function MeusImoveisPage() {
   const imoveis: Imovel[] = [
     {
       id: 1,
-      titulo: 'Apartamento Vista Mar - IcaraÃ­',
+      titulo: 'Apartamento Vista Mar - Icaraí',
       preco: 'R$ 1.250.000',
-      bairro: 'IcaraÃ­',
-      cidade: 'NiterÃ³i',
+      bairro: 'Icaraí',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=800&h=600&fit=crop',
-      descricaoCurta: '3 quartos â€¢ 1 suÃ­te â€¢ 2 vagas'
+      descricaoCurta: '3 quartos • 1 suíte • 2 vagas'
     },
     {
       id: 2,
       titulo: 'Cobertura Duplex - Charitas',
       preco: 'R$ 2.100.000',
       bairro: 'Charitas',
-      cidade: 'NiterÃ³i',
-      status: 'Em negociaÃ§Ã£o',
+      cidade: 'Niterói',
+      status: 'Em negociação',
       tipo: 'Cobertura',
       imagem: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop',
-      descricaoCurta: '4 quartos â€¢ 280mÂ² â€¢ 3 vagas'
+      descricaoCurta: '4 quartos • 280m² • 3 vagas'
     },
     {
       id: 3,
       titulo: 'Studio Moderno - Centro',
       preco: 'R$ 420.000',
       bairro: 'Centro',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Studio',
       imagem: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop',
-      descricaoCurta: '1 quarto â€¢ 45mÂ² â€¢ 1 vaga'
+      descricaoCurta: '1 quarto • 45m² • 1 vaga'
     },
     {
       id: 4,
-      titulo: 'Casa Alto PadrÃ£o - Pendotiba',
+      titulo: 'Casa Alto Padrão - Pendotiba',
       preco: 'R$ 1.850.000',
       bairro: 'Pendotiba',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Vendido',
       tipo: 'Casa',
       imagem: 'https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=800&h=600&fit=crop',
-      descricaoCurta: '5 quartos â€¢ 350mÂ² â€¢ 4 vagas'
+      descricaoCurta: '5 quartos • 350m² • 4 vagas'
     },
     {
       id: 5,
-      titulo: 'Apartamento 3 Quartos - IngÃ¡',
+      titulo: 'Apartamento 3 Quartos - Ingá',
       preco: 'R$ 890.000',
-      bairro: 'IngÃ¡',
-      cidade: 'NiterÃ³i',
+      bairro: 'Ingá',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop',
-      descricaoCurta: '3 quartos â€¢ 98mÂ² â€¢ 1 vaga'
+      descricaoCurta: '3 quartos • 98m² • 1 vaga'
     },
     {
       id: 6,
-      titulo: 'Loft ContemporÃ¢neo - SÃ£o Francisco',
+      titulo: 'Loft Contemporâneo - São Francisco',
       preco: 'R$ 650.000',
-      bairro: 'SÃ£o Francisco',
-      cidade: 'NiterÃ³i',
-      status: 'Em negociaÃ§Ã£o',
+      bairro: 'São Francisco',
+      cidade: 'Niterói',
+      status: 'Em negociação',
       tipo: 'Loft',
       imagem: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop',
-      descricaoCurta: '2 quartos â€¢ 75mÂ² â€¢ 1 vaga'
+      descricaoCurta: '2 quartos • 75m² • 1 vaga'
     },
     {
       id: 7,
-      titulo: 'Apartamento Frente Mar - IcaraÃ­',
+      titulo: 'Apartamento Frente Mar - Icaraí',
       preco: 'R$ 1.450.000',
-      bairro: 'IcaraÃ­',
-      cidade: 'NiterÃ³i',
+      bairro: 'Icaraí',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop',
-      descricaoCurta: '3 quartos â€¢ 135mÂ² â€¢ 2 vagas'
+      descricaoCurta: '3 quartos • 135m² • 2 vagas'
     },
     {
       id: 8,
-      titulo: 'Casa em CondomÃ­nio - Piratininga',
+      titulo: 'Casa em Condomínio - Piratininga',
       preco: 'R$ 1.200.000',
       bairro: 'Piratininga',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Casa',
       imagem: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop',
-      descricaoCurta: '4 quartos â€¢ 220mÂ² â€¢ 3 vagas'
+      descricaoCurta: '4 quartos • 220m² • 3 vagas'
     },
     {
       id: 9,
       titulo: 'Apartamento Compacto - Boa Viagem',
       preco: 'R$ 380.000',
       bairro: 'Boa Viagem',
-      cidade: 'NiterÃ³i',
-      status: 'IndisponÃ­vel',
+      cidade: 'Niterói',
+      status: 'Indisponível',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&h=600&fit=crop',
-      descricaoCurta: '2 quartos â€¢ 60mÂ² â€¢ 1 vaga'
+      descricaoCurta: '2 quartos • 60m² • 1 vaga'
     },
     {
       id: 10,
-      titulo: 'Cobertura Jardim OceÃ¢nico',
+      titulo: 'Cobertura Jardim Oceânico',
       preco: 'R$ 3.200.000',
-      bairro: 'Jardim OceÃ¢nico',
+      bairro: 'Jardim Oceânico',
       cidade: 'Barra da Tijuca',
-      status: 'Em negociaÃ§Ã£o',
+      status: 'Em negociação',
       tipo: 'Cobertura',
       imagem: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop',
-      descricaoCurta: '4 quartos â€¢ 320mÂ² â€¢ 4 vagas'
+      descricaoCurta: '4 quartos • 320m² • 4 vagas'
     },
     {
       id: 11,
       titulo: 'Apartamento Santa Rosa',
       preco: 'R$ 720.000',
       bairro: 'Santa Rosa',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
-      descricaoCurta: '3 quartos â€¢ 95mÂ² â€¢ 2 vagas'
+      descricaoCurta: '3 quartos • 95m² • 2 vagas'
     },
     {
       id: 12,
       titulo: 'Casa Camboinhas Frente Lagoa',
       preco: 'R$ 2.500.000',
       bairro: 'Camboinhas',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Casa',
       imagem: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop',
-      descricaoCurta: '5 quartos â€¢ 400mÂ² â€¢ 5 vagas'
+      descricaoCurta: '5 quartos • 400m² • 5 vagas'
     },
     {
       id: 13,
       titulo: 'Apartamento Fonseca',
       preco: 'R$ 520.000',
       bairro: 'Fonseca',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Vendido',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop',
-      descricaoCurta: '2 quartos â€¢ 70mÂ² â€¢ 1 vaga'
+      descricaoCurta: '2 quartos • 70m² • 1 vaga'
     },
     {
       id: 14,
       titulo: 'Duplex Itaipu',
       preco: 'R$ 980.000',
       bairro: 'Itaipu',
-      cidade: 'NiterÃ³i',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Duplex',
       imagem: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop',
-      descricaoCurta: '3 quartos â€¢ 150mÂ² â€¢ 2 vagas'
+      descricaoCurta: '3 quartos • 150m² • 2 vagas'
     },
     {
       id: 15,
-      titulo: 'Apartamento Vista BaÃ­a - SÃ£o Domingos',
+      titulo: 'Apartamento Vista Baía - São Domingos',
       preco: 'R$ 1.100.000',
-      bairro: 'SÃ£o Domingos',
-      cidade: 'NiterÃ³i',
-      status: 'Em negociaÃ§Ã£o',
+      bairro: 'São Domingos',
+      cidade: 'Niterói',
+      status: 'Em negociação',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&h=600&fit=crop',
-      descricaoCurta: '3 quartos â€¢ 110mÂ² â€¢ 2 vagas'
+      descricaoCurta: '3 quartos • 110m² • 2 vagas'
     },
     {
       id: 16,
-      titulo: 'Casa Jardim IcaraÃ­',
+      titulo: 'Casa Jardim Icaraí',
       preco: 'R$ 1.650.000',
-      bairro: 'IcaraÃ­',
-      cidade: 'NiterÃ³i',
+      bairro: 'Icaraí',
+      cidade: 'Niterói',
       status: 'Ativo',
       tipo: 'Casa',
       imagem: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop',
-      descricaoCurta: '4 quartos â€¢ 250mÂ² â€¢ 3 vagas'
+      descricaoCurta: '4 quartos • 250m² • 3 vagas'
     },
     {
       id: 17,
@@ -213,29 +213,29 @@ export default function MeusImoveisPage() {
       status: 'Ativo',
       tipo: 'Cobertura',
       imagem: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&h=600&fit=crop',
-      descricaoCurta: '5 quartos â€¢ 450mÂ² â€¢ 6 vagas'
+      descricaoCurta: '5 quartos • 450m² • 6 vagas'
     },
     {
       id: 18,
       titulo: 'Apartamento Moderno - Centro',
       preco: 'R$ 540.000',
       bairro: 'Centro',
-      cidade: 'NiterÃ³i',
-      status: 'IndisponÃ­vel',
+      cidade: 'Niterói',
+      status: 'Indisponível',
       tipo: 'Apartamento',
       imagem: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop',
-      descricaoCurta: '2 quartos â€¢ 68mÂ² â€¢ 1 vaga'
+      descricaoCurta: '2 quartos • 68m² • 1 vaga'
     },
     {
       id: 19,
-      titulo: 'Casa de Praia - MaricÃ¡',
+      titulo: 'Casa de Praia - Maricá',
       preco: 'R$ 950.000',
-      bairro: 'ItaipuaÃ§u',
-      cidade: 'MaricÃ¡',
+      bairro: 'Itaipuaçu',
+      cidade: 'Maricá',
       status: 'Ativo',
       tipo: 'Casa',
       imagem: 'https://images.unsplash.com/photo-1499916078039-922301b0eb9b?w=800&h=600&fit=crop',
-      descricaoCurta: '4 quartos â€¢ 180mÂ² â€¢ 2 vagas'
+      descricaoCurta: '4 quartos • 180m² • 2 vagas'
     },
     {
       id: 20,
@@ -246,7 +246,7 @@ export default function MeusImoveisPage() {
       status: 'Vendido',
       tipo: 'Cobertura',
       imagem: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&h=600&fit=crop',
-      descricaoCurta: '4 quartos â€¢ 380mÂ² â€¢ 5 vagas'
+      descricaoCurta: '4 quartos • 380m² • 5 vagas'
     }
   ];
 
@@ -254,11 +254,11 @@ export default function MeusImoveisPage() {
     switch (status) {
       case 'Ativo':
         return { bg: 'var(--color-success)', text: 'var(--brand-light)' };
-      case 'Em negociaÃ§Ã£o':
+      case 'Em negociação':
         return { bg: 'var(--color-warning)', text: 'var(--brand-light)' };
       case 'Vendido':
         return { bg: 'var(--color-purple)', text: 'var(--brand-light)' };
-      case 'IndisponÃ­vel':
+      case 'Indisponível':
         return { bg: 'var(--color-error)', text: 'var(--brand-light)' };
       default:
         return { bg: 'var(--brand-text-gray)', text: 'var(--brand-light)' };
@@ -284,7 +284,7 @@ export default function MeusImoveisPage() {
               color: 'var(--brand-primary)'
             }}
           >
-            Meus ImÃ³veis
+            Meus Imóveis
           </h1>
           <p 
             className="text-xl"
@@ -293,7 +293,7 @@ export default function MeusImoveisPage() {
               color: 'var(--brand-text-gray)'
             }}
           >
-            Gerencie todos os imÃ³veis cadastrados no HUB.
+            Gerencie todos os imóveis cadastrados no HUB.
           </p>
         </div>
 
@@ -315,7 +315,7 @@ export default function MeusImoveisPage() {
             }}
           >
             <Plus className="w-6 h-6" />
-            Cadastrar ImÃ³vel
+            Cadastrar Imóvel
           </Link>
         </div>
 
@@ -346,20 +346,20 @@ export default function MeusImoveisPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
                 <option>Ativo</option>
-                <option>Em negociaÃ§Ã£o</option>
+                <option>Em negociação</option>
                 <option>Vendido</option>
-                <option>IndisponÃ­vel</option>
+                <option>Indisponível</option>
               </select>
             </div>
 
-            {/* Tipo de ImÃ³vel Filter */}
+            {/* Tipo de Imóvel Filter */}
             <div>
               <label 
                 className="block text-sm font-semibold mb-2"
@@ -368,7 +368,7 @@ export default function MeusImoveisPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Tipo de ImÃ³vel
+                Tipo de Imóvel
               </label>
               <select
                 value={tipoFilter}
@@ -377,7 +377,7 @@ export default function MeusImoveisPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
@@ -410,24 +410,24 @@ export default function MeusImoveisPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>IcaraÃ­</option>
+                <option>Icaraí</option>
                 <option>Charitas</option>
                 <option>Centro</option>
-                <option>IngÃ¡</option>
+                <option>Ingá</option>
                 <option>Pendotiba</option>
-                <option>SÃ£o Francisco</option>
+                <option>São Francisco</option>
                 <option>Piratininga</option>
                 <option>Camboinhas</option>
               </select>
             </div>
 
-            {/* Faixa de PreÃ§o Filter */}
+            {/* Faixa de Preço Filter */}
             <div>
               <label 
                 className="block text-sm font-semibold mb-2"
@@ -436,7 +436,7 @@ export default function MeusImoveisPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Faixa de PreÃ§o
+                Faixa de Preço
               </label>
               <select
                 value={precoFilter}
@@ -445,16 +445,16 @@ export default function MeusImoveisPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>AtÃ© R$ 500 mil</option>
-                <option>R$ 500 mil - R$ 1 milhÃ£o</option>
-                <option>R$ 1 milhÃ£o - R$ 2 milhÃµes</option>
-                <option>Acima de R$ 2 milhÃµes</option>
+                <option>Até R$ 500 mil</option>
+                <option>R$ 500 mil - R$ 1 milhão</option>
+                <option>R$ 1 milhão - R$ 2 milhões</option>
+                <option>Acima de R$ 2 milhões</option>
               </select>
             </div>
           </div>
@@ -523,7 +523,7 @@ export default function MeusImoveisPage() {
                       color: 'var(--brand-text-gray)'
                     }}
                   >
-                    ðŸ“ {imovel.bairro}, {imovel.cidade}
+                    📍 {imovel.bairro}, {imovel.cidade}
                   </p>
 
                   <p 
@@ -545,7 +545,7 @@ export default function MeusImoveisPage() {
                         fontFamily: 'Montserrat, sans-serif',
                         backgroundColor: 'var(--brand-dark-secondary)',
                         color: 'var(--brand-primary)',
-                        borderWidth: '2px',
+                        borderWidth: "var(--border-md)",
                         borderColor: 'var(--brand-primary)'
                       }}
                       onMouseEnter={(e) => {
@@ -591,12 +591,13 @@ export default function MeusImoveisPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” GestÃ£o de ImÃ³veis.
+            © 2025 HUB Imobiliário Inteligente — Gestão de Imóveis.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

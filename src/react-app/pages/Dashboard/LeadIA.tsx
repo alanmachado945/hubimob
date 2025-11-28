@@ -25,21 +25,21 @@ export default function LeadIAPage() {
 
   const imoveis = [
     {
-      titulo: 'Apartamento 3 Quartos â€“ IcaraÃ­',
+      titulo: 'Apartamento 3 Quartos – Icaraí',
       preco: 'R$ 720.000',
-      detalhes: '120mÂ², 3 quartos, 1 vaga, vista parcial mar',
+      detalhes: '120m², 3 quartos, 1 vaga, vista parcial mar',
       imagem: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800'
     },
     {
-      titulo: 'Apartamento Moderno â€“ PrÃ©dio Novo',
+      titulo: 'Apartamento Moderno – Prédio Novo',
       preco: 'R$ 760.000',
-      detalhes: '98mÂ², prÃ©dio novo, lazer completo',
+      detalhes: '98m², prédio novo, lazer completo',
       imagem: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800'
     },
     {
-      titulo: 'Cobertura Duplex â€“ Ãrea Gourmet',
+      titulo: 'Cobertura Duplex – Área Gourmet',
       preco: 'R$ 780.000',
-      detalhes: 'Cobertura duplex, Ã¡rea gourmet premium',
+      detalhes: 'Cobertura duplex, área gourmet premium',
       imagem: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800'
     }
   ];
@@ -59,7 +59,7 @@ export default function LeadIAPage() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-6" style={{ borderColor: 'var(--brand-primary)', backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)' }}>
             <Sparkles className="w-4 h-4" style={{ color: 'var(--brand-primary)' }} />
             <span className="text-sm font-semibold" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}>
-              INTELIGÃŠNCIA ARTIFICIAL
+              INTELIGÊNCIA ARTIFICIAL
             </span>
           </div>
           
@@ -67,13 +67,13 @@ export default function LeadIAPage() {
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
           >
-            Assistente de IA â€“ Novo Lead
+            Assistente de IA – Novo Lead
           </h1>
           <p 
             className="text-xl"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            A IA do HUB qualifica seu lead automaticamente e sugere imÃ³veis ideais.
+            A IA do HUB qualifica seu lead automaticamente e sugere imóveis ideais.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export default function LeadIAPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -136,7 +136,7 @@ export default function LeadIAPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -146,13 +146,13 @@ export default function LeadIAPage() {
                 />
               </div>
 
-              {/* OrÃ§amento */}
+              {/* Orçamento */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  OrÃ§amento (R$)
+                  Orçamento (R$)
                 </label>
                 <input
                   type="text"
@@ -163,7 +163,7 @@ export default function LeadIAPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -190,23 +190,23 @@ export default function LeadIAPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
                   onFocus={(e) => e.target.style.borderColor = 'var(--brand-primary)'}
                   onBlur={(e) => e.target.style.borderColor = 'var(--brand-dark-secondary)'}
-                  placeholder="Ex: IcaraÃ­"
+                  placeholder="Ex: Icaraí"
                 />
               </div>
 
-              {/* Tipo de ImÃ³vel */}
+              {/* Tipo de Imóvel */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Tipo de imÃ³vel
+                  Tipo de imóvel
                 </label>
                 <select
                   value={tipoImovel}
@@ -215,7 +215,7 @@ export default function LeadIAPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -229,13 +229,13 @@ export default function LeadIAPage() {
                 </select>
               </div>
 
-              {/* UrgÃªncia */}
+              {/* Urgência */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  UrgÃªncia
+                  Urgência
                 </label>
                 <select
                   value={urgencia}
@@ -244,7 +244,7 @@ export default function LeadIAPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -269,7 +269,7 @@ export default function LeadIAPage() {
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
               >
-                Gerar AnÃ¡lise da IA
+                Gerar Análise da IA
               </button>
             </form>
           </div>
@@ -287,7 +287,7 @@ export default function LeadIAPage() {
                     className="text-lg"
                     style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                   >
-                    Preencha os dados do comprador e clique em "Gerar AnÃ¡lise da IA" para receber sugestÃµes personalizadas.
+                    Preencha os dados do comprador e clique em "Gerar Análise da IA" para receber sugestões personalizadas.
                   </p>
                 </div>
               </div>
@@ -296,7 +296,7 @@ export default function LeadIAPage() {
                 {/* AI Analysis Message */}
                 <div 
                   className="p-6 rounded-xl"
-                  style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+                  style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
                 >
                   <div className="flex items-start gap-3 mb-4">
                     <Sparkles className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--brand-primary)' }} />
@@ -305,19 +305,19 @@ export default function LeadIAPage() {
                         className="font-semibold mb-3"
                         style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                       >
-                        Analisando o perfil do compradorâ€¦
+                        Analisando o perfil do comprador…
                       </p>
                       <div className="space-y-2">
                         <div className="flex items-center gap-2">
                           <Check className="w-4 h-4" style={{ color: 'var(--brand-primary)' }} />
                           <span style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                            OrÃ§amento: {orcamento || 'R$ 750.000'}
+                            Orçamento: {orcamento || 'R$ 750.000'}
                           </span>
                         </div>
                         <div className="flex items-center gap-2">
                           <Check className="w-4 h-4" style={{ color: 'var(--brand-primary)' }} />
                           <span style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                            Bairro desejado: {bairro || 'IcaraÃ­'}
+                            Bairro desejado: {bairro || 'Icaraí'}
                           </span>
                         </div>
                         <div className="flex items-center gap-2">
@@ -329,7 +329,7 @@ export default function LeadIAPage() {
                         <div className="flex items-center gap-2">
                           <Check className="w-4 h-4" style={{ color: 'var(--brand-primary)' }} />
                           <span style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                            UrgÃªncia: {urgencia === '3 meses' ? 'comprar em atÃ© 3 meses' : urgencia.toLowerCase()}
+                            Urgência: {urgencia === '3 meses' ? 'comprar em até 3 meses' : urgencia.toLowerCase()}
                           </span>
                         </div>
                       </div>
@@ -337,7 +337,7 @@ export default function LeadIAPage() {
                         className="mt-4 font-semibold"
                         style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                       >
-                        Com base nesses dados, selecionei 3 imÃ³veis ideais para esse comprador. Confira abaixo:
+                        Com base nesses dados, selecionei 3 imóveis ideais para esse comprador. Confira abaixo:
                       </p>
                     </div>
                   </div>
@@ -349,7 +349,7 @@ export default function LeadIAPage() {
                     className="text-xl font-bold"
                     style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
                   >
-                    ImÃ³veis Sugeridos
+                    Imóveis Sugeridos
                   </h3>
 
                   {imoveis.map((imovel, index) => (
@@ -390,7 +390,7 @@ export default function LeadIAPage() {
                             fontFamily: 'Montserrat, sans-serif',
                             backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)',
                             color: 'var(--brand-primary)',
-                            borderWidth: '1px',
+                            borderWidth: "var(--border-thin)",
                             borderColor: 'var(--brand-primary)'
                           }}
                           onMouseEnter={(e) => {
@@ -434,12 +434,13 @@ export default function LeadIAPage() {
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Lead Qualificado pela IA.
+            © 2025 HUB Imobiliário Inteligente — Lead Qualificado pela IA.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

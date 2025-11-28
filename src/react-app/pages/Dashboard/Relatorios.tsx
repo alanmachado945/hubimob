@@ -24,26 +24,26 @@ export default function RelatoriosPage() {
     { label: 'Leads Recebidos', value: '132', icon: TrendingUp },
     { label: 'Visitas Agendadas', value: '57', icon: Calendar },
     { label: 'Propostas Enviadas', value: '21', icon: FileText },
-    { label: 'NegÃ³cios Fechados', value: '8', icon: CheckCircle2 }
+    { label: 'Negócios Fechados', value: '8', icon: CheckCircle2 }
   ];
 
   const revenueCards = [
-    { label: 'ComissÃ£o Acumulada', value: 'R$ 18.400,00', icon: DollarSign },
+    { label: 'Comissão Acumulada', value: 'R$ 18.400,00', icon: DollarSign },
     { label: 'Valor Total em Propriedades Vendidas', value: 'R$ 2.150.000,00', icon: TrendingUp },
-    { label: 'Ticket MÃ©dio', value: 'R$ 268.750', icon: BarChart3 }
+    { label: 'Ticket Médio', value: 'R$ 268.750', icon: BarChart3 }
   ];
 
   const comissoes = [
     {
-      imovel: 'Apto Vista Mar â€” 3q / IcaraÃ­',
-      comprador: 'JoÃ£o Pereira',
+      imovel: 'Apto Vista Mar — 3q / Icaraí',
+      comprador: 'João Pereira',
       status: 'Fechado',
       valor: 'R$ 750.000',
       comissao: 'R$ 9.000',
       data: '12/11/2025'
     },
     {
-      imovel: 'Casa Alto PadrÃ£o â€” Pendotiba',
+      imovel: 'Casa Alto Padrão — Pendotiba',
       comprador: 'Carla Silva',
       status: 'Proposta',
       valor: 'R$ 1.250.000',
@@ -105,7 +105,7 @@ export default function RelatoriosPage() {
               color: 'var(--brand-primary)'
             }}
           >
-            RelatÃ³rios & ComissÃµes
+            Relatórios & Comissões
           </h1>
           <p 
             className="text-xl"
@@ -114,7 +114,7 @@ export default function RelatoriosPage() {
               color: 'var(--brand-text-gray)'
             }}
           >
-            Acompanhe sua performance, comissÃµes e mÃ©tricas de venda no HUB.
+            Acompanhe sua performance, comissões e métricas de venda no HUB.
           </p>
         </div>
 
@@ -224,7 +224,7 @@ export default function RelatoriosPage() {
             className="h-64 rounded-xl flex items-center justify-center"
             style={{ 
               backgroundColor: 'var(--brand-dark-secondary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderStyle: 'dashed',
               borderColor: 'var(--brand-primary)'
             }}
@@ -238,7 +238,7 @@ export default function RelatoriosPage() {
                   color: 'var(--brand-text-gray)'
                 }}
               >
-                GrÃ¡fico de performance â€” mock visual. Substituir futuramente por componente real.
+                Gráfico de performance — mock visual. Substituir futuramente por componente real.
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ export default function RelatoriosPage() {
               color: 'var(--brand-light)'
             }}
           >
-            Tabela de ComissÃµes
+            Tabela de Comissões
           </h2>
 
           <div 
@@ -277,7 +277,7 @@ export default function RelatoriosPage() {
                         color: 'var(--brand-primary)'
                       }}
                     >
-                      ImÃ³vel
+                      Imóvel
                     </th>
                     <th 
                       className="px-6 py-4 text-left text-sm font-semibold"
@@ -313,7 +313,7 @@ export default function RelatoriosPage() {
                         color: 'var(--brand-primary)'
                       }}
                     >
-                      Sua ComissÃ£o
+                      Sua Comissão
                     </th>
                     <th 
                       className="px-6 py-4 text-left text-sm font-semibold"
@@ -331,7 +331,7 @@ export default function RelatoriosPage() {
                         color: 'var(--brand-primary)'
                       }}
                     >
-                      AÃ§Ãµes
+                      Ações
                     </th>
                   </tr>
                 </thead>
@@ -442,7 +442,7 @@ export default function RelatoriosPage() {
                 color: 'var(--brand-light)'
               }}
             >
-              ProjeÃ§Ã£o Inteligente da IA
+              Projeção Inteligente da IA
             </h2>
           </div>
 
@@ -458,7 +458,7 @@ export default function RelatoriosPage() {
                   color: 'var(--brand-text-gray)'
                 }}
               >
-                ComissÃ£o projetada (prÃ³ximos 30 dias)
+                Comissão projetada (próximos 30 dias)
               </p>
               <p 
                 className="text-3xl font-bold"
@@ -482,7 +482,7 @@ export default function RelatoriosPage() {
                   color: 'var(--brand-text-gray)'
                 }}
               >
-                Potencial mÃ¡ximo (base leads atuais)
+                Potencial máximo (base leads atuais)
               </p>
               <p 
                 className="text-3xl font-bold"
@@ -506,7 +506,7 @@ export default function RelatoriosPage() {
                   color: 'var(--brand-text-gray)'
                 }}
               >
-                Liquidez mÃ©dia estimada
+                Liquidez média estimada
               </p>
               <p 
                 className="text-3xl font-bold"
@@ -548,7 +548,7 @@ export default function RelatoriosPage() {
             className="p-6 rounded-xl"
             style={{ 
               backgroundColor: 'var(--brand-dark-secondary)',
-              borderLeft: '4px solid var(--brand-primary)'
+              borderLeft: "var(--border-thick) solid var(--brand-primary)'
             }}
           >
             <div className="flex items-start gap-3">
@@ -561,7 +561,7 @@ export default function RelatoriosPage() {
                     color: 'var(--brand-light)'
                   }}
                 >
-                  SugestÃ£o da IA:
+                  Sugestão da IA:
                 </p>
                 <p 
                   style={{ 
@@ -570,7 +570,7 @@ export default function RelatoriosPage() {
                     lineHeight: '1.6'
                   }}
                 >
-                  "Priorize os leads qualificados com urgÃªncia Alta para maximizar sua conversÃ£o."
+                  "Priorize os leads qualificados com urgência Alta para maximizar sua conversão."
                 </p>
               </div>
             </div>
@@ -590,7 +590,7 @@ export default function RelatoriosPage() {
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
           >
             <Download className="w-6 h-6" />
-            Exportar RelatÃ³rio (PDF)
+            Exportar Relatório (PDF)
           </button>
         </div>
 
@@ -603,12 +603,13 @@ export default function RelatoriosPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” RelatÃ³rios e ComissÃµes.
+            © 2025 HUB Imobiliário Inteligente — Relatórios e Comissões.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

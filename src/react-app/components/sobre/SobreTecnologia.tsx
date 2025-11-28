@@ -1,27 +1,27 @@
-﻿const tecnologias = [
+const tecnologias = [
   {
-    title: "IA Especializada no Mercado ImobiliÃ¡rio",
-    desc: "Nossa IA responde, qualifica leads, sugere imÃ³veis e automatiza tarefas que tomam atÃ© 20h semanais dos profissionais.",
+    title: "IA Especializada no Mercado Imobiliário",
+    desc: "Nossa IA responde, qualifica leads, sugere imóveis e automatiza tarefas que tomam até 20h semanais dos profissionais.",
   },
   {
-    title: "Arquitetura EscalÃ¡vel",
-    desc: "Backend modular, APIs independentes, filas de processamento e estrutura preparada para milhares de usuÃ¡rios simultÃ¢neos.",
+    title: "Arquitetura Escalável",
+    desc: "Backend modular, APIs independentes, filas de processamento e estrutura preparada para milhares de usuários simultâneos.",
   },
   {
-    title: "Omnichannel 360Âº",
-    desc: "WhatsApp, Instagram, e-mail e demais canais centralizados em uma Ãºnica caixa de entrada inteligente.",
+    title: "Omnichannel 360º",
+    desc: "WhatsApp, Instagram, e-mail e demais canais centralizados em uma única caixa de entrada inteligente.",
   },
   {
     title: "Infraestrutura de Alto Desempenho",
-    desc: "Cloud, redundÃ¢ncia, seguranÃ§a de dados e monitoramento contÃ­nuo.",
+    desc: "Cloud, redundância, segurança de dados e monitoramento contínuo.",
   },
   {
     title: "CRM Integrado",
-    desc: "Pipeline visual, automaÃ§Ãµes, funil de vendas, distribuiÃ§Ã£o de leads e inteligÃªncia operacional.",
+    desc: "Pipeline visual, automações, funil de vendas, distribuição de leads e inteligência operacional.",
   },
   {
     title: "Marketplace Unificado",
-    desc: "InventÃ¡rio amplo e atualizado com imÃ³veis de vÃ¡rios perfis conectados Ã  rede de corretores.",
+    desc: "Inventário amplo e atualizado com imóveis de vários perfis conectados à rede de corretores.",
   },
 ];
 

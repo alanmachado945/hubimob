@@ -3,18 +3,18 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// Criar Ã­cone customizado com a paleta IMOBIA
+// Criar ícone customizado com a paleta IMOBIA
 const createCustomIcon = () => {
   return L.divIcon({
     html: `
       <div style="
-        background: var(--color-d4af67); /* dourado metÃ¡lico */
+        background: var(--color-d4af67); /* dourado metálico */
         width: 36px;
         height: 36px;
         border-radius: 50% 50% 50% 0;
         transform: rotate(-45deg);
         border: 3px solid var(--color-fff9f2); /* branco quente */
-        box-shadow: 0 2px 8px rgba(var(--color-0a0f1f-rgb), 0.3); /* navy profundo /30 */
+        box-shadow: var(--shadow-md); /* navy profundo /30 */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,7 +46,7 @@ interface PropertyMapProps {
 
 export default function PropertyMap({ latitude, longitude, propertyName, location }: PropertyMapProps) {
   useEffect(() => {
-    // SubstituiÃ§Ã£o total das cores para paleta IMOBIA
+    // Substituição total das cores para paleta IMOBIA
     const style = document.createElement('style');
     style.textContent = `
       .leaflet-container {
@@ -55,10 +55,10 @@ export default function PropertyMap({ latitude, longitude, propertyName, locatio
       }
       
       .leaflet-control-zoom {
-        border: 1px solid rgba(var(--color-f2f2f2-rgb), 0.1) !important; /* cinza neutro /10 */
-        border-radius: 4px !important;
+        border: var(--border-thin) solid rgba(var(--color-f2f2f2-rgb), 0.1) !important; /* cinza neutro /10 */
+        border-radius: var(--radius-sm) !important;
         overflow: hidden;
-        box-shadow: 0 2px 4px rgba(var(--color-0a0f1f-rgb), 0.2); /* navy profundo /20 */
+        box-shadow: var(--shadow-sm); /* navy profundo /20 */
       }
       
       .leaflet-control-zoom a {
@@ -74,7 +74,7 @@ export default function PropertyMap({ latitude, longitude, propertyName, locatio
       
       .leaflet-control-zoom a:hover {
         background: var(--color-111827) !important; /* preto azul-grafite */
-        color: var(--color-d4af67) !important; /* dourado metÃ¡lico */
+        color: var(--color-d4af67) !important; /* dourado metálico */
       }
       
       .leaflet-control-attribution {
@@ -83,21 +83,21 @@ export default function PropertyMap({ latitude, longitude, propertyName, locatio
       
       .leaflet-popup-content-wrapper {
         background: var(--color-0a0f1f) !important; /* azul-marinho profundo */
-        border: 1px solid rgba(var(--color-d4af67-rgb), 0.3); /* dourado 30% */
-        border-radius: 8px !important;
-        box-shadow: 0 4px 12px rgba(var(--color-0a0f1f-rgb), 0.25);
+        border: var(--border-thin) solid rgba(var(--color-d4af67-rgb), 0.3); /* dourado 30% */
+        border-radius: var(--radius-md) !important;
+        box-shadow: var(--shadow-md);
         color: var(--color-f2f2f2) !important; /* cinza neutro */
       }
       
       .leaflet-popup-content {
-        margin: 12px !important;
+        margin: var(--spacing-md) !important;
         color: var(--color-f2f2f2) !important;
         font-family: 'Inter', sans-serif;
       }
       
       .leaflet-popup-tip {
         background: var(--color-0a0f1f) !important;
-        border: 1px solid rgba(var(--color-d4af67-rgb), 0.3);
+        border: var(--border-thin) solid rgba(var(--color-d4af67-rgb), 0.3);
       }
       
       .custom-marker {
@@ -116,7 +116,7 @@ export default function PropertyMap({ latitude, longitude, propertyName, locatio
     <div
       className="rounded-2xl overflow-hidden shadow-2xl"
       style={{
-        border: "1px solid rgba(var(--color-d4af67-rgb), 0.30)" // dourado metÃ¡lico 30%
+        border: "1px solid rgba(var(--color-d4af67-rgb), 0.30)" // dourado metálico 30%
       }}
     >
       <MapContainer
@@ -153,5 +153,6 @@ export default function PropertyMap({ latitude, longitude, propertyName, locatio
     </div>
   );
 }
+
 
 

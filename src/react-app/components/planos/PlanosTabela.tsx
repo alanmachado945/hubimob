@@ -1,45 +1,45 @@
-﻿const planos = [
+const planos = [
   {
     nome: "HUB Lite",
     publico: "Corretores",
-    preco: "R$ 0 / mÃªs",
-    fee: "12% da comissÃ£o no sucesso",
+    preco: "R$ 0 / mês",
+    fee: "12% da comissão no sucesso",
     beneficios: [
-      "Acesso Ã  IA do HUB",
-      "CRM bÃ¡sico",
+      "Acesso à IA do HUB",
+      "CRM básico",
       "Omnichannel Lite",
-      "QualificaÃ§Ã£o de leads",
-      "ProteÃ§Ã£o jurÃ­dica bÃ¡sica",
+      "Qualificação de leads",
+      "Proteção jurídica básica",
       "Acesso ao marketplace"
     ],
     destaque: false
   },
   {
     nome: "HUB Pro",
-    publico: "ImobiliÃ¡rias",
-    preco: "R$ 297 / mÃªs",
+    publico: "Imobiliárias",
+    preco: "R$ 297 / mês",
     fee: "Fee reduzido e vantagens internas",
     beneficios: [
       "Tudo do Lite",
       "CRM completo com equipes",
-      "DistribuiÃ§Ã£o automÃ¡tica de leads",
+      "Distribuição automática de leads",
       "Dashboards e funis",
-      "ProteÃ§Ã£o jurÃ­dica avanÃ§ada",
-      "RelatÃ³rios e auditoria",
+      "Proteção jurídica avançada",
+      "Relatórios e auditoria",
       "IA de follow-up automatizado"
     ],
     destaque: true
   },
   {
     nome: "HUB Enterprise",
-    publico: "Construtoras & Grandes OperaÃ§Ãµes",
+    publico: "Construtoras & Grandes Operações",
     preco: "Sob consulta",
-    fee: "Modelos hÃ­bridos sob demanda",
+    fee: "Modelos híbridos sob demanda",
     beneficios: [
       "Infraestrutura dedicada",
       "Atendimento corporativo",
-      "Suporte avanÃ§ado",
-      "IntegraÃ§Ã£o com ERPs",
+      "Suporte avançado",
+      "Integração com ERPs",
       "Omnichannel de alto volume",
       "Treinamento de equipes"
     ],
@@ -60,7 +60,7 @@ export default function PlanosTabela() {
           className="text-4xl md:text-5xl font-bold text-center mb-12"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
-          Escolha o Plano <span className="text-amber-400">Ideal</span> Para Sua OperaÃ§Ã£o
+          Escolha o Plano <span className="text-amber-400">Ideal</span> Para Sua Operação
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -120,7 +120,7 @@ export default function PlanosTabela() {
                       key={idx}
                       className="flex gap-3 items-start"
                     >
-                      <span className="text-amber-400 text-lg flex-shrink-0">âœ“</span>
+                      <span className="text-amber-400 text-lg flex-shrink-0">✓</span>
                       <span 
                         className="text-gray-300"
                         style={{ fontFamily: 'Montserrat, sans-serif' }}

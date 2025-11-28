@@ -1,20 +1,20 @@
-﻿import { Shield, Clock, Award, Rocket, LineChart, Users } from 'lucide-react';
+import { Shield, Clock, Award, Rocket, LineChart, Users } from 'lucide-react';
 
 const differentials = [
   {
     icon: Shield,
-    title: 'SeguranÃ§a Total',
+    title: 'Segurança Total',
     description: 'Dados criptografados e conformidade LGPD garantida'
   },
   {
     icon: Clock,
     title: 'Economia de 70% do Tempo',
-    description: 'AutomaÃ§Ã£o completa do processo de qualificaÃ§Ã£o'
+    description: 'Automação completa do processo de qualificação'
   },
   {
     icon: Award,
-    title: 'ImÃ³veis Exclusivos',
-    description: 'PortfÃ³lio premium que sÃ³ vocÃª terÃ¡ acesso'
+    title: 'Imóveis Exclusivos',
+    description: 'Portfólio premium que só você terá acesso'
   },
   {
     icon: Rocket,
@@ -23,7 +23,7 @@ const differentials = [
   },
   {
     icon: LineChart,
-    title: 'Analytics AvanÃ§ado',
+    title: 'Analytics Avançado',
     description: 'Dashboards em tempo real sobre seu desempenho'
   },
   {
@@ -47,14 +47,14 @@ export default function Differentials() {
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            O Que Nos Torna <span style={{ color: 'var(--brand-primary)' }}>Ãšnicos</span>
+            O Que Nos Torna <span style={{ color: 'var(--brand-primary)' }}>Únicos</span>
           </h2>
 
           <p 
             className="text-xl max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f7f7-rgb), 0.667)' }}
           >
-            Diferenciais que colocam vocÃª Ã  frente da concorrÃªncia
+            Diferenciais que colocam você à frente da concorrência
           </p>
         </div>
 
@@ -106,14 +106,14 @@ export default function Differentials() {
               className="text-3xl md:text-4xl font-bold mb-4"
               style={{ fontFamily: 'Playfair Display, serif' }}
             >
-              Tecnologia que acelera seus resultados <span style={{ color: 'var(--brand-primary)' }}>desde o primeiro mÃªs</span>
+              Tecnologia que acelera seus resultados <span style={{ color: 'var(--brand-primary)' }}>desde o primeiro mês</span>
             </h3>
 
             <p 
               className="text-lg max-w-2xl mx-auto"
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f7f7-rgb), 0.8)' }}
             >
-              Com leads mais qualificados, corretores reduzem esforÃ§o e aumentam conversÃµes.
+              Com leads mais qualificados, corretores reduzem esforço e aumentam conversões.
             </p>
           </div>
         </div>

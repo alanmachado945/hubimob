@@ -1,10 +1,10 @@
-﻿export default function MegaMenuComprar() {
+export default function MegaMenuComprar() {
   return (
     <div
       className="absolute left-0 mt-4 w-[420px] backdrop-blur-xl rounded-xl shadow-xl p-6 z-50"
       style={{
         backgroundColor: "rgba(var(--color-111827-rgb), 0.95)", // Preto Azul-Grafite 95%
-        border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)", // Dourado metÃ¡lico 20%
+        border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)", // Dourado metálico 20%
       }}
     >
 
@@ -21,7 +21,7 @@
           className="text-sm"
           style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
         >
-          ImÃ³veis Ãºnicos selecionados pela curadoria IMOBIA.
+          Imóveis únicos selecionados pela curadoria IMOBIA.
         </p>
       </div>
 
@@ -30,18 +30,18 @@
         style={{ borderColor: "rgba(var(--color-d4af67-rgb), 0.20)" }}
       />
 
-      {/* Escolha por RegiÃµes */}
+      {/* Escolha por Regiões */}
       <div className="mb-2">
         <h3
           className="font-semibold text-lg mb-3"
           style={{ color: "var(--brand-primary)" }}
         >
-          Escolha por regiÃµes
+          Escolha por regiões
         </h3>
 
         <div className="grid grid-cols-2 gap-4">
 
-          {/* Coluna 1 â€“ Cidades */}
+          {/* Coluna 1 – Cidades */}
           <div>
             <h4
               className="text-sm font-medium mb-2"
@@ -72,12 +72,12 @@
                   (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.80)")
                 }
               >
-                NiterÃ³i
+                Niterói
               </li>
             </ul>
           </div>
 
-          {/* Coluna 2 â€“ Bairros */}
+          {/* Coluna 2 – Bairros */}
           <div>
             <h4
               className="text-sm font-medium mb-2"

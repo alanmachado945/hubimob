@@ -55,7 +55,7 @@ export default function CaptacaoImovelPage() {
               className="text-sm font-semibold" 
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
             >
-              CAPTAÃ‡ÃƒO INTELIGENTE
+              CAPTAÇÃO INTELIGENTE
             </span>
           </div>
           
@@ -63,18 +63,18 @@ export default function CaptacaoImovelPage() {
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
           >
-            CaptaÃ§Ã£o Inteligente de ImÃ³veis
+            Captação Inteligente de Imóveis
           </h1>
           <p 
             className="text-xl max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            A IA do HUB ajuda vocÃª a captar imÃ³veis com mais precisÃ£o, rapidez e seguranÃ§a.
+            A IA do HUB ajuda você a captar imóveis com mais precisão, rapidez e segurança.
           </p>
         </div>
 
         <form onSubmit={handleGerarAnalise} className="space-y-8">
-          {/* SEÃ‡ÃƒO 1 - Dados do ProprietÃ¡rio */}
+          {/* SEÇÃO 1 - Dados do Proprietário */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -83,7 +83,7 @@ export default function CaptacaoImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              Dados do ProprietÃ¡rio
+              Dados do Proprietário
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -93,19 +93,19 @@ export default function CaptacaoImovelPage() {
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Nome completo do proprietÃ¡rio
+                  Nome completo do proprietário
                 </label>
                 <input
                   type="text"
                   value={nomeProprietario}
                   onChange={(e) => setNomeProprietario(e.target.value)}
                   required
-                  placeholder="Ex: JoÃ£o da Silva"
+                  placeholder="Ex: João da Silva"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -132,7 +132,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -159,7 +159,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -183,14 +183,14 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
                   onFocus={(e) => e.target.style.borderColor = 'var(--brand-primary)'}
                   onBlur={(e) => e.target.style.borderColor = 'var(--brand-dark-secondary)'}
                 >
-                  <option>IndicaÃ§Ã£o</option>
+                  <option>Indicação</option>
                   <option>Cliente Atual</option>
                   <option>Ex-cliente</option>
                   <option>Outro</option>
@@ -199,7 +199,7 @@ export default function CaptacaoImovelPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 2 - Dados do ImÃ³vel */}
+          {/* SEÇÃO 2 - Dados do Imóvel */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -208,29 +208,29 @@ export default function CaptacaoImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              Dados do ImÃ³vel
+              Dados do Imóvel
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* EndereÃ§o completo */}
+              {/* Endereço completo */}
               <div className="md:col-span-2">
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  EndereÃ§o completo
+                  Endereço completo
                 </label>
                 <input
                   type="text"
                   value={endereco}
                   onChange={(e) => setEndereco(e.target.value)}
                   required
-                  placeholder="Rua, nÃºmero, complemento"
+                  placeholder="Rua, número, complemento"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -252,12 +252,12 @@ export default function CaptacaoImovelPage() {
                   value={bairro}
                   onChange={(e) => setBairro(e.target.value)}
                   required
-                  placeholder="Ex: IcaraÃ­"
+                  placeholder="Ex: Icaraí"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -279,12 +279,12 @@ export default function CaptacaoImovelPage() {
                   value={cidade}
                   onChange={(e) => setCidade(e.target.value)}
                   required
-                  placeholder="Ex: NiterÃ³i"
+                  placeholder="Ex: Niterói"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -308,7 +308,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -316,19 +316,19 @@ export default function CaptacaoImovelPage() {
                   onBlur={(e) => e.target.style.borderColor = 'var(--brand-dark-secondary)'}
                 >
                   <option value="RJ">Rio de Janeiro</option>
-                  <option value="SP">SÃ£o Paulo</option>
+                  <option value="SP">São Paulo</option>
                   <option value="MG">Minas Gerais</option>
-                  <option value="ES">EspÃ­rito Santo</option>
+                  <option value="ES">Espírito Santo</option>
                 </select>
               </div>
 
-              {/* Tipo de imÃ³vel */}
+              {/* Tipo de imóvel */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Tipo de imÃ³vel
+                  Tipo de imóvel
                 </label>
                 <select
                   value={tipoImovel}
@@ -337,7 +337,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -358,7 +358,7 @@ export default function CaptacaoImovelPage() {
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Metragem (mÂ²)
+                  Metragem (m²)
                 </label>
                 <input
                   type="text"
@@ -370,7 +370,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -394,7 +394,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -424,7 +424,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -454,7 +454,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -475,18 +475,18 @@ export default function CaptacaoImovelPage() {
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Andar (se aplicÃ¡vel)
+                  Andar (se aplicável)
                 </label>
                 <input
                   type="text"
                   value={andar}
                   onChange={(e) => setAndar(e.target.value)}
-                  placeholder="Ex: 5Âº andar"
+                  placeholder="Ex: 5º andar"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -495,13 +495,13 @@ export default function CaptacaoImovelPage() {
                 />
               </div>
 
-              {/* CondomÃ­nio */}
+              {/* Condomínio */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  CondomÃ­nio (R$)
+                  Condomínio (R$)
                 </label>
                 <input
                   type="text"
@@ -512,7 +512,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -538,7 +538,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -547,13 +547,13 @@ export default function CaptacaoImovelPage() {
                 />
               </div>
 
-              {/* Ano de construÃ§Ã£o */}
+              {/* Ano de construção */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Ano de construÃ§Ã£o (opcional)
+                  Ano de construção (opcional)
                 </label>
                 <input
                   type="text"
@@ -564,7 +564,7 @@ export default function CaptacaoImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -575,7 +575,7 @@ export default function CaptacaoImovelPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 3 - Fotos e DocumentaÃ§Ã£o */}
+          {/* SEÇÃO 3 - Fotos e Documentação */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -584,7 +584,7 @@ export default function CaptacaoImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              Fotos e DocumentaÃ§Ã£o
+              Fotos e Documentação
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -595,13 +595,13 @@ export default function CaptacaoImovelPage() {
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
                   <Upload className="w-5 h-5" />
-                  Upload de Fotos do ImÃ³vel
+                  Upload de Fotos do Imóvel
                 </h3>
                 <div 
                   className="h-48 rounded-xl flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-opacity-80"
                   style={{ 
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderStyle: 'dashed',
                     borderColor: 'var(--brand-primary)'
                   }}
@@ -618,29 +618,29 @@ export default function CaptacaoImovelPage() {
                       className="text-xs"
                       style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                     >
-                      Envie atÃ© 20 fotos do imÃ³vel
+                      Envie até 20 fotos do imóvel
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* DocumentaÃ§Ã£o */}
+              {/* Documentação */}
               <div>
                 <h3 
                   className="text-xl font-bold mb-4 flex items-center gap-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
                   <FileText className="w-5 h-5" />
-                  DocumentaÃ§Ã£o do ImÃ³vel
+                  Documentação do Imóvel
                 </h3>
                 <div className="space-y-3">
-                  {['MatrÃ­cula', 'Escritura', 'IPTU', 'Planta baixa'].map((doc) => (
+                  {['Matrícula', 'Escritura', 'IPTU', 'Planta baixa'].map((doc) => (
                     <div 
                       key={doc}
                       className="p-3 rounded-xl flex items-center justify-between cursor-pointer transition-all duration-300 hover:bg-opacity-80"
                       style={{ 
                         backgroundColor: 'var(--brand-dark-secondary)',
-                        borderWidth: '2px',
+                        borderWidth: "var(--border-md)",
                         borderColor: 'var(--brand-dark-secondary)'
                       }}
                     >
@@ -658,7 +658,7 @@ export default function CaptacaoImovelPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 4 - IA de CaptaÃ§Ã£o */}
+          {/* SEÇÃO 4 - IA de Captação */}
           {!analiseGerada ? (
             <div 
               className="p-8 rounded-2xl border-2 text-center"
@@ -669,13 +669,13 @@ export default function CaptacaoImovelPage() {
                 className="text-3xl font-bold mb-4"
                 style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
               >
-                AnÃ¡lise Inteligente de CaptaÃ§Ã£o
+                Análise Inteligente de Captação
               </h2>
               <p 
                 className="text-lg mb-8 max-w-3xl mx-auto"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
               >
-                A IA do HUB identifica o preÃ§o ideal, aponta problemas na documentaÃ§Ã£o e sugere posicionamento no marketplace.
+                A IA do HUB identifica o preço ideal, aponta problemas na documentação e sugere posicionamento no marketplace.
               </p>
 
               <button
@@ -689,7 +689,7 @@ export default function CaptacaoImovelPage() {
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
               >
-                Gerar AnÃ¡lise de CaptaÃ§Ã£o com IA
+                Gerar Análise de Captação com IA
               </button>
             </div>
           ) : (
@@ -703,12 +703,12 @@ export default function CaptacaoImovelPage() {
                   className="text-3xl font-bold"
                   style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
                 >
-                  AnÃ¡lise Inteligente de CaptaÃ§Ã£o
+                  Análise Inteligente de Captação
                 </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                {/* Faixa de preÃ§o sugerida */}
+                {/* Faixa de preço sugerida */}
                 <div 
                   className="p-6 rounded-xl text-center"
                   style={{ backgroundColor: 'var(--brand-dark-secondary)' }}
@@ -718,7 +718,7 @@ export default function CaptacaoImovelPage() {
                     className="text-sm font-semibold mb-2"
                     style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                   >
-                    Faixa de preÃ§o sugerida (IA)
+                    Faixa de preço sugerida (IA)
                   </p>
                   <p 
                     className="text-3xl font-bold"
@@ -738,7 +738,7 @@ export default function CaptacaoImovelPage() {
                     className="text-sm font-semibold mb-2"
                     style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                   >
-                    Liquidez estimada do imÃ³vel
+                    Liquidez estimada do imóvel
                   </p>
                   <p 
                     className="text-2xl font-bold"
@@ -748,7 +748,7 @@ export default function CaptacaoImovelPage() {
                   </p>
                 </div>
 
-                {/* NÃ­vel de atratividade */}
+                {/* Nível de atratividade */}
                 <div 
                   className="p-6 rounded-xl text-center"
                   style={{ backgroundColor: 'var(--brand-dark-secondary)' }}
@@ -758,7 +758,7 @@ export default function CaptacaoImovelPage() {
                     className="text-sm font-semibold mb-2"
                     style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                   >
-                    NÃ­vel de atratividade
+                    Nível de atratividade
                   </p>
                   <p 
                     className="text-2xl font-bold"
@@ -769,10 +769,10 @@ export default function CaptacaoImovelPage() {
                 </div>
               </div>
 
-              {/* SugestÃ£o de copy */}
+              {/* Sugestão de copy */}
               <div 
                 className="p-6 rounded-xl mb-6"
-                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
               >
                 <div className="flex items-start gap-3">
                   <Sparkles className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--brand-primary)' }} />
@@ -781,12 +781,12 @@ export default function CaptacaoImovelPage() {
                       className="font-semibold mb-3"
                       style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                     >
-                      SugestÃ£o de copy para anÃºncio (gerado pela IA):
+                      Sugestão de copy para anúncio (gerado pela IA):
                     </p>
                     <p 
                       style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)', lineHeight: '1.6' }}
                     >
-                      "Apartamento premium de {metragem}mÂ² em {bairro}, {cidade}. Com {quartos} quartos amplos, {banheiros} banheiros modernos e {vagas} vaga(s) de garagem. LocalizaÃ§Ã£o privilegiada, prÃ³ximo a comÃ©rcios, escolas e Ã¡reas de lazer. Excelente oportunidade para investidores e famÃ­lias que buscam conforto e qualidade de vida."
+                      "Apartamento premium de {metragem}m² em {bairro}, {cidade}. Com {quartos} quartos amplos, {banheiros} banheiros modernos e {vagas} vaga(s) de garagem. Localização privilegiada, próximo a comércios, escolas e áreas de lazer. Excelente oportunidade para investidores e famílias que buscam conforto e qualidade de vida."
                     </p>
                   </div>
                 </div>
@@ -795,7 +795,7 @@ export default function CaptacaoImovelPage() {
               {/* Alertas da IA */}
               <div 
                 className="p-6 rounded-xl"
-                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-ff9800)' }}
+                style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-ff9800)' }}
               >
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--color-warning)' }} />
@@ -804,17 +804,17 @@ export default function CaptacaoImovelPage() {
                       className="font-semibold mb-2"
                       style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
                     >
-                      VerificaÃ§Ãµes recomendadas:
+                      Verificações recomendadas:
                     </p>
                     <ul className="list-disc list-inside space-y-1">
                       <li style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                        Confirmar regularizaÃ§Ã£o da matrÃ­cula do imÃ³vel
+                        Confirmar regularização da matrícula do imóvel
                       </li>
                       <li style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                        Validar certidÃ£o negativa de dÃ©bitos condominiais
+                        Validar certidão negativa de débitos condominiais
                       </li>
                       <li style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}>
-                        Solicitar comprovante de quitaÃ§Ã£o do IPTU
+                        Solicitar comprovante de quitação do IPTU
                       </li>
                     </ul>
                   </div>
@@ -823,7 +823,7 @@ export default function CaptacaoImovelPage() {
             </div>
           )}
 
-          {/* BotÃµes finais */}
+          {/* Botões finais */}
           {analiseGerada && (
             <div className="flex flex-col md:flex-row gap-4">
               <button
@@ -837,7 +837,7 @@ export default function CaptacaoImovelPage() {
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
               >
-                Salvar ImÃ³vel no Marketplace
+                Salvar Imóvel no Marketplace
               </button>
 
               <Link
@@ -847,7 +847,7 @@ export default function CaptacaoImovelPage() {
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'transparent',
                   color: 'var(--brand-primary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)'
                 }}
                 onMouseEnter={(e) => {
@@ -863,18 +863,19 @@ export default function CaptacaoImovelPage() {
           )}
         </form>
 
-        {/* RodapÃ© */}
+        {/* Rodapé */}
         <div className="text-center pt-12 mt-12 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” CaptaÃ§Ã£o Inteligente de ImÃ³veis.
+            © 2025 HUB Imobiliário Inteligente — Captação Inteligente de Imóveis.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

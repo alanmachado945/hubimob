@@ -15,7 +15,7 @@ export default function AgendaDetalhePage() {
 
   const timelineEvents = [
     { date: '20/11/2025', text: 'Follow-up enviado pela IA', icon: Send },
-    { date: '18/11/2025', text: 'LigaÃ§Ã£o realizada', icon: Phone },
+    { date: '18/11/2025', text: 'Ligação realizada', icon: Phone },
     { date: '15/11/2025', text: 'Lead qualificado', icon: CheckCircle2 },
     { date: '12/11/2025', text: 'Lead adicionado ao HUB', icon: Plus },
   ];
@@ -41,7 +41,7 @@ export default function AgendaDetalhePage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)',
             }}
             onMouseEnter={(e) => {
@@ -62,7 +62,7 @@ export default function AgendaDetalhePage() {
               color: 'var(--brand-primary)',
             }}
           >
-            Visita Agendada â€“ Detalhes
+            Visita Agendada – Detalhes
           </h1>
 
           <p
@@ -72,7 +72,7 @@ export default function AgendaDetalhePage() {
               color: 'var(--color-f7f7f7)',
             }}
           >
-            Aqui estÃ£o todas as informaÃ§Ãµes sobre esta visita agendada.
+            Aqui estão todas as informações sobre esta visita agendada.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function AgendaDetalhePage() {
         >
           <div className="flex items-center justify-between mb-6">
 
-            {/* TÃ­tulo */}
+            {/* Título */}
             <div className="flex items-center gap-3">
               <Calendar className="w-8 h-8" style={{ color: 'var(--brand-primary)' }} />
               <h2
@@ -109,7 +109,7 @@ export default function AgendaDetalhePage() {
                 color: 'var(--brand-primary)',
               }}
             >
-              PrÃ³ximo
+              Próximo
             </span>
           </div>
 
@@ -125,7 +125,7 @@ export default function AgendaDetalhePage() {
               </div>
 
               <p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--color-f7f7f7)' }}>
-                22/11/2025 Ã s 10:00
+                22/11/2025 às 10:00
               </p>
             </div>
 
@@ -139,12 +139,12 @@ export default function AgendaDetalhePage() {
               </div>
 
               <p className="text-lg" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
-                Apartamento Vista Mar â€“ IcaraÃ­
+                Apartamento Vista Mar – Icaraí
               </p>
             </div>
           </div>
 
-          {/* BotÃµes */}
+          {/* Botões */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
 
             <button
@@ -167,7 +167,7 @@ export default function AgendaDetalhePage() {
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'var(--brand-dark)',
                 color: 'var(--brand-primary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
             >
@@ -176,7 +176,7 @@ export default function AgendaDetalhePage() {
             </button>
 
             <button
-              onClick={() => alert('Visita concluÃ­da')}
+              onClick={() => alert('Visita concluída')}
               className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
               style={{
                 fontFamily: 'Montserrat, sans-serif',
@@ -185,16 +185,16 @@ export default function AgendaDetalhePage() {
               }}
             >
               <CheckCircle2 className="w-5 h-5" />
-              Marcar como ConcluÃ­do
+              Marcar como Concluído
             </button>
           </div>
         </div>
 
-        {/* InformaÃ§Ãµes do Cliente */}
+        {/* Informações do Cliente */}
         <div className="mb-8 p-8 rounded-2xl border-2" style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}>
 
           <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--color-f7f7f7)' }}>
-            InformaÃ§Ãµes do Cliente
+            Informações do Cliente
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -236,7 +236,7 @@ export default function AgendaDetalhePage() {
 
             <div>
               <p className="text-sm font-semibold mb-2" style={{ color: 'var(--brand-primary)', fontFamily: 'Montserrat, sans-serif' }}>
-                HistÃ³rico
+                Histórico
               </p>
               <p className="text-lg" style={{ color: 'var(--color-f7f7f7)', fontFamily: 'Montserrat, sans-serif' }}>
                 Lead ativo com alto potencial de compra
@@ -245,11 +245,11 @@ export default function AgendaDetalhePage() {
           </div>
         </div>
 
-        {/* InformaÃ§Ãµes do ImÃ³vel */}
+        {/* Informações do Imóvel */}
         <div className="mb-8 p-8 rounded-2xl border-2" style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}>
 
           <h2 className="text-2xl font-bold mb-6" style={{ color: 'var(--color-f7f7f7)', fontFamily: 'Playfair Display, serif' }}>
-            InformaÃ§Ãµes do ImÃ³vel
+            Informações do Imóvel
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -264,14 +264,14 @@ export default function AgendaDetalhePage() {
 
             <div>
               <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--brand-primary)', fontFamily: 'Playfair Display, serif' }}>
-                Apartamento Vista Mar â€“ IcaraÃ­
+                Apartamento Vista Mar – Icaraí
               </h3>
 
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-2">
                   <MapPin className="w-5 h-5 mt-1" style={{ color: 'var(--brand-primary)' }} />
                   <p className="text-lg" style={{ color: 'var(--color-f7f7f7)', fontFamily: 'Montserrat, sans-serif' }}>
-                    Rua Ãlvares de Azevedo, 155 â€“ IcaraÃ­
+                    Rua Álvares de Azevedo, 155 – Icaraí
                   </p>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function AgendaDetalhePage() {
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--brand-primary)')}
               >
                 <Home className="w-5 h-5" />
-                Ver ImÃ³vel
+                Ver Imóvel
               </button>
             </div>
           </div>
@@ -345,11 +345,11 @@ export default function AgendaDetalhePage() {
           </div>
         </div>
 
-        {/* AÃ§Ãµes RÃ¡pidas */}
+        {/* Ações Rápidas */}
         <div className="mb-12 p-8 rounded-2xl border-2" style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}>
 
           <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--color-f7f7f7)' }}>
-            AÃ§Ãµes RÃ¡pidas
+            Ações Rápidas
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -361,7 +361,7 @@ export default function AgendaDetalhePage() {
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'var(--brand-dark-secondary)',
                 color: 'var(--brand-primary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
               onMouseEnter={(e) => {
@@ -384,7 +384,7 @@ export default function AgendaDetalhePage() {
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'var(--brand-dark-secondary)',
                 color: 'var(--brand-primary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
               onMouseEnter={(e) => {
@@ -412,7 +412,7 @@ export default function AgendaDetalhePage() {
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--brand-primary)')}
             >
               <FileText className="w-5 h-5" />
-              Gerar PrÃ©-contrato (IA)
+              Gerar Pré-contrato (IA)
             </button>
 
           </div>
@@ -421,7 +421,7 @@ export default function AgendaDetalhePage() {
         {/* Footer */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-c8a96a-rgb), 0.2)' }}>
           <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” GestÃ£o de Agendamentos.
+            © 2025 HUB Imobiliário Inteligente — Gestão de Agendamentos.
           </p>
         </div>
 
@@ -429,5 +429,6 @@ export default function AgendaDetalhePage() {
     </div>
   );
 }
+
 
 

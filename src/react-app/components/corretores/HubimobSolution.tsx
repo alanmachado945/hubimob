@@ -1,35 +1,35 @@
-﻿import { Brain, Target, LineChart, Filter, DollarSign, Zap } from 'lucide-react';
+import { Brain, Target, LineChart, Filter, DollarSign, Zap } from 'lucide-react';
 
 const features = [
   {
     icon: Brain,
-    title: 'AnÃ¡lise Comportamental',
-    description: 'A IA rastreia padrÃµes de navegaÃ§Ã£o e engajamento para identificar intenÃ§Ã£o real'
+    title: 'Análise Comportamental',
+    description: 'A IA rastreia padrões de navegação e engajamento para identificar intenção real'
   },
   {
     icon: LineChart,
     title: 'Scoring Preditivo',
-    description: 'Sistema de pontuaÃ§Ã£o que prevÃª probabilidade de fechamento antes do primeiro contato'
+    description: 'Sistema de pontuação que prevê probabilidade de fechamento antes do primeiro contato'
   },
   {
     icon: Filter,
-    title: 'Filtragem AutomÃ¡tica',
-    description: 'Elimina curiosos e leads frios automaticamente, sem intervenÃ§Ã£o manual'
+    title: 'Filtragem Automática',
+    description: 'Elimina curiosos e leads frios automaticamente, sem intervenção manual'
   },
   {
     icon: Target,
-    title: 'ClassificaÃ§Ã£o de IntenÃ§Ã£o',
-    description: 'Identifica se o lead estÃ¡ apenas pesquisando ou pronto para tomar decisÃ£o'
+    title: 'Classificação de Intenção',
+    description: 'Identifica se o lead está apenas pesquisando ou pronto para tomar decisão'
   },
   {
     icon: DollarSign,
-    title: 'VerificaÃ§Ã£o de Fit Financeiro',
-    description: 'Analisa poder de compra compatÃ­vel com o portfÃ³lio que vocÃª oferece'
+    title: 'Verificação de Fit Financeiro',
+    description: 'Analisa poder de compra compatível com o portfólio que você oferece'
   },
   {
     icon: Zap,
     title: 'Processamento em Tempo Real',
-    description: 'Leads qualificados chegam instantaneamente quando a IA identifica alta intenÃ§Ã£o'
+    description: 'Leads qualificados chegam instantaneamente quando a IA identifica alta intenção'
   }
 ];
 
@@ -48,13 +48,13 @@ export default function HubimobSolution() {
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            Uma <span className="text-amber-400">IA</span> que Trabalha Por VocÃª e Entrega Apenas <span className="text-amber-400">Compradores Prontos</span>
+            Uma <span className="text-amber-400">IA</span> que Trabalha Por Você e Entrega Apenas <span className="text-amber-400">Compradores Prontos</span>
           </h2>
           <p 
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            Nossa inteligÃªncia artificial faz o trabalho pesado de qualificaÃ§Ã£o para que vocÃª sÃ³ precise fechar negÃ³cios
+            Nossa inteligência artificial faz o trabalho pesado de qualificação para que você só precise fechar negócios
           </p>
         </div>
 

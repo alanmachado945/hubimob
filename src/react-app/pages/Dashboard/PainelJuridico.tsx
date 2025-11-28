@@ -1,4 +1,4 @@
-﻿import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Shield, FileText, AlertCircle, Download, Eye, ChevronLeft, LayoutDashboard, Clock, CheckCircle, Send, Lightbulb, FileCheck } from "lucide-react";
 
 export default function PainelJuridico() {
@@ -8,25 +8,25 @@ export default function PainelJuridico() {
     {
       icon: Lightbulb,
       title: "Lead criado automaticamente pela IA",
-      time: "hÃ¡ 2h",
+      time: "há 2h",
       description: "Sistema identificou perfil qualificado"
     },
     {
       icon: FileCheck,
-      title: "ImÃ³veis recomendados pela IA",
-      time: "hÃ¡ 1h30",
+      title: "Imóveis recomendados pela IA",
+      time: "há 1h30",
       description: "3 propriedades selecionadas com match 95%"
     },
     {
       icon: FileText,
       title: "Proposta gerada pela IA",
-      time: "hÃ¡ 30 min",
+      time: "há 30 min",
       description: "Documento criado automaticamente"
     },
     {
       icon: CheckCircle,
       title: "Proposta revisada pelo corretor",
-      time: "hÃ¡ 12 min",
+      time: "há 12 min",
       description: "Ajustes finais aprovados"
     },
     {
@@ -39,16 +39,16 @@ export default function PainelJuridico() {
 
   const logs = [
     { date: "21/02/2025 14:52", action: "Envio de Proposta", user: "IA-HUB", hash: "0x8F3A9C..." },
-    { date: "21/02/2025 14:40", action: "GeraÃ§Ã£o da Proposta", user: "IA-HUB", hash: "0x7C2AB1..." },
-    { date: "21/02/2025 14:10", action: "RecomendaÃ§Ã£o de ImÃ³veis", user: "IA-HUB", hash: "0x551D9A..." },
-    { date: "21/02/2025 14:05", action: "CriaÃ§Ã£o do Lead", user: "HUB-CRM", hash: "0x2E9F4A..." }
+    { date: "21/02/2025 14:40", action: "Geração da Proposta", user: "IA-HUB", hash: "0x7C2AB1..." },
+    { date: "21/02/2025 14:10", action: "Recomendação de Imóveis", user: "IA-HUB", hash: "0x551D9A..." },
+    { date: "21/02/2025 14:05", action: "Criação do Lead", user: "HUB-CRM", hash: "0x2E9F4A..." }
   ];
 
   const documents = [
     "Proposta gerada (PDF)",
-    "HistÃ³rico de mensagens",
+    "Histórico de mensagens",
     "Registro do envio",
-    "PrÃ©-contrato (em andamento)"
+    "Pré-contrato (em andamento)"
   ];
 
   return (
@@ -58,10 +58,10 @@ export default function PainelJuridico() {
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="flex items-center gap-3 mb-4">
             <Shield className="w-8 h-8 text-[var(--brand-primary)]" />
-            <h1 className="text-4xl font-bold text-[var(--brand-primary)]">Painel JurÃ­dico & Auditoria</h1>
+            <h1 className="text-4xl font-bold text-[var(--brand-primary)]">Painel Jurídico & Auditoria</h1>
           </div>
           <p className="text-gray-400 text-lg max-w-3xl">
-            Acompanhe todo o histÃ³rico jurÃ­dico, registros imutÃ¡veis e trilha de auditoria do lead e da negociaÃ§Ã£o.
+            Acompanhe todo o histórico jurídico, registros imutáveis e trilha de auditoria do lead e da negociação.
           </p>
           <div className="mt-4 inline-block">
             <span className="px-4 py-1.5 bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-primary-dark)] text-black text-sm font-semibold rounded-full">
@@ -72,11 +72,11 @@ export default function PainelJuridico() {
       </header>
 
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-8">
-        {/* SeÃ§Ã£o 1 - Resumo JurÃ­dico */}
+        {/* Seção 1 - Resumo Jurídico */}
         <div className="bg-[var(--color-0b0b0c)] border-2 border-[var(--brand-primary)] rounded-xl p-8 shadow-2xl shadow-[var(--brand-primary)]/10">
           <h2 className="text-2xl font-bold text-[var(--brand-primary)] mb-6 flex items-center gap-3">
             <FileText className="w-6 h-6" />
-            Resumo JurÃ­dico do Processo
+            Resumo Jurídico do Processo
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -85,15 +85,15 @@ export default function PainelJuridico() {
               <p className="text-white text-lg font-semibold">Ana Lima</p>
             </div>
             <div>
-              <p className="text-gray-400 text-sm mb-1">ImÃ³vel</p>
-              <p className="text-white text-lg font-semibold">Apartamento 3 Quartos â€“ IcaraÃ­</p>
+              <p className="text-gray-400 text-sm mb-1">Imóvel</p>
+              <p className="text-white text-lg font-semibold">Apartamento 3 Quartos – Icaraí</p>
             </div>
             <div>
               <p className="text-gray-400 text-sm mb-1">Status Atual</p>
               <p className="text-[var(--brand-primary)] text-lg font-semibold">Proposta enviada</p>
             </div>
             <div>
-              <p className="text-gray-400 text-sm mb-1">Ãšltima AÃ§Ã£o Registrada</p>
+              <p className="text-gray-400 text-sm mb-1">Última Ação Registrada</p>
               <p className="text-white text-lg font-semibold">Envio de proposta via WhatsApp</p>
             </div>
             <div>
@@ -107,11 +107,11 @@ export default function PainelJuridico() {
           </div>
         </div>
 
-        {/* SeÃ§Ã£o 2 - Linha do Tempo JurÃ­dica */}
+        {/* Seção 2 - Linha do Tempo Jurídica */}
         <div className="bg-[var(--color-0b0b0c)] border border-[var(--brand-primary)]/30 rounded-xl p-8 shadow-xl">
           <h2 className="text-2xl font-bold text-[var(--brand-primary)] mb-8 flex items-center gap-3">
             <Clock className="w-6 h-6" />
-            Linha do Tempo JurÃ­dica / Auditoria
+            Linha do Tempo Jurídica / Auditoria
           </h2>
 
           <div className="space-y-6">
@@ -140,11 +140,11 @@ export default function PainelJuridico() {
           </div>
         </div>
 
-        {/* SeÃ§Ã£o 3 - Logs ImutÃ¡veis */}
+        {/* Seção 3 - Logs Imutáveis */}
         <div className="bg-[var(--color-0b0b0c)] border border-[var(--brand-primary)]/30 rounded-xl p-8 shadow-xl">
           <h2 className="text-2xl font-bold text-[var(--brand-primary)] mb-6 flex items-center gap-3">
             <Shield className="w-6 h-6" />
-            Logs ImutÃ¡veis do Sistema
+            Logs Imutáveis do Sistema
           </h2>
 
           <div className="overflow-x-auto">
@@ -152,8 +152,8 @@ export default function PainelJuridico() {
               <thead>
                 <tr className="border-b border-[var(--brand-primary)]/30">
                   <th className="text-left py-3 px-4 text-[var(--brand-primary)] font-semibold">Data</th>
-                  <th className="text-left py-3 px-4 text-[var(--brand-primary)] font-semibold">AÃ§Ã£o</th>
-                  <th className="text-left py-3 px-4 text-[var(--brand-primary)] font-semibold">UsuÃ¡rio / Origem</th>
+                  <th className="text-left py-3 px-4 text-[var(--brand-primary)] font-semibold">Ação</th>
+                  <th className="text-left py-3 px-4 text-[var(--brand-primary)] font-semibold">Usuário / Origem</th>
                   <th className="text-left py-3 px-4 text-[var(--brand-primary)] font-semibold">Identificador do Registro</th>
                 </tr>
               </thead>
@@ -171,11 +171,11 @@ export default function PainelJuridico() {
           </div>
 
           <p className="text-gray-500 text-sm mt-4 italic">
-            Registros criptograficamente seguros e nÃ£o editÃ¡veis.
+            Registros criptograficamente seguros e não editáveis.
           </p>
         </div>
 
-        {/* SeÃ§Ã£o 4 - DocumentaÃ§Ã£o */}
+        {/* Seção 4 - Documentação */}
         <div className="bg-[var(--color-0b0b0c)] border-2 border-[var(--brand-primary)] rounded-xl p-8 shadow-2xl shadow-[var(--brand-primary)]/10">
           <h2 className="text-2xl font-bold text-[var(--brand-primary)] mb-6 flex items-center gap-3">
             <FileText className="w-6 h-6" />
@@ -203,38 +203,38 @@ export default function PainelJuridico() {
           </div>
         </div>
 
-        {/* SeÃ§Ã£o 5 - Compliance */}
+        {/* Seção 5 - Compliance */}
         <div className="bg-[var(--color-0b0b0c)] border border-[var(--brand-primary)]/30 rounded-xl p-8 shadow-xl">
           <h2 className="text-2xl font-bold text-[var(--brand-primary)] mb-6 flex items-center gap-3">
             <AlertCircle className="w-6 h-6" />
-            Compliance & SeguranÃ§a
+            Compliance & Segurança
           </h2>
 
           <ul className="space-y-3 mb-6">
             <li className="flex items-start gap-3 text-gray-300">
               <div className="w-2 h-2 rounded-full bg-[var(--brand-primary)] mt-2" />
-              <span>Toda aÃ§Ã£o Ã© registrada automaticamente pelo HUB.</span>
+              <span>Toda ação é registrada automaticamente pelo HUB.</span>
             </li>
             <li className="flex items-start gap-3 text-gray-300">
               <div className="w-2 h-2 rounded-full bg-[var(--brand-primary)] mt-2" />
-              <span>Eventos crÃ­ticos possuem hash imutÃ¡vel.</span>
+              <span>Eventos críticos possuem hash imutável.</span>
             </li>
             <li className="flex items-start gap-3 text-gray-300">
               <div className="w-2 h-2 rounded-full bg-[var(--brand-primary)] mt-2" />
-              <span><strong className="text-green-400">Risco jurÃ­dico: Baixo.</strong></span>
+              <span><strong className="text-green-400">Risco jurídico: Baixo.</strong></span>
             </li>
             <li className="flex items-start gap-3 text-gray-300">
               <div className="w-2 h-2 rounded-full bg-[var(--brand-primary)] mt-2" />
-              <span>PrÃ³xima validaÃ§Ã£o recomendada pela IA: confirmaÃ§Ã£o de leitura da proposta.</span>
+              <span>Próxima validação recomendada pela IA: confirmação de leitura da proposta.</span>
             </li>
           </ul>
 
           <button className="px-6 py-3 bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-primary-dark)] text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-[var(--brand-primary)]/30 transition-all">
-            Registrar Novo Evento JurÃ­dico
+            Registrar Novo Evento Jurídico
           </button>
         </div>
 
-        {/* BotÃµes Finais */}
+        {/* Botões Finais */}
         <div className="flex flex-wrap gap-4 pt-4">
           <button
             onClick={() => navigate("/lead-perfil")}
@@ -253,11 +253,11 @@ export default function PainelJuridico() {
         </div>
       </div>
 
-      {/* RodapÃ© Premium */}
+      {/* Rodapé Premium */}
       <footer className="border-t border-[var(--brand-primary)]/20 bg-gradient-to-b from-[var(--color-0b0b0c)] to-black mt-16">
         <div className="max-w-7xl mx-auto px-6 py-6 text-center">
           <p className="text-gray-500 text-sm">
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Auditoria e Compliance Integrados.
+            © 2025 HUB Imobiliário Inteligente — Auditoria e Compliance Integrados.
           </p>
         </div>
       </footer>

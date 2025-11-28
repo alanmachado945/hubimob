@@ -23,7 +23,7 @@ export default function LeadsPage() {
       canal: 'WhatsApp',
       status: 'Novo',
       orcamento: 'R$ 750.000',
-      ultimaInteracao: 'hÃ¡ 2h',
+      ultimaInteracao: 'há 2h',
     },
     {
       nome: 'Pedro Souza',
@@ -37,28 +37,28 @@ export default function LeadsPage() {
       canal: 'Instagram',
       status: 'Visita Agendada',
       orcamento: 'R$ 950.000',
-      ultimaInteracao: 'hÃ¡ 3 dias',
+      ultimaInteracao: 'há 3 dias',
     },
     {
       nome: 'Roberto Silva',
-      canal: 'IndicaÃ§Ã£o',
+      canal: 'Indicação',
       status: 'Proposta Enviada',
       orcamento: 'R$ 820.000',
-      ultimaInteracao: 'hÃ¡ 1 dia',
+      ultimaInteracao: 'há 1 dia',
     },
     {
       nome: 'Juliana Costa',
       canal: 'WhatsApp',
       status: 'Novo',
       orcamento: 'R$ 450.000',
-      ultimaInteracao: 'hÃ¡ 4h',
+      ultimaInteracao: 'há 4h',
     },
     {
       nome: 'Marcos Paulo',
       canal: 'Site',
       status: 'Fechado',
       orcamento: 'R$ 1.200.000',
-      ultimaInteracao: 'hÃ¡ 1 semana',
+      ultimaInteracao: 'há 1 semana',
     },
   ];
 
@@ -107,7 +107,7 @@ export default function LeadsPage() {
               color: 'var(--brand-text-gray)',
             }}
           >
-            Aqui estÃ£o todos os seus compradores cadastrados no HUB.
+            Aqui estão todos os seus compradores cadastrados no HUB.
           </p>
         </div>
 
@@ -122,12 +122,12 @@ export default function LeadsPage() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Buscar por nome, telefone ou e-mailâ€¦"
+              placeholder="Buscar por nome, telefone ou e-mail…"
               className="w-full pl-12 pr-4 py-4 rounded-xl transition-all duration-300 focus:outline-none"
               style={{
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'var(--brand-dark-secondary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)',
                 color: 'var(--brand-light)',
               }}
@@ -162,7 +162,7 @@ export default function LeadsPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
@@ -194,7 +194,7 @@ export default function LeadsPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
@@ -203,11 +203,11 @@ export default function LeadsPage() {
                 <option>WhatsApp</option>
                 <option>Site</option>
                 <option>Instagram</option>
-                <option>IndicaÃ§Ã£o</option>
+                <option>Indicação</option>
               </select>
             </div>
 
-            {/* UrgÃªncia Filter */}
+            {/* Urgência Filter */}
             <div>
               <label
                 className="block text-sm font-semibold mb-2"
@@ -216,7 +216,7 @@ export default function LeadsPage() {
                   color: 'var(--brand-primary)',
                 }}
               >
-                UrgÃªncia
+                Urgência
               </label>
               <select
                 value={urgenciaFilter}
@@ -225,19 +225,19 @@ export default function LeadsPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
               >
                 <option>Todos</option>
                 <option>Alta</option>
-                <option>MÃ©dia</option>
+                <option>Média</option>
                 <option>Baixa</option>
               </select>
             </div>
 
-            {/* OrÃ§amento Filter */}
+            {/* Orçamento Filter */}
             <div>
               <label
                 className="block text-sm font-semibold mb-2"
@@ -246,7 +246,7 @@ export default function LeadsPage() {
                   color: 'var(--brand-primary)',
                 }}
               >
-                OrÃ§amento
+                Orçamento
               </label>
               <select
                 value={orcamentoFilter}
@@ -255,15 +255,15 @@ export default function LeadsPage() {
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)',
                 }}
               >
                 <option>Todos</option>
-                <option>AtÃ© 300 mil</option>
-                <option>AtÃ© 600 mil</option>
-                <option>AtÃ© 900 mil</option>
+                <option>Até 300 mil</option>
+                <option>Até 600 mil</option>
+                <option>Até 900 mil</option>
                 <option>1M+</option>
               </select>
             </div>
@@ -337,7 +337,7 @@ export default function LeadsPage() {
                       color: 'var(--brand-primary)',
                     }}
                   >
-                    OrÃ§amento
+                    Orçamento
                   </th>
                   <th
                     className="px-6 py-4 text-left text-sm font-semibold"
@@ -346,7 +346,7 @@ export default function LeadsPage() {
                       color: 'var(--brand-primary)',
                     }}
                   >
-                    Ãšltima InteraÃ§Ã£o
+                    Última Interação
                   </th>
                   <th
                     className="px-6 py-4 text-left text-sm font-semibold"
@@ -355,7 +355,7 @@ export default function LeadsPage() {
                       color: 'var(--brand-primary)',
                     }}
                   >
-                    AÃ§Ãµes
+                    Ações
                   </th>
                 </tr>
               </thead>
@@ -459,12 +459,13 @@ export default function LeadsPage() {
               color: 'var(--color-7a7a7a)',
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” GestÃ£o de Leads com IA.
+            © 2025 HUB Imobiliário Inteligente — Gestão de Leads com IA.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

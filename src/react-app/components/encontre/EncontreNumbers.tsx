@@ -1,6 +1,6 @@
-﻿const numbers = [
-  { value: "3â€“5", label: "imÃ³veis perfeitos sugeridos pela IA" },
-  { value: "24h", label: "atendimento instantÃ¢neo sempre que precisar" },
+const numbers = [
+  { value: "3–5", label: "imóveis perfeitos sugeridos pela IA" },
+  { value: "24h", label: "atendimento instantâneo sempre que precisar" },
   { value: "30%", label: "mais agilidade no processo de compra" },
   { value: "+25%", label: "mais visitas qualificadas agendadas" },
 ];

@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   TrendingUp, 
@@ -15,8 +15,8 @@ import {
 const kpis = [
   { label: 'Leads Novos Hoje', value: '12', icon: TrendingUp },
   { label: 'Visitas Agendadas', value: '3', icon: Calendar },
-  { label: 'Propostas em NegociaÃ§Ã£o', value: '4', icon: FileText },
-  { label: 'ImÃ³veis Ativos', value: '58', icon: Home }
+  { label: 'Propostas em Negociação', value: '4', icon: FileText },
+  { label: 'Imóveis Ativos', value: '58', icon: Home }
 ];
 
 const pipelineStages = [
@@ -28,9 +28,9 @@ const pipelineStages = [
 ];
 
 const tasks = [
-  { id: 1, text: 'Ligar para JoÃ£o â€“ pÃ³s-visita em IcaraÃ­', icon: Phone },
-  { id: 2, text: 'Enviar propostas ao casal Santos â€“ orÃ§amento R$ 900.000', icon: Send },
-  { id: 3, text: 'Confirmar visita em Charitas â€“ amanhÃ£, 10h', icon: CheckCircle2 }
+  { id: 1, text: 'Ligar para João – pós-visita em Icaraí', icon: Phone },
+  { id: 2, text: 'Enviar propostas ao casal Santos – orçamento R$ 900.000', icon: Send },
+  { id: 3, text: 'Confirmar visita em Charitas – amanhã, 10h', icon: CheckCircle2 }
 ];
 
 const recentLeads = [
@@ -39,7 +39,7 @@ const recentLeads = [
     channel: 'WhatsApp',
     status: 'Novo',
     budget: 'R$ 750.000',
-    lastInteraction: 'hÃ¡ 2h'
+    lastInteraction: 'há 2h'
   },
   {
     name: 'Pedro Souza',
@@ -53,7 +53,7 @@ const recentLeads = [
     channel: 'Instagram',
     status: 'Visita agendada',
     budget: 'R$ 950.000',
-    lastInteraction: 'hÃ¡ 3 dias'
+    lastInteraction: 'há 3 dias'
   }
 ];
 
@@ -93,7 +93,7 @@ export default function DashboardPage() {
               color: 'var(--brand-text-gray)'
             }}
           >
-            Aqui estÃ¡ a visÃ£o geral da sua operaÃ§Ã£o hoje.
+            Aqui está a visão geral da sua operação hoje.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export default function DashboardPage() {
               color: 'var(--brand-text-gray)'
             }}
           >
-            Seu funil de vendas atualizado automaticamente conforme vocÃª interage com leads.
+            Seu funil de vendas atualizado automaticamente conforme você interage com leads.
           </p>
         </div>
 
@@ -210,7 +210,7 @@ export default function DashboardPage() {
                 color: 'var(--brand-light)'
               }}
             >
-              Seus prÃ³ximos follow-ups
+              Seus próximos follow-ups
             </h2>
 
             <div className="space-y-4 mb-6">
@@ -316,7 +316,7 @@ export default function DashboardPage() {
                         color: 'var(--brand-primary)'
                       }}
                     >
-                      OrÃ§amento
+                      Orçamento
                     </th>
                     <th 
                       className="px-6 py-4 text-left text-sm font-semibold"
@@ -325,7 +325,7 @@ export default function DashboardPage() {
                         color: 'var(--brand-primary)'
                       }}
                     >
-                      Ãšltima interaÃ§Ã£o
+                      Última interação
                     </th>
                   </tr>
                 </thead>
@@ -417,7 +417,7 @@ export default function DashboardPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Ãrea do Corretor.
+            © 2025 HUB Imobiliário Inteligente — Área do Corretor.
           </p>
         </div>
       </div>

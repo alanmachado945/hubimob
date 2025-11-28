@@ -9,7 +9,7 @@ export default function MinhaContaPage() {
   const [creci, setCreci] = useState('12345-F');
   const [estadoCreci, setEstadoCreci] = useState('RJ');
   const [categoria, setCategoria] = useState('Corretor');
-  const [nomeImobiliaria, setNomeImobiliaria] = useState('HUB ImÃ³veis Premium');
+  const [nomeImobiliaria, setNomeImobiliaria] = useState('HUB Imóveis Premium');
   const [cnpj, setCnpj] = useState('12.345.678/0001-99');
   const [endereco, setEndereco] = useState('Av. Rio Branco, 1234 - Centro, Rio de Janeiro - RJ');
   const [siteImobiliaria, setSiteImobiliaria] = useState('https://hubimoveispremium.com.br');
@@ -29,7 +29,7 @@ export default function MinhaContaPage() {
 
   const handleSave = () => {
     // TODO: Implement save logic
-    alert('AlteraÃ§Ãµes salvas com sucesso!');
+    alert('Alterações salvas com sucesso!');
   };
 
   return (
@@ -42,7 +42,7 @@ export default function MinhaContaPage() {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-primary-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="relative z-10 max-w-5xl mx-auto">
-        {/* CABEÃ‡ALHO */}
+        {/* CABEÇALHO */}
         <div className="mb-12 text-center">
           <div 
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-6" 
@@ -53,7 +53,7 @@ export default function MinhaContaPage() {
               className="text-sm font-semibold" 
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
             >
-              CONFIGURAÃ‡Ã•ES DO CORRETOR
+              CONFIGURAÇÕES DO CORRETOR
             </span>
           </div>
           
@@ -67,11 +67,11 @@ export default function MinhaContaPage() {
             className="text-xl max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            Gerencie suas informaÃ§Ãµes pessoais, profissionais e da sua imobiliÃ¡ria.
+            Gerencie suas informações pessoais, profissionais e da sua imobiliária.
           </p>
         </div>
 
-        {/* SEÃ‡ÃƒO 1 â€” FOTO DO PERFIL */}
+        {/* SEÇÃO 1 — FOTO DO PERFIL */}
         <div 
           className="mb-8 p-8 rounded-2xl border-2 text-center"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -110,7 +110,7 @@ export default function MinhaContaPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 2 â€” DADOS PESSOAIS DO CORRETOR */}
+        {/* SEÇÃO 2 — DADOS PESSOAIS DO CORRETOR */}
         <div 
           className="mb-8 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -120,7 +120,7 @@ export default function MinhaContaPage() {
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
             <User className="w-8 h-8" style={{ color: 'var(--brand-primary)' }} />
-            InformaÃ§Ãµes Pessoais
+            Informações Pessoais
           </h2>
 
           <div className="space-y-4">
@@ -141,7 +141,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -167,7 +167,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -193,7 +193,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -214,13 +214,13 @@ export default function MinhaContaPage() {
                 <input
                   id="password"
                   type="password"
-                  value="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+                  value="••••••••"
                   disabled
                   className="flex-1 px-4 py-3 rounded-xl"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--color-7a7a7a)'
                   }}
@@ -231,7 +231,7 @@ export default function MinhaContaPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'transparent',
                     color: 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)'
                   }}
                   onMouseEnter={(e) => {
@@ -249,7 +249,7 @@ export default function MinhaContaPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 3 â€” DADOS PROFISSIONAIS (CRECI) */}
+        {/* SEÇÃO 3 — DADOS PROFISSIONAIS (CRECI) */}
         <div 
           className="mb-8 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -259,7 +259,7 @@ export default function MinhaContaPage() {
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
             <Briefcase className="w-8 h-8" style={{ color: 'var(--brand-primary)' }} />
-            InformaÃ§Ãµes Profissionais
+            Informações Profissionais
           </h2>
 
           <div className="grid md:grid-cols-3 gap-4">
@@ -269,7 +269,7 @@ export default function MinhaContaPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
               >
-                NÃºmero do CRECI
+                Número do CRECI
               </label>
               <input
                 id="creci"
@@ -280,7 +280,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -305,7 +305,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -313,9 +313,9 @@ export default function MinhaContaPage() {
                 onBlur={(e) => e.target.style.borderColor = 'var(--brand-dark-secondary)'}
               >
                 <option value="RJ">RJ - Rio de Janeiro</option>
-                <option value="SP">SP - SÃ£o Paulo</option>
+                <option value="SP">SP - São Paulo</option>
                 <option value="MG">MG - Minas Gerais</option>
-                <option value="ES">ES - EspÃ­rito Santo</option>
+                <option value="ES">ES - Espírito Santo</option>
               </select>
             </div>
 
@@ -335,7 +335,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -343,14 +343,14 @@ export default function MinhaContaPage() {
                 onBlur={(e) => e.target.style.borderColor = 'var(--brand-dark-secondary)'}
               >
                 <option value="Corretor">Corretor</option>
-                <option value="ImobiliÃ¡ria">ImobiliÃ¡ria</option>
+                <option value="Imobiliária">Imobiliária</option>
                 <option value="Parceiro">Parceiro</option>
               </select>
             </div>
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 4 â€” DADOS DA IMOBILIÃRIA */}
+        {/* SEÇÃO 4 — DADOS DA IMOBILIÁRIA */}
         <div 
           className="mb-8 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -360,7 +360,7 @@ export default function MinhaContaPage() {
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
             <Building className="w-8 h-8" style={{ color: 'var(--brand-primary)' }} />
-            ImobiliÃ¡ria / Empresa
+            Imobiliária / Empresa
           </h2>
 
           <div className="space-y-4">
@@ -371,7 +371,7 @@ export default function MinhaContaPage() {
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
-                  Nome da imobiliÃ¡ria
+                  Nome da imobiliária
                 </label>
                 <input
                   id="nomeImobiliaria"
@@ -382,7 +382,7 @@ export default function MinhaContaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -408,7 +408,7 @@ export default function MinhaContaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -424,7 +424,7 @@ export default function MinhaContaPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
               >
-                EndereÃ§o comercial
+                Endereço comercial
               </label>
               <input
                 id="endereco"
@@ -435,7 +435,7 @@ export default function MinhaContaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -462,7 +462,7 @@ export default function MinhaContaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -488,7 +488,7 @@ export default function MinhaContaPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -500,7 +500,7 @@ export default function MinhaContaPage() {
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 5 â€” PREFERÃŠNCIAS DA CONTA */}
+        {/* SEÇÃO 5 — PREFERÊNCIAS DA CONTA */}
         <div 
           className="mb-8 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -510,7 +510,7 @@ export default function MinhaContaPage() {
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
             <Settings className="w-8 h-8" style={{ color: 'var(--brand-primary)' }} />
-            PreferÃªncias do Sistema
+            Preferências do Sistema
           </h2>
 
           <div className="space-y-4">
@@ -525,7 +525,7 @@ export default function MinhaContaPage() {
                 className="text-lg group-hover:text-[var(--brand-primary)] transition-colors"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
               >
-                NotificaÃ§Ãµes por WhatsApp
+                Notificações por WhatsApp
               </span>
             </label>
 
@@ -540,7 +540,7 @@ export default function MinhaContaPage() {
                 className="text-lg group-hover:text-[var(--brand-primary)] transition-colors"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
               >
-                NotificaÃ§Ãµes por e-mail
+                Notificações por e-mail
               </span>
             </label>
 
@@ -555,7 +555,7 @@ export default function MinhaContaPage() {
                 className="text-lg group-hover:text-[var(--brand-primary)] transition-colors"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
               >
-                SugestÃµes da IA no dashboard
+                Sugestões da IA no dashboard
               </span>
             </label>
 
@@ -585,13 +585,13 @@ export default function MinhaContaPage() {
                 className="text-lg group-hover:text-[var(--brand-primary)] transition-colors"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
               >
-                Marketplace colaborativo (receber imÃ³veis de parceiros)
+                Marketplace colaborativo (receber imóveis de parceiros)
               </span>
             </label>
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 6 â€” BOTÃ•ES FINAIS */}
+        {/* SEÇÃO 6 — BOTÕES FINAIS */}
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <button
             onClick={handleSave}
@@ -605,7 +605,7 @@ export default function MinhaContaPage() {
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
           >
             <Save className="w-5 h-5" />
-            Salvar AlteraÃ§Ãµes
+            Salvar Alterações
           </button>
 
           <Link
@@ -615,7 +615,7 @@ export default function MinhaContaPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -630,18 +630,19 @@ export default function MinhaContaPage() {
           </Link>
         </div>
 
-        {/* RODAPÃ‰ PREMIUM */}
+        {/* RODAPÉ PREMIUM */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Ãrea do Corretor.
+            © 2025 HUB Imobiliário Inteligente — Área do Corretor.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

@@ -1,4 +1,4 @@
-@import './tokens.css';
+﻿@import './tokens.css';
 @import './colors.css';
 
 @tailwind base;
@@ -85,7 +85,7 @@ a {
 
 .btn-outline {
   background: transparent;
-  border: 1px solid var(--brand-primary);
+  border: var(--border-thin) solid var(--brand-primary);
   color: var(--brand-primary);
 }
 
@@ -93,6 +93,31 @@ a {
   background-color: var(--brand-primary);
   color: var(--brand-dark);
 }
+
+/* TYPOGRAPHY UTILITIES */
+.font-display {
+  font-family: var(--font-display) !important;
+}
+
+.font-sans {
+  font-family: var(--font-sans) !important;
+}
+
+.fs-base {
+  font-size: var(--font-size-base) !important;
+}
+
+.fs-title {
+  font-size: var(--font-size-title) !important;
+}
+
+.fs-subtitle {
+  font-size: var(--font-size-subtitle) !important;
+}
+
+.fw-regular { font-weight: var(--font-normal) !important; }
+.fw-medium { font-weight: var(--font-medium) !important; }
+.fw-bold { font-weight: var(--font-bold) !important; }
 
 /* RESPONSIVE */
 @media (max-width: 980px) {
@@ -104,3 +129,4 @@ a {
     font-size: var(--text-2xl);
   }
 }
+

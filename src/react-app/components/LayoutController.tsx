@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import SidebarCorretor from "./SidebarCorretor";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -11,7 +11,7 @@ interface LayoutProps {
 
 export default function LayoutController({ children, isPublic, dashboard }: LayoutProps) {
 
-  // ðŸ”¹ LOGIN / REGISTER â€” sem header/footer/sidebar
+  // 🔹 LOGIN / REGISTER — sem header/footer/sidebar
   if (isPublic === true) {
     return (
       <div
@@ -26,7 +26,7 @@ export default function LayoutController({ children, isPublic, dashboard }: Layo
     );
   }
 
-  // ðŸ”¹ DASHBOARD â€” com sidebar
+  // 🔹 DASHBOARD — com sidebar
   if (dashboard === true) {
     return (
       <div
@@ -41,7 +41,7 @@ export default function LayoutController({ children, isPublic, dashboard }: Layo
           <SidebarCorretor />
         </div>
 
-        {/* ConteÃºdo */}
+        {/* Conteúdo */}
         <main
           style={{
             backgroundColor: "var(--brand-dark)", // preto azul-grafite
@@ -55,7 +55,7 @@ export default function LayoutController({ children, isPublic, dashboard }: Layo
     );
   }
 
-  // ðŸ”¹ PÃGINAS PÃšBLICAS (Home, Sobre, etc.)
+  // 🔹 PÁGINAS PÚBLICAS (Home, Sobre, etc.)
   return (
     <div
       style={{
@@ -66,7 +66,7 @@ export default function LayoutController({ children, isPublic, dashboard }: Layo
     >
       <Header />
 
-      {/* ðŸ”¥ IMPORTANTE: sem padding. A Home precisa ocupar a tela toda */}
+      {/* 🔥 IMPORTANTE: sem padding. A Home precisa ocupar a tela toda */}
       <main className="flex-1">
         {children}
       </main>

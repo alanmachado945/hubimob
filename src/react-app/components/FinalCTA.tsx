@@ -1,12 +1,12 @@
-﻿import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router';
 
 const benefits = [
-  'Acesso imediato Ã  plataforma premium',
+  'Acesso imediato à plataforma premium',
   'Onboarding personalizado com especialista',
-  'Primeiros leads qualificados em atÃ© 24h',
-  'Suporte prioritÃ¡rio 7 dias por semana',
-  'Garantia de satisfaÃ§Ã£o ou reembolso'
+  'Primeiros leads qualificados em até 24h',
+  'Suporte prioritário 7 dias por semana',
+  'Garantia de satisfação ou reembolso'
 ];
 
 export default function FinalCTA() {
@@ -36,7 +36,7 @@ export default function FinalCTA() {
                 className="text-sm font-bold"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
               >
-                VAGAS LIMITADAS - APENAS 50 CORRETORES POR MÃŠS
+                VAGAS LIMITADAS - APENAS 50 CORRETORES POR MÊS
               </span>
             </div>
 
@@ -52,7 +52,7 @@ export default function FinalCTA() {
               className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed"
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.8)' }}
             >
-              Junte-se aos corretores de elite que jÃ¡ estÃ£o acelerando resultados com tecnologia avanÃ§ada de qualificaÃ§Ã£o.
+              Junte-se aos corretores de elite que já estão acelerando resultados com tecnologia avançada de qualificação.
             </p>
 
             {/* Benefits List */}
@@ -78,7 +78,7 @@ export default function FinalCTA() {
                 fontFamily: 'Montserrat, sans-serif',
                 color: 'var(--brand-dark)',
                 backgroundImage: 'linear-gradient(to right, var(--color-c8a96a), var(--color-a68a52), var(--color-c8a96a))',
-                boxShadow: '0 0 40px rgba(var(--color-c8a96a-rgb), 0.4)'
+                boxShadow: 'var(--shadow-lg)'
               }}
             >
               <span className="relative z-10 flex items-center gap-3">
@@ -100,7 +100,7 @@ export default function FinalCTA() {
               className="text-sm"
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.6)' }}
             >
-              Sem compromisso de permanÃªncia â€¢ Cancele quando quiser â€¢ Dados 100% seguros
+              Sem compromisso de permanência • Cancele quando quiser • Dados 100% seguros
             </p>
           </div>
 
@@ -115,7 +115,7 @@ export default function FinalCTA() {
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.502)' }}
           >
-            HUBIMOB â€¢ Tecnologia de IA para Corretores de Elite â€¢ 2025
+            HUBIMOB • Tecnologia de IA para Corretores de Elite • 2025
           </p>
         </div>
       </div>

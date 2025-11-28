@@ -30,7 +30,7 @@ export default function CadastrarImovelPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Implement property registration logic
-    alert('ImÃ³vel cadastrado com sucesso!');
+    alert('Imóvel cadastrado com sucesso!');
   };
 
   const toggleCaracteristica = (caracteristica: string) => {
@@ -88,7 +88,7 @@ export default function CadastrarImovelPage() {
               className="text-sm font-semibold" 
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
             >
-              CADASTRO DE IMÃ“VEL
+              CADASTRO DE IMÓVEL
             </span>
           </div>
           
@@ -96,18 +96,18 @@ export default function CadastrarImovelPage() {
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
           >
-            Cadastrar Novo ImÃ³vel
+            Cadastrar Novo Imóvel
           </h1>
           <p 
             className="text-xl max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            Preencha os dados abaixo para adicionar um imÃ³vel ao Marketplace.
+            Preencha os dados abaixo para adicionar um imóvel ao Marketplace.
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-8">
-          {/* SEÃ‡ÃƒO 1 - InformaÃ§Ãµes Principais */}
+          {/* SEÇÃO 1 - Informações Principais */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -116,29 +116,29 @@ export default function CadastrarImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              InformaÃ§Ãµes Principais
+              Informações Principais
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* TÃ­tulo do ImÃ³vel */}
+              {/* Título do Imóvel */}
               <div className="md:col-span-2">
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  TÃ­tulo do ImÃ³vel
+                  Título do Imóvel
                 </label>
                 <input
                   type="text"
                   value={titulo}
                   onChange={(e) => setTitulo(e.target.value)}
                   required
-                  placeholder="Ex: Apartamento 3 Quartos â€“ IcaraÃ­"
+                  placeholder="Ex: Apartamento 3 Quartos – Icaraí"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -162,7 +162,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -192,7 +192,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -204,13 +204,13 @@ export default function CadastrarImovelPage() {
                 </select>
               </div>
 
-              {/* PreÃ§o */}
+              {/* Preço */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  PreÃ§o (R$)
+                  Preço (R$)
                 </label>
                 <input
                   type="text"
@@ -222,7 +222,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -231,13 +231,13 @@ export default function CadastrarImovelPage() {
                 />
               </div>
 
-              {/* Ãrea */}
+              {/* Área */}
               <div>
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Ãrea (mÂ²)
+                  Área (m²)
                 </label>
                 <input
                   type="text"
@@ -249,7 +249,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -273,7 +273,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -303,7 +303,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -333,7 +333,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -350,7 +350,7 @@ export default function CadastrarImovelPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 2 - LocalizaÃ§Ã£o */}
+          {/* SEÇÃO 2 - Localização */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -359,7 +359,7 @@ export default function CadastrarImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              LocalizaÃ§Ã£o
+              Localização
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -381,7 +381,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -403,12 +403,12 @@ export default function CadastrarImovelPage() {
                   value={cidade}
                   onChange={(e) => setCidade(e.target.value)}
                   required
-                  placeholder="NiterÃ³i"
+                  placeholder="Niterói"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -430,12 +430,12 @@ export default function CadastrarImovelPage() {
                   value={bairro}
                   onChange={(e) => setBairro(e.target.value)}
                   required
-                  placeholder="IcaraÃ­"
+                  placeholder="Icaraí"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -462,7 +462,7 @@ export default function CadastrarImovelPage() {
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -471,25 +471,25 @@ export default function CadastrarImovelPage() {
                 />
               </div>
 
-              {/* EndereÃ§o */}
+              {/* Endereço */}
               <div className="md:col-span-2">
                 <label 
                   className="block text-sm font-semibold mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  EndereÃ§o Completo
+                  Endereço Completo
                 </label>
                 <input
                   type="text"
                   value={endereco}
                   onChange={(e) => setEndereco(e.target.value)}
                   required
-                  placeholder="Rua, nÃºmero, complemento"
+                  placeholder="Rua, número, complemento"
                   className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-light)'
                   }}
@@ -504,7 +504,7 @@ export default function CadastrarImovelPage() {
               className="h-64 rounded-xl flex items-center justify-center"
               style={{ 
                 backgroundColor: 'var(--color-1a1a1c)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderStyle: 'dashed',
                 borderColor: 'var(--brand-primary)'
               }}
@@ -521,7 +521,7 @@ export default function CadastrarImovelPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 3 - DescriÃ§Ã£o */}
+          {/* SEÇÃO 3 - Descrição */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -530,7 +530,7 @@ export default function CadastrarImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              DescriÃ§Ã£o do ImÃ³vel
+              Descrição do Imóvel
             </h2>
 
             <div className="mb-4">
@@ -538,19 +538,19 @@ export default function CadastrarImovelPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
               >
-                DescriÃ§Ã£o Completa
+                Descrição Completa
               </label>
               <textarea
                 value={descricao}
                 onChange={(e) => setDescricao(e.target.value)}
                 required
                 rows={8}
-                placeholder="Descreva as caracterÃ­sticas e diferenciais do imÃ³vel..."
+                placeholder="Descreva as características e diferenciais do imóvel..."
                 className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none resize-none"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-dark-secondary)',
                   color: 'var(--brand-light)'
                 }}
@@ -566,7 +566,7 @@ export default function CadastrarImovelPage() {
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)',
                 color: 'var(--brand-primary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
               onMouseEnter={(e) => {
@@ -579,11 +579,11 @@ export default function CadastrarImovelPage() {
               }}
             >
               <Sparkles className="w-5 h-5" />
-              Gerar descriÃ§Ã£o com IA
+              Gerar descrição com IA
             </button>
           </div>
 
-          {/* SEÃ‡ÃƒO 4 - Fotos */}
+          {/* SEÇÃO 4 - Fotos */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -592,14 +592,14 @@ export default function CadastrarImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              Fotos do ImÃ³vel
+              Fotos do Imóvel
             </h2>
 
             <div 
               className="h-64 rounded-xl flex items-center justify-center cursor-pointer transition-all duration-300 hover:bg-opacity-80"
               style={{ 
                 backgroundColor: 'var(--color-1a1a1c)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderStyle: 'dashed',
                 borderColor: 'var(--brand-primary)'
               }}
@@ -616,13 +616,13 @@ export default function CadastrarImovelPage() {
                   className="text-sm"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  Formatos aceitos: JPG, PNG (mÃ¡x. 10MB)
+                  Formatos aceitos: JPG, PNG (máx. 10MB)
                 </p>
               </div>
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 5 - CaracterÃ­sticas */}
+          {/* SEÇÃO 5 - Características */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -631,7 +631,7 @@ export default function CadastrarImovelPage() {
               className="text-3xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              CaracterÃ­sticas
+              Características
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -645,7 +645,7 @@ export default function CadastrarImovelPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: caracteristicas.includes(caracteristica) ? 'var(--brand-primary)' : 'var(--brand-dark-secondary)',
                     color: caracteristicas.includes(caracteristica) ? 'var(--brand-dark)' : 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)'
                   }}
                 >
@@ -656,7 +656,7 @@ export default function CadastrarImovelPage() {
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 6 - Tags do Marketplace */}
+          {/* SEÇÃO 6 - Tags do Marketplace */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -679,7 +679,7 @@ export default function CadastrarImovelPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: tags.includes(tag) ? 'var(--brand-primary)' : 'rgba(var(--color-e3a93c-rgb), 0.125)',
                     color: tags.includes(tag) ? 'var(--brand-dark)' : 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)'
                   }}
                 >
@@ -689,7 +689,7 @@ export default function CadastrarImovelPage() {
             </div>
           </div>
 
-          {/* BotÃµes de AÃ§Ã£o */}
+          {/* Botões de Ação */}
           <div className="flex flex-col md:flex-row gap-4">
             <Link
               to="/captacao-imovel"
@@ -702,7 +702,7 @@ export default function CadastrarImovelPage() {
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
             >
-              Cadastrar ImÃ³vel
+              Cadastrar Imóvel
             </Link>
 
             <Link
@@ -712,7 +712,7 @@ export default function CadastrarImovelPage() {
                 fontFamily: 'Montserrat, sans-serif',
                 backgroundColor: 'transparent',
                 color: 'var(--brand-primary)',
-                borderWidth: '2px',
+                borderWidth: "var(--border-md)",
                 borderColor: 'var(--brand-primary)'
               }}
               onMouseEnter={(e) => {
@@ -727,18 +727,19 @@ export default function CadastrarImovelPage() {
           </div>
         </form>
 
-        {/* RodapÃ© */}
+        {/* Rodapé */}
         <div className="text-center pt-12 mt-12 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Cadastro de ImÃ³veis.
+            © 2025 HUB Imobiliário Inteligente — Cadastro de Imóveis.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

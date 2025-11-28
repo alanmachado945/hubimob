@@ -1,11 +1,11 @@
-﻿import { Brain, Database, TrendingUp } from 'lucide-react';
+import { Brain, Database, TrendingUp } from 'lucide-react';
 
 export default function Methodology() {
   return (
     <section
       className="py-24 bg-gradient-to-b"
       style={{
-        backgroundImage: "linear-gradient(to bottom, var(--color-0a0f1f), var(--color-111827))" // Azul-marinho profundo â†’ Preto azul-grafite
+        backgroundImage: "linear-gradient(to bottom, var(--color-0a0f1f), var(--color-111827))" // Azul-marinho profundo → Preto azul-grafite
       }}
     >
       <div className="max-w-container mx-auto px-5">
@@ -17,7 +17,7 @@ export default function Methodology() {
               className="absolute inset-0 bg-gradient-to-br blur-3xl"
               style={{
                 backgroundImage:
-                  "linear-gradient(to bottom right, rgba(var(--color-d4af67-rgb), 0.20), rgba(var(--color-0a0f1f-rgb), 0))" // Dourado metÃ¡lico â†’ transparente sobre navy
+                  "linear-gradient(to bottom right, rgba(var(--color-d4af67-rgb), 0.20), rgba(var(--color-0a0f1f-rgb), 0))" // Dourado metálico → transparente sobre navy
               }}
             ></div>
 
@@ -26,7 +26,7 @@ export default function Methodology() {
               alt="Modern Architecture"
               className="relative rounded-3xl shadow-2xl w-full h-[600px] object-cover"
               style={{
-                boxShadow: "0 0 40px rgba(var(--color-d4af67-rgb), 0.10)" // Dourado metÃ¡lico 10%
+                boxShadow: "var(--shadow-lg)" // Dourado metálico 10%
               }}
             />
           </div>
@@ -42,7 +42,7 @@ export default function Methodology() {
               className="text-lg mb-12 leading-relaxed"
               style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.80)" }}
             >
-              Nossa plataforma combina algoritmos avanÃ§ados de machine learning com a experiÃªncia de consultores especializados para entregar recomendaÃ§Ãµes precisas e personalizadas.
+              Nossa plataforma combina algoritmos avançados de machine learning com a experiência de consultores especializados para entregar recomendações precisas e personalizadas.
             </p>
             
             <div className="space-y-6">
@@ -51,8 +51,8 @@ export default function Methodology() {
               <div
                 className="flex gap-4 items-start glass-effect rounded-xl p-6"
                 style={{
-                  backgroundColor: "rgba(var(--color-111827-rgb), 0.40)", // Preto azul-grafite translÃºcido
-                  border: "1px solid rgba(var(--color-d4af67-rgb), 0.15)" // Dourado metÃ¡lico 15%
+                  backgroundColor: "rgba(var(--color-111827-rgb), 0.40)", // Preto azul-grafite translúcido
+                  border: "1px solid rgba(var(--color-d4af67-rgb), 0.15)" // Dourado metálico 15%
                 }}
               >
                 <div
@@ -66,10 +66,10 @@ export default function Methodology() {
 
                 <div>
                   <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-light)" }}>
-                    InteligÃªncia Artificial
+                    Inteligência Artificial
                   </h3>
                   <p style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
-                    AnÃ¡lise de milhares de imÃ³veis em tempo real para encontrar matches perfeitos
+                    Análise de milhares de imóveis em tempo real para encontrar matches perfeitos
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Methodology() {
                     Big Data
                   </h3>
                   <p style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
-                    Dados de mercado atualizados constantemente para decisÃµes informadas
+                    Dados de mercado atualizados constantemente para decisões informadas
                   </p>
                 </div>
               </div>
@@ -120,10 +120,10 @@ export default function Methodology() {
 
                 <div>
                   <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-light)" }}>
-                    AnÃ¡lise Preditiva
+                    Análise Preditiva
                   </h3>
                   <p style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
-                    PrevisÃµes de valorizaÃ§Ã£o e tendÃªncias de mercado
+                    Previsões de valorização e tendências de mercado
                   </p>
                 </div>
               </div>

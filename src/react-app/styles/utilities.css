@@ -1,4 +1,4 @@
-/* ================================
+﻿/* ================================
    HUBIMOB — Utility Classes Globais
    Padronizadas com Design Tokens
 ================================ */
@@ -169,7 +169,7 @@
 }
 
 .btn-outline {
-  border: 2px solid var(--brand-primary);
+  border: var(--border-md) solid var(--brand-primary);
   color: var(--brand-primary);
   padding: var(--space-2) var(--space-6);
   border-radius: var(--radius-pill);
@@ -235,7 +235,7 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-sm);
   padding: var(--space-6);
-  border: 1px solid var(--brand-light-gray);
+  border: var(--border-thin) solid var(--brand-light-gray);
 }
 
 .card-light:hover {
@@ -441,3 +441,4 @@
   padding-top: var(--space-32);
   padding-bottom: var(--space-32);
 }
+

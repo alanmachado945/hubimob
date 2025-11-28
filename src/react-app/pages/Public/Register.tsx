@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function RegisterPage() {
@@ -13,7 +13,7 @@ export default function RegisterPage() {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      alert('As senhas nÃ£o coincidem');
+      alert('As senhas não coincidem');
       return;
     }
 
@@ -43,7 +43,7 @@ export default function RegisterPage() {
           </h1>
 
           <p className="text-sm text-brand-light/70 font-sans">
-            Acesso exclusivo para corretores e imobiliÃ¡rias.
+            Acesso exclusivo para corretores e imobiliárias.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function RegisterPage() {
               onFocus={() => setFocusedField('password')}
               onBlur={() => setFocusedField(null)}
               required
-              placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+              placeholder="••••••••"
               className={inputClasses(focusedField === 'password')}
             />
           </div>
@@ -134,7 +134,7 @@ export default function RegisterPage() {
               onFocus={() => setFocusedField('confirmPassword')}
               onBlur={() => setFocusedField(null)}
               required
-              placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+              placeholder="••••••••"
               className={inputClasses(focusedField === 'confirmPassword')}
             />
           </div>
@@ -153,7 +153,7 @@ export default function RegisterPage() {
               to="/login"
               className="text-sm font-semibold text-brand-primary hover:text-brand-primary-dark transition-colors duration-300 font-sans"
             >
-              JÃ¡ tenho conta â†’ Entrar
+              Já tenho conta → Entrar
             </Link>
           </div>
         </form>
@@ -161,7 +161,7 @@ export default function RegisterPage() {
         {/* Footer */}
         <div className="mt-8 text-center">
           <p className="text-xs text-brand-light/50 font-sans">
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” ProtÃ³tipo MVP.
+            © 2025 HUB Imobiliário Inteligente — Protótipo MVP.
           </p>
         </div>
       </div>

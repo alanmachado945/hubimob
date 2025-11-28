@@ -1,28 +1,28 @@
-﻿import { Briefcase, Heart, Rocket, Crown } from 'lucide-react';
+import { Briefcase, Heart, Rocket, Crown } from 'lucide-react';
 
 const experiences = [
   {
     icon: Briefcase,
     title: 'Executivos',
-    description: 'ImÃ³veis prÃ³ximos aos principais centros corporativos com infraestrutura premium',
+    description: 'Imóveis próximos aos principais centros corporativos com infraestrutura premium',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/exp-executivos.png'
   },
   {
     icon: Heart,
-    title: 'MÃ©dicos',
-    description: 'Propriedades com fÃ¡cil acesso a hospitais e clÃ­nicas de excelÃªncia',
+    title: 'Médicos',
+    description: 'Propriedades com fácil acesso a hospitais e clínicas de excelência',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/exp-medicos.png'
   },
   {
     icon: Rocket,
     title: 'Empreendedores',
-    description: 'EspaÃ§os versÃ¡teis que atendem necessidades profissionais e pessoais',
+    description: 'Espaços versáteis que atendem necessidades profissionais e pessoais',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/exp-empreendedores.png'
   },
   {
     icon: Crown,
     title: 'Investidores',
-    description: 'Oportunidades com alto potencial de valorizaÃ§Ã£o e retorno',
+    description: 'Oportunidades com alto potencial de valorização e retorno',
     image: 'https://mocha-cdn.com/019aa212-fa9f-7c39-a01d-88c61f0b7ef3/exp-investidores.png'
   }
 ];
@@ -35,7 +35,7 @@ export default function PremiumExperiences() {
         {/* TITLE */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span style={{ color: "var(--brand-light)" }}>ExperiÃªncias</span>{' '}
+            <span style={{ color: "var(--brand-light)" }}>Experiências</span>{' '}
             <span style={{ color: "var(--brand-primary)" }}>premium</span>
           </h2>
 
@@ -43,7 +43,7 @@ export default function PremiumExperiences() {
             className="text-lg max-w-2xl mx-auto"
             style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
           >
-            SoluÃ§Ãµes personalizadas para diferentes perfis profissionais
+            Soluções personalizadas para diferentes perfis profissionais
           </p>
         </div>
         
@@ -58,7 +58,7 @@ export default function PremiumExperiences() {
                   hover:shadow-2xl transition-all duration-500 hover:scale-105 
                   min-h-[340px] flex flex-col"
                 style={{
-                  boxShadow: "0 0 25px rgba(var(--color-d4af67-rgb), 0.15)" // dourado suave
+                  boxShadow: "var(--shadow-lg)" // dourado suave
                 }}
               >
 
@@ -93,7 +93,7 @@ export default function PremiumExperiences() {
                     className="w-16 h-16 rounded-xl backdrop-blur-sm flex items-center justify-center mb-6 
                       group-hover:scale-110 transition-all duration-300 shadow-lg"
                     style={{
-                      backgroundColor: "rgba(var(--color-d4af67-rgb), 0.20)", // dourado translÃºcido
+                      backgroundColor: "rgba(var(--color-d4af67-rgb), 0.20)", // dourado translúcido
                       border: "1px solid rgba(var(--color-d4af67-rgb), 0.30)" // dourado 30%
                     }}
                   >

@@ -1,35 +1,35 @@
-﻿import { Brain, Shield, Users, Zap, TrendingUp, Clock } from 'lucide-react';
+import { Brain, Shield, Users, Zap, TrendingUp, Clock } from 'lucide-react';
 
 const benefits = [
   {
     icon: Brain,
     title: 'IA Qualifica Compradores',
-    description: 'Nossa inteligÃªncia artificial filtra e qualifica leads em tempo real, garantindo que apenas compradores sÃ©rios visualizem seu imÃ³vel.'
+    description: 'Nossa inteligência artificial filtra e qualifica leads em tempo real, garantindo que apenas compradores sérios visualizem seu imóvel.'
   },
   {
     icon: Shield,
-    title: 'ProteÃ§Ã£o JurÃ­dica Total',
-    description: 'Contratos digitais, rastreabilidade completa e seguranÃ§a em cada etapa da negociaÃ§Ã£o. Seus dados e transaÃ§Ã£o protegidos.'
+    title: 'Proteção Jurídica Total',
+    description: 'Contratos digitais, rastreabilidade completa e segurança em cada etapa da negociação. Seus dados e transação protegidos.'
   },
   {
     icon: Users,
     title: 'Rede Premium de Corretores',
-    description: 'Acesso exclusivo a corretores especializados e verificados, prontos para valorizar e vender seu imÃ³vel.'
+    description: 'Acesso exclusivo a corretores especializados e verificados, prontos para valorizar e vender seu imóvel.'
   },
   {
     icon: Zap,
-    title: 'Processo Ãgil e Automatizado',
-    description: 'Da publicaÃ§Ã£o Ã  venda, tudo acontece de forma rÃ¡pida e automatizada. Menos burocracia, mais resultados.'
+    title: 'Processo Ágil e Automatizado',
+    description: 'Da publicação à venda, tudo acontece de forma rápida e automatizada. Menos burocracia, mais resultados.'
   },
   {
     icon: TrendingUp,
-    title: 'ValorizaÃ§Ã£o Inteligente',
-    description: 'Nossa IA analisa o mercado e sugere melhorias para aumentar o valor do seu imÃ³vel antes mesmo da venda.'
+    title: 'Valorização Inteligente',
+    description: 'Nossa IA analisa o mercado e sugere melhorias para aumentar o valor do seu imóvel antes mesmo da venda.'
   },
   {
     icon: Clock,
-    title: 'Venda atÃ© 40% Mais RÃ¡pido',
-    description: 'Com compradores qualificados e processo otimizado, seu imÃ³vel vende muito mais rÃ¡pido que no mercado tradicional.'
+    title: 'Venda até 40% Mais Rápido',
+    description: 'Com compradores qualificados e processo otimizado, seu imóvel vende muito mais rápido que no mercado tradicional.'
   }
 ];
 
@@ -53,7 +53,7 @@ export default function ProprietariosBenefits() {
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            BenefÃ­cios exclusivos que transformam a forma como vocÃª vende seu imÃ³vel
+            Benefícios exclusivos que transformam a forma como você vende seu imóvel
           </p>
         </div>
 

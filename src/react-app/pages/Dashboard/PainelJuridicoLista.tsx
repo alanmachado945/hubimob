@@ -6,9 +6,9 @@ interface ProcessoJuridico {
   id: number;
   cliente: string;
   imovel: string;
-  tipoDocumento: 'Proposta' | 'PrÃ©-Contrato' | 'Contrato';
+  tipoDocumento: 'Proposta' | 'Pré-Contrato' | 'Contrato';
   ultimaAcao: string;
-  statusJuridico: 'Em AnÃ¡lise' | 'Pendente' | 'Aprovado' | 'Rejeitado' | 'Assinado';
+  statusJuridico: 'Em Análise' | 'Pendente' | 'Aprovado' | 'Rejeitado' | 'Assinado';
   dataAtualizacao: string;
 }
 
@@ -30,25 +30,25 @@ export default function PainelJuridicoListaPage() {
     {
       id: 1,
       cliente: 'Ana Lima',
-      imovel: 'Apartamento Vista Mar - IcaraÃ­',
+      imovel: 'Apartamento Vista Mar - Icaraí',
       tipoDocumento: 'Proposta',
       ultimaAcao: 'Proposta enviada ao cliente',
-      statusJuridico: 'Em AnÃ¡lise',
+      statusJuridico: 'Em Análise',
       dataAtualizacao: '21/11/2025'
     },
     {
       id: 2,
       cliente: 'Pedro Souza',
       imovel: 'Cobertura Duplex - Charitas',
-      tipoDocumento: 'PrÃ©-Contrato',
-      ultimaAcao: 'PrÃ©-contrato gerado pela IA',
+      tipoDocumento: 'Pré-Contrato',
+      ultimaAcao: 'Pré-contrato gerado pela IA',
       statusJuridico: 'Pendente',
       dataAtualizacao: '20/11/2025'
     },
     {
       id: 3,
       cliente: 'Carla e Bruno',
-      imovel: 'Casa Alto PadrÃ£o - Pendotiba',
+      imovel: 'Casa Alto Padrão - Pendotiba',
       tipoDocumento: 'Contrato',
       ultimaAcao: 'Contrato assinado digitalmente',
       statusJuridico: 'Assinado',
@@ -59,23 +59,23 @@ export default function PainelJuridicoListaPage() {
       cliente: 'Roberto Silva',
       imovel: 'Studio Moderno - Centro',
       tipoDocumento: 'Proposta',
-      ultimaAcao: 'Aguardando revisÃ£o do cliente',
+      ultimaAcao: 'Aguardando revisão do cliente',
       statusJuridico: 'Pendente',
       dataAtualizacao: '18/11/2025'
     },
     {
       id: 5,
       cliente: 'Juliana Costa',
-      imovel: 'Apartamento 3 Quartos - IngÃ¡',
-      tipoDocumento: 'PrÃ©-Contrato',
-      ultimaAcao: 'DocumentaÃ§Ã£o complementar solicitada',
-      statusJuridico: 'Em AnÃ¡lise',
+      imovel: 'Apartamento 3 Quartos - Ingá',
+      tipoDocumento: 'Pré-Contrato',
+      ultimaAcao: 'Documentação complementar solicitada',
+      statusJuridico: 'Em Análise',
       dataAtualizacao: '17/11/2025'
     },
     {
       id: 6,
       cliente: 'Marcos Paulo',
-      imovel: 'Loft ContemporÃ¢neo - SÃ£o Francisco',
+      imovel: 'Loft Contemporâneo - São Francisco',
       tipoDocumento: 'Proposta',
       ultimaAcao: 'Proposta recusada pelo vendedor',
       statusJuridico: 'Rejeitado',
@@ -84,7 +84,7 @@ export default function PainelJuridicoListaPage() {
     {
       id: 7,
       cliente: 'Fernanda Martins',
-      imovel: 'Apartamento Frente Mar - IcaraÃ­',
+      imovel: 'Apartamento Frente Mar - Icaraí',
       tipoDocumento: 'Contrato',
       ultimaAcao: 'Todas as partes assinaram',
       statusJuridico: 'Assinado',
@@ -93,9 +93,9 @@ export default function PainelJuridicoListaPage() {
     {
       id: 8,
       cliente: 'Lucas Oliveira',
-      imovel: 'Casa em CondomÃ­nio - Piratininga',
-      tipoDocumento: 'PrÃ©-Contrato',
-      ultimaAcao: 'Aprovado pelo jurÃ­dico',
+      imovel: 'Casa em Condomínio - Piratininga',
+      tipoDocumento: 'Pré-Contrato',
+      ultimaAcao: 'Aprovado pelo jurídico',
       statusJuridico: 'Aprovado',
       dataAtualizacao: '14/11/2025'
     },
@@ -104,14 +104,14 @@ export default function PainelJuridicoListaPage() {
       cliente: 'Patricia Alves',
       imovel: 'Apartamento Compacto - Boa Viagem',
       tipoDocumento: 'Proposta',
-      ultimaAcao: 'Em anÃ¡lise pelo jurÃ­dico',
-      statusJuridico: 'Em AnÃ¡lise',
+      ultimaAcao: 'Em análise pelo jurídico',
+      statusJuridico: 'Em Análise',
       dataAtualizacao: '13/11/2025'
     },
     {
       id: 10,
       cliente: 'Rafael Santos',
-      imovel: 'Cobertura Jardim OceÃ¢nico',
+      imovel: 'Cobertura Jardim Oceânico',
       tipoDocumento: 'Contrato',
       ultimaAcao: 'Contrato enviado para assinatura',
       statusJuridico: 'Pendente',
@@ -121,8 +121,8 @@ export default function PainelJuridicoListaPage() {
       id: 11,
       cliente: 'Beatriz Lima',
       imovel: 'Apartamento Santa Rosa',
-      tipoDocumento: 'PrÃ©-Contrato',
-      ultimaAcao: 'PrÃ©-contrato aprovado',
+      tipoDocumento: 'Pré-Contrato',
+      ultimaAcao: 'Pré-contrato aprovado',
       statusJuridico: 'Aprovado',
       dataAtualizacao: '11/11/2025'
     },
@@ -139,7 +139,7 @@ export default function PainelJuridicoListaPage() {
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case 'Em AnÃ¡lise':
+      case 'Em Análise':
         return { bg: 'var(--color-info)', text: 'var(--brand-light)' };
       case 'Pendente':
         return { bg: 'var(--color-warning)', text: 'var(--brand-light)' };
@@ -158,7 +158,7 @@ export default function PainelJuridicoListaPage() {
     switch (tipo) {
       case 'Proposta':
         return FileText;
-      case 'PrÃ©-Contrato':
+      case 'Pré-Contrato':
         return FileText;
       case 'Contrato':
         return Shield;
@@ -186,7 +186,7 @@ export default function PainelJuridicoListaPage() {
               color: 'var(--brand-primary)'
             }}
           >
-            Painel JurÃ­dico
+            Painel Jurídico
           </h1>
           <p 
             className="text-xl"
@@ -195,7 +195,7 @@ export default function PainelJuridicoListaPage() {
               color: 'var(--brand-text-gray)'
             }}
           >
-            Acompanhe o status legal e contratual de todas as suas negociaÃ§Ãµes.
+            Acompanhe o status legal e contratual de todas as suas negociações.
           </p>
         </div>
 
@@ -208,7 +208,7 @@ export default function PainelJuridicoListaPage() {
           }}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {/* Status JurÃ­dico Filter */}
+            {/* Status Jurídico Filter */}
             <div>
               <label 
                 className="block text-sm font-semibold mb-2"
@@ -217,7 +217,7 @@ export default function PainelJuridicoListaPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Status JurÃ­dico
+                Status Jurídico
               </label>
               <select
                 value={statusFilter}
@@ -226,13 +226,13 @@ export default function PainelJuridicoListaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>Em AnÃ¡lise</option>
+                <option>Em Análise</option>
                 <option>Pendente</option>
                 <option>Aprovado</option>
                 <option>Rejeitado</option>
@@ -258,14 +258,14 @@ export default function PainelJuridicoListaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
                 <option>Proposta</option>
-                <option>PrÃ©-Contrato</option>
+                <option>Pré-Contrato</option>
                 <option>Contrato</option>
               </select>
             </div>
@@ -288,7 +288,7 @@ export default function PainelJuridicoListaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
@@ -301,7 +301,7 @@ export default function PainelJuridicoListaPage() {
               </select>
             </div>
 
-            {/* ImÃ³vel Filter */}
+            {/* Imóvel Filter */}
             <div>
               <label 
                 className="block text-sm font-semibold mb-2"
@@ -310,7 +310,7 @@ export default function PainelJuridicoListaPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                ImÃ³vel
+                Imóvel
               </label>
               <select
                 value={imovelFilter}
@@ -319,16 +319,16 @@ export default function PainelJuridicoListaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
-                <option>IcaraÃ­</option>
+                <option>Icaraí</option>
                 <option>Charitas</option>
                 <option>Centro</option>
-                <option>IngÃ¡</option>
+                <option>Ingá</option>
                 <option>Pendotiba</option>
               </select>
             </div>
@@ -351,16 +351,16 @@ export default function PainelJuridicoListaPage() {
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)',
                   color: 'var(--brand-light)'
                 }}
               >
                 <option>Todos</option>
                 <option>Hoje</option>
-                <option>Ãšltima semana</option>
-                <option>Ãšltimo mÃªs</option>
-                <option>Ãšltimos 3 meses</option>
+                <option>Última semana</option>
+                <option>Último mês</option>
+                <option>Últimos 3 meses</option>
               </select>
             </div>
           </div>
@@ -429,7 +429,7 @@ export default function PainelJuridicoListaPage() {
                   </p>
                 </div>
 
-                {/* ImÃ³vel */}
+                {/* Imóvel */}
                 <div className="mb-3">
                   <p 
                     className="text-sm font-semibold mb-1"
@@ -438,7 +438,7 @@ export default function PainelJuridicoListaPage() {
                       color: 'var(--brand-primary)'
                     }}
                   >
-                    ImÃ³vel
+                    Imóvel
                   </p>
                   <p 
                     className="text-sm"
@@ -451,7 +451,7 @@ export default function PainelJuridicoListaPage() {
                   </p>
                 </div>
 
-                {/* Ãšltima AÃ§Ã£o */}
+                {/* Última Ação */}
                 <div className="mb-3">
                   <p 
                     className="text-sm font-semibold mb-1"
@@ -460,7 +460,7 @@ export default function PainelJuridicoListaPage() {
                       color: 'var(--brand-primary)'
                     }}
                   >
-                    Ãšltima AÃ§Ã£o
+                    Última Ação
                   </p>
                   <p 
                     className="text-sm"
@@ -473,7 +473,7 @@ export default function PainelJuridicoListaPage() {
                   </p>
                 </div>
 
-                {/* Data de AtualizaÃ§Ã£o */}
+                {/* Data de Atualização */}
                 <div className="mb-6">
                   <p 
                     className="text-sm font-semibold mb-1"
@@ -482,7 +482,7 @@ export default function PainelJuridicoListaPage() {
                       color: 'var(--brand-primary)'
                     }}
                   >
-                    ðŸ“… Ãšltima AtualizaÃ§Ã£o
+                    📅 Última Atualização
                   </p>
                   <p 
                     className="text-sm"
@@ -495,7 +495,7 @@ export default function PainelJuridicoListaPage() {
                   </p>
                 </div>
 
-                {/* BotÃ£o de AÃ§Ã£o */}
+                {/* Botão de Ação */}
                 <Link
                   to={processo.id === 1 ? '/painel-juridico' : `/painel-juridico/${processo.id}`}
                   className="w-full flex items-center justify-center gap-2 py-3 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105"
@@ -503,7 +503,7 @@ export default function PainelJuridicoListaPage() {
                     fontFamily: 'Montserrat, sans-serif',
                     backgroundColor: 'var(--brand-dark-secondary)',
                     color: 'var(--brand-primary)',
-                    borderWidth: '2px',
+                    borderWidth: "var(--border-md)",
                     borderColor: 'var(--brand-primary)'
                   }}
                   onMouseEnter={(e) => {
@@ -532,12 +532,13 @@ export default function PainelJuridicoListaPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Painel JurÃ­dico e Compliance.
+            © 2025 HUB Imobiliário Inteligente — Painel Jurídico e Compliance.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

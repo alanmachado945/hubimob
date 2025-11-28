@@ -1,17 +1,17 @@
-﻿:root {
+:root {
   /* ==================== COLORS ==================== */
   
   /* Primary Palette */
-  --brand-primary: var(--color-c8a96a);         /* Dourado primÃ¡rio */
+  --brand-primary: var(--color-c8a96a);         /* Dourado primário */
   --brand-primary-dark: var(--color-a68a52);    /* Dourado escuro hover */
   
   /* Secondary Palette */
-  --brand-secondary: var(--color-0d1a2d);       /* Azul secundÃ¡rio */
+  --brand-secondary: var(--color-0d1a2d);       /* Azul secundário */
   --brand-secondary-light: var(--color-0a0f1f); /* Azul-Marinho Profundo */
   
   /* Neutral Palette */
   --brand-dark: var(--color-1a1a1a);            /* Escuro principal */
-  --brand-dark-secondary: var(--color-0d0d0d);  /* Escuro secundÃ¡rio */
+  --brand-dark-secondary: var(--color-0d0d0d);  /* Escuro secundário */
   --brand-light: var(--color-f7f9fb);           /* Fundo claro */
   --brand-light-gray: var(--color-e7ecf2);      /* Cinza claro */
   --brand-text-dark: var(--color-0d1a2d);       /* Texto escuro */
@@ -22,7 +22,7 @@
   /* Semantic Colors */
   --color-success: var(--color-4caf50);         /* Verde sucesso */
   --color-warning: var(--color-ff9800);         /* Laranja aviso */
-  --color-info: var(--color-2196f3);            /* Azul informaÃ§Ã£o */
+  --color-info: var(--color-2196f3);            /* Azul informação */
   --color-error: var(--color-f44336);           /* Vermelho erro */
   --color-purple: var(--color-9c27b0);          /* Roxo */
   
@@ -31,6 +31,11 @@
   --font-display: 'Playfair Display', serif;
   --font-sans: 'Montserrat', sans-serif;
   --font-default: 'Inter', sans-serif;
+
+  /* Unified font-size tokens */
+  --font-size-base: var(--text-base);
+  --font-size-title: var(--text-4xl);
+  --font-size-subtitle: var(--text-lg);
   
   /* Font Sizes */
   --text-xs: 0.75rem;
@@ -86,6 +91,24 @@
   --radius-3xl: 3rem;
   --radius-pill: 999px;
   
+  /* Normalized tokens for Phase 3 (radius, shadows, spacing) */
+  /* Spacing tokens (aliases to existing spacing scale) */
+  --spacing-xs: var(--space-1);
+  --spacing-sm: var(--space-2);
+  --spacing-md: var(--space-4);
+  --spacing-lg: var(--space-8);
+  --spacing-xl: var(--space-16);
+
+  /* Shadow aliases (canonical names requested) */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-medium);
+  --shadow-lg: var(--shadow-lg);
+
+  /* ==================== BORDERS ==================== */
+  --border-thin: 1px;
+  --border-md: 2px;
+  --border-thick: 4px;
+  
   /* ==================== SHADOWS ==================== */
   
   --shadow-none: 0;
@@ -101,5 +124,60 @@
   --transition-fast: 0.15s ease;
   --transition-base: 0.25s ease;
   --transition-slow: 0.35s ease;
-\n\n  /* Auto-generated color tokens */\n  --color-f0c986: var(--color-f0c986);\n  --color-f0c986-rgb: 240,201,134;\n  --color-000000: var(--color-000000);\n  --color-000000-rgb: 0,0,0;\n  --color-7b1fa2: var(--color-7b1fa2);\n  --color-7b1fa2-rgb: 123,31,162;\n  --color-111827: var(--color-111827);\n  --color-111827-rgb: 17,24,39;\n  --color-0c1f26: var(--color-0c1f26);\n  --color-0c1f26-rgb: 12,31,38;\n  --color-fbbf24: var(--color-fbbf24);\n  --color-fbbf24-rgb: 251,191,36;\n  --color-0b0b0c: var(--color-0b0b0c);\n  --color-0b0b0c-rgb: 11,11,12;\n  --color-f2f2f2: var(--color-f2f2f2);\n  --color-f2f2f2-rgb: 242,242,242;\n  --color-555555: var(--color-555555);\n  --color-555555-rgb: 85,85,85;\n  --color-22c55e: var(--color-22c55e);\n  --color-22c55e-rgb: 34,197,94;\n  --color-b68a37: var(--color-b68a37);\n  --color-b68a37-rgb: 182,138,55;\n  --color-45a049: var(--color-45a049);\n  --color-45a049-rgb: 69,160,73;\n  --color-333333: var(--color-333333);\n  --color-333333-rgb: 51,51,51;\n  --color-777777: var(--color-777777);\n  --color-777777-rgb: 119,119,119;\n  --color-7a7a7a: var(--color-7a7a7a);\n  --color-7a7a7a-rgb: 122,122,122;\n  --color-d4af67: var(--color-d4af67);\n  --color-d4af67-rgb: 212,175,103;\n  --color-1a1a1c: var(--color-1a1a1c);\n  --color-1a1a1c-rgb: 26,26,28;\n  --color-a88a52: var(--color-a88a52);\n  --color-a88a52-rgb: 168,138,82;\n  --color-e7b877: var(--color-e7b877);\n  --color-e7b877-rgb: 231,184,119;\n  --color-d32f2f: var(--color-d32f2f);\n  --color-d32f2f-rgb: 211,47,47;\n  --color-c8912f: var(--color-c8912f);\n  --color-c8912f-rgb: 200,145,47;\n  --color-1976d2: var(--color-1976d2);\n  --color-1976d2-rgb: 25,118,210;\n  --color-e3a93c: var(--color-e3a93c);\n  --color-e3a93c-rgb: 227,169,60;\n  --color-fff9f2: var(--color-fff9f2);\n  --color-fff9f2-rgb: 255,249,242;\n  --color-666666: var(--color-666666);\n  --color-666666-rgb: 102,102,102;\n  --color-f57c00: var(--color-f57c00);\n  --color-f57c00-rgb: 245,124,0;\n  --color-ef4444: var(--color-ef4444);\n  --color-ef4444-rgb: 239,68,68;\n}\n
+  /* Auto-generated color tokens */
+  --color-f0c986: #f0c986;
+  --color-f0c986-rgb: 240,201,134;
+  --color-000000: #000000;
+  --color-000000-rgb: 0,0,0;
+  --color-7b1fa2: #7b1fa2;
+  --color-7b1fa2-rgb: 123,31,162;
+  --color-111827: #111827;
+  --color-111827-rgb: 17,24,39;
+  --color-0c1f26: #0c1f26;
+  --color-0c1f26-rgb: 12,31,38;
+  --color-fbbf24: #fbbf24;
+  --color-fbbf24-rgb: 251,191,36;
+  --color-0b0b0c: #0b0b0c;
+  --color-0b0b0c-rgb: 11,11,12;
+  --color-f2f2f2: #f2f2f2;
+  --color-f2f2f2-rgb: 242,242,242;
+  --color-555555: #555555;
+  --color-555555-rgb: 85,85,85;
+  --color-22c55e: #22c55e;
+  --color-22c55e-rgb: 34,197,94;
+  --color-b68a37: #b68a37;
+  --color-b68a37-rgb: 182,138,55;
+  --color-45a049: #45a049;
+  --color-45a049-rgb: 69,160,73;
+  --color-333333: #333333;
+  --color-333333-rgb: 51,51,51;
+  --color-777777: #777777;
+  --color-777777-rgb: 119,119,119;
+  --color-7a7a7a: #7a7a7a;
+  --color-7a7a7a-rgb: 122,122,122;
+  --color-d4af67: #d4af67;
+  --color-d4af67-rgb: 212,175,103;
+  --color-1a1a1c: #1a1a1c;
+  --color-1a1a1c-rgb: 26,26,28;
+  --color-a88a52: #a88a52;
+  --color-a88a52-rgb: 168,138,82;
+  --color-e7b877: #e7b877;
+  --color-e7b877-rgb: 231,184,119;
+  --color-d32f2f: #d32f2f;
+  --color-d32f2f-rgb: 211,47,47;
+  --color-c8912f: #c8912f;
+  --color-c8912f-rgb: 200,145,47;
+  --color-1976d2: #1976d2;
+  --color-1976d2-rgb: 25,118,210;
+  --color-e3a93c: #e3a93c;
+  --color-e3a93c-rgb: 227,169,60;
+  --color-fff9f2: #fff9f2;
+  --color-fff9f2-rgb: 255,249,242;
+  --color-666666: #666666;
+  --color-666666-rgb: 102,102,102;
+  --color-f57c00: #f57c00;
+  --color-f57c00-rgb: 245,124,0;
+  --color-ef4444: #ef4444;
+  --color-ef4444-rgb: 239,68,68;
+}
 

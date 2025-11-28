@@ -5,7 +5,7 @@ import L from "leaflet";
 import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-// Corrige o Ã­cone padrÃ£o do Leaflet
+// Corrige o ícone padrão do Leaflet
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl:
@@ -27,7 +27,7 @@ export default function ImovelDetalhes() {
     document.head.appendChild(link);
   }, []);
 
-  const position: [number, number] = [-22.9064, -43.1089]; // IcaraÃ­ - NiterÃ³i
+  const position: [number, number] = [-22.9064, -43.1089]; // Icaraí - Niterói
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -41,7 +41,7 @@ export default function ImovelDetalhes() {
       ></div>
 
       <div className="max-w-6xl mx-auto px-6 py-12">
-        {/* TÃ­tulo */}
+        {/* Título */}
         <h1
           className="text-4xl md:text-5xl font-bold mb-4 text-amber-400"
           style={{ fontFamily: "Playfair Display, serif" }}
@@ -53,7 +53,7 @@ export default function ImovelDetalhes() {
           className="text-gray-300 text-lg mb-2"
           style={{ fontFamily: "Montserrat" }}
         >
-          IcaraÃ­, NiterÃ³i â€“ RJ
+          Icaraí, Niterói – RJ
         </p>
 
         <p
@@ -63,12 +63,12 @@ export default function ImovelDetalhes() {
           R$ 1.250.000
         </p>
 
-        {/* DescriÃ§Ã£o */}
+        {/* Descrição */}
         <h2
           className="text-2xl md:text-3xl font-semibold mt-12 mb-6"
           style={{ fontFamily: "Playfair Display" }}
         >
-          DescriÃ§Ã£o do ImÃ³vel
+          Descrição do Imóvel
         </h2>
 
         <p
@@ -76,31 +76,31 @@ export default function ImovelDetalhes() {
           style={{ fontFamily: "Montserrat" }}
         >
           Este moderno apartamento com vista para o mar oferece conforto,
-          elegÃ¢ncia e uma experiÃªncia Ãºnica. Conta com sala ampla, cozinha
-          planejada, suÃ­te climatizada, varanda gourmet e acabamentos premium.
+          elegância e uma experiência única. Conta com sala ampla, cozinha
+          planejada, suíte climatizada, varanda gourmet e acabamentos premium.
         </p>
 
-        {/* CaracterÃ­sticas */}
+        {/* Características */}
         <h2
           className="text-2xl md:text-3xl font-semibold mt-12 mb-6"
           style={{ fontFamily: "Playfair Display" }}
         >
-          CaracterÃ­sticas
+          Características
         </h2>
 
         <ul
           className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-300 text-lg"
           style={{ fontFamily: "Montserrat" }}
         >
-          <li>âœ” 3 Quartos</li>
-          <li>âœ” 2 Banheiros</li>
-          <li>âœ” 1 SuÃ­te</li>
-          <li>âœ” 2 Vagas</li>
-          <li>âœ” Varanda Gourmet</li>
-          <li>âœ” Vista PanorÃ¢mica</li>
-          <li>âœ” Piscina</li>
-          <li>âœ” Academia</li>
-          <li>âœ” SalÃ£o de Festas</li>
+          <li>✔ 3 Quartos</li>
+          <li>✔ 2 Banheiros</li>
+          <li>✔ 1 Suíte</li>
+          <li>✔ 2 Vagas</li>
+          <li>✔ Varanda Gourmet</li>
+          <li>✔ Vista Panorâmica</li>
+          <li>✔ Piscina</li>
+          <li>✔ Academia</li>
+          <li>✔ Salão de Festas</li>
         </ul>
 
         {/* Galeria */}
@@ -133,7 +133,7 @@ export default function ImovelDetalhes() {
           className="text-2xl md:text-3xl font-semibold mt-12 mb-6"
           style={{ fontFamily: "Playfair Display" }}
         >
-          LocalizaÃ§Ã£o
+          Localização
         </h2>
 
         <div className="rounded-2xl overflow-hidden border-2 border-amber-500/30 shadow-xl bg-black">
@@ -157,7 +157,7 @@ export default function ImovelDetalhes() {
                   </strong>
                   <br />
                   <span className="text-gray-300 text-sm">
-                    IcaraÃ­, NiterÃ³i â€“ RJ
+                    Icaraí, Niterói – RJ
                   </span>
                 </div>
               </Popup>
@@ -165,7 +165,7 @@ export default function ImovelDetalhes() {
           </MapContainer>
         </div>
 
-        {/* BOTÃ•ES */}
+        {/* BOTÕES */}
         <div className="mt-12 grid md:grid-cols-3 gap-4">
 
           {/* AGENDAR */}
@@ -186,7 +186,7 @@ export default function ImovelDetalhes() {
             Gerar Proposta
           </Link>
 
-          {/* ENVIAR PARA CLIENTE â†’ CORRIGIDO */}
+          {/* ENVIAR PARA CLIENTE → CORRIGIDO */}
           <button
   type="button"
   onClick={() => navigate(`/enviar-proposta/:id}`)}
@@ -195,7 +195,7 @@ export default function ImovelDetalhes() {
     fontFamily: "Montserrat, sans-serif",
     backgroundColor: "transparent",
     color: "var(--brand-primary)",
-    borderWidth: "2px",
+    borderWidth: "var(--border-md)",
     borderColor: "var(--brand-primary)",
   }}
   onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "rgba(var(--color-e3a93c-rgb), 0.125)")}
@@ -209,5 +209,6 @@ export default function ImovelDetalhes() {
     </div>
   );
 }
+
 
 

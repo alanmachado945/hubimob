@@ -1,4 +1,4 @@
-﻿import { Star, Quote } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
@@ -10,15 +10,15 @@ const testimonials = [
   },
   {
     name: 'Marina Santos',
-    role: 'Especialista em Alto PadrÃ£o - RJ',
-    content: 'O diferencial estÃ¡ na qualificaÃ§Ã£o. NÃ£o perco mais tempo com curiosos. Recebo apenas compradores sÃ©rios e qualificados financeiramente.',
+    role: 'Especialista em Alto Padrão - RJ',
+    content: 'O diferencial está na qualificação. Não perco mais tempo com curiosos. Recebo apenas compradores sérios e qualificados financeiramente.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop'
   },
   {
     name: 'Carlos Mendes',
     role: 'Broker Independente - MG',
-    content: 'A plataforma Ã© intuitiva e os analytics me ajudam a entender exatamente onde focar. Minha taxa de conversÃ£o aumentou significativamente.',
+    content: 'A plataforma é intuitiva e os analytics me ajudam a entender exatamente onde focar. Minha taxa de conversão aumentou significativamente.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop'
   }
@@ -33,7 +33,7 @@ export default function Testimonials() {
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            O Que Corretores EstÃ£o <span style={{ color: 'var(--brand-primary)' }}>Dizendo</span>
+            O Que Corretores Estão <span style={{ color: 'var(--brand-primary)' }}>Dizendo</span>
           </h2>
           <p 
             className="text-xl"
@@ -143,7 +143,7 @@ export default function Testimonials() {
               className="text-sm"
               style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.8)' }}
             >
-              AvaliaÃ§Ã£o MÃ©dia
+              Avaliação Média
             </div>
           </div>
 

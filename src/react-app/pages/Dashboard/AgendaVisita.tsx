@@ -4,10 +4,10 @@ import { Calendar, Clock, Sparkles, Send, ArrowLeft, CheckCircle2 } from 'lucide
 
 export default function AgendaVisitaPage() {
   const [horarioSelecionado, setHorarioSelecionado] = useState('');
-  const [mensagem, setMensagem] = useState(`OlÃ¡, Ana! ðŸ˜Š
-Encontrei um Ã³timo horÃ¡rio para visitarmos o apartamento em IcaraÃ­.
-Podemos confirmar amanhÃ£ Ã s 15h?
-Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
+  const [mensagem, setMensagem] = useState(`Olá, Ana! 😊
+Encontrei um ótimo horário para visitarmos o apartamento em Icaraí.
+Podemos confirmar amanhã às 15h?
+Qualquer ajuste, estou à disposição!`);
   const [editandoMensagem, setEditandoMensagem] = useState(false);
   const [diaSelecionado, setDiaSelecionado] = useState(15);
 
@@ -19,9 +19,9 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
   }, []);
 
   const imovelInfo = {
-    titulo: 'Apartamento 3 Quartos â€“ IcaraÃ­',
+    titulo: 'Apartamento 3 Quartos – Icaraí',
     preco: 'R$ 760.000',
-    metragem: '98mÂ²',
+    metragem: '98m²',
     quartos: '3',
     vaga: '1',
     imagem: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800'
@@ -31,13 +31,13 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
     nome: 'Ana Lima',
     whatsapp: '(21) 99999-9999',
     orcamento: 'R$ 750.000',
-    preferencia: 'IcaraÃ­'
+    preferencia: 'Icaraí'
   };
 
   const horariosIA = [
-    { id: 1, texto: 'AmanhÃ£ Ã s 10h', detalhes: 'Taxa de conversÃ£o: 85%' },
-    { id: 2, texto: 'AmanhÃ£ Ã s 15h', detalhes: 'Melhor horÃ¡rio para o comprador' },
-    { id: 3, texto: 'SÃ¡bado Ã s 09h', detalhes: 'Baixo trÃ¢nsito na regiÃ£o' }
+    { id: 1, texto: 'Amanhã às 10h', detalhes: 'Taxa de conversão: 85%' },
+    { id: 2, texto: 'Amanhã às 15h', detalhes: 'Melhor horário para o comprador' },
+    { id: 3, texto: 'Sábado às 09h', detalhes: 'Baixo trânsito na região' }
   ];
 
   const diasCalendario = [
@@ -90,13 +90,13 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
             className="text-xl max-w-4xl mx-auto"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
-            A IA do HUB sugere os melhores horÃ¡rios e organiza sua agenda automaticamente.
+            A IA do HUB sugere os melhores horários e organiza sua agenda automaticamente.
           </p>
         </div>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* SEÃ‡ÃƒO 1 - Dados do ImÃ³vel */}
+          {/* SEÇÃO 1 - Dados do Imóvel */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -105,7 +105,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
               className="text-2xl font-bold mb-6"
               style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
             >
-              ImÃ³vel para Visita
+              Imóvel para Visita
             </h2>
 
             <div className="rounded-xl overflow-hidden mb-4">
@@ -134,13 +134,13 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
               <span 
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
               >
-                {imovelInfo.metragem} â€¢ {imovelInfo.quartos} quartos â€¢ {imovelInfo.vaga} vaga
+                {imovelInfo.metragem} • {imovelInfo.quartos} quartos • {imovelInfo.vaga} vaga
               </span>
             </div>
 
             <div 
               className="p-4 rounded-xl"
-              style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+              style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
             >
               <div className="flex items-start gap-2">
                 <Sparkles className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: 'var(--brand-primary)' }} />
@@ -148,13 +148,13 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
                   className="text-sm"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
                 >
-                  ImÃ³vel recomendado pela IA para o comprador.
+                  Imóvel recomendado pela IA para o comprador.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* SEÃ‡ÃƒO 2 - Dados do Comprador */}
+          {/* SEÇÃO 2 - Dados do Comprador */}
           <div 
             className="p-8 rounded-2xl border-2"
             style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -202,7 +202,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
                   className="text-sm font-semibold mb-1"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
-                  OrÃ§amento
+                  Orçamento
                 </p>
                 <p 
                   className="text-lg"
@@ -217,7 +217,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
                   className="text-sm font-semibold mb-1"
                   style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
                 >
-                  PreferÃªncia
+                  Preferência
                 </p>
                 <p 
                   className="text-lg"
@@ -230,7 +230,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 3 - SugestÃµes de HorÃ¡rios da IA */}
+        {/* SEÇÃO 3 - Sugestões de Horários da IA */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -239,19 +239,19 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
             className="text-3xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
-            SugestÃµes Inteligentes da IA
+            Sugestões Inteligentes da IA
           </h2>
 
           <div 
             className="p-6 rounded-xl mb-6"
-            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: '4px solid var(--color-e3a93c)' }}
+            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderLeft: "var(--border-thick) solid var(--color-e3a93c)' }}
           >
             <div className="flex items-start gap-3">
               <Sparkles className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--brand-primary)' }} />
               <p 
                 style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)', lineHeight: '1.6' }}
               >
-                Com base na sua disponibilidade e no histÃ³rico do comprador, a IA recomenda os seguintes horÃ¡rios ideais:
+                Com base na sua disponibilidade e no histórico do comprador, a IA recomenda os seguintes horários ideais:
               </p>
             </div>
           </div>
@@ -265,7 +265,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
                 style={{ 
                   backgroundColor: horarioSelecionado === horario.texto ? 'var(--brand-primary)' : 'var(--brand-dark-secondary)',
                   color: horarioSelecionado === horario.texto ? 'var(--brand-dark)' : 'var(--brand-primary)',
-                  borderWidth: '2px',
+                  borderWidth: "var(--border-md)",
                   borderColor: 'var(--brand-primary)'
                 }}
               >
@@ -301,11 +301,11 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
             className="text-sm text-center"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            A IA utiliza fatores como horÃ¡rio de maior taxa de conversÃ£o, perfil do comprador e previsÃ£o de trÃ¢nsito da regiÃ£o.
+            A IA utiliza fatores como horário de maior taxa de conversão, perfil do comprador e previsão de trânsito da região.
           </p>
         </div>
 
-        {/* SEÃ‡ÃƒO 4 - CalendÃ¡rio Premium */}
+        {/* SEÇÃO 4 - Calendário Premium */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -314,12 +314,12 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
             className="text-3xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
           >
-            Ou escolha manualmente no calendÃ¡rio
+            Ou escolha manualmente no calendário
           </h2>
 
           <div 
             className="p-6 rounded-xl"
-            style={{ backgroundColor: 'var(--color-1a1a1c)', borderWidth: '2px', borderColor: 'var(--brand-primary)' }}
+            style={{ backgroundColor: 'var(--color-1a1a1c)', borderWidth: "var(--border-md)", borderColor: 'var(--brand-primary)' }}
           >
             <div className="mb-4 text-center">
               <p 
@@ -332,7 +332,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
 
             {/* Calendar Header */}
             <div className="grid grid-cols-7 gap-2 mb-4">
-              {['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'SÃ¡b'].map((dia) => (
+              {['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'].map((dia) => (
                 <div 
                   key={dia}
                   className="text-center py-2"
@@ -359,7 +359,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
                   style={{ 
                     backgroundColor: diaSelecionado === item.dia ? 'var(--brand-primary)' : (item.disponivel ? 'var(--brand-dark-secondary)' : 'var(--brand-dark-secondary)'),
                     color: diaSelecionado === item.dia ? 'var(--brand-dark)' : (item.disponivel ? 'var(--brand-light)' : 'var(--brand-text-gray)'),
-                    borderWidth: '1px',
+                    borderWidth: "var(--border-thin)",
                     borderColor: diaSelecionado === item.dia ? 'var(--brand-primary)' : 'var(--brand-dark-secondary)',
                     cursor: item.disponivel ? 'pointer' : 'not-allowed',
                     fontFamily: 'Montserrat, sans-serif',
@@ -373,7 +373,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
           </div>
         </div>
 
-        {/* SEÃ‡ÃƒO 5 - Mensagem AutomÃ¡tica */}
+        {/* SEÇÃO 5 - Mensagem Automática */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
@@ -387,7 +387,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
 
           <div 
             className="p-6 rounded-xl mb-6"
-            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderWidth: '2px', borderColor: 'var(--brand-primary)' }}
+            style={{ backgroundColor: 'var(--brand-dark-secondary)', borderWidth: "var(--border-md)", borderColor: 'var(--brand-primary)' }}
           >
             {editandoMensagem ? (
               <textarea
@@ -422,7 +422,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -436,7 +436,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
           </button>
         </div>
 
-        {/* BOTÃ•ES DE AÃ‡ÃƒO */}
+        {/* BOTÕES DE AÇÃO */}
         <div className="flex flex-col md:flex-row gap-4 mb-12">
           <button
             className="flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
@@ -458,7 +458,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -479,7 +479,7 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'var(--brand-dark-secondary)',
               color: 'var(--brand-text-gray)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-dark-secondary)'
             }}
             onMouseEnter={(e) => {
@@ -496,18 +496,19 @@ Qualquer ajuste, estou Ã  disposiÃ§Ã£o!`);
           </Link>
         </div>
 
-        {/* RODAPÃ‰ PREMIUM */}
+        {/* RODAPÉ PREMIUM */}
         <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-7a7a7a)' }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Agendamentos inteligentes e automÃ¡ticos.
+            © 2025 HUB Imobiliário Inteligente — Agendamentos inteligentes e automáticos.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 

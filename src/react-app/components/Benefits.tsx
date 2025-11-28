@@ -1,25 +1,25 @@
-﻿import { Brain, Target, TrendingUp, Zap } from 'lucide-react';
+import { Brain, Target, TrendingUp, Zap } from 'lucide-react';
 
 const benefits = [
   {
     icon: Brain,
-    title: 'InteligÃªncia Artificial AvanÃ§ada',
-    description: 'Nossa IA analisa comportamento, poder de compra e intenÃ§Ã£o real de cada lead para entregar apenas compradores sÃ©rios.'
+    title: 'Inteligência Artificial Avançada',
+    description: 'Nossa IA analisa comportamento, poder de compra e intenção real de cada lead para entregar apenas compradores sérios.'
   },
   {
     icon: Target,
     title: 'Leads Ultra Qualificados',
-    description: 'Receba apenas leads prÃ©-avaliados com alto fit para imÃ³veis premium.'
+    description: 'Receba apenas leads pré-avaliados com alto fit para imóveis premium.'
   },
   {
     icon: TrendingUp,
-    title: 'PortfÃ³lio Premium Exclusivo',
-    description: 'Acesso a imÃ³veis de alto padrÃ£o e oportunidades exclusivas para corretores HUB.'
+    title: 'Portfólio Premium Exclusivo',
+    description: 'Acesso a imóveis de alto padrão e oportunidades exclusivas para corretores HUB.'
   },
   {
     icon: Zap,
-    title: 'Plataforma de Ãšltima GeraÃ§Ã£o',
-    description: 'CRM completo, automaÃ§Ã£o de follow-up e analytics em tempo real.'
+    title: 'Plataforma de Última Geração',
+    description: 'CRM completo, automação de follow-up e analytics em tempo real.'
   }
 ];
 
@@ -61,12 +61,12 @@ export default function Benefits() {
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand-gold/0 to-brand-gold/0 group-hover:from-brand-gold/10 group-hover:to-brand-gold/5 transition-all duration-500"></div>
                 
                 <div className="relative z-10">
-                  {/* Ãcone */}
+                  {/* Ícone */}
                   <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-gold to-[var(--color-a88a52)] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="w-8 h-8" style={{ color: 'var(--brand-dark-secondary)' }} strokeWidth={2.5} />
                   </div>
 
-                  {/* TÃ­tulo */}
+                  {/* Título */}
                   <h3 
                     className="text-2xl font-bold mb-4"
                     style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}
@@ -74,7 +74,7 @@ export default function Benefits() {
                     {benefit.title}
                   </h3>
 
-                  {/* DescriÃ§Ã£o */}
+                  {/* Descrição */}
                   <p 
                     className="leading-relaxed"
                     style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f7f7-rgb), 0.667)' }}

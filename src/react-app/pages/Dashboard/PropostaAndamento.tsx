@@ -34,12 +34,12 @@ export default function PropostaAndamentoPage() {
   const proposta = {
     id: id || '1',
     comprador: 'Ana Lima',
-    imovel: 'Apartamento Vista Mar - IcaraÃ­',
-    endereco: 'Rua Ãlvares de Azevedo, 155 - IcaraÃ­, NiterÃ³i/RJ',
+    imovel: 'Apartamento Vista Mar - Icaraí',
+    endereco: 'Rua Álvares de Azevedo, 155 - Icaraí, Niterói/RJ',
     valor: 'R$ 740.000',
     data: '20/11/2025',
     corretor: 'Carlos Silva',
-    status: 'Em NegociaÃ§Ã£o' as const,
+    status: 'Em Negociação' as const,
     prazoValidade: '72 horas',
     condicoesPagamento: 'Entrada 20% + Financiamento'
   };
@@ -48,7 +48,7 @@ export default function PropostaAndamentoPage() {
     switch (status) {
       case 'Enviada':
         return { bg: 'var(--color-info)', text: 'var(--brand-light)' };
-      case 'Em NegociaÃ§Ã£o':
+      case 'Em Negociação':
         return { bg: 'var(--color-warning)', text: 'var(--brand-light)' };
       case 'Aprovada':
         return { bg: 'var(--color-success)', text: 'var(--brand-light)' };
@@ -69,54 +69,54 @@ export default function PropostaAndamentoPage() {
       icon: Sparkles,
       titulo: 'Proposta Gerada pela IA',
       descricao: 'Sistema criou proposta automaticamente com base no perfil do cliente',
-      dataHora: '20/11/2025 Ã s 14:30',
+      dataHora: '20/11/2025 às 14:30',
       status: 'concluido',
-      badge: 'ConcluÃ­do'
+      badge: 'Concluído'
     },
     {
       icon: Send,
       titulo: 'Enviada ao Cliente',
       descricao: 'Proposta enviada via WhatsApp para Ana Lima',
-      dataHora: '20/11/2025 Ã s 14:52',
+      dataHora: '20/11/2025 às 14:52',
       status: 'concluido',
-      badge: 'ConcluÃ­do'
+      badge: 'Concluído'
     },
     {
       icon: Eye,
       titulo: 'Cliente abriu a proposta',
       descricao: 'Ana Lima visualizou o documento em PDF',
-      dataHora: '20/11/2025 Ã s 16:20',
+      dataHora: '20/11/2025 às 16:20',
       status: 'concluido',
-      badge: 'ConcluÃ­do'
+      badge: 'Concluído'
     },
     {
       icon: MessageSquare,
       titulo: 'Contra-oferta recebida',
-      descricao: 'Cliente propÃ´s valor de R$ 720.000 com entrada de 15%',
-      dataHora: '20/11/2025 Ã s 18:45',
+      descricao: 'Cliente propôs valor de R$ 720.000 com entrada de 15%',
+      dataHora: '20/11/2025 às 18:45',
       status: 'concluido',
-      badge: 'ConcluÃ­do'
+      badge: 'Concluído'
     },
     {
       icon: UserCheck,
-      titulo: 'AnÃ¡lise do Corretor',
-      descricao: 'Aguardando decisÃ£o sobre aceitar ou recusar contra-oferta',
-      dataHora: '21/11/2025 Ã s 09:15',
+      titulo: 'Análise do Corretor',
+      descricao: 'Aguardando decisão sobre aceitar ou recusar contra-oferta',
+      dataHora: '21/11/2025 às 09:15',
       status: 'em_andamento',
       badge: 'Em Andamento'
     },
     {
       icon: Shield,
-      titulo: 'Encaminhar ao JurÃ­dico',
-      descricao: 'ValidaÃ§Ã£o jurÃ­dica pendente',
+      titulo: 'Encaminhar ao Jurídico',
+      descricao: 'Validação jurídica pendente',
       dataHora: 'Pendente',
       status: 'pendente',
       badge: 'Pendente'
     },
     {
       icon: FileCheck,
-      titulo: 'PrÃ©-Contrato gerado',
-      descricao: 'Documento formal aguardando aprovaÃ§Ã£o',
+      titulo: 'Pré-Contrato gerado',
+      descricao: 'Documento formal aguardando aprovação',
       dataHora: 'Pendente',
       status: 'pendente',
       badge: 'Pendente'
@@ -131,7 +131,7 @@ export default function PropostaAndamentoPage() {
     }
   ];
 
-  // HistÃ³rico de aÃ§Ãµes
+  // Histórico de ações
   const historicoAcoes = [
     {
       dataHora: '21/11/2025 09:15',
@@ -166,7 +166,7 @@ export default function PropostaAndamentoPage() {
     {
       dataHora: '20/11/2025 14:10',
       usuario: 'Carlos Silva (Corretor)',
-      acao: 'Iniciou processo de criaÃ§Ã£o de proposta',
+      acao: 'Iniciou processo de criação de proposta',
       tipo: 'corretor'
     }
   ];
@@ -215,7 +215,7 @@ export default function PropostaAndamentoPage() {
             fontFamily: 'Montserrat, sans-serif',
             backgroundColor: 'transparent',
             color: 'var(--brand-primary)',
-            borderWidth: '2px',
+            borderWidth: "var(--border-md)",
             borderColor: 'var(--brand-primary)'
           }}
           onMouseEnter={(e) => {
@@ -240,7 +240,7 @@ export default function PropostaAndamentoPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Andamento da Proposta â€“ {proposta.comprador}
+                Andamento da Proposta – {proposta.comprador}
               </h1>
               <p 
                 className="text-xl"
@@ -249,7 +249,7 @@ export default function PropostaAndamentoPage() {
                   color: 'var(--brand-text-gray)'
                 }}
               >
-                Acompanhamento completo das etapas comerciais e jurÃ­dicas.
+                Acompanhamento completo das etapas comerciais e jurídicas.
               </p>
             </div>
             <span 
@@ -265,7 +265,7 @@ export default function PropostaAndamentoPage() {
           </div>
         </div>
 
-        {/* BotÃµes de AÃ§Ã£o - Topo */}
+        {/* Botões de Ação - Topo */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
           <button
             onClick={() => alert('Enviando proposta novamente...')}
@@ -289,7 +289,7 @@ export default function PropostaAndamentoPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'var(--brand-dark-secondary)',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -306,7 +306,7 @@ export default function PropostaAndamentoPage() {
           </button>
 
           <button
-            onClick={() => alert('Encaminhando para jurÃ­dico...')}
+            onClick={() => alert('Encaminhando para jurídico...')}
             className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105"
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
@@ -317,11 +317,11 @@ export default function PropostaAndamentoPage() {
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--color-purple)'}
           >
             <Shield className="w-4 h-4" />
-            Enviar ao JurÃ­dico
+            Enviar ao Jurídico
           </button>
 
           <button
-            onClick={() => alert('Gerando prÃ©-contrato...')}
+            onClick={() => alert('Gerando pré-contrato...')}
             className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:scale-105"
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
@@ -332,7 +332,7 @@ export default function PropostaAndamentoPage() {
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--color-warning)'}
           >
             <FileCheck className="w-4 h-4" />
-            Gerar PrÃ©-contrato
+            Gerar Pré-contrato
           </button>
 
           <button
@@ -422,7 +422,7 @@ export default function PropostaAndamentoPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                ImÃ³vel
+                Imóvel
               </p>
               <p 
                 className="text-xl font-bold"
@@ -494,7 +494,7 @@ export default function PropostaAndamentoPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                Corretor ResponsÃ¡vel
+                Corretor Responsável
               </p>
               <p 
                 className="text-lg"
@@ -515,7 +515,7 @@ export default function PropostaAndamentoPage() {
                   color: 'var(--brand-primary)'
                 }}
               >
-                CondiÃ§Ãµes de Pagamento
+                Condições de Pagamento
               </p>
               <p 
                 className="text-lg"
@@ -640,7 +640,7 @@ export default function PropostaAndamentoPage() {
           </div>
         </div>
 
-        {/* HistÃ³rico de AÃ§Ãµes */}
+        {/* Histórico de Ações */}
         <div 
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
@@ -655,7 +655,7 @@ export default function PropostaAndamentoPage() {
               color: 'var(--brand-light)'
             }}
           >
-            HistÃ³rico de AÃ§Ãµes
+            Histórico de Ações
           </h2>
 
           <div className="space-y-3">
@@ -719,7 +719,7 @@ export default function PropostaAndamentoPage() {
           </div>
         </div>
 
-        {/* BotÃµes de AÃ§Ã£o - Final */}
+        {/* Botões de Ação - Final */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
           <button
             onClick={() => alert('Enviando proposta novamente...')}
@@ -743,7 +743,7 @@ export default function PropostaAndamentoPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -754,7 +754,7 @@ export default function PropostaAndamentoPage() {
             }}
           >
             <Shield className="w-5 h-5" />
-            Ver Painel JurÃ­dico
+            Ver Painel Jurídico
           </button>
 
           <button
@@ -764,7 +764,7 @@ export default function PropostaAndamentoPage() {
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
               color: 'var(--brand-primary)',
-              borderWidth: '2px',
+              borderWidth: "var(--border-md)",
               borderColor: 'var(--brand-primary)'
             }}
             onMouseEnter={(e) => {
@@ -788,13 +788,14 @@ export default function PropostaAndamentoPage() {
               color: 'var(--color-7a7a7a)'
             }}
           >
-            Â© 2025 HUB ImobiliÃ¡rio Inteligente â€” Acompanhamento de Propostas.
+            © 2025 HUB Imobiliário Inteligente — Acompanhamento de Propostas.
           </p>
         </div>
       </div>
     </div>
   );
 }
+
 
 
 

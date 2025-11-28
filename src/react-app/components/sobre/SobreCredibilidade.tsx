@@ -1,27 +1,27 @@
-﻿const credibilidade = [
+const credibilidade = [
   {
-    title: "SeguranÃ§a JurÃ­dica Profissional",
-    desc: "Contratos digitais, logs, rastreabilidade e proteÃ§Ã£o de comissÃ£o garantem negociaÃ§Ãµes seguras.",
+    title: "Segurança Jurídica Profissional",
+    desc: "Contratos digitais, logs, rastreabilidade e proteção de comissão garantem negociações seguras.",
   },
   {
-    title: "TransparÃªncia Total",
-    desc: "Todas as interaÃ§Ãµes ficam documentadas, criando um histÃ³rico confiÃ¡vel entre profissionais e clientes.",
+    title: "Transparência Total",
+    desc: "Todas as interações ficam documentadas, criando um histórico confiável entre profissionais e clientes.",
   },
   {
-    title: "ProteÃ§Ã£o Contra Bypass",
-    desc: "Estrutura que protege corretores e imobiliÃ¡rias contra perda de comissÃ£o nas parcerias.",
+    title: "Proteção Contra Bypass",
+    desc: "Estrutura que protege corretores e imobiliárias contra perda de comissão nas parcerias.",
   },
   {
     title: "Dados Criptografados",
-    desc: "Seguindo padrÃµes modernos de seguranÃ§a e conformidade total com a LGPD.",
+    desc: "Seguindo padrões modernos de segurança e conformidade total com a LGPD.",
   },
   {
-    title: "OperaÃ§Ã£o Ã‰tica e Profissional",
-    desc: "O HUBIMOB atua como intermediador confiÃ¡vel, garantindo processos justos para todos.",
+    title: "Operação Ética e Profissional",
+    desc: "O HUBIMOB atua como intermediador confiável, garantindo processos justos para todos.",
   },
   {
     title: "Modelo de Fee Justo",
-    desc: "12% de intermediaÃ§Ã£o â€” simples, claro e pago apenas no sucesso.",
+    desc: "12% de intermediação — simples, claro e pago apenas no sucesso.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function SobreCredibilidade() {
           className="text-4xl md:text-5xl font-bold text-center mb-12"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
-          ConfianÃ§a e <span className="text-amber-400">Seriedade</span> em Cada OperaÃ§Ã£o
+          Confiança e <span className="text-amber-400">Seriedade</span> em Cada Operação
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
