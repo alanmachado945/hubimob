@@ -2,8 +2,9 @@
   /* ==================== COLORS ==================== */
   
   /* Primary Palette */
-  --brand-primary: var(--color-c8a96a);         /* Dourado primário */
-  --brand-primary-dark: var(--color-a68a52);    /* Dourado escuro hover */
+  --brand-primary: #0A0F1F;           /* Azul-Marinho Profundo */
+  --brand-primary-dark: #111827;      /* Preto Azul-Grafite */
+  --brand-primary-rgb: 10,15,31;
   
   /* Secondary Palette */
   --brand-secondary: var(--color-0d1a2d);       /* Azul secundário */
@@ -25,6 +26,23 @@
   --color-info: var(--color-2196f3);            /* Azul informação */
   --color-error: var(--color-f44336);           /* Vermelho erro */
   --color-purple: var(--color-9c27b0);          /* Roxo */
+
+  /* Brand Accent & Text */
+  --brand-accent: #D4AF67;            /* Dourado Metálico */
+  --brand-accent-dark: #B68A37;       /* Dourado Escuro */
+  --brand-accent-rgb: 212,175,103;
+  --brand-text-light: #F2F2F2;        /* Cinza Neutro */
+  --brand-text-light-rgb: 242,242,242;
+  --brand-surface: #FFF9F2;           /* Branco Quente */
+  --brand-surface-rgb: 255,249,242;
+
+  /* Derived tokens (auto-generated) */
+  --brand-primary-light: rgba(var(--brand-primary-rgb), 0.06);
+  --brand-accent-light: rgba(var(--brand-accent-rgb), 0.08);
+  --brand-border: rgba(var(--brand-primary-rgb), 0.12);
+  --brand-bg: var(--brand-surface);
+  --brand-card: rgba(var(--brand-surface-rgb), 0.98);
+  --brand-muted: rgba(var(--brand-text-light-rgb), 0.6);
   
   /* ==================== TYPOGRAPHY ==================== */
   
