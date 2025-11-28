@@ -124,6 +124,96 @@
   --transition-fast: 0.15s ease;
   --transition-base: 0.25s ease;
   --transition-slow: 0.35s ease;
+
+  /* ==================== ACCENT COLORS (Dashboard & Components) ==================== */
+  --accent-gold: #E3A93C;
+  --accent-gold-dark: #C8912F;
+  --brand-gold-alt: #D4AF67;
+
+  /* ==================== EXTENDED NEUTRAL PALETTE ==================== */
+  --text-white: #FFFFFF;
+  --text-black: #000000;
+  --text-gray-light: #F7F7F7;
+  --text-gray-medium: #C7C7C7;
+  --text-gray-dark: #7A7A7A;
+  --text-gray-darker: #666666;
+  --text-gray-darkest: #555555;
+
+  /* ==================== BACKGROUND DARK VARIANTS ==================== */
+  --bg-dark-navy: #0A0F1F;
+  --bg-dark-blue: #111827;
+  --bg-dark-pure: #0B0B0C;
+  --bg-dark-darkest: #0D0D0D;
+  --bg-dark-warmish: #1A1A1C;
+
+  /* ==================== PRE-CALCULATED RGBA COLORS (Transparency Variants) ==================== */
+  /* Primary Brand Color Variants */
+  --rgba-brand-10: rgba(var(--color-c8a96a-rgb), 0.10);
+  --rgba-brand-13: rgba(var(--color-c8a96a-rgb), 0.13);
+  --rgba-brand-20: rgba(var(--color-c8a96a-rgb), 0.20);
+  --rgba-brand-03: rgba(var(--color-c8a96a-rgb), 0.03);
+  --rgba-brand-06: rgba(var(--color-c8a96a-rgb), 0.06);
+
+  /* Gold Accent Variants */
+  --rgba-gold-accent-10: rgba(227, 169, 60, 0.10);
+  --rgba-gold-accent-15: rgba(227, 169, 60, 0.15);
+  --rgba-gold-accent-20: rgba(227, 169, 60, 0.20);
+  --rgba-gold-accent-30: rgba(227, 169, 60, 0.30);
+
+  /* Light Gray Text Variants */
+  --rgba-light-06: rgba(var(--color-f2f2f2-rgb), 0.06);
+  --rgba-light-10: rgba(var(--color-f2f2f2-rgb), 0.10);
+  --rgba-light-70: rgba(var(--color-f2f2f2-rgb), 0.70);
+  --rgba-light-80: rgba(var(--color-f2f2f2-rgb), 0.80);
+  --rgba-light-90: rgba(var(--color-f2f2f2-rgb), 0.90);
+
+  /* Dark Background Variants */
+  --rgba-dark-40: rgba(var(--color-111827-rgb), 0.40);
+  --rgba-dark-125: rgba(var(--color-1a1a1a-rgb), 0.125);
+
+  /* Navy Dark Variants */
+  --rgba-navy-dark-60: rgba(var(--color-0a0f1f-rgb), 0.60);
+  --rgba-navy-dark-70: rgba(var(--color-0a0f1f-rgb), 0.70);
+  --rgba-navy-dark-85: rgba(var(--color-0a0f1f-rgb), 0.85);
+  --rgba-navy-dark-95: rgba(var(--color-0a0f1f-rgb), 0.95);
+
+  /* ==================== GRADIENTS ==================== */
+  --gradient-navy-top: linear-gradient(to bottom, rgba(var(--color-0a0f1f-rgb), 0.95), rgba(var(--color-0a0f1f-rgb), 0.85), rgba(var(--color-0a0f1f-rgb), 0.70));
+  --gradient-gold-accent: linear-gradient(to bottom right, rgba(var(--color-d4af67-rgb), 0.00), rgba(var(--color-d4af67-rgb), 0.20));
+  --gradient-gold-to-navy: linear-gradient(to bottom right, rgba(var(--color-d4af67-rgb), 0.20), rgba(var(--color-0a0f1f-rgb), 0));
+  --gradient-light-subtle: linear-gradient(rgba(var(--color-c8a96a-rgb), 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(var(--color-c8a96a-rgb), 0.03) 1px, transparent 1px);
+
+  /* ==================== SEMANTIC TYPOGRAPHY ==================== */
+  /* Heading 1 */
+  --font-h1-size: var(--text-5xl);
+  --font-h1-weight: var(--font-extrabold);
+  --font-h1-family: var(--font-display);
+  --font-h1-line-height: var(--line-tight);
+
+  /* Heading 2 */
+  --font-h2-size: var(--text-4xl);
+  --font-h2-weight: var(--font-bold);
+  --font-h2-family: var(--font-display);
+  --font-h2-line-height: var(--line-snug);
+
+  /* Heading 3 */
+  --font-h3-size: var(--text-xl);
+  --font-h3-weight: var(--font-semibold);
+  --font-h3-family: var(--font-sans);
+  --font-h3-line-height: var(--line-normal);
+
+  /* Body Text */
+  --font-body-size: var(--text-base);
+  --font-body-family: var(--font-sans);
+  --font-body-weight: var(--font-normal);
+  --font-body-line-height: var(--line-relaxed);
+
+  /* Small Text */
+  --font-small-size: var(--text-sm);
+  --font-small-family: var(--font-sans);
+  --font-small-weight: var(--font-normal);
+  --font-small-line-height: var(--line-normal);
+
   /* Auto-generated color tokens */
   --color-f0c986: #f0c986;
   --color-f0c986-rgb: 240,201,134;
