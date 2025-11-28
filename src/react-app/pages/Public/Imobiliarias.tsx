@@ -34,25 +34,25 @@ export default function ImobiliariasPage() {
   const getBadgeColor = (badge: string) => {
     switch (badge) {
       case 'Premium':
-        return { bg: 'rgba(var(--color-c8a96a-rgb), 0.125)', color: 'var(--brand-primary)' };
+        return { bg: 'rgba(var(--brand-gold-rgb), 0.125)', color: 'var(--brand-gold)' };
       case 'Nova':
-        return { bg: 'rgba(var(--color-1a1a1a-rgb), 0.125)', color: 'var(--color-f7f7f7)' };
+        return { bg: 'rgba(var(--brand-dark-rgb), 0.125)', color: 'var(--brand-white)' };
       case 'Parceira':
-        return { bg: 'rgba(var(--color-0c1f26-rgb), 0.125)', color: 'var(--color-0c1f26)' };
+        return { bg: 'rgba(var(--brand-dark-rgb), 0.125)', color: 'var(--brand-dark)' };
       default:
-        return { bg: 'rgba(var(--color-1a1a1a-rgb), 0.125)', color: 'var(--color-f7f7f7)' };
+        return { bg: 'rgba(var(--brand-dark-rgb), 0.125)', color: 'var(--brand-white)' };
     }
   };
 
   return (
-    <div className="min-h-screen bg-brand-dark text-brand-light px-6 py-12">
+    <div className="min-h-screen bg-brand-dark text-brand-white px-6 py-12">
 
       {/* Background Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--color-c8a96a-rgb), 0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--color-c8a96a-rgb), 0.06)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--brand-gold-rgb), 0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--brand-gold-rgb), 0.06)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
 
       {/* Glow Effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
@@ -62,7 +62,7 @@ export default function ImobiliariasPage() {
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{
               fontFamily: 'Playfair Display, serif',
-              color: 'var(--brand-primary)'
+              color: 'var(--brand-gold)'
             }}
           >
             Imobiliárias Parceiras
@@ -82,20 +82,20 @@ export default function ImobiliariasPage() {
         {/* Filtros */}
         <div
           className="mb-12 p-6 rounded-2xl border-2"
-          style={{
+            style={{
             backgroundColor: 'var(--brand-dark)',
-            borderColor: 'var(--brand-primary)'
+            borderColor: 'var(--brand-gold)'
           }}
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
             {/* Cidade */}
             <div>
-              <label
+                  <label
                 className="block text-sm font-semibold mb-2"
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Cidade
@@ -104,12 +104,12 @@ export default function ImobiliariasPage() {
                 value={cidadeFilter}
                 onChange={(e) => setCidadeFilter(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
-                style={{
+                  style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
                   borderWidth: "var(--border-md)",
-                  borderColor: 'var(--brand-primary)',
-                  color: 'var(--color-f7f7f7)'
+                  borderColor: 'var(--brand-gold)',
+                  color: 'var(--brand-white)'
                 }}
               >
                 <option>Todas</option>
@@ -129,7 +129,7 @@ export default function ImobiliariasPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Bairro
@@ -138,12 +138,12 @@ export default function ImobiliariasPage() {
                 value={bairroFilter}
                 onChange={(e) => setBairroFilter(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
-                style={{
+                  style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
                   borderWidth: "var(--border-md)",
-                  borderColor: 'var(--brand-primary)',
-                  color: 'var(--color-f7f7f7)'
+                  borderColor: 'var(--brand-gold)',
+                  color: 'var(--brand-white)'
                 }}
               >
                 <option>Todos</option>
@@ -163,7 +163,7 @@ export default function ImobiliariasPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Tipo de Imobiliária
@@ -172,12 +172,12 @@ export default function ImobiliariasPage() {
                 value={tipoFilter}
                 onChange={(e) => setTipoFilter(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
-                style={{
+                  style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
                   borderWidth: "var(--border-md)",
-                  borderColor: 'var(--brand-primary)',
-                  color: 'var(--color-f7f7f7)'
+                  borderColor: 'var(--brand-gold)',
+                  color: 'var(--brand-white)'
                 }}
               >
                 <option>Todos</option>
@@ -193,7 +193,7 @@ export default function ImobiliariasPage() {
                 className="block text-sm font-semibold mb-2"
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Status
@@ -202,12 +202,12 @@ export default function ImobiliariasPage() {
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
-                style={{
+                  style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark-secondary)',
                   borderWidth: "var(--border-md)",
-                  borderColor: 'var(--brand-primary)',
-                  color: 'var(--color-f7f7f7)'
+                  borderColor: 'var(--brand-gold)',
+                  color: 'var(--brand-white)'
                 }}
               >
                 <option>Todos</option>
@@ -231,7 +231,7 @@ export default function ImobiliariasPage() {
                 className="rounded-2xl border-2 overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl group"
                 style={{
                   backgroundColor: 'var(--brand-dark)',
-                  borderColor: 'var(--brand-primary)'
+                  borderColor: 'var(--brand-gold)'
                 }}
               >
                 <div className="p-8">
@@ -254,7 +254,7 @@ export default function ImobiliariasPage() {
                   <h3
                     className="text-2xl font-bold mb-3"
                     style={{
-                      color: 'var(--brand-primary)',
+                      color: 'var(--brand-gold)',
                       fontFamily: 'Playfair Display, serif'
                     }}
                   >
@@ -263,8 +263,8 @@ export default function ImobiliariasPage() {
 
                   {/* Localização */}
                   <div className="flex items-center gap-2 mb-4">
-                    <MapPin className="w-5 h-5" style={{ color: 'var(--brand-primary)' }} />
-                    <span style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
+                    <MapPin className="w-5 h-5" style={{ color: 'var(--brand-gold)' }} />
+                    <span style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}>
                       {imobiliaria.cidade} — {imobiliaria.bairro}
                     </span>
                   </div>
@@ -274,24 +274,24 @@ export default function ImobiliariasPage() {
 
                     <div className="p-4 rounded-xl" style={{ backgroundColor: 'var(--brand-dark-secondary)' }}>
                       <div className="flex items-center gap-2 mb-2">
-                        <Home className="w-5 h-5" style={{ color: 'var(--brand-primary)' }} />
-                        <span className="text-sm font-semibold" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
+                        <Home className="w-5 h-5" style={{ color: 'var(--brand-gold)' }} />
+                        <span className="text-sm font-semibold" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}>
                           Imóveis Ativos
                         </span>
                       </div>
-                      <p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}>
+                      <p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-gold)' }}>
                         {imobiliaria.imoveisAtivos}
                       </p>
                     </div>
 
                     <div className="p-4 rounded-xl" style={{ backgroundColor: 'var(--brand-dark-secondary)' }}>
                       <div className="flex items-center gap-2 mb-2">
-                        <Users className="w-5 h-5" style={{ color: 'var(--brand-primary)' }} />
-                        <span className="text-sm font-semibold" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
+                        <Users className="w-5 h-5" style={{ color: 'var(--brand-gold)' }} />
+                        <span className="text-sm font-semibold" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}>
                           Corretores
                         </span>
                       </div>
-                      <p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}>
+                      <p className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-gold)' }}>
                         {imobiliaria.corretores}
                       </p>
                     </div>
@@ -300,7 +300,7 @@ export default function ImobiliariasPage() {
 
                   {/* Data */}
                   <div className="mb-6">
-                    <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
+                    <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}>
                       Parceira desde {imobiliaria.dataParceria}
                     </p>
                   </div>
@@ -310,7 +310,7 @@ export default function ImobiliariasPage() {
                     to="/imobiliarias/1"
                     className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
                     style={{
-                      backgroundColor: 'var(--brand-primary)',
+                      backgroundColor: 'var(--brand-gold)',
                       color: 'var(--brand-dark-secondary)',
                       fontFamily: 'Montserrat, sans-serif'
                     }}
@@ -326,10 +326,10 @@ export default function ImobiliariasPage() {
         </div>
 
         {/* Footer */}
-        <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-c8a96a-rgb), 0.2)' }}>
+        <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--brand-gold-rgb), 0.2)' }}>
           <div className="flex items-center justify-center gap-3 mb-3">
-            <Building2 className="w-6 h-6" style={{ color: 'var(--brand-primary)' }} />
-            <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-f7f7f7)' }}>
+            <Building2 className="w-6 h-6" style={{ color: 'var(--brand-gold)' }} />
+            <p className="text-sm" style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}>
               HUBIMOB — Conectando Corretores às Melhores Imobiliárias do Brasil.
             </p>
           </div>

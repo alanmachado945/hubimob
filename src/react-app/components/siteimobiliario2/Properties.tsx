@@ -44,7 +44,7 @@ export default function Properties() {
     <section
       className="py-24 bg-gradient-to-b"
       style={{
-        backgroundImage: "linear-gradient(to bottom, var(--color-111827), var(--color-0a0f1f))" // Preto Azul-Grafite → Azul-Marinho Profundo
+        backgroundImage: "linear-gradient(to bottom, var(--brand-dark), var(--brand-bg))" // Preto Azul-Grafite → Azul-Marinho Profundo
       }}
     >
       <div className="max-w-container mx-auto px-5">
@@ -71,8 +71,8 @@ export default function Properties() {
               key={index}
               className="group rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105"
               style={{
-                backgroundColor: "rgba(var(--color-111827-rgb), 0.45)", // Preto Azul-Grafite translúcido
-                border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)" // Dourado metálico 20%
+                backgroundColor: "rgba(var(--brand-dark-rgb), 0.45)", // Preto Azul-Grafite translúcido
+                border: "1px solid rgba(var(--brand-gold-rgb), 0.20)" // Dourado metálico 20%
               }}
             >
               
@@ -95,8 +95,8 @@ export default function Properties() {
                 {/* LOCATION */}
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-4 h-4" style={{ color: "var(--brand-primary)" }} />
-                    <span style={{ color: "var(--brand-light)" }} className="text-sm">
+                    <MapPin className="w-4 h-4" style={{ color: "var(--brand-gold)" }} />
+                    <span style={{ color: "var(--brand-white)" }} className="text-sm">
                       {property.location}
                     </span>
                   </div>
@@ -107,30 +107,30 @@ export default function Properties() {
               <div className="p-6">
                 <h3
                   className="font-display text-2xl font-semibold mb-4"
-                  style={{ color: "var(--brand-light)" }}
+                  style={{ color: "var(--brand-white)" }}
                 >
                   {property.title}
                 </h3>
                 
                 <div
                   className="flex items-center gap-4 mb-4"
-                  style={{ color: "var(--brand-light)" }}
+                  style={{ color: "var(--brand-white)" }}
                 >
                   <div className="flex items-center gap-1">
-                    <Bed className="w-4 h-4" style={{ color: "var(--brand-light)" }} />
-                    <span className="text-sm" style={{ color: "var(--brand-light)" }}>
+                    <Bed className="w-4 h-4" style={{ color: "var(--brand-white)" }} />
+                    <span className="text-sm" style={{ color: "var(--brand-white)" }}>
                       {property.beds}
                     </span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <Bath className="w-4 h-4" style={{ color: "var(--brand-light)" }} />
-                    <span className="text-sm" style={{ color: "var(--brand-light)" }}>
+                    <Bath className="w-4 h-4" style={{ color: "var(--brand-white)" }} />
+                    <span className="text-sm" style={{ color: "var(--brand-white)" }}>
                       {property.baths}
                     </span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <Square className="w-4 h-4" style={{ color: "var(--brand-light)" }} />
-                    <span className="text-sm" style={{ color: "var(--brand-light)" }}>
+                    <Square className="w-4 h-4" style={{ color: "var(--brand-white)" }} />
+                    <span className="text-sm" style={{ color: "var(--brand-white)" }}>
                       {property.area}m²
                     </span>
                   </div>
@@ -138,7 +138,7 @@ export default function Properties() {
                 
                 <div
                   className="text-2xl font-bold"
-                  style={{ color: "var(--brand-primary)" }}
+                  style={{ color: "var(--brand-gold)" }}
                 >
                   {property.price}
                 </div>

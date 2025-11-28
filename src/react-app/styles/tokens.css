@@ -21,9 +21,9 @@
   --brand-white-rgb: 255,249,242;
 
   /* Backwards-compatible aliases (keep older token names mapped to canonical ones) */
-  --brand-primary: var(--brand-bg);
-  --brand-primary-dark: var(--brand-dark);
-  --brand-primary-rgb: var(--brand-bg-rgb);
+  --brand-primary: var(--brand-gold);
+  --brand-primary-dark: var(--brand-gold-dark);
+  --brand-primary-rgb: var(--brand-gold-rgb);
   --brand-accent: var(--brand-gold);
   --brand-accent-dark: var(--brand-gold-dark);
   --brand-accent-rgb: var(--brand-gold-rgb);
@@ -73,13 +73,28 @@
   /* ==================== TYPOGRAPHY ==================== */
   
   --font-display: 'Playfair Display', serif;
-  --font-sans: 'Montserrat', sans-serif;
+  --font-sans: 'Inter', sans-serif;
   --font-default: 'Inter', sans-serif;
 
-  /* Unified font-size tokens */
+  /* Unified font-size tokens (backwards-compatible aliases) */
   --font-size-base: var(--text-base);
   --font-size-title: var(--text-4xl);
   --font-size-subtitle: var(--text-lg);
+
+  /* Requested typography tokens */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-hero: 3rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
   
   /* Font Sizes */
   --text-xs: 0.75rem;
@@ -109,19 +124,24 @@
   --line-loose: 2;
   
   /* ==================== SPACING ==================== */
-  
-  --space-0: 0;
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
-  --space-24: 6rem;
-  --space-32: 8rem;
+  /* === SPACING TOKENS (4px scale) === */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-section: 80px; /* seções grandes */
   
   /* ==================== RADIUS ==================== */
   

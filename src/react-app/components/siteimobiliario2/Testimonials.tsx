@@ -32,13 +32,13 @@ export default function Testimonials() {
         {/* TITLE */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span style={{ color: "var(--brand-light)" }}>O que dizem</span>{' '}
-            <span style={{ color: "var(--brand-primary)" }}>nossos clientes</span>
+            <span style={{ color: "var(--brand-gray)" }}>O que dizem</span>{' '}
+            <span style={{ color: "var(--brand-gold)" }}>nossos clientes</span>
           </h2>
 
           <p
             className="text-lg max-w-2xl mx-auto"
-            style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
+            style={{ color: "rgba(var(--brand-gray-rgb), 0.70)" }}
           >
             HistÃ³rias reais de quem confiou na HUBIMOB
           </p>
@@ -76,7 +76,7 @@ export default function Testimonials() {
                 
                 <Quote
                   className="w-10 h-10 mb-6"
-                  style={{ color: "rgba(var(--color-d4af67-rgb), 0.60)" }}
+                  style={{ color: "rgba(var(--brand-gold-rgb), 0.60)" }}
                 />
                 
                 <div className="flex gap-1 mb-6">
@@ -84,14 +84,14 @@ export default function Testimonials() {
                     <Star
                       key={i}
                       className="w-5 h-5"
-                      style={{ color: "var(--brand-primary)", fill: "var(--brand-primary)" }}
+                      style={{ color: "var(--brand-gold)", fill: "var(--brand-gold)" }}
                     />
                   ))}
                 </div>
                 
                 <p
                   className="leading-relaxed mb-8 text-lg flex-grow drop-shadow-lg"
-                  style={{ color: "var(--brand-light)" }}
+                  style={{ color: "var(--brand-white)" }}
                 >
                   "{testimonial.content}"
                 </p>
@@ -99,14 +99,14 @@ export default function Testimonials() {
                 <div>
                   <div
                     className="font-semibold text-lg drop-shadow-lg"
-                    style={{ color: "var(--brand-light)" }}
+                    style={{ color: "var(--brand-white)" }}
                   >
                     {testimonial.name}
                   </div>
                   
                   <div
                     className="text-sm drop-shadow-lg"
-                    style={{ color: "var(--brand-primary)" }}
+                    style={{ color: "var(--brand-gold)" }}
                   >
                     {testimonial.role}
                   </div>

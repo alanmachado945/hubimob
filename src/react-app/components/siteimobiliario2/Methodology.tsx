@@ -5,7 +5,7 @@ export default function Methodology() {
     <section
       className="py-24 bg-gradient-to-b"
       style={{
-        backgroundImage: "linear-gradient(to bottom, var(--color-0a0f1f), var(--color-111827))" // Azul-marinho profundo â†’ Preto azul-grafite
+        backgroundImage: "linear-gradient(to bottom, var(--brand-bg), var(--brand-dark))" // Azul-marinho profundo → Preto azul-grafite
       }}
     >
       <div className="max-w-container mx-auto px-5">
@@ -17,7 +17,7 @@ export default function Methodology() {
               className="absolute inset-0 bg-gradient-to-br blur-3xl"
               style={{
                 backgroundImage:
-                  "linear-gradient(to bottom right, rgba(var(--color-d4af67-rgb), 0.20), rgba(var(--color-0a0f1f-rgb), 0))" // Dourado metÃ¡lico â†’ transparente sobre navy
+                  "linear-gradient(to bottom right, rgba(var(--brand-gold-rgb), 0.20), rgba(var(--brand-bg-rgb), 0))" // Dourado metálico → transparente sobre navy
               }}
             ></div>
 
@@ -34,8 +34,8 @@ export default function Methodology() {
           {/* Content */}
           <div>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              <span style={{ color: "var(--brand-primary)" }}>Metodologia</span><br />
-              <span style={{ color: "var(--brand-light)" }}>inteligente</span>
+              <span style={{ color: "var(--brand-gold)" }}>Metodologia</span><br />
+              <span style={{ color: "var(--brand-gray)" }}>inteligente</span>
             </h2>
             
             <p
@@ -51,24 +51,24 @@ export default function Methodology() {
               <div
                 className="flex gap-4 items-start glass-effect rounded-xl p-6"
                 style={{
-                  backgroundColor: "rgba(var(--color-111827-rgb), 0.40)", // Preto azul-grafite translÃºcido
-                  border: "1px solid rgba(var(--color-d4af67-rgb), 0.15)" // Dourado metÃ¡lico 15%
-                }}
+                    backgroundColor: "rgba(var(--brand-dark-rgb), 0.40)", // Preto azul-grafite translúcido
+                    border: "1px solid rgba(var(--brand-gold-rgb), 0.15)" // Dourado metálico 15%
+                  }}
               >
                 <div
                   className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
                   style={{
-                    backgroundColor: "rgba(var(--color-d4af67-rgb), 0.20)" // dourado 20%
+                    backgroundColor: "rgba(var(--brand-gold-rgb), 0.20)" // dourado 20%
                   }}
                 >
-                  <Brain className="w-6 h-6" style={{ color: "var(--brand-primary)" }} />
+                  <Brain className="w-6 h-6" style={{ color: "var(--brand-gold)" }} />
                 </div>
 
                 <div>
-                  <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-light)" }}>
+                  <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-white)" }}>
                     InteligÃªncia Artificial
                   </h3>
-                  <p style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
+                  <p style={{ color: "rgba(var(--brand-gray-rgb), 0.70)" }}>
                     AnÃ¡lise de milhares de imÃ³veis em tempo real para encontrar matches perfeitos
                   </p>
                 </div>
@@ -85,17 +85,17 @@ export default function Methodology() {
                 <div
                   className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
                   style={{
-                    backgroundColor: "rgba(var(--color-d4af67-rgb), 0.20)"
+                    backgroundColor: "rgba(var(--brand-gold-rgb), 0.20)"
                   }}
                 >
-                  <Database className="w-6 h-6" style={{ color: "var(--brand-primary)" }} />
+                  <Database className="w-6 h-6" style={{ color: "var(--brand-gold)" }} />
                 </div>
 
                 <div>
-                  <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-light)" }}>
+                  <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-white)" }}>
                     Big Data
                   </h3>
-                  <p style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
+                  <p style={{ color: "rgba(var(--brand-gray-rgb), 0.70)" }}>
                     Dados de mercado atualizados constantemente para decisÃµes informadas
                   </p>
                 </div>
@@ -112,17 +112,17 @@ export default function Methodology() {
                 <div
                   className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0"
                   style={{
-                    backgroundColor: "rgba(var(--color-d4af67-rgb), 0.20)"
+                    backgroundColor: "rgba(var(--brand-gold-rgb), 0.20)"
                   }}
                 >
-                  <TrendingUp className="w-6 h-6" style={{ color: "var(--brand-primary)" }} />
+                  <TrendingUp className="w-6 h-6" style={{ color: "var(--brand-gold)" }} />
                 </div>
 
                 <div>
-                  <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-light)" }}>
+                  <h3 className="font-semibold mb-2 text-lg" style={{ color: "var(--brand-white)" }}>
                     AnÃ¡lise Preditiva
                   </h3>
-                  <p style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
+                  <p style={{ color: "rgba(var(--brand-gray-rgb), 0.70)" }}>
                     PrevisÃµes de valorizaÃ§Ã£o e tendÃªncias de mercado
                   </p>
                 </div>

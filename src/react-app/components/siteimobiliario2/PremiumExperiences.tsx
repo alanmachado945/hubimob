@@ -35,13 +35,13 @@ export default function PremiumExperiences() {
         {/* TITLE */}
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            <span style={{ color: "var(--brand-light)" }}>ExperiÃªncias</span>{' '}
-            <span style={{ color: "var(--brand-primary)" }}>premium</span>
+            <span style={{ color: "var(--brand-gray)" }}>Experiências</span>{' '}
+            <span style={{ color: "var(--brand-gold)" }}>premium</span>
           </h2>
 
           <p
             className="text-lg max-w-2xl mx-auto"
-            style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
+            style={{ color: "rgba(var(--brand-gray-rgb), 0.70)" }}
           >
             SoluÃ§Ãµes personalizadas para diferentes perfis profissionais
           </p>
@@ -93,26 +93,26 @@ export default function PremiumExperiences() {
                     className="w-16 h-16 rounded-xl backdrop-blur-sm flex items-center justify-center mb-6 
                       group-hover:scale-110 transition-all duration-300 shadow-lg"
                     style={{
-                      backgroundColor: "rgba(var(--color-d4af67-rgb), 0.20)", // dourado translÃºcido
-                      border: "1px solid rgba(var(--color-d4af67-rgb), 0.30)" // dourado 30%
+                      backgroundColor: "rgba(var(--brand-gold-rgb), 0.20)", // dourado translúcido
+                      border: "1px solid rgba(var(--brand-gold-rgb), 0.30)" // dourado 30%
                     }}
                   >
                     <Icon
                       className="w-8 h-8"
-                      style={{ color: "var(--brand-light)" }} // branco quente / cinza claro
+                      style={{ color: "var(--brand-white)" }} // branco quente / cinza claro
                     />
                   </div>
                   
                   <h3
                     className="font-display text-2xl font-semibold mb-3 drop-shadow-lg"
-                    style={{ color: "var(--brand-light)" }}
+                    style={{ color: "var(--brand-white)" }}
                   >
                     {exp.title}
                   </h3>
                   
                   <p
                     className="leading-relaxed drop-shadow-md"
-                    style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.90)" }}
+                    style={{ color: "rgba(var(--brand-gray-rgb), 0.90)" }}
                   >
                     {exp.description}
                   </p>

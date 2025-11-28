@@ -73,7 +73,7 @@ export default function LeadsPage() {
       case 'Proposta Enviada':
         return 'var(--color-purple)';
       case 'Fechado':
-        return 'var(--brand-primary)';
+        return 'var(--brand-gold)';
       default:
         return 'var(--brand-text-gray)';
     }
@@ -82,20 +82,20 @@ export default function LeadsPage() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-12">
       {/* Decorative Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--color-e3a93c-rgb), 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--color-e3a93c-rgb), 0.02)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--brand-gold-rgb), 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--brand-gold-rgb), 0.02)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
 
       {/* Glow Effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--brand-primary)]/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-primary-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--brand-gold)]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-gold-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h1
+              <h1
             className="text-5xl md:text-6xl font-bold mb-4"
             style={{
               fontFamily: 'Playfair Display, serif',
-              color: 'var(--brand-primary)',
+              color: 'var(--brand-gold)',
             }}
           >
             Leads
@@ -125,32 +125,32 @@ export default function LeadsPage() {
               placeholder="Buscar por nome, telefone ou e-mail…"
               className="w-full pl-12 pr-4 py-4 rounded-xl transition-all duration-300 focus:outline-none"
               style={{
-                fontFamily: 'Montserrat, sans-serif',
-                backgroundColor: 'var(--brand-dark-secondary)',
-                borderWidth: "var(--border-md)",
-                borderColor: 'var(--brand-primary)',
-                color: 'var(--brand-light)',
-              }}
+                  fontFamily: 'Montserrat, sans-serif',
+                  backgroundColor: 'var(--brand-dark-secondary)',
+                  borderWidth: "var(--border-md)",
+                  borderColor: 'var(--brand-gold)',
+                  color: 'var(--brand-white)',
+                }}
             />
           </div>
         </div>
 
         {/* Advanced Filters */}
-        <div
-          className="mb-8 p-6 rounded-2xl border-2"
-          style={{
-            backgroundColor: 'var(--brand-dark-secondary)',
-            borderColor: 'var(--brand-primary)',
-          }}
-        >
+          <div
+            className="mb-8 p-6 rounded-2xl border-2"
+            style={{
+              backgroundColor: 'var(--brand-dark-secondary)',
+              borderColor: 'var(--brand-gold)',
+            }}
+          >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {/* Status Filter */}
             <div>
-              <label
+                  <label
                 className="block text-sm font-semibold mb-2"
                 style={{
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)',
+                  color: 'var(--brand-gold)',
                 }}
               >
                 Status
@@ -159,12 +159,12 @@ export default function LeadsPage() {
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
                 className="w-full px-4 py-3 rounded-xl transition-all duration-300 focus:outline-none"
-                style={{
+                  style={{
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: 'var(--brand-dark)',
                   borderWidth: "var(--border-md)",
-                  borderColor: 'var(--brand-primary)',
-                  color: 'var(--brand-light)',
+                  borderColor: 'var(--brand-gold)',
+                  color: 'var(--brand-white)',
                 }}
               >
                 <option>Todos</option>
@@ -277,11 +277,11 @@ export default function LeadsPage() {
             className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
             style={{
               fontFamily: 'Montserrat, sans-serif',
-              backgroundColor: 'var(--brand-primary)',
+              backgroundColor: 'var(--brand-gold)',
               color: 'var(--brand-dark)',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--brand-primary)')}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)')}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = 'var(--brand-gold)')}
           >
             <Sparkles className="w-6 h-6" />
             Cadastrar Lead com IA
@@ -289,11 +289,11 @@ export default function LeadsPage() {
         </div>
 
         {/* Leads Table */}
-        <div
+          <div
           className="rounded-2xl border-2 overflow-hidden mb-12"
           style={{
             backgroundColor: 'var(--brand-dark)',
-            borderColor: 'var(--brand-primary)',
+            borderColor: 'var(--brand-gold)',
           }}
         >
           <div className="overflow-x-auto">
@@ -362,9 +362,9 @@ export default function LeadsPage() {
               <tbody>
                 {leads.map((lead, index) => (
                   <tr
-                    key={index}
-                    className="border-b transition-colors duration-300"
-                    style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}
+                      key={index}
+                      className="border-b transition-colors duration-300"
+                      style={{ borderColor: 'rgba(var(--brand-gold-rgb), 0.2)' }}
                     onMouseEnter={(e) =>
                       (e.currentTarget.style.backgroundColor = 'rgba(var(--color-000000-rgb), 0.314)')
                     }
@@ -376,7 +376,7 @@ export default function LeadsPage() {
                       className="px-6 py-4"
                       style={{
                         fontFamily: 'Montserrat, sans-serif',
-                        color: 'var(--brand-light)',
+                        color: 'var(--brand-white)',
                       }}
                     >
                       {lead.nome}
@@ -391,7 +391,7 @@ export default function LeadsPage() {
                       {lead.canal}
                     </td>
                     <td className="px-6 py-4">
-                      <span
+                        <span
                         className="px-3 py-1 rounded-full text-sm font-semibold"
                         style={{
                           fontFamily: 'Montserrat, sans-serif',
@@ -406,7 +406,7 @@ export default function LeadsPage() {
                       className="px-6 py-4"
                       style={{
                         fontFamily: 'Montserrat, sans-serif',
-                        color: 'var(--brand-primary)',
+                        color: 'var(--brand-gold)',
                       }}
                     >
                       {lead.orcamento}
@@ -426,14 +426,14 @@ export default function LeadsPage() {
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
                         style={{
                           fontFamily: 'Montserrat, sans-serif',
-                          backgroundColor: 'var(--brand-primary)',
+                          backgroundColor: 'var(--brand-gold)',
                           color: 'var(--brand-dark)',
                         }}
                         onMouseEnter={(e) =>
-                          (e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)')
+                          (e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)')
                         }
                         onMouseLeave={(e) =>
-                          (e.currentTarget.style.backgroundColor = 'var(--brand-primary)')
+                          (e.currentTarget.style.backgroundColor = 'var(--brand-gold)')
                         }
                       >
                         <Eye className="w-4 h-4" />

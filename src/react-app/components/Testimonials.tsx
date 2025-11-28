@@ -33,7 +33,7 @@ export default function Testimonials() {
             className="text-5xl md:text-6xl font-bold mb-6"
             style={{ fontFamily: 'Playfair Display, serif' }}
           >
-            O Que Corretores Estão <span style={{ color: 'var(--brand-primary)' }}>Dizendo</span>
+            O Que Corretores Estão <span style={{ color: 'var(--brand-gold)' }}>Dizendo</span>
           </h2>
           <p 
             className="text-xl"
@@ -59,20 +59,20 @@ export default function Testimonials() {
 
               {/* Quote Icon */}
               <div className="absolute top-6 right-6 opacity-10 group-hover:opacity-20 transition-opacity duration-300 z-10">
-                <Quote className="w-16 h-16" style={{ color: 'var(--brand-primary)' }} />
+                <Quote className="w-16 h-16" style={{ color: 'var(--brand-gold)' }} />
               </div>
 
               {/* Rating */}
               <div className="flex gap-1 mb-6 relative z-10">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5" style={{ fill: 'var(--brand-primary)', color: 'var(--brand-primary)' }} />
+                  <Star key={i} className="w-5 h-5" style={{ fill: 'var(--brand-gold)', color: 'var(--brand-gold)' }} />
                 ))}
               </div>
 
               {/* Content */}
               <p 
                 className="mb-8 leading-relaxed relative z-10"
-                style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
+                style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}
               >
                 "{testimonial.content}"
               </p>
@@ -81,20 +81,20 @@ export default function Testimonials() {
               <div className="relative z-10">
                 <div 
                   className="font-bold mb-1"
-                  style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-light)' }}
+                  style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-white)' }}
                 >
                   {testimonial.name}
                 </div>
                 <div 
                   className="text-sm"
-                  style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--color-f7f9fb-rgb), 0.8)' }}
+                  style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgba(var(--brand-white-rgb), 0.8)' }}
                 >
                   {testimonial.role}
                 </div>
               </div>
 
               {/* Glow Effect */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand-primary/0 to-brand-primary/0 group-hover:from-brand-primary/10 group-hover:to-brand-primary/10 transition-all duration-500"></div>
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand-gold/0 to-brand-gold/0 group-hover:from-brand-gold/10 group-hover:to-brand-gold/10 transition-all duration-500"></div>
             </div>
           ))}
         </div>
@@ -151,7 +151,7 @@ export default function Testimonials() {
       </div>
 
       {/* Background Decoration */}
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-brand-primary/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl"></div>
     </section>
   );
 }

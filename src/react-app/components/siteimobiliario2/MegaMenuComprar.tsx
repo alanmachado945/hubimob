@@ -3,23 +3,23 @@
     <div
       className="absolute left-0 mt-4 w-menu backdrop-blur-xl rounded-xl shadow-xl p-6 z-50"
       style={{
-        backgroundColor: "rgba(var(--color-111827-rgb), 0.95)", // Preto Azul-Grafite 95%
-        border: "1px solid rgba(var(--color-d4af67-rgb), 0.20)", // Dourado metÃ¡lico 20%
+        backgroundColor: "rgba(var(--brand-dark-rgb), 0.95)", // Preto Azul-Grafite 95%
+        border: "1px solid rgba(var(--brand-gold-rgb), 0.20)", // Dourado metálico 20%
       }}
     >
 
       {/* Exclusivos IMOBIA */}
       <div className="mb-6">
-        <h3
+          <h3
           className="font-semibold text-lg mb-2"
-          style={{ color: "var(--brand-primary)" }}
+          style={{ color: "var(--brand-gold)" }}
         >
           Exclusivos IMOBIA
         </h3>
 
         <p
           className="text-sm"
-          style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
+          style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
         >
           ImÃ³veis Ãºnicos selecionados pela curadoria IMOBIA.
         </p>
@@ -34,7 +34,7 @@
       <div className="mb-2">
         <h3
           className="font-semibold text-lg mb-3"
-          style={{ color: "var(--brand-primary)" }}
+          style={{ color: "var(--brand-gold)" }}
         >
           Escolha por regiÃµes
         </h3>
@@ -43,23 +43,23 @@
 
           {/* Coluna 1 â€“ Cidades */}
           <div>
-            <h4
+              <h4
               className="text-sm font-medium mb-2"
-              style={{ color: "rgba(var(--color-d4af67-rgb), 0.90)" }}
+              style={{ color: "rgba(var(--brand-gold-rgb), 0.90)" }}
             >
               Cidades
             </h4>
 
-            <ul
+              <ul
               className="space-y-2 text-sm"
-              style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.80)" }}
+              style={{ color: "rgba(var(--brand-white-rgb), 0.80)" }}
             >
               <li
                 className="cursor-pointer transition-colors"
                 style={{}}
-                onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                 onMouseOut={(e) =>
-                  (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.80)")
+                  (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.80)")
                 }
               >
                 Rio de Janeiro
@@ -67,9 +67,9 @@
 
               <li
                 className="cursor-pointer transition-colors"
-                onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                 onMouseOut={(e) =>
-                  (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.80)")
+                  (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.80)")
                 }
               >
                 NiterÃ³i
@@ -95,9 +95,9 @@
                   <li
                     key={i}
                     className="cursor-pointer transition-colors"
-                    onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                    onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                     onMouseOut={(e) =>
-                      (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.80)")
+                      (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.80)")
                     }
                   >
                     {bairro}

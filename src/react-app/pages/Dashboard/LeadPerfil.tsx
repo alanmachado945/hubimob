@@ -64,11 +64,11 @@ export default function LeadPerfilPage() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-12">
       {/* Decorative Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--color-e3a93c-rgb), 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--color-e3a93c-rgb), 0.02)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--brand-gold-rgb), 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--brand-gold-rgb), 0.02)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
       
       {/* Glow Effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--brand-primary)]/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-primary-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--brand-gold)]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-gold-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
@@ -78,7 +78,7 @@ export default function LeadPerfilPage() {
               className="text-5xl md:text-6xl font-bold mb-4"
               style={{ 
                 fontFamily: 'Playfair Display, serif',
-                color: 'var(--brand-primary)'
+                color: 'var(--brand-gold)'
               }}
             >
               Perfil do Lead – {leadInfo.nome}
@@ -97,11 +97,11 @@ export default function LeadPerfilPage() {
             className="mt-6 md:mt-0 px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
-              backgroundColor: 'var(--brand-primary)',
+              backgroundColor: 'var(--brand-gold)',
               color: 'var(--brand-dark)'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold)'}
           >
             Mover Lead no Funil
           </button>
@@ -112,14 +112,14 @@ export default function LeadPerfilPage() {
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
             backgroundColor: 'var(--brand-dark)',
-            borderColor: 'var(--brand-primary)'
+            borderColor: 'var(--brand-gold)'
           }}
         >
           <h2 
             className="text-3xl font-bold mb-6"
             style={{ 
               fontFamily: 'Playfair Display, serif',
-              color: 'var(--brand-light)'
+              color: 'var(--brand-white)'
             }}
           >
             Informações Gerais
@@ -131,7 +131,7 @@ export default function LeadPerfilPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Nome
@@ -152,7 +152,7 @@ export default function LeadPerfilPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Canal
@@ -173,7 +173,7 @@ export default function LeadPerfilPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Orçamento
@@ -194,7 +194,7 @@ export default function LeadPerfilPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Bairro desejado
@@ -215,7 +215,7 @@ export default function LeadPerfilPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Tipo de imóvel
@@ -236,7 +236,7 @@ export default function LeadPerfilPage() {
                 className="text-sm font-semibold mb-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  color: 'var(--brand-primary)'
+                  color: 'var(--brand-gold)'
                 }}
               >
                 Urgência
@@ -259,7 +259,7 @@ export default function LeadPerfilPage() {
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
             backgroundColor: 'var(--brand-dark)',
-            borderColor: 'var(--brand-primary)'
+            borderColor: 'var(--brand-gold)'
           }}
         >
           <h2 
@@ -281,44 +281,44 @@ export default function LeadPerfilPage() {
           >
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-primary)' }} />
+                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-gold)' }} />
                 <span 
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
-                    color: 'var(--brand-light)'
+                    color: 'var(--brand-white)'
                   }}
                 >
                   Lead com alta intenção de compra
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-primary)' }} />
+                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-gold)' }} />
                 <span 
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
-                    color: 'var(--brand-light)'
+                    color: 'var(--brand-white)'
                   }}
                 >
                   Perfil financeiro compatível com imóveis de R$ 700k a R$ 800k
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-primary)' }} />
+                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-gold)' }} />
                 <span 
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
-                    color: 'var(--brand-light)'
+                    color: 'var(--brand-white)'
                   }}
                 >
                   Preferência clara por Icaraí
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-primary)' }} />
+                <CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: 'var(--brand-gold)' }} />
                 <span 
                   style={{ 
                     fontFamily: 'Montserrat, sans-serif',
-                    color: 'var(--brand-light)'
+                    color: 'var(--brand-white)'
                   }}
                 >
                   Recomenda-se contato nas próximas 24 horas
@@ -330,7 +330,7 @@ export default function LeadPerfilPage() {
           <div 
             className="inline-block px-6 py-3 rounded-full"
             style={{ 
-              backgroundColor: 'var(--brand-primary)',
+              backgroundColor: 'var(--brand-gold)',
               color: 'var(--brand-dark)'
             }}
           >
@@ -362,7 +362,7 @@ export default function LeadPerfilPage() {
                 className="rounded-2xl overflow-hidden border-2 transition-all duration-300 hover:scale-105"
                 style={{ 
                   backgroundColor: 'var(--brand-dark)',
-                  borderColor: 'var(--brand-primary)'
+                  borderColor: 'var(--brand-gold)'
                 }}
               >
                 <div className="h-48 overflow-hidden">
@@ -377,7 +377,7 @@ export default function LeadPerfilPage() {
                     className="text-xl font-bold mb-2"
                     style={{ 
                       fontFamily: 'Montserrat, sans-serif',
-                      color: 'var(--brand-primary)'
+                      color: 'var(--brand-gold)'
                     }}
                   >
                     {imovel.titulo}
@@ -386,7 +386,7 @@ export default function LeadPerfilPage() {
                     className="text-3xl font-bold mb-3"
                     style={{ 
                       fontFamily: 'Playfair Display, serif',
-                      color: 'var(--brand-primary)'
+                      color: 'var(--brand-gold)'
                     }}
                   >
                     {imovel.preco}
@@ -404,11 +404,11 @@ export default function LeadPerfilPage() {
                     className="w-full py-3 rounded-full font-semibold transition-all duration-300"
                     style={{ 
                       fontFamily: 'Montserrat, sans-serif',
-                      backgroundColor: 'var(--brand-primary)',
+                      backgroundColor: 'var(--brand-gold)',
                       color: 'var(--brand-dark)'
                     }}
-                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
-                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
+                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)'}
+                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold)'}
                   >
                     Ver Detalhes
                   </button>
@@ -423,7 +423,7 @@ export default function LeadPerfilPage() {
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
             backgroundColor: 'var(--brand-dark)',
-            borderColor: 'var(--brand-primary)'
+            borderColor: 'var(--brand-gold)'
           }}
         >
           <h2 
@@ -447,16 +447,16 @@ export default function LeadPerfilPage() {
                 >
                   <div 
                     className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                    style={{ backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)' }}
-                  >
-                    <Icon className="w-5 h-5" style={{ color: 'var(--brand-primary)' }} />
+                      style={{ backgroundColor: 'rgba(var(--brand-gold-rgb), 0.125)' }}
+                      >
+                      <Icon className="w-5 h-5" style={{ color: 'var(--brand-gold)' }} />
                   </div>
                   <div className="flex-1">
                     <p 
                       className="font-semibold"
                       style={{ 
                         fontFamily: 'Montserrat, sans-serif',
-                        color: 'var(--brand-light)'
+                        color: 'var(--brand-white)'
                       }}
                     >
                       {item.texto}
@@ -482,7 +482,7 @@ export default function LeadPerfilPage() {
           className="mb-12 p-8 rounded-2xl border-2"
           style={{ 
             backgroundColor: 'var(--brand-dark)',
-            borderColor: 'var(--brand-primary)'
+            borderColor: 'var(--brand-gold)'
           }}
         >
           <h2 
@@ -503,9 +503,9 @@ export default function LeadPerfilPage() {
                     className={`w-12 h-12 rounded-full flex items-center justify-center mb-2 transition-all duration-300 ${
                       stage.active ? 'shadow-lg' : ''
                     }`}
-                    style={{ 
-                      backgroundColor: stage.active || stage.completed ? 'var(--brand-primary)' : 'var(--brand-dark-secondary)',
-                      boxShadow: stage.active ? 'var(--shadow-lg)' : 'none'
+                      style={{ 
+                        backgroundColor: stage.active || stage.completed ? 'var(--brand-gold)' : 'var(--brand-dark-secondary)',
+                        boxShadow: stage.active ? 'var(--shadow-lg)' : 'none'
                     }}
                   >
                     {stage.completed && <CheckCircle2 className="w-6 h-6" style={{ color: 'var(--brand-dark)' }} />}
@@ -515,7 +515,7 @@ export default function LeadPerfilPage() {
                     className="text-sm text-center"
                     style={{ 
                       fontFamily: 'Montserrat, sans-serif',
-                      color: stage.active || stage.completed ? 'var(--brand-primary)' : 'var(--brand-text-gray)'
+                      color: stage.active || stage.completed ? 'var(--brand-gold)' : 'var(--brand-text-gray)'
                     }}
                   >
                     {stage.name}
@@ -528,7 +528,7 @@ export default function LeadPerfilPage() {
               <div 
                 className="absolute h-1 rounded-full transition-all duration-500"
                 style={{ 
-                  backgroundColor: 'var(--brand-primary)',
+                  backgroundColor: 'var(--brand-gold)',
                   width: '25%'
                 }}
               ></div>
@@ -539,11 +539,11 @@ export default function LeadPerfilPage() {
             className="px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105"
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
-              backgroundColor: 'var(--brand-primary)',
+              backgroundColor: 'var(--brand-gold)',
               color: 'var(--brand-dark)'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold)'}
           >
             Mover para Visita Agendada
           </button>
@@ -555,11 +555,11 @@ export default function LeadPerfilPage() {
             className="flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
-              backgroundColor: 'var(--brand-primary)',
+              backgroundColor: 'var(--brand-gold)',
               color: 'var(--brand-dark)'
             }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold)'}
           >
             <Calendar className="w-5 h-5" />
             Agendar Contato
@@ -571,9 +571,9 @@ export default function LeadPerfilPage() {
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
-              color: 'var(--brand-primary)',
+              color: 'var(--brand-gold)',
               borderWidth: "var(--border-md)",
-              borderColor: 'var(--brand-primary)'
+              borderColor: 'var(--brand-gold)'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.backgroundColor = 'rgba(var(--color-e3a93c-rgb), 0.125)';
@@ -588,12 +588,12 @@ export default function LeadPerfilPage() {
         </div>
 
         {/* Rodapé */}
-        <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
+        <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--brand-gold-rgb), 0.2)' }}>
           <p 
             className="text-sm"
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
-              color: 'var(--color-7a7a7a)'
+              color: 'var(--brand-text-gray)'
             }}
           >
             © 2025 HUB Imobiliário Inteligente — CRM com IA.

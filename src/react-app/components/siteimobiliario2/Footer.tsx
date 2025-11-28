@@ -6,7 +6,7 @@ export default function Footer() {
       className="border-t"
       style={{
         backgroundColor: "var(--brand-dark)", // Preto Azul-Grafite
-        borderColor: "rgba(var(--color-d4af67-rgb), 0.10)", // Dourado metálico 10%
+        borderColor: "rgba(var(--brand-gold-rgb), 0.10)", // Dourado metálico 10%
       }}
     >
       <div className="max-w-container mx-auto px-5 py-16">
@@ -15,17 +15,17 @@ export default function Footer() {
           {/* LOGO + TEXTO */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Building2 className="w-8 h-8" style={{ color: "var(--brand-primary)" }} />
+              <Building2 className="w-8 h-8" style={{ color: "var(--brand-gold)" }} />
               <span
                 className="font-display text-2xl font-semibold"
-                style={{ color: "var(--brand-primary)" }}
+                style={{ color: "var(--brand-gold)" }}
               >
                 HUBIMOB
               </span>
             </div>
             <p
               className="leading-relaxed max-w-md"
-              style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
+              style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
             >
               Proptech premium do Rio de Janeiro. Combinamos tecnologia avançada,
               IA e curadoria humana para encontrar seu imóvel ideal.
@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h3
               className="font-semibold mb-4"
-              style={{ color: "var(--brand-light)" }}
+              style={{ color: "var(--brand-white)" }}
             >
               Navegação
             </h3>
@@ -46,10 +46,10 @@ export default function Footer() {
                 <a
                   href="/"
                   className="transition-colors"
-                  style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
-                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                  style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
+                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                   onMouseOut={(e) =>
-                    (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
+                    (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.70)")
                   }
                 >
                   Home
@@ -60,10 +60,10 @@ export default function Footer() {
                 <a
                   href="/encontre-seu-imovel"
                   className="transition-colors"
-                  style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
-                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                  style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
+                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                   onMouseOut={(e) =>
-                    (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
+                    (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.70)")
                   }
                 >
                   Encontre seu imóvel
@@ -74,10 +74,10 @@ export default function Footer() {
                 <a
                   href="/imobiliarias"
                   className="transition-colors"
-                  style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
-                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                  style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
+                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                   onMouseOut={(e) =>
-                    (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
+                    (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.70)")
                   }
                 >
                   Imobiliárias
@@ -88,10 +88,10 @@ export default function Footer() {
                 <a
                   href="/sobre"
                   className="transition-colors"
-                  style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
-                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                  style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
+                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                   onMouseOut={(e) =>
-                    (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
+                    (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.70)")
                   }
                 >
                   Sobre
@@ -102,10 +102,10 @@ export default function Footer() {
                 <a
                   href="/proprietarios"
                   className="transition-colors"
-                  style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}
-                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-primary)")}
+                  style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}
+                  onMouseOver={(e) => (e.currentTarget.style.color = "var(--brand-gold)")}
                   onMouseOut={(e) =>
-                    (e.currentTarget.style.color = "rgba(var(--color-f2f2f2-rgb), 0.70)")
+                    (e.currentTarget.style.color = "rgba(var(--brand-white-rgb), 0.70)")
                   }
                 >
                   Proprietários
@@ -118,29 +118,29 @@ export default function Footer() {
           <div>
             <h3
               className="font-semibold mb-4"
-              style={{ color: "var(--brand-light)" }}
+              style={{ color: "var(--brand-white)" }}
             >
               Contato
             </h3>
 
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4" style={{ color: "var(--brand-primary)" }} />
-                <span className="text-sm" style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
+                <Mail className="w-4 h-4" style={{ color: "var(--brand-gold)" }} />
+                <span className="text-sm" style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}>
                   contato@hubimob.com
                 </span>
               </div>
 
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" style={{ color: "var(--brand-primary)" }} />
-                <span className="text-sm" style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
+                <Phone className="w-4 h-4" style={{ color: "var(--brand-gold)" }} />
+                <span className="text-sm" style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}>
                   (21) 3500-0000
                 </span>
               </div>
 
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" style={{ color: "var(--brand-primary)" }} />
-                <span className="text-sm" style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.70)" }}>
+                <MapPin className="w-4 h-4" style={{ color: "var(--brand-gold)" }} />
+                <span className="text-sm" style={{ color: "rgba(var(--brand-white-rgb), 0.70)" }}>
                   Rio de Janeiro, RJ
                 </span>
               </div>
@@ -152,8 +152,8 @@ export default function Footer() {
         <div
           className="pt-8 text-center text-sm border-t"
           style={{
-            color: "rgba(var(--color-f2f2f2-rgb), 0.50)",
-            borderColor: "rgba(var(--color-d4af67-rgb), 0.10)",
+            color: "rgba(var(--brand-white-rgb), 0.50)",
+            borderColor: "rgba(var(--brand-gold-rgb), 0.10)",
           }}
         >
           <p>© 2025 HUBIMOB. Todos os direitos reservados.</p>

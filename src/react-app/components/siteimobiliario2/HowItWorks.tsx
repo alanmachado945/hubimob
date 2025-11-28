@@ -36,7 +36,7 @@ export default function HowItWorks() {
     <section
       className="py-24 bg-gradient-to-b"
       style={{
-        backgroundImage: "linear-gradient(to bottom, var(--color-0a0f1f), var(--color-111827))"
+        backgroundImage: "linear-gradient(to bottom, var(--brand-bg), var(--brand-dark))"
       }}
     >
       <div className="max-w-container mx-auto px-5">
@@ -66,7 +66,7 @@ export default function HowItWorks() {
                   <div
                     className="hidden lg:block absolute top-16 left-full w-full h-0.5"
                     style={{
-                      backgroundImage: "linear-gradient(to right, rgba(var(--color-d4af67-rgb), 0.40), transparent)"
+                      backgroundImage: "linear-gradient(to right, rgba(var(--brand-gold-rgb), 0.40), transparent)"
                     }}
                   ></div>
                 )}
@@ -83,7 +83,7 @@ export default function HowItWorks() {
                   <div
                     className="absolute inset-0 bg-gradient-to-t"
                     style={{
-                      backgroundImage: "linear-gradient(to top, rgba(var(--color-0a0f1f-rgb), 0.85), rgba(var(--color-0a0f1f-rgb), 0.70), rgba(var(--color-0a0f1f-rgb), 0.60))"
+                      backgroundImage: "linear-gradient(to top, rgba(var(--brand-bg-rgb), 0.85), rgba(var(--brand-bg-rgb), 0.70), rgba(var(--brand-bg-rgb), 0.60))"
                     }}
                   ></div>
                   
@@ -92,7 +92,7 @@ export default function HowItWorks() {
                     
                     <div
                       className="text-6xl font-display font-bold mb-4 drop-shadow-lg"
-                      style={{ color: "rgba(var(--color-d4af67-rgb), 0.30)" }}
+                        style={{ color: "rgba(var(--brand-gold-rgb), 0.30)" }}
                     >
                       {step.number}
                     </div>
@@ -100,22 +100,22 @@ export default function HowItWorks() {
                     <div
                       className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-lg"
                       style={{
-                        background: "linear-gradient(to bottom right, var(--color-d4af67), rgba(var(--color-d4af67-rgb), 0.50))"
+                        background: "linear-gradient(to bottom right, var(--brand-gold), rgba(var(--brand-gold-rgb), 0.50))"
                       }}
                     >
-                      <Icon className="w-7 h-7" style={{ color: "var(--brand-light)" }} />
+                      <Icon className="w-7 h-7" style={{ color: "var(--brand-white)" }} />
                     </div>
                     
                     <h3
                       className="font-display text-xl font-semibold mb-3 drop-shadow-lg"
-                      style={{ color: "var(--brand-light)" }}
+                      style={{ color: "var(--brand-white)" }}
                     >
                       {step.title}
                     </h3>
                     
                     <p
                       className="leading-relaxed drop-shadow-md"
-                      style={{ color: "rgba(var(--color-f2f2f2-rgb), 0.90)" }}
+                      style={{ color: "rgba(var(--brand-white-rgb), 0.90)" }}
                     >
                       {step.description}
                     </p>

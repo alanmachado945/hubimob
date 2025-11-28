@@ -68,23 +68,23 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
   return (
     <div className="min-h-screen bg-black text-white px-6 py-12">
       {/* Decorative Background */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--color-e3a93c-rgb), 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--color-e3a93c-rgb), 0.02)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(var(--brand-gold-rgb), 0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(var(--brand-gold-rgb), 0.02)_1px,transparent_1px)] bg-[size:100px_100px] pointer-events-none"></div>
       
       {/* Glow Effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--brand-primary)]/5 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-primary-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[var(--brand-gold)]/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--brand-gold-dark)]/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 text-center">
           <div 
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-6" 
-            style={{ borderColor: 'var(--brand-primary)', backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)' }}
+            style={{ borderColor: 'var(--brand-gold)', backgroundColor: 'rgba(var(--brand-gold-rgb), 0.125)' }}
           >
-            <Sparkles className="w-4 h-4" style={{ color: 'var(--brand-primary)' }} />
+            <Sparkles className="w-4 h-4" style={{ color: 'var(--brand-gold)' }} />
             <span 
               className="text-sm font-semibold" 
-              style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
+              style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-gold)' }}
             >
               AUTOMAÇÃO INTELIGENTE
             </span>
@@ -92,7 +92,7 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
           
           <h1 
             className="text-5xl md:text-6xl font-bold mb-4"
-            style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-primary)' }}
+            style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-gold)' }}
           >
             Assistente de IA – Follow-up Automático
           </h1>
@@ -111,13 +111,13 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
             className="p-8 rounded-2xl border-2 flex flex-col"
             style={{ 
               backgroundColor: 'var(--brand-dark)', 
-              borderColor: 'var(--brand-primary)',
+              borderColor: 'var(--brand-gold)',
               minHeight: '600px'
             }}
           >
             <h2 
               className="text-2xl font-bold mb-6"
-              style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
+              style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-white)' }}
             >
               Chat com a IA
             </h2>
@@ -135,18 +135,18 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                         ? 'rounded-br-none' 
                         : 'rounded-bl-none'
                     }`}
-                    style={{
-                      backgroundColor: msg.tipo === 'corretor' ? 'var(--brand-dark-secondary)' : 'rgba(var(--color-e3a93c-rgb), 0.125)',
+                      style={{
+                      backgroundColor: msg.tipo === 'corretor' ? 'var(--brand-dark-secondary)' : 'rgba(var(--brand-gold-rgb), 0.125)',
                       borderWidth: "var(--border-md)",
-                      borderColor: msg.tipo === 'corretor' ? 'var(--brand-dark-secondary)' : 'var(--brand-primary)'
+                      borderColor: msg.tipo === 'corretor' ? 'var(--brand-dark-secondary)' : 'var(--brand-gold)'
                     }}
                   >
                     {msg.tipo === 'ia' && (
                       <div className="flex items-center gap-2 mb-3">
-                        <Sparkles className="w-4 h-4" style={{ color: 'var(--brand-primary)' }} />
+                        <Sparkles className="w-4 h-4" style={{ color: 'var(--brand-gold)' }} />
                         <span 
                           className="text-sm font-bold"
-                          style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-primary)' }}
+                          style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-gold)' }}
                         >
                           IA
                         </span>
@@ -156,7 +156,7 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                       className="whitespace-pre-line"
                       style={{ 
                         fontFamily: 'Montserrat, sans-serif', 
-                        color: 'var(--brand-light)',
+                        color: 'var(--brand-white)',
                         lineHeight: '1.6'
                       }}
                     >
@@ -190,11 +190,11 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                 className="px-6 py-3 rounded-xl font-bold transition-all duration-300 hover:scale-105 flex items-center gap-2"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  backgroundColor: 'var(--brand-primary)',
+                  backgroundColor: 'var(--brand-gold)',
                   color: 'var(--brand-dark)'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold)'}
               >
                 <Send className="w-5 h-5" />
                 Enviar
@@ -207,11 +207,11 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
             {/* Quick Suggestions Card */}
             <div 
               className="p-8 rounded-2xl border-2"
-              style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
+              style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-gold)' }}
             >
               <h2 
                 className="text-2xl font-bold mb-6"
-                style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
+                style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-white)' }}
               >
                 Sugestões Rápidas da IA
               </h2>
@@ -223,18 +223,18 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                     className="w-full py-3 px-6 rounded-xl font-semibold text-left transition-all duration-300 hover:scale-[1.02]"
                     style={{ 
                       fontFamily: 'Montserrat, sans-serif',
-                      backgroundColor: 'rgba(var(--color-e3a93c-rgb), 0.125)',
-                      color: 'var(--brand-primary)',
+                      backgroundColor: 'rgba(var(--brand-gold-rgb), 0.125)',
+                      color: 'var(--brand-gold)',
                       borderWidth: "var(--border-md)",
-                      borderColor: 'var(--brand-primary)'
+                      borderColor: 'var(--brand-gold)'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = 'var(--brand-primary)';
+                      e.currentTarget.style.backgroundColor = 'var(--brand-gold)';
                       e.currentTarget.style.color = 'var(--brand-dark)';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'rgba(var(--color-e3a93c-rgb), 0.125)';
-                      e.currentTarget.style.color = 'var(--brand-primary)';
+                      e.currentTarget.style.backgroundColor = 'rgba(var(--brand-gold-rgb), 0.125)';
+                      e.currentTarget.style.color = 'var(--brand-gold)';
                     }}
                   >
                     {sugestao}
@@ -246,11 +246,11 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
             {/* Automation Card */}
             <div 
               className="p-8 rounded-2xl border-2"
-              style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-primary)' }}
+              style={{ backgroundColor: 'var(--brand-dark)', borderColor: 'var(--brand-gold)' }}
             >
               <h2 
                 className="text-2xl font-bold mb-4"
-                style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-light)' }}
+                style={{ fontFamily: 'Playfair Display, serif', color: 'var(--brand-white)' }}
               >
                 Automação Inteligente Sugerida
               </h2>
@@ -278,11 +278,11 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
                 className="w-full py-4 rounded-full font-bold transition-all duration-300 hover:scale-105 shadow-lg"
                 style={{ 
                   fontFamily: 'Montserrat, sans-serif',
-                  backgroundColor: 'var(--brand-primary)',
+                  backgroundColor: 'var(--brand-gold)',
                   color: 'var(--brand-dark)'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary-dark)'}
-                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-primary)'}
+                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold-dark)'}
+                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--brand-gold)'}
               >
                 Criar Follow-up Automaticamente
               </button>
@@ -298,12 +298,12 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
             style={{ 
               fontFamily: 'Montserrat, sans-serif',
               backgroundColor: 'transparent',
-              color: 'var(--brand-primary)',
+              color: 'var(--brand-gold)',
               borderWidth: "var(--border-md)",
-              borderColor: 'var(--brand-primary)'
+              borderColor: 'var(--brand-gold)'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(var(--color-e3a93c-rgb), 0.125)';
+              e.currentTarget.style.backgroundColor = 'rgba(var(--brand-gold-rgb), 0.125)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = 'transparent';
@@ -314,10 +314,10 @@ Essa abordagem é eficaz porque mantém o relacionamento profissional e demonstr
         </div>
 
         {/* Footer */}
-        <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--color-e3a93c-rgb), 0.2)' }}>
+        <div className="text-center pt-8 border-t" style={{ borderColor: 'rgba(var(--brand-gold-rgb), 0.2)' }}>
           <p 
             className="text-sm"
-            style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--color-777777)' }}
+            style={{ fontFamily: 'Montserrat, sans-serif', color: 'var(--brand-text-gray)' }}
           >
             © 2025 HUB Imobiliário Inteligente — Follow-ups gerados por IA.
           </p>
